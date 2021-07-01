@@ -36,8 +36,15 @@
     display: block;
     margin: 0 auto;
     width: 5em;
-    text-align: center;
     margin-bottom: 1em;
+}
+
+.next {
+    display: flex;
+    justify-content: space-between;
+    margin: .3em 4em;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 @media (min-width: 30em) {
@@ -55,3 +62,4 @@
         column-gap: 1.5em;
     }
 }
+

@@ -29,14 +29,14 @@
 .button {
     background: #1b68e3;
     color: white;
-    padding: .6em;
+    padding: 1em .7em;
     border-radius: 12px;
     text-decoration: none;
     font-weight: 600;
     display: block;
     margin: 0 auto;
-    width: 5em;
     text-align: center;
+    width: 5em;
     margin-bottom: 1em;
 }
 
