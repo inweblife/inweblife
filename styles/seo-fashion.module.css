@@ -41,7 +41,7 @@
 
 .next {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: .3em 4em;
     text-decoration: none;
     font-weight: 700;
