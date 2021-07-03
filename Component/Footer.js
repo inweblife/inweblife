@@ -11,6 +11,14 @@ const Footer = () => {
         </li>
       </ul>
     </div>
+        <div className="header">
+      <ul className='nav'>
+        <li><Link href="https://twitter.com/inweblife"><a>Twitter</a></Link>
+        <Link href="https://www.linkedin.com/in/inweblife/"><a>Linkedin</a></Link>
+        <Link href="https://github.com/inweblife"><a>GitHub</a></Link>
+        </li>
+      </ul>
+    </div>
     <h4> &copy;2021 inweblife </h4>
   </footer>
      );
