@@ -16,7 +16,7 @@ const About = () => {
       <div className={styles.container}>
         <div className={styles.picture}>
           <Image
-            src="/Ivan Dimitrov.png"
+            src="/Ivan Dimitrov.jpg"
             alt="inweblife"
             width={780}
             height={500}
