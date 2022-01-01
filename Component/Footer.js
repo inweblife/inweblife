@@ -19,7 +19,7 @@ const Footer = () => {
         </li>
       </ul>
     </div>
-    <h4> &copy;2021 inweblife </h4>
+    <h4> &copy;2022 inweblife </h4>
   </footer>
      );
 }
