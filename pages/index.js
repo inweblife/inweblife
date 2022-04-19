@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <Head>
         <title>inweblife - животът в мрежата</title>
-        <meta name="description" content="inweblife - Вашият живот в мрежата" />
+        <meta name="description" content="inweblife - Вашият живот в мрежата. Сайтът на Иван Димитров - Web Developer, SEO and Digital marketing expert" />
         <meta name="keywords" content="Web Development, SEO, Adwords" />
         <link rel="icon" href="/favicon.jpg" />
       </Head>
