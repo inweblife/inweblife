@@ -1,0 +1,41 @@
+.heading {
+  text-align: center;
+  color: #1b68e3;
+}
+
+.container {
+  max-width: 95%;
+  margin: 1em auto;
+  display: grid;
+  gap: 1.4rem;
+}
+
+.first {
+  padding-top: 0.3em;
+  box-shadow: 0px 2px 10px black;
+  padding: 1em;
+}
+
+.second {
+  box-shadow: 0px 2px 10px black;
+  padding: 1em;
+}
+
+.third {
+  box-shadow: 0px 2px 10px black;
+  padding: 1em;
+}
+
+.fourth {
+  box-shadow: 0px 2px 10px black;
+  padding: 1em;
+  padding-bottom: 1em;
+}
+
+@media (min-width: 40em) {
+  .container {
+    max-width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
