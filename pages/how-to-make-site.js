@@ -11,7 +11,7 @@ const make = () => {
         <title>inweblife - Как се прави сайт</title>
         <meta name="description" content="inweblife - Вашият живот в мрежата" />
         <meta name="keywords" content="Как се прави сайт през 2023 г." />
-        <link rel="icon" href="/favicon.jpg" />
+        <link rel="icon" href="/favicon.webp" />
       </Head>
 
       <div className={styles.container}>
