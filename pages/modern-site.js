@@ -11,7 +11,7 @@ const modern = () => {
         <title>Как се прави модерен сайт</title>
         <meta name="description" content="inweblife - Вашият живот в мрежата" />
         <meta name="keywords" content="Как се прави модерен сайт" />
-        <link rel="icon" href="/favicon.jpg" />
+        <link rel="icon" href="/favicon.webp" />
       </Head>
 
       <div className={styles.container}>
