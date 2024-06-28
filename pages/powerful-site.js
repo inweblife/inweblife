@@ -11,7 +11,7 @@ const powerful = () => {
         <title>inweblife - Създаване на мощен сайт</title>
         <meta name="description" content="inweblife - Вашият живот в мрежата" />
         <meta name="keywords" content="Създайте мощен сайт" />
-        <link rel="icon" href="/favicon.jpg" />
+        <link rel="icon" href="/favicon.webp" />
       </Head>
 
       <div className={styles.container}>
