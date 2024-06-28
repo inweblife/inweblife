@@ -11,7 +11,7 @@ const seo = () => {
         <title>inweblife - SEO оптимизация</title>
         <meta name="description" content="inweblife - Вашият живот в мрежата" />
         <meta name="keywords" content="В ерата на смартфоните." />
-        <link rel="icon" href="/favicon.jpg" />
+        <link rel="icon" href="/favicon.webp" />
       </Head>
 
       <div className={styles.container}>
