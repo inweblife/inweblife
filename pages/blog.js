@@ -11,7 +11,7 @@ const Blog = () => {
         <title>inweblife - блог</title>
         <meta name="description" content="inweblife - Вашият живот в мрежата" />
         <meta name="keywords" content="Web Development, SEO, Adwords" />
-        <link rel="icon" href="/favicon.jpg" />
+        <link rel="icon" href="/favicon.webp" />
       </Head>
 
       <h1 className={styles.heading}>Блог за уеб съдържание</h1>
