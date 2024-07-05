@@ -55,7 +55,7 @@ const About = () => {
               бизнеса и тяхното функционално настройване за успешни маркетингови
               активности, SEO и PPC кампании, съобразени със създаването на
               Facebook Business page и цялата палитра маркетингови услуги на
-              Google. Един от сайтове, по които работя е <Link href="https://kolazascrap.com/"><strong>Коли за скрап</strong></Link>
+              Google. Един от сайтове, по които работя е <Link href="https://kolazascrap.com/"><strong>Коли за скрап</strong></Link>, а друг - <Link href="https://ecometal.bg/"><strong>Коли за бракуване</strong></Link> и <Link href="https://carco.bg/"><strong>Авточасти втора употреба</strong></Link>
             </p>
           </div>
         </section>
