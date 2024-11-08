@@ -183,6 +183,19 @@ export default function Home() {
               работи сайта.
             </p>
 
+            <div className={styles.picture}>
+              <Image
+                src="/desk.webp"
+                alt="workplace"
+                width={600}
+                height={500}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
+              />
+            </div>
+
             <p>
               Изграждането на един сайт не става за ден-два, така че през това
               време, през което се довършва, може да се работи спокойно по SEO.
@@ -251,19 +264,6 @@ export default function Home() {
               оптимизации, изграждане на сайтове, подготвянето им за индексиране
               в Google и реклами.
             </p>
-
-            <div className={styles.picture}>
-              <Image
-                src="/desk.webp"
-                alt="workplace"
-                width={600}
-                height={500}
-                style={{
-                  maxWidth: "100%",
-                  height: "auto",
-                }}
-              />
-            </div>
           </div>
         </section>
         <section className={styles.btn}>
