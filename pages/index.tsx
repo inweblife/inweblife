@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>inweblife-SEO и Web Development</title>
-        <meta name="description" content="За всеки има място в мрежата. Web Development, SEO и PPC за дигитален маркетинг от най-висока класа. Как се прави успешна реклама." />
+        <title>SEO и Web Development | inweblife</title>
+        <meta name="description" content="Web Development, SEO и PPC за дигитален маркетинг от най-висока класа. Как се прави топ реклама" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.webp" />
       </Head>
