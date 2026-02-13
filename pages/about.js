@@ -7,11 +7,15 @@ import styles from "../styles/About.module.css";
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Иван",
-  jobTitle: "Experienced Full-Stack Developer and SEO & PPC Strategist",
+  name: "Иван Димитров",
+  jobTitle: [
+    "High-Budget PPC Strategist",
+    "Semantic SEO Expert",
+    "Full-Stack Developer",
+  ],
   knowsAbout: [
     "Semantic SEO",
-    "PPC Management at scale",
+    "High-Budget PPC Strategy",
     "Next.js",
     "Software Architecture",
   ],
@@ -38,8 +42,8 @@ const About = () => {
   return (
     <>
       <SeoHead
-        title="За мен | inweblife"
-        description="Иван Димитров - web development, SEO и дигитални стратегии."
+        title="За мен: PPC Експерт, SEO Архитект | Full-Stack Developer"
+        description="Иван Димитров е PPC Експерт, SEO Архитект и Full-Stack Developer с 10+ години опит в high-budget кампании, техническо SEO, семантични структури и скалируем код."
         path="/about"
         image="/ivan.webp"
         imageAlt="Портрет на Иван Димитров"
@@ -62,7 +66,7 @@ const About = () => {
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>
-            <h1 className={styles.title}>Иван Димитров</h1>
+            <h1 className={styles.title}>Иван Димитров - PPC Експерт и SEO Архитект</h1>
             <p className={styles.subtitle}>Full-Stack JavaScript Developer</p>
           </div>
         </section>

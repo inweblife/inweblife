@@ -9,7 +9,7 @@ const articleSchema = {
   "@type": "Article",
   headline: "Как се прави модерен сайт",
   description:
-    "Стратегия за модерен сайт: семантична архитектура, тематичен авторитет, mobile-first UX и устойчиво SEO класиране.",
+    "Как се прави модерен сайт: семантика, UX и техническа стабилност от SEO Архитект, PPC Експерт и Full-Stack Developer за по-силни класирания и конверсии.",
   image: ["https://inweblife.vercel.app/workplace.webp"],
   author: {
     "@type": "Person",
@@ -28,8 +28,8 @@ const ModernSite = () => {
   return (
     <>
       <SeoHead
-        title="Как се прави модерен сайт | inweblife"
-        description="Стратегия за модерен сайт: семантична архитектура, тематичен авторитет, mobile-first UX и устойчиво SEO класиране."
+        title="Как се прави модерен сайт | SEO Архитект и PPC Експерт"
+        description="Как се прави модерен сайт: семантика, UX и техническа стабилност от SEO Архитект, PPC Експерт и Full-Stack Developer за по-силни класирания и конверсии."
         path="/modern-site"
         image="/workplace.webp"
         imageAlt="Модерен работен кът за уеб разработка"

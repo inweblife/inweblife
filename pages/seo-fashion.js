@@ -9,7 +9,7 @@ const articleSchema = {
   "@type": "Article",
   headline: "В ерата на смартфоните",
   description:
-    "Mobile-first SEO в AI епохата: поведение на потребителя, AI Overview, ChatGPT/Perplexity/Gemini и стратегия за видимост.",
+    "В ерата на смартфоните: mobile-first SEO, AI Overview и видимост в ChatGPT, Gemini и Perplexity. Анализ от PPC Експерт, SEO Архитект и Full-Stack Developer.",
   image: ["https://inweblife.vercel.app/desk.webp"],
   author: {
     "@type": "Person",
@@ -28,8 +28,8 @@ const SeoFashion = () => {
   return (
     <>
       <SeoHead
-        title="В ерата на смартфоните | inweblife"
-        description="Mobile-first SEO в AI епохата: поведение на потребителя, AI Overview, ChatGPT/Perplexity/Gemini и стратегия за видимост."
+        title="В ерата на смартфоните | SEO Архитект и PPC Експерт"
+        description="В ерата на смартфоните: mobile-first SEO, AI Overview и видимост в ChatGPT, Gemini и Perplexity. Анализ от PPC Експерт, SEO Архитект и Full-Stack Developer."
         path="/seo-fashion"
         image="/desk.webp"
         imageAlt="Работно бюро с фокус върху мобилни устройства"

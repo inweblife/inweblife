@@ -43,8 +43,8 @@ const Blog = () => {
   return (
     <>
       <SeoHead
-        title="Блог | inweblife"
-        description="Статии за уеб разработка, SEO и digital стратегии."
+        title="Блог: PPC Експерт, SEO Архитект | Full-Stack Developer"
+        description="Блог с практични стратегии от PPC Експерт, SEO Архитект и Full-Stack Developer: mobile-first, AI търсене, техническо SEO, семантика и органичен растеж."
         path="/blog"
         image="/workplace.webp"
         imageAlt="Съвременна работна станция за уеб проекти"
@@ -62,7 +62,7 @@ const Blog = () => {
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>
-            <h1 className={styles.heading}>Блог за уеб съдържание</h1>
+            <h1 className={styles.heading}>Блог на PPC Експерт, SEO Архитект и Full-Stack Developer</h1>
           </div>
         </section>
 
