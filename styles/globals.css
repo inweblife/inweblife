@@ -211,3 +211,9 @@ footer {
 footer small {
   color: var(--text-muted);
 }
+
+.notFoundMain {
+  width: min(900px, 94%);
+  margin: 2.5rem auto;
+  text-align: center;
+}

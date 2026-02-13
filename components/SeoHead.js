@@ -1,4 +1,4 @@
-import Head from "next/head";
+﻿import Head from "next/head";
 
 const SITE_URL = "https://inweblife.vercel.app";
 const SITE_NAME = "inweblife";
@@ -15,8 +15,11 @@ const SeoHead = ({
   description,
   path = "/",
   image = "/working.webp",
+  imageWidth = 1200,
+  imageHeight = 630,
   imageAlt = "inweblife",
   type = "website",
+  robots = "index, follow, max-image-preview:large",
   children = null,
 }) => {
   const canonicalUrl = toAbsoluteUrl(path);
@@ -28,7 +31,7 @@ const SeoHead = ({
       <meta name="description" content={description} />
       <meta name="author" content="Иван Димитров" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="robots" content="index, follow, max-image-preview:large" />
+      <meta name="robots" content={robots} />
       <meta name="theme-color" content="#101828" />
 
       <link rel="icon" href="/favicon.webp" />
@@ -41,9 +44,12 @@ const SeoHead = ({
       <meta property="og:description" content={description} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:image" content={ogImageUrl} />
+      <meta property="og:image:width" content={String(imageWidth)} />
+      <meta property="og:image:height" content={String(imageHeight)} />
       <meta property="og:image:alt" content={imageAlt} />
 
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@inweblife" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImageUrl} />

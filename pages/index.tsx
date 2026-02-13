@@ -4,6 +4,18 @@ import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Home.module.css";
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "inweblife",
+  url: "https://inweblife.vercel.app/",
+  inLanguage: "bg",
+  publisher: {
+    "@type": "Person",
+    name: "Иван Димитров",
+  },
+};
+
 export default function Home() {
   return (
     <>
@@ -14,7 +26,12 @@ export default function Home() {
         image="/working.webp"
         imageAlt="Работно пространство за уеб разработка"
         type="website"
-      />
+      >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+      </SeoHead>
 
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Въведение">
