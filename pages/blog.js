@@ -43,8 +43,9 @@ const Blog = () => {
   return (
     <>
       <SeoHead
-        title="Блог: PPC Експерт, SEO Архитект | Full-Stack Developer"
-        description="Блог с практични стратегии от PPC Експерт, SEO Архитект и Full-Stack Developer: mobile-first, AI търсене, техническо SEO, семантика и органичен растеж."
+        title="SEO, PPC и Development Блог | Next.js и WordPress"
+        description="Практичен блог за SEO, PPC, JavaScript и WordPress: semantic clusters, pillar content, technical SEO, mobile-first UX и стратегии за topical authority."
+        keywords="SEO блог, PPC стратегии, Next.js специалист, JavaScript Developer, WordPress Developer, semantic clusters, pillar content, topical authority, technical SEO"
         path="/blog"
         image="/workplace.webp"
         imageAlt="Съвременна работна станция за уеб проекти"

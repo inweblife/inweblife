@@ -9,7 +9,7 @@ const articleSchema = {
   "@type": "Article",
   headline: "Как се прави сайт",
   description:
-    "Как се прави сайт стратегически: техническо задание, семантично ядро, лематизация и вътрешни връзки от PPC Експерт, SEO Архитект и Full-Stack Developer.",
+    "Практичен blueprint за сайт: структура, semantic clusters, pillar content и вътрешни връзки, комбинирани от SEO експерт, PPC експерт и WordPress developer.",
   image: ["https://inweblife.vercel.app/working.webp"],
   author: {
     "@type": "Person",
@@ -28,8 +28,9 @@ const HowToMakeSite = () => {
   return (
     <>
       <SeoHead
-        title="Как се прави сайт в България | PPC Експерт и SEO Архитект"
-        description="Как се прави сайт стратегически: техническо задание, семантично ядро, лематизация и вътрешни връзки от PPC Експерт, SEO Архитект и Full-Stack Developer."
+        title="Как се прави сайт | SEO + PPC + WordPress/Next.js"
+        description="Практичен blueprint за сайт: структура, semantic clusters, pillar content и вътрешни връзки, комбинирани от SEO експерт, PPC експерт и WordPress developer."
+        keywords="как се прави сайт, SEO експерт, PPC експерт, WordPress Developer, Next.js специалист, semantic clusters, pillar content, вътрешни връзки"
         path="/how-to-make-site"
         image="/working.webp"
         imageAlt="Процес по изграждане на уеб сайт"

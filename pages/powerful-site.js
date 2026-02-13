@@ -9,7 +9,7 @@ const articleSchema = {
   "@type": "Article",
   headline: "Създайте мощен сайт",
   description:
-    "Създайте мощен сайт с правилен CMS, mobile-first логика, тематичен блог и pillar страници. Подход от PPC Експерт, SEO Архитект и Full-Stack Developer.",
+    "Изградете мощен сайт с CMS стратегия, mobile-first архитектура, pillar content и topical authority от PPC експерт, SEO експерт и Full-Stack developer.",
   image: ["https://inweblife.vercel.app/computer.webp"],
   author: {
     "@type": "Person",
@@ -28,8 +28,9 @@ const PowerfulSite = () => {
   return (
     <>
       <SeoHead
-        title="Създайте мощен сайт в България | PPC Експерт и SEO Архитект"
-        description="Създайте мощен сайт с правилен CMS, mobile-first логика, тематичен блог и pillar страници. Подход от PPC Експерт, SEO Архитект и Full-Stack Developer."
+        title="Създайте мощен сайт | SEO, PPC и Topical Authority"
+        description="Изградете мощен сайт с CMS стратегия, mobile-first архитектура, pillar content и topical authority от PPC експерт, SEO експерт и Full-Stack developer."
+        keywords="мощен сайт, PPC експерт, SEO експерт, Full-Stack Developer, Next.js специалист, WordPress Developer, topical authority, pillar content"
         path="/powerful-site"
         image="/computer.webp"
         imageAlt="Компютърна станция за разработка"

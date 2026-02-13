@@ -5,8 +5,9 @@ export default function NotFoundPage() {
   return (
     <>
       <SeoHead
-        title="404 страница и навигация | PPC Експерт, SEO Архитект"
-        description="Търсената страница липсва. Върнете се към съдържанието за PPC стратегии, SEO архитектура и Full-Stack разработка, за да продължите към правилната посока."
+        title="404 страница | SEO, PPC и Full-Stack навигация"
+        description="Страницата не е налична. Продължете към ресурси за SEO експертни стратегии, PPC кампании, Next.js development и semantic content архитектура."
+        keywords="404, SEO експерт, PPC кампании, Next.js development, Full-Stack Developer, semantic content"
         path="/404"
         image="/working.webp"
         type="website"
