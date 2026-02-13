@@ -156,8 +156,15 @@
   z-index: 1;
 }
 
+.expertiseIntroRow {
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+
 .portraitInline {
-  margin: 0 auto 0.95rem;
+  margin: 0 auto;
   width: min(100%, 260px);
 }
 
@@ -167,7 +174,8 @@
 }
 
 .portfolioLead {
-  margin-top: 0.75rem;
+  margin-top: 0;
+  margin-bottom: 0;
   color: #d3dcf5;
 }
 
@@ -263,18 +271,21 @@
   }
 
   .expertiseContent {
-    display: flow-root;
+    display: block;
+  }
+
+  .expertiseIntroRow {
+    grid-template-columns: minmax(220px, 38%) minmax(0, 1fr);
+    gap: clamp(1rem, 2.2vw, 1.5rem);
   }
 
   .portraitInline {
-    float: right;
-    width: min(38%, 320px);
-    margin: 0 0 1rem 1.2rem;
+    width: min(100%, 320px);
+    margin: 0;
   }
 
   .projectGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    clear: both;
   }
 }
 
