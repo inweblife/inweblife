@@ -176,9 +176,17 @@ button:focus-visible {
     width: auto;
     margin: 0 auto;
     text-align: center;
-    font-family: "Segoe UI Variable Display", "Avenir Next", "Montserrat", sans-serif;
-    font-size: clamp(1.35rem, 6vw, 1.7rem);
-    letter-spacing: 0.01em;
+    font-family: "Avenir Next", "Segoe UI Variable Display", "Montserrat", sans-serif;
+    font-size: clamp(1.55rem, 7vw, 1.95rem);
+    font-weight: 800;
+    letter-spacing: 0.015em;
+    line-height: 1.05;
+    color: var(--accent-strong);
+    background: linear-gradient(135deg, #1f4fd1 0%, #2f6df6 45%, #1f4fd1 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 8px 24px rgba(31, 79, 209, 0.2);
   }
 
   .topBar nav {
