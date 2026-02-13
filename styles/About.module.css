@@ -49,6 +49,46 @@
   font-weight: 700;
 }
 
+.strategySection {
+  margin-top: 1.4rem;
+  padding: clamp(1rem, 2vw, 1.4rem);
+  border-radius: 22px;
+  border: 1px solid color-mix(in srgb, var(--accent) 18%, var(--border));
+  background: linear-gradient(145deg, #edf3ff 0%, #ffffff 68%);
+  box-shadow: var(--shadow-sm);
+}
+
+.strategySection h2 {
+  margin-bottom: 0.75rem;
+}
+
+.capabilityGrid {
+  margin: 1rem 0 0.8rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.capabilityCard {
+  padding: 0.9rem;
+  border-radius: 16px;
+  border: 1px solid color-mix(in srgb, var(--border) 80%, transparent);
+  background: var(--surface);
+}
+
+.capabilityCard h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.capabilityCard p {
+  margin: 0;
+}
+
+.strategyConclusion {
+  margin-bottom: 0;
+}
+
 .expertiseSection {
   margin-top: 1.65rem;
   display: flex;
@@ -65,21 +105,56 @@
   min-width: 0;
 }
 
-.projectList {
-  margin: 0.8rem 0 0.95rem;
-  padding-left: 1.2rem;
+.portfolioLead {
+  margin-top: 0.75rem;
+}
+
+.projectGrid {
+  margin: 0.95rem 0 1rem;
   display: grid;
-  gap: 0.55rem;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0.7rem;
 }
 
-.projectLink {
+.projectCard {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.8rem;
+  border-radius: 14px;
+  border: 1px solid color-mix(in srgb, var(--border) 80%, transparent);
+  background: var(--surface);
+  text-decoration: none;
+  color: var(--text);
   font-weight: 700;
-  transition: color 0.2s ease, text-decoration-color 0.2s ease, opacity 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-.projectLink:hover {
-  color: var(--accent);
-  text-decoration: underline;
+.projectCard strong {
+  font-size: 1rem;
+}
+
+.projectCard span:last-child {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.projectCard:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
+  box-shadow: var(--shadow-sm);
+}
+
+.projectTag {
+  display: inline-flex;
+  width: fit-content;
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 14%, #ffffff);
+  color: var(--accent-strong);
+  font-size: 0.72rem;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
 }
 
 .expertiseMedia {
@@ -99,6 +174,10 @@
 }
 
 @media (min-width: 48rem) {
+  .capabilityGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .expertiseSection {
     flex-direction: row;
     align-items: flex-start;

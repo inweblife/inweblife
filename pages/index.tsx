@@ -34,6 +34,24 @@ export default function Home() {
           <p className={styles.subtitle}>Заемете своето онлайн пространство</p>
         </header>
 
+        <section className={styles.highlightSection} aria-labelledby="hero-expertise-title">
+          <article className={styles.highlightCard}>
+            <p className={styles.highlightIcon} aria-hidden="true">
+              ◎
+            </p>
+            <h2 id="hero-expertise-title">Експертиза в мащабни дигитални екосистеми</h2>
+            <p>
+              С над 10 години опит в управлението на сложни онлайн структури,
+              моят фокус е върху изграждането на семантичен авторитет и
+              високоефективна архитектура. Специализирам в управлението на
+              мащабни PPC кампании с бюджети, надхвърлящи милиони евро, където
+              всяко решение е подкрепено от данни и стратегическо планиране. Не
+              просто настройвам сайтове - създавам активи, които доминират в
+              нишата си.
+            </p>
+          </article>
+        </section>
+
         <section className={styles.text}>
           <article className={styles.paragraph}>
             <p>

@@ -50,58 +50,110 @@ const About = () => {
               <Link href="/modern-site">модерен сайт</Link>.
             </p>
 
+            <section className={styles.strategySection} aria-labelledby="strategy-title">
+              <h2 id="strategy-title">Стратегическо управление и бизнес растеж</h2>
+              <p>
+                Моят път в дигиталния свят е белязан от работа по ключови
+                индустриални проекти като{" "}
+                <a href="https://carco.bg/" target="_blank" rel="noopener noreferrer">
+                  <strong>Carco.bg</strong>
+                </a>
+                ,{" "}
+                <a href="https://ecometal.bg/" target="_blank" rel="noopener noreferrer">
+                  <strong>Ecometal.bg</strong>
+                </a>{" "}
+                и{" "}
+                <a href="https://kolazascrap.com/" target="_blank" rel="noopener noreferrer">
+                  <strong>Kolazascrap.com</strong>
+                </a>
+                . Опитът ми включва:
+              </p>
+              <div className={styles.capabilityGrid}>
+                <article className={styles.capabilityCard}>
+                  <h3>Управление на милионни бюджети</h3>
+                  <p>
+                    Доказана експертиза в Google Ads и социални мрежи с фокус
+                    върху максимална възвръщаемост (ROAS).
+                  </p>
+                </article>
+                <article className={styles.capabilityCard}>
+                  <h3>Семантична архитектура</h3>
+                  <p>
+                    Проектиране на сложни приложения и Pillar Pages, които
+                    осигуряват устойчив органичен трафик.
+                  </p>
+                </article>
+                <article className={styles.capabilityCard}>
+                  <h3>Индустриален мащаб</h3>
+                  <p>
+                    Дълбоко познаване на логистичните и оперативни процеси в
+                    секторите рециклиране и търговия с авточасти.
+                  </p>
+                </article>
+              </div>
+              <p className={styles.strategyConclusion}>
+                Вярвам, че истинският авторитет се гради чрез комбинация от
+                техническо съвършенство и дълбоко разбиране на бизнес логиката.
+              </p>
+            </section>
+
             <section
               className={styles.expertiseSection}
               aria-labelledby="projects-expertise-title"
             >
               <div className={styles.expertiseContent}>
                 <h2 id="projects-expertise-title">Моите проекти и експертиза</h2>
-                <ul className={styles.projectList}>
-                  <li>
-                    <a
-                      className={styles.projectLink}
-                      href="https://carco.bg/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Авточасти втора употреба
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className={styles.projectLink}
-                      href="https://kolazascrap.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      коли за скрап
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className={styles.projectLink}
-                      href="https://ecometal.bg/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      екометал
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className={styles.projectLink}
-                      href="https://kolizascrap.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      коли за скрап калкулатор
-                    </a>
-                  </li>
-                </ul>
+                <p className={styles.portfolioLead}>
+                  Дизайнът и архитектурата трябва да внушават експертиза и
+                  доверие. Всеки проект е структуриран като дългосрочен актив,
+                  а не просто като списък от линкове.
+                </p>
+                <div className={styles.projectGrid}>
+                  <a
+                    className={styles.projectCard}
+                    href="https://carco.bg/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className={styles.projectTag}>Automotive</span>
+                    <strong>Carco.bg</strong>
+                    <span>Авточасти втора употреба</span>
+                  </a>
+                  <a
+                    className={styles.projectCard}
+                    href="https://ecometal.bg/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className={styles.projectTag}>Recycling</span>
+                    <strong>Ecometal.bg</strong>
+                    <span>Екометал</span>
+                  </a>
+                  <a
+                    className={styles.projectCard}
+                    href="https://kolazascrap.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className={styles.projectTag}>Lead Gen</span>
+                    <strong>Kolazascrap.com</strong>
+                    <span>Коли за скрап</span>
+                  </a>
+                  <a
+                    className={styles.projectCard}
+                    href="https://kolizascrap.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className={styles.projectTag}>Tooling</span>
+                    <strong>Kolizascrap.com</strong>
+                    <span>Коли за скрап калкулатор</span>
+                  </a>
+                </div>
                 <p>
                   Изграждането на тематичен авторитет е доста по-важно от
-                  настройване на сайтовете за LLM, а изграждането на pillar pages
-                  е в основата на семантичната архитектура на апликациите.
+                  настройване на сайтовете за LLM, а изграждането на pillar
+                  pages е в основата на семантичната архитектура на апликациите.
                 </p>
               </div>
 
