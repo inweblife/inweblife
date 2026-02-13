@@ -163,13 +163,18 @@ button:focus-visible {
 
 @media (max-width: 48rem) {
   .topBar {
-    display: grid;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 0.7rem;
+    text-align: center;
   }
 
   .siteTitle {
-    width: 100%;
+    display: block;
+    width: auto;
+    margin: 0 auto;
     text-align: center;
     font-family: "Segoe UI Variable Display", "Avenir Next", "Montserrat", sans-serif;
     font-size: clamp(1.35rem, 6vw, 1.7rem);
@@ -178,9 +183,12 @@ button:focus-visible {
 
   .topBar nav {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .menuList {
+    width: 100%;
     justify-content: center;
   }
 }
