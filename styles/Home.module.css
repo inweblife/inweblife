@@ -74,6 +74,18 @@
   margin: 0;
 }
 
+.expertArchitecture {
+  margin-top: clamp(1rem, 2.2vw, 1.8rem);
+}
+
+.expertArchitecture .highlightCard {
+  gap: 0.95rem;
+}
+
+.expertArchitecture p {
+  line-height: 1.85;
+}
+
 .text {
   margin-top: clamp(1.5rem, 3vw, 2.6rem);
 }

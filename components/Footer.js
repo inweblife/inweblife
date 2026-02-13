@@ -1,4 +1,4 @@
-const Footer = () => {
+﻿const Footer = () => {
   return (
     <footer>
       <div className="footerInner">
@@ -21,9 +21,7 @@ const Footer = () => {
             </li>
           </ul>
         </nav>
-        <small>
-          Copyright {new Date().getFullYear()} inweblife - животът в мрежата
-        </small>
+        <small>Copyright {new Date().getFullYear()} inweblife - животът в мрежата</small>
       </div>
     </footer>
   );

@@ -47,6 +47,25 @@ export default function Home() {
           </article>
         </section>
 
+        <section className={styles.expertArchitecture} aria-labelledby="expert-architecture-title">
+          <article className={styles.highlightCard}>
+            <h2 id="expert-architecture-title">Експертна SEO архитектура</h2>
+            <p>
+              В дигитална ера, доминирана от комплексни алгоритми, истинският успех се крие в
+              пресечната точка между безпрецедентен мащаб и технологична прецизност. С опит в
+              стратегическото управление на маркетингови бюджети за милиони евро и изграждането на
+              семантична архитектура за индустриални лидери като „Карко Индъстри“ ЕООД и
+              „Екометал Инженеринг“ ЕООД, аз не просто разработвам софтуер – аз създавам дигитални
+              активи с висок авторитет.
+            </p>
+            <p>
+              Моят подход интегрира full-stack девелопмънт с експертно SEO, за да изгради устойчиви
+              системи, които доминират в класациите и са подготвени за бъдещето на AI и LLM
+              търсенията.
+            </p>
+          </article>
+        </section>
+
         <section className={styles.text}>
           <article className={styles.paragraph}>
             <h2 className={styles.sectionTitle}>Когато SEO е силно, PPC става още по-ефективно</h2>

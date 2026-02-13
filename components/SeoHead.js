@@ -26,6 +26,7 @@ const SeoHead = ({
     <Head>
       <title>{title}</title>
       <meta name="description" content={description} />
+      <meta name="author" content="Иван Димитров" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index, follow, max-image-preview:large" />
       <meta name="theme-color" content="#101828" />
@@ -46,6 +47,7 @@ const SeoHead = ({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImageUrl} />
+      <meta name="twitter:image:alt" content={imageAlt} />
 
       {children}
     </Head>
