@@ -9,7 +9,7 @@ const articleSchema = {
   "@type": "Article",
   headline: "Как се прави модерен сайт",
   description:
-    "Рамка за модерен сайт с semantic clusters, pillar content и mobile-first UX, приложена от SEO експерт, PPC експерт и Next.js/JavaScript developer.",
+    "Как се прави модерен сайт: semantic clusters, pillar content, mobile-first UX и SEO/PPC стратегия с Next.js фокус.",
   image: ["https://inweblife.vercel.app/workplace.webp"],
   author: {
     "@type": "Person",
@@ -29,7 +29,7 @@ const ModernSite = () => {
     <>
       <SeoHead
         title="Как се прави модерен сайт | SEO, PPC и Next.js подход"
-        description="Рамка за модерен сайт с semantic clusters, pillar content и mobile-first UX, приложена от SEO експерт, PPC експерт и Next.js/JavaScript developer."
+        description="Как се прави модерен сайт: semantic clusters, pillar content, mobile-first UX и SEO/PPC стратегия с Next.js фокус."
         keywords="модерен сайт, SEO експерт, PPC експерт, Next.js специалист, JavaScript Developer, semantic clusters, pillar content, mobile-first UX"
         path="/modern-site"
         image="/workplace.webp"

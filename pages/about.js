@@ -42,8 +42,8 @@ const About = () => {
   return (
     <>
       <SeoHead
-        title="За мен | SEO&PPC експерт и Full-Stack Developer"
-        description="Иван Димитров е SEO&PPC експерт и Full-Stack Developer с 10+ години опит в high-budget кампании, Next.js/WordPress решения, semantic clusters и topical authority."
+        title="За мен | SEO&PPC експерт и Full-Stack Developer профил"
+        description="Профил на Иван Димитров: SEO&PPC експерт и Full-Stack Developer с 10+ години опит в PPC кампании, Next.js/WordPress и technical SEO."
         keywords="Иван Димитров, PPC експерт, SEO експерт, Full-Stack Developer, JavaScript Developer, WordPress Developer, Next.js специалист, semantic clusters, topical authority"
         path="/about"
         image="/ivan.webp"
