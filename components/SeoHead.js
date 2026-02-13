@@ -62,6 +62,7 @@ const SeoHead = ({
       <meta name="theme-color" content="#101828" />
 
       <link rel="icon" href="/favicon.webp" />
+      <link rel="alternate icon" href="/favicon.ico" />
       <link rel="canonical" href={canonicalUrl} />
 
       <meta property="og:locale" content="bg_BG" />

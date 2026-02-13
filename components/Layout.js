@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <a className="skipLink" href="#main-content">
-        Skip to main content
+        Прескочи към основното съдържание
       </a>
       <Navbar />
       {children}
