@@ -1,10 +1,11 @@
 .main {
-  width: min(1100px, 94%);
-  margin: 1rem auto;
-  padding: 1rem;
-  background: var(--surface);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  width: min(1240px, 94%);
+  margin: clamp(1.2rem, 2.8vw, 2.4rem) auto;
+  padding: clamp(1.2rem, 2.4vw, 2.2rem);
+  background: linear-gradient(180deg, var(--surface) 0%, var(--surface-raised) 100%);
+  border: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
 }
 
 .hero {
@@ -18,27 +19,30 @@
 .image {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 24px;
+  box-shadow: var(--shadow-sm);
 }
 
 .title {
-  margin: 1rem 0 0.2rem;
-  font-size: clamp(1.6rem, 4vw, 2.3rem);
+  margin: 1.15rem 0 0.25rem;
 }
 
 .subtitle {
   margin: 0;
-  color: var(--text-muted);
-  font-weight: 600;
+  font-size: clamp(1rem, 1.6vw, 1.18rem);
 }
 
 .text {
-  margin-top: 1rem;
+  margin-top: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 .paragraph {
-  max-width: 70ch;
+  max-width: 78ch;
   margin: 0 auto;
+}
+
+.paragraph p {
+  margin-bottom: 1rem;
 }
 
 .paragraph a {
@@ -46,10 +50,15 @@
 }
 
 .expertiseSection {
-  margin-top: 1rem;
+  margin-top: 1.65rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.45rem;
+  padding: clamp(1rem, 2.4vw, 1.6rem);
+  background: var(--surface);
+  border: 1px solid color-mix(in srgb, var(--border) 80%, transparent);
+  border-radius: 26px;
+  box-shadow: var(--shadow-sm);
 }
 
 .expertiseContent {
@@ -57,17 +66,19 @@
 }
 
 .projectList {
-  margin: 0.75rem 0;
+  margin: 0.8rem 0 0.95rem;
   padding-left: 1.2rem;
+  display: grid;
+  gap: 0.55rem;
 }
 
 .projectLink {
   font-weight: 700;
-  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease, opacity 0.2s ease;
 }
 
 .projectLink:hover {
-  color: #01579b;
+  color: var(--accent);
   text-decoration: underline;
 }
 
@@ -84,14 +95,14 @@
   object-fit: cover;
   object-position: top;
   border-radius: 24px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 28px 56px rgba(15, 23, 42, 0.2);
 }
 
 @media (min-width: 48rem) {
   .expertiseSection {
     flex-direction: row;
     align-items: flex-start;
-    gap: 2rem;
+    gap: clamp(1.5rem, 2.8vw, 2.4rem);
   }
 
   .expertiseContent {
@@ -105,22 +116,29 @@
 }
 
 .cta {
-  margin-top: 1.5rem;
+  margin-top: clamp(1.6rem, 3vw, 2.4rem);
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 0.75rem;
+  gap: 0.85rem;
+  flex-wrap: wrap;
 }
 
 .ctaLink {
-  display: inline-block;
-  padding: 0.6rem 1rem;
-  border: 1px solid var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 999px;
-  font-weight: 600;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  padding: 0.72rem 1.1rem;
+  font-weight: 700;
+  color: var(--text);
   text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .ctaLink:hover {
-  background: #e3f2fd;
+  transform: translateY(-2px);
+  background: color-mix(in srgb, var(--accent) 10%, var(--surface));
+  box-shadow: var(--shadow-sm);
 }

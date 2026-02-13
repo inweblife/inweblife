@@ -2,9 +2,11 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <header>
+    <header className="siteHeader">
       <div className="topBar">
-        <p className="siteTitle">inweblife</p>
+        <Link href="/" className="siteTitle">
+          inweblife
+        </Link>
         <nav aria-label="Основна навигация">
           <ul className="menuList">
             <li>
