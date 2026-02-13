@@ -4,17 +4,42 @@ import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Как се прави сайт",
+  description:
+    "Пълен процес за създаване на сайт: техническо задание, семантично ядро, оптимизация за търсачки, навигация и блог стратегия.",
+  image: ["https://inweblife.vercel.app/working.webp"],
+  author: {
+    "@type": "Person",
+    name: "Иван Димитров",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "inweblife",
+  },
+  datePublished: "2026-02-13",
+  dateModified: "2026-02-13",
+  mainEntityOfPage: "https://inweblife.vercel.app/how-to-make-site",
+};
+
 const HowToMakeSite = () => {
   return (
     <>
       <SeoHead
         title="Как се прави сайт | inweblife"
-        description="Основни стъпки за създаване на ефективен сайт с добра SEO основа."
+        description="Пълен процес за създаване на сайт: техническо задание, семантично ядро, оптимизация за търсачки, навигация и блог стратегия."
         path="/how-to-make-site"
         image="/working.webp"
         imageAlt="Процес по изграждане на уеб сайт"
         type="article"
-      />
+      >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+      </SeoHead>
 
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Как се прави сайт">
@@ -34,6 +59,10 @@ const HowToMakeSite = () => {
         <article className={styles.article}>
           <section>
             <p>
+              <strong>Автор:</strong> Иван Димитров | <strong>Публикувано:</strong>{" "}
+              <time dateTime="2026-02-13">13 февруари 2026</time>
+            </p>
+            <p>
               Въпросът &quot;как се прави сайт&quot; често получава подвеждащо прост отговор. Избираш
               платформа, купуваш домейн, качваш дизайн и публикуваш. Технически това е вярно.
               Стратегически - напълно недостатъчно. Истински работещият сайт не започва от визията,
@@ -42,7 +71,11 @@ const HowToMakeSite = () => {
             <p>
               Сайтът днес е дигитална екосистема. Той трябва да бъде разбираем за търсачките,
               полезен за потребителите и стратегически позициониран спрямо конкуренцията. Всичко
-              останало е вторично.
+              останало е вторично. За модерната рамка виж{" "}
+              <Link href="/modern-site">
+                <strong>как се прави модерен сайт</strong>
+              </Link>
+              .
             </p>
           </section>
 
@@ -100,7 +133,11 @@ const HowToMakeSite = () => {
             <p>
               Добре изграденото семантично ядро позволява на сайта да расте органично. Вместо да
               се конкурира за произволни фрази, той изгражда тематична дълбочина и стабилност в
-              класирането.
+              класирането. Сходна логика за дългосрочен растеж има в{" "}
+              <Link href="/powerful-site">
+                <strong>създайте мощен сайт</strong>
+              </Link>
+              .
             </p>
           </section>
 
@@ -162,7 +199,11 @@ const HowToMakeSite = () => {
               В крайна сметка въпросът не е просто как се прави сайт, а как се изгражда дигитална
               основа, която издържа във времето. Когато техническото планиране, семантичното ядро
               и оптимизацията работят в синхрон, резултатът не е просто онлайн присъствие, а
-              стратегически актив.
+              стратегически актив. За mobile-first перспектива разгледай{" "}
+              <Link href="/seo-fashion">
+                <strong>в ерата на смартфоните</strong>
+              </Link>
+              .
             </p>
           </section>
 

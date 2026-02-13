@@ -4,17 +4,42 @@ import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "В ерата на смартфоните",
+  description:
+    "Mobile-first SEO в AI епохата: поведение на потребителя, AI Overview, ChatGPT/Perplexity/Gemini и стратегия за видимост.",
+  image: ["https://inweblife.vercel.app/desk.webp"],
+  author: {
+    "@type": "Person",
+    name: "Иван Димитров",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "inweblife",
+  },
+  datePublished: "2026-02-13",
+  dateModified: "2026-02-13",
+  mainEntityOfPage: "https://inweblife.vercel.app/seo-fashion",
+};
+
 const SeoFashion = () => {
   return (
     <>
       <SeoHead
         title="В ерата на смартфоните | inweblife"
-        description="Mobile-first оптимизация за по-добра използваемост и SEO резултати."
+        description="Mobile-first SEO в AI епохата: поведение на потребителя, AI Overview, ChatGPT/Perplexity/Gemini и стратегия за видимост."
         path="/seo-fashion"
         image="/desk.webp"
         imageAlt="Работно бюро с фокус върху мобилни устройства"
         type="article"
-      />
+      >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+      </SeoHead>
 
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="В ерата на смартфоните">
@@ -34,6 +59,10 @@ const SeoFashion = () => {
         <article className={styles.article}>
           <section>
             <p>
+              <strong>Автор:</strong> Иван Димитров | <strong>Публикувано:</strong>{" "}
+              <time dateTime="2026-02-13">13 февруари 2026</time>
+            </p>
+            <p>
               Дигиталната среда се промени по-бързо през последните няколко години, отколкото през
               предходното десетилетие. Начинът, по който хората търсят информация, как взимат
               решения и как откриват брандове, вече не е същият. Ако преди оптимизацията
@@ -42,7 +71,11 @@ const SeoFashion = () => {
             </p>
             <p>
               SEO вече не е само игра за позиции. То е борба за внимание в среда, където
-              резултатите се променят пред очите ни.
+              резултатите се променят пред очите ни. Ако искаш основата на този процес, виж{" "}
+              <Link href="/modern-site">
+                <strong>как се прави модерен сайт</strong>
+              </Link>
+              .
             </p>
           </section>
 
@@ -65,7 +98,11 @@ const SeoFashion = () => {
               Google от години използва mobile-first индексиране, което означава, че именно
               мобилната версия определя как ще бъде оценен сайтът. Това променя приоритетите.
               Скоростта става критична. Яснотата става задължителна. Структурата трябва да води
-              директно към отговора.
+              директно към отговора. Практически пример за тази архитектура има в{" "}
+              <Link href="/how-to-make-site">
+                <strong>как се прави сайт</strong>
+              </Link>
+              .
             </p>
             <p>
               SEO в ерата на смартфоните означава оптимизация за реалното поведение на хората, а
@@ -123,7 +160,11 @@ const SeoFashion = () => {
             <p>
               Затова модерното SEO вече включва мислене отвъд Google. То включва разбиране как
               работят езиковите модели и какво съдържание те предпочитат. Ясни формулировки,
-              логична структура и експертен тон стават решаващи фактори.
+              логична структура и експертен тон стават решаващи фактори. Свързан подход има и в{" "}
+              <Link href="/powerful-site">
+                <strong>създайте мощен сайт</strong>
+              </Link>
+              .
             </p>
           </section>
 

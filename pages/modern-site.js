@@ -4,17 +4,42 @@ import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Как се прави модерен сайт",
+  description:
+    "Стратегия за модерен сайт: семантична архитектура, тематичен авторитет, mobile-first UX и устойчиво SEO класиране.",
+  image: ["https://inweblife.vercel.app/workplace.webp"],
+  author: {
+    "@type": "Person",
+    name: "Иван Димитров",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "inweblife",
+  },
+  datePublished: "2026-02-13",
+  dateModified: "2026-02-13",
+  mainEntityOfPage: "https://inweblife.vercel.app/modern-site",
+};
+
 const ModernSite = () => {
   return (
     <>
       <SeoHead
         title="Как се прави модерен сайт | inweblife"
-        description="Mobile-first подход, архитектура и SEO основи за модерен уеб сайт."
+        description="Стратегия за модерен сайт: семантична архитектура, тематичен авторитет, mobile-first UX и устойчиво SEO класиране."
         path="/modern-site"
         image="/workplace.webp"
         imageAlt="Модерен работен кът за уеб разработка"
         type="article"
-      />
+      >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+      </SeoHead>
 
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Модерен сайт">
@@ -34,6 +59,10 @@ const ModernSite = () => {
         <article className={styles.article}>
           <section>
             <p>
+              <strong>Автор:</strong> Иван Димитров | <strong>Публикувано:</strong>{" "}
+              <time dateTime="2026-02-13">13 февруари 2026</time>
+            </p>
+            <p>
               Идеята за &quot;модерен сайт&quot; често се свежда до визия - анимации, градиенти, динамични
               ефекти и впечатляващи изображения. Това обаче е повърхността. Истински модерният
               сайт не започва от дизайна, а от стратегията. Той е резултат от ясно разбиране как
@@ -44,7 +73,11 @@ const ModernSite = () => {
               Модерният сайт не е дигитална брошура. Той е система. Система, която привлича,
               задържа и конвертира. Система, която е технически стабилна, семантично ясна и
               изградена около реални потребителски намерения. Ако липсва дори един от тези
-              елементи, сайтът остава просто красив фон без тежест.
+              елементи, сайтът остава просто красив фон без тежест. За стабилна основа виж и{" "}
+              <Link href="/how-to-make-site">
+                <strong>как се прави сайт</strong>
+              </Link>
+              .
             </p>
           </section>
 
@@ -87,7 +120,11 @@ const ModernSite = () => {
               последователност. Когато даден сайт разглежда една тема от различни ъгли, когато
               отговаря на въпроси, които възникват естествено около основната тема, тогава
               алгоритмите започват да го възприемат като източник, а не като случаен участник в
-              резултатите. Това е разликата между присъствие и доминация.
+              резултатите. Това е разликата между присъствие и доминация. По тази тема разгледай{" "}
+              <Link href="/powerful-site">
+                <strong>създайте мощен сайт</strong>
+              </Link>
+              .
             </p>
             <p>
               Семантичното ядро изисква планиране. То изисква анализ на търсенията, разбиране на
@@ -117,7 +154,12 @@ const ModernSite = () => {
               Модерният сайт се стреми да намали триенето. Намалява времето за зареждане, премахва
               излишните елементи и насочва вниманието към същинската стойност. Когато потребителят
               усеща лекота, той остава по-дълго. Когато остава по-дълго, доверието се увеличава. А
-              доверието е валута както в бизнеса, така и в алгоритмите.
+              доверието е валута както в бизнеса, така и в алгоритмите. За mobile-first контекст
+              виж и{" "}
+              <Link href="/seo-fashion">
+                <strong>в ерата на смартфоните</strong>
+              </Link>
+              .
             </p>
           </section>
 

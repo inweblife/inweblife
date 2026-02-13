@@ -4,17 +4,42 @@ import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Създайте мощен сайт",
+  description:
+    "Как да създадеш мощен сайт с правилен CMS избор, mobile-first подход, тематичен блог и стълбови страници за устойчиво класиране.",
+  image: ["https://inweblife.vercel.app/computer.webp"],
+  author: {
+    "@type": "Person",
+    name: "Иван Димитров",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "inweblife",
+  },
+  datePublished: "2026-02-13",
+  dateModified: "2026-02-13",
+  mainEntityOfPage: "https://inweblife.vercel.app/powerful-site",
+};
+
 const PowerfulSite = () => {
   return (
     <>
       <SeoHead
         title="Създайте мощен сайт | inweblife"
-        description="Как да изградите устойчив и мащабируем сайт с добри SEO основи."
+        description="Как да създадеш мощен сайт с правилен CMS избор, mobile-first подход, тематичен блог и стълбови страници за устойчиво класиране."
         path="/powerful-site"
         image="/computer.webp"
         imageAlt="Компютърна станция за разработка"
         type="article"
-      />
+      >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+      </SeoHead>
 
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Мощен сайт">
@@ -34,6 +59,10 @@ const PowerfulSite = () => {
         <article className={styles.article}>
           <section>
             <p>
+              <strong>Автор:</strong> Иван Димитров | <strong>Публикувано:</strong>{" "}
+              <time dateTime="2026-02-13">13 февруари 2026</time>
+            </p>
+            <p>
               Мощният сайт не е този с най-много ефекти. Не е този с най-скъпия дизайн. И не е
               този, който просто &quot;изглежда добре&quot;.
             </p>
@@ -44,12 +73,16 @@ const PowerfulSite = () => {
             </p>
             <p>
               Създаването на такъв сайт не е въпрос на късмет или шаблон. Това е процес на
-              правилни решения още от самото начало.
+              правилни решения още от самото начало. За фундаменталните стъпки виж{" "}
+              <Link href="/how-to-make-site">
+                <strong>как се прави сайт</strong>
+              </Link>
+              .
             </p>
           </section>
 
           <section>
-            <h2>Избора на надежден CMS или добра среда в мрежата</h2>
+            <h2>Изборът на надежден CMS или добра среда в мрежата</h2>
             <p>
               Всичко започва от средата, върху която ще бъде изграден сайтът. Изборът на CMS или
               технологична платформа не е просто технически детайл, а стратегическо решение. Тази
@@ -98,7 +131,11 @@ const PowerfulSite = () => {
               Mobile-first подходът влияе и на класирането. Търсачките анализират мобилната версия
               като основна. Това означава, че скоростта, структурата и съдържанието трябва да бъдат
               оптимизирани именно за този формат. Мощният сайт не прави компромиси с мобилното
-              изживяване, защото именно там се печели или губи вниманието.
+              изживяване, защото именно там се печели или губи вниманието. По темата разгледай{" "}
+              <Link href="/seo-fashion">
+                <strong>в ерата на смартфоните</strong>
+              </Link>
+              .
             </p>
           </section>
 
@@ -153,7 +190,11 @@ const PowerfulSite = () => {
               В крайна сметка създаването на мощен сайт е въпрос на дългосрочно мислене. Когато
               изборът на среда, мобилният подход, тематичният блог и стълбовите страници работят в
               синхрон, резултатът не е просто онлайн присъствие. Резултатът е дигитална платформа
-              със стабилна основа, която расте, класира се и създава реална стойност.
+              със стабилна основа, която расте, класира се и създава реална стойност. Виж и{" "}
+              <Link href="/modern-site">
+                <strong>как се прави модерен сайт</strong>
+              </Link>
+              .
             </p>
           </section>
 
