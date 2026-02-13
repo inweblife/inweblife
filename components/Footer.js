@@ -1,26 +1,28 @@
-import Link from "next/link";
-
 const Footer = () => {
   return (
     <footer>
-      <div>
-        <ul className="menu_list">
+      <nav aria-label="Социални профили">
+        <ul className="menuList">
           <li>
-            <Link href="https://twitter.com/inweblife">Twitter</Link> |
+            <a href="https://twitter.com/inweblife" target="_blank" rel="noreferrer">
+              Twitter
+            </a>
           </li>
           <li>
-            <Link href="https://www.linkedin.com/in/inweblife/">Linkedin</Link>{" "}
-            |
+            <a href="https://www.linkedin.com/in/inweblife/" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
           </li>
           <li>
-            <Link href="https://github.com/inweblife">GitHub</Link> 
+            <a href="https://github.com/inweblife" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
           </li>
         </ul>
-      </div>
-
-      <copyright>
+      </nav>
+      <small>
         Copyright {new Date().getFullYear()} inweblife - животът в мрежата
-      </copyright>
+      </small>
     </footer>
   );
 };

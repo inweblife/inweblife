@@ -8,122 +8,77 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>
-          {" "}
-          За мен | Как се прави сайт за най-високо класиране в Google
-        </title>
+        <title>За мен | inweblife</title>
         <meta
           name="description"
-          content="Успешно SEO гарантира благополучно представяне на сайта в мрежата, за да се вижда от всички навсякъде."
+          content="Иван Димитров - web development, SEO и дигитални стратегии."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.webp" />
       </Head>
 
-      <div className={styles.main}>
-        <div className={styles.picture}>
-          <Image
-            src="/coffee.webp"
-            alt="workplace"
-            width={900}
-            height={540}
-            style={{
-              maxWidth: "100%",
-              height: "auto",
-            }}
-          />
-        </div>
-
-        <h1 className={styles.title}>Иван Димитров</h1>
-        <h3 className={styles.title}>Fullstack JavaScript Developer</h3>
-
-        <section className={styles.text}>
-          <div className={styles.paragraph}>
-            <p>
-              Казвам се Иван Димитров и съм роден през 1977 година в град София,
-              България. Занимавам се{" "}
-              <Link href="/">
-                <strong>Web development</strong>
-              </Link>{" "}
-              от 2011 година. Завършил съм престижната школа w3schools през 2018
-              година, Frontend masters, както и някои руски школи за
-              програмиране, Responsive design и Web development.
-            </p>
-
-            <p>
-              Квалифицирал съм се допълнително в областта на Digital marketing -
-              Facebook ads, Google Ads, Remarketing, SEO и т.н. С навлизането на
-              Mobile First технологията за изграждане на интернет съдържание
-              достъпно през мобилни устройства, след бума в производството и
-              използването на смартфони, започнах активно да изграждам сайтове
-              по най-модерните критерии за Google ranking и Facebook marketing.
-            </p>
-
-            <p>
-              Имам опит с{" "}
-              <Link href="/how-to-make-site">
-                <strong>изграждането на Web сайтове</strong>
-              </Link>{" "}
-              в най-различни сфери от бизнеса и тяхното функционално настройване
-              за успешни маркетингови активности, SEO и PPC кампании, съобразени
-              със създаването на Facebook Business page и цялата палитра
-              маркетингови услуги на Google. Един от сайтове, по които работя е{" "}
-              <Link href="https://kolazascrap.com/">
-                <strong>Коли за скрап</strong>
-              </Link>
-              , а друг -{" "}
-              <Link href="https://ecometal.bg/">
-                <strong>Коли за бракуване</strong>
-              </Link>{" "}, освен това <Link href="https://kolizascrap.com/"><strong>Калкулатор коли за скрап </strong></Link>
-              и{" "}
-              <Link href="https://carco.bg/">
-                <strong>Авточасти втора употреба</strong>
-              </Link>
-            </p>
-          </div>
-        </section>
-        <section className={styles.btn}>
-          <button>
-            <Link href="mailto:inweblife@yandex.com">За контакт</Link>
-          </button>
-        </section>
+      <main className={styles.main} id="main-content">
+        <header className={styles.hero}>
+          <figure className={styles.picture}>
+            <Image
+              src="/coffee.webp"
+              alt="Работно бюро с лаптоп и чаша кафе"
+              width={900}
+              height={540}
+              className={styles.image}
+              priority
+            />
+          </figure>
+          <h1 className={styles.title}>Иван Димитров</h1>
+          <p className={styles.subtitle}>Fullstack JavaScript Developer</p>
+        </header>
 
         <section className={styles.text}>
-          <div className={styles.paragraph}>
+          <article className={styles.paragraph}>
             <p>
-              Убеден съм, че{" "}
-              <Link href="/powerful-site">
-                <strong>сайтовете трябва да се правят</strong>
-              </Link>{" "}
-              от първия до последния код, изцяло според най-добрите практики на
-              Google за оптимизация, от заглавията, през описанията по ключови
-              думи, чак до скорост на зареждане и най-приятно потребителско
-              изживяване. Повече неща ще разказвам в{" "}
+              Занимавам се с web development и SEO с фокус върху устойчив
+              растеж: добър код, ясна структура и бързи страници.
+            </p>
+            <p>
+              Работя по цялостен процес: архитектура, съдържание, техническа
+              оптимизация и рекламна подготовка. Разгледайте и моите материали в{" "}
               <Link href="/blog">
-                <strong>моя блог</strong>
+                <strong>блога</strong>
               </Link>
+              .
             </p>
-
-            <div className={styles.picture}>
+            <p>
+              Примери за проекти и подход ще намерите в статиите за{" "}
+              <Link href="/powerful-site">
+                <strong>мощен сайт</strong>
+              </Link>{" "}
+              и{" "}
+              <Link href="/modern-site">
+                <strong>модерен сайт</strong>
+              </Link>
+              .
+            </p>
+            <figure className={styles.picture}>
               <Image
                 src="/ivan.webp"
-                alt="workplace"
+                alt="Портрет на Иван Димитров"
                 width={500}
                 height={400}
-                style={{
-                  maxWidth: "100%",
-                  height: "auto",
-                }}
+                className={styles.image}
               />
-            </div>
-          </div>
+            </figure>
+          </article>
         </section>
-        <section className={styles.btn}>
-          <button>
-            <Link href="/blog">Блог</Link>
-          </button>
+
+        <section className={styles.cta}>
+          <a className={styles.ctaLink} href="mailto:inweblife@yandex.com">
+            За контакт
+          </a>
+          <Link className={styles.ctaLink} href="/blog">
+            Блог
+          </Link>
         </section>
-      </div>
+      </main>
     </>
   );
 };
