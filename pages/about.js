@@ -135,6 +135,18 @@ const About = () => {
             >
               <div className={styles.expertiseContent}>
                 <h2 id="projects-expertise-title">Моите проекти и експертиза</h2>
+                <aside className={styles.portraitInline} aria-label="Профил">
+                  <div className={styles.portraitFrame}>
+                    <Image
+                      src="/ivan.webp"
+                      alt="Портрет на Иван Димитров"
+                      width={600}
+                      height={600}
+                      className={styles.portrait}
+                      priority
+                    />
+                  </div>
+                </aside>
                 <p className={styles.portfolioLead}>
                   Дизайнът и архитектурата трябва да внушават експертиза и доверие. Всеки проект е
                   структуриран като дългосрочен актив, а не просто като списък от линкове.
@@ -187,19 +199,6 @@ const About = () => {
                   апликациите.
                 </p>
               </div>
-
-              <figure className={styles.expertiseMedia}>
-                <div className={styles.portraitFrame}>
-                  <Image
-                    src="/ivan.webp"
-                    alt="Портрет на Иван Димитров"
-                    width={600}
-                    height={600}
-                    className={styles.portrait}
-                    priority
-                  />
-                </div>
-              </figure>
             </section>
           </article>
         </section>
