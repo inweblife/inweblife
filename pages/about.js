@@ -4,6 +4,19 @@ import Link from "next/link";
 
 import styles from "../styles/About.module.css";
 
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Иван",
+  jobTitle: "Senior Full-Stack Developer & SEO Expert",
+  knowsAbout: [
+    "Semantic SEO",
+    "PPC Management at scale",
+    "Next.js",
+    "Software Architecture",
+  ],
+};
+
 const About = () => {
   return (
     <>
@@ -15,6 +28,10 @@ const About = () => {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.webp" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
       </Head>
 
       <main className={styles.main} id="main-content">
@@ -71,14 +88,14 @@ const About = () => {
               <div className={styles.capabilityGrid}>
                 <article className={styles.capabilityCard}>
                   <h3>Управление на милионни бюджети</h3>
-                  <p>
+                  <p className={styles.premiumText}>
                     Доказана експертиза в Google Ads и социални мрежи с фокус
                     върху максимална възвръщаемост (ROAS).
                   </p>
                 </article>
                 <article className={styles.capabilityCard}>
                   <h3>Семантична архитектура</h3>
-                  <p>
+                  <p className={styles.premiumText}>
                     Проектиране на сложни приложения и Pillar Pages, които
                     осигуряват устойчив органичен трафик.
                   </p>
@@ -115,7 +132,7 @@ const About = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span className={styles.projectTag}>Automotive</span>
+                    <span className={styles.projectTag}>AUTOMOTIVE</span>
                     <strong>Carco.bg</strong>
                     <span>Авточасти втора употреба</span>
                   </a>
@@ -125,7 +142,7 @@ const About = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span className={styles.projectTag}>Recycling</span>
+                    <span className={styles.projectTag}>RECYCLING</span>
                     <strong>Ecometal.bg</strong>
                     <span>Екометал</span>
                   </a>
@@ -135,7 +152,7 @@ const About = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span className={styles.projectTag}>Lead Gen</span>
+                    <span className={styles.projectTag}>LEAD GEN</span>
                     <strong>Kolazascrap.com</strong>
                     <span>Коли за скрап</span>
                   </a>
@@ -145,7 +162,7 @@ const About = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span className={styles.projectTag}>Tooling</span>
+                    <span className={styles.projectTag}>TOOLING</span>
                     <strong>Kolizascrap.com</strong>
                     <span>Коли за скрап калкулатор</span>
                   </a>
