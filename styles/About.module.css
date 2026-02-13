@@ -21,13 +21,6 @@
   border-radius: 10px;
 }
 
-.portrait {
-  width: min(100%, 600px);
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
 .title {
   margin: 1rem 0 0.2rem;
   font-size: clamp(1.6rem, 4vw, 2.3rem);
@@ -46,6 +39,69 @@
 .paragraph {
   max-width: 70ch;
   margin: 0 auto;
+}
+
+.paragraph a {
+  font-weight: 700;
+}
+
+.expertiseSection {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.expertiseContent {
+  min-width: 0;
+}
+
+.projectList {
+  margin: 0.75rem 0;
+  padding-left: 1.2rem;
+}
+
+.projectLink {
+  font-weight: 700;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.projectLink:hover {
+  color: #01579b;
+  text-decoration: underline;
+}
+
+.expertiseMedia {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.portrait {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 48rem) {
+  .expertiseSection {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .expertiseContent {
+    flex: 0 0 60%;
+  }
+
+  .expertiseMedia {
+    flex: 0 0 40%;
+    justify-content: flex-end;
+  }
 }
 
 .cta {

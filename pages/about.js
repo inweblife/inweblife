@@ -42,80 +42,80 @@ const About = () => {
             <p>
               Работя по цялостен процес: архитектура, съдържание, техническа
               оптимизация и рекламна подготовка. Разгледайте и моите материали в{" "}
-              <Link href="/blog">
-                <strong>блога</strong>
-              </Link>
-              .
+              <Link href="/blog">блога</Link>.
             </p>
             <p>
               Примери за проекти и подход ще намерите в статиите за{" "}
-              <Link href="/powerful-site">
-                <strong>мощен сайт</strong>
-              </Link>{" "}
-              и{" "}
-              <Link href="/modern-site">
-                <strong>модерен сайт</strong>
-              </Link>
-              .
+              <Link href="/powerful-site">мощен сайт</Link> и{" "}
+              <Link href="/modern-site">модерен сайт</Link>.
             </p>
 
-            <section aria-labelledby="projects-expertise-title">
-              <h2 id="projects-expertise-title">Моите проекти и експертиза</h2>
-              <ul>
-                <li>
-                  <a
-                    href="https://carco.bg/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Авточасти втора употреба
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://kolazascrap.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    коли за скрап
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://ecometal.bg/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    екометал
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://kolizascrap.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    коли за скрап калкулатор
-                  </a>
-                </li>
-              </ul>
-              <p>
-                Изграждането на тематичен авторитет е доста по-важно от
-                настройване на сайтовете за LLM, а изграждането на pillar pages
-                е в основата на семантичната архитектура на апликациите.
-              </p>
-            </section>
+            <section
+              className={styles.expertiseSection}
+              aria-labelledby="projects-expertise-title"
+            >
+              <div className={styles.expertiseContent}>
+                <h2 id="projects-expertise-title">Моите проекти и експертиза</h2>
+                <ul className={styles.projectList}>
+                  <li>
+                    <a
+                      className={styles.projectLink}
+                      href="https://carco.bg/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Авточасти втора употреба
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className={styles.projectLink}
+                      href="https://kolazascrap.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      коли за скрап
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className={styles.projectLink}
+                      href="https://ecometal.bg/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      екометал
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className={styles.projectLink}
+                      href="https://kolizascrap.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      коли за скрап калкулатор
+                    </a>
+                  </li>
+                </ul>
+                <p>
+                  Изграждането на тематичен авторитет е доста по-важно от
+                  настройване на сайтовете за LLM, а изграждането на pillar pages
+                  е в основата на семантичната архитектура на апликациите.
+                </p>
+              </div>
 
-            <figure className={styles.picture}>
-              <Image
-                src="/ivan.webp"
-                alt="Портрет на Иван Димитров"
-                width={600}
-                height={600}
-                className={styles.portrait}
-                priority
-              />
-            </figure>
+              <figure className={styles.expertiseMedia}>
+                <Image
+                  src="/ivan.webp"
+                  alt="Портрет на Иван Димитров"
+                  width={600}
+                  height={600}
+                  className={styles.portrait}
+                  priority
+                />
+              </figure>
+            </section>
           </article>
         </section>
 
