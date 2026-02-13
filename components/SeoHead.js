@@ -19,6 +19,7 @@ const toAbsoluteUrl = (path = "/") => {
 const SeoHead = ({
   title,
   description,
+  keywords = `${PERSON_NAME}, PPC експерт, SEO експерт, Full-Stack Developer, JavaScript Developer, WordPress Developer, Next.js специалист, topical authority, semantic clusters, pillar content`,
   path = "/",
   image = "/working.webp",
   imageWidth = 1200,
@@ -51,7 +52,7 @@ const SeoHead = ({
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="author" content={PERSON_NAME} />
-      <meta name="keywords" content={`${PERSON_NAME}, ${EXPERTISE_LABELS.join(", ")}`} />
+      <meta name="keywords" content={keywords} />
       <meta
         name="expertise"
         content={`${PERSON_NAME} | ${EXPERTISE_LABELS[0]} | ${EXPERTISE_LABELS[1]} | ${EXPERTISE_LABELS[2]}`}

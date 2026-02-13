@@ -12,7 +12,7 @@ const websiteSchema = {
   name: "inweblife",
   url: "https://inweblife.vercel.app/",
   description:
-    "PPC Експерт, SEO Архитект и Full-Stack Developer за устойчив растеж: семантична архитектура, high-budget кампании и уеб решения, които носят реални резултати.",
+    "PPC експерт и SEO експерт с фокус върху Next.js, JavaScript и WordPress екосистеми, semantic clusters, pillar content и topical authority за устойчив растеж.",
   inLanguage: "bg",
   publisher: {
     "@type": "Person",
@@ -52,8 +52,9 @@ export default function Home() {
   return (
     <>
       <SeoHead
-        title="PPC Експерт и SEO Архитект | Full-Stack Developer BG"
-        description="PPC Експерт, SEO Архитект и Full-Stack Developer за устойчив растеж: семантична архитектура, high-budget кампании и уеб решения, които носят реални резултати."
+        title="PPC & SEO Експерт | Next.js и JavaScript Developer"
+        description="PPC експерт и SEO експерт с фокус върху Next.js, JavaScript и WordPress екосистеми, semantic clusters, pillar content и topical authority за устойчив растеж."
+        keywords="PPC експерт, SEO експерт, Next.js специалист, JavaScript Developer, WordPress Developer, topical authority, semantic clusters, pillar content, technical SEO"
         path="/"
         image="/working.webp"
         imageAlt="Работно пространство за уеб разработка"
