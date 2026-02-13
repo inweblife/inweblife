@@ -8,12 +8,29 @@ const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Иван",
-  jobTitle: "Senior Full-Stack Developer & SEO Expert",
+  jobTitle: "Experienced Full-Stack Developer and SEO & PPC Strategist",
   knowsAbout: [
     "Semantic SEO",
     "PPC Management at scale",
     "Next.js",
     "Software Architecture",
+  ],
+  workExample: [
+    {
+      "@type": "CreativeWork",
+      name: "Carco.bg",
+      url: "https://carco.bg/",
+    },
+    {
+      "@type": "CreativeWork",
+      name: "Ecometal.bg",
+      url: "https://ecometal.bg/",
+    },
+    {
+      "@type": "CreativeWork",
+      name: "Kolazascrap.com",
+      url: "https://kolazascrap.com/",
+    },
   ],
 };
 
@@ -35,20 +52,20 @@ const About = () => {
       </Head>
 
       <main className={styles.main} id="main-content">
-        <header className={styles.hero}>
-          <figure className={styles.picture}>
-            <Image
-              src="/coffee.webp"
-              alt="Работно бюро с лаптоп и чаша кафе"
-              width={900}
-              height={540}
-              className={styles.image}
-              priority
-            />
-          </figure>
-          <h1 className={styles.title}>Иван Димитров</h1>
-          <p className={styles.subtitle}>Fullstack JavaScript Developer</p>
-        </header>
+        <section className={styles.heroBanner} aria-label="За Иван">
+          <Image
+            src="/coffee.webp"
+            alt="Работно бюро с лаптоп и чаша кафе"
+            fill
+            sizes="100vw"
+            priority
+            className={styles.heroImage}
+          />
+          <div className={styles.heroOverlay}>
+            <h1 className={styles.title}>Иван Димитров</h1>
+            <p className={styles.subtitle}>Fullstack JavaScript Developer</p>
+          </div>
+        </section>
 
         <section className={styles.text}>
           <article className={styles.paragraph}>
@@ -61,10 +78,11 @@ const About = () => {
               оптимизация и рекламна подготовка. Разгледайте и моите материали в{" "}
               <Link href="/blog">блога</Link>.
             </p>
-            <p>
-              Примери за проекти и подход ще намерите в статиите за{" "}
-              <Link href="/powerful-site">мощен сайт</Link> и{" "}
-              <Link href="/modern-site">модерен сайт</Link>.
+            <p className={styles.authorityCopy}>
+              Експерт с доказан опит в управлението на PPC бюджети за милиони
+              евра и архитект на SEO стратегии за лидерите в Automotive &
+              Recycling индустрията. Моят код не просто работи - той доминира
+              семантично.
             </p>
 
             <section className={styles.strategySection} aria-labelledby="strategy-title">

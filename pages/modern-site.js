@@ -17,20 +17,21 @@ const ModernSite = () => {
       </Head>
 
       <main className={styles.main} id="main-content">
-        <article className={styles.article}>
-          <header>
+        <section className={styles.heroBanner} aria-label="Модерен сайт">
+          <Image
+            src="/workplace.webp"
+            alt="Модерен работен кът за уеб разработка"
+            fill
+            sizes="100vw"
+            priority
+            className={styles.heroImage}
+          />
+          <div className={styles.heroOverlay}>
             <h1>Как се прави модерен сайт</h1>
-          </header>
-          <figure className={styles.picture}>
-            <Image
-              src="/workplace.webp"
-              alt="Модерен работен кът за уеб разработка"
-              width={780}
-              height={500}
-              className={styles.image}
-              priority
-            />
-          </figure>
+          </div>
+        </section>
+
+        <article className={styles.article}>
           <section>
             <p>
               Модерният сайт е комбинация от бързина, удобна навигация и добра

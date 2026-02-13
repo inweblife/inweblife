@@ -53,7 +53,20 @@ const Blog = () => {
       </Head>
 
       <main className={styles.main} id="main-content">
-        <h1 className={styles.heading}>Блог за уеб съдържание</h1>
+        <section className={styles.heroBanner} aria-label="Блог хедър">
+          <Image
+            src="/workplace.webp"
+            alt="Съвременна работна станция за уеб проекти"
+            fill
+            sizes="100vw"
+            priority
+            className={styles.heroImage}
+          />
+          <div className={styles.heroOverlay}>
+            <h1 className={styles.heading}>Блог за уеб съдържание</h1>
+          </div>
+        </section>
+
         <section className={styles.grid} aria-label="Списък със статии">
           {posts.map((post) => (
             <article key={post.href} className={styles.card}>

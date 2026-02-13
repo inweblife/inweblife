@@ -17,20 +17,21 @@ const HowToMakeSite = () => {
       </Head>
 
       <main className={styles.main} id="main-content">
-        <article className={styles.article}>
-          <header>
+        <section className={styles.heroBanner} aria-label="Как се прави сайт">
+          <Image
+            src="/working.webp"
+            alt="Процес по изграждане на уеб сайт"
+            fill
+            sizes="100vw"
+            priority
+            className={styles.heroImage}
+          />
+          <div className={styles.heroOverlay}>
             <h1>Как се прави сайт</h1>
-          </header>
-          <figure className={styles.picture}>
-            <Image
-              src="/working.webp"
-              alt="Процес по изграждане на уеб сайт"
-              width={780}
-              height={500}
-              className={styles.image}
-              priority
-            />
-          </figure>
+          </div>
+        </section>
+
+        <article className={styles.article}>
           <section>
             <p>
               Проектът започва с ясна цел: какво решава сайтът и за кого е

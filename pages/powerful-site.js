@@ -17,20 +17,21 @@ const PowerfulSite = () => {
       </Head>
 
       <main className={styles.main} id="main-content">
-        <article className={styles.article}>
-          <header>
+        <section className={styles.heroBanner} aria-label="Мощен сайт">
+          <Image
+            src="/computer.webp"
+            alt="Компютърна станция за разработка"
+            fill
+            sizes="100vw"
+            priority
+            className={styles.heroImage}
+          />
+          <div className={styles.heroOverlay}>
             <h1>Създайте мощен сайт</h1>
-          </header>
-          <figure className={styles.picture}>
-            <Image
-              src="/computer.webp"
-              alt="Компютърна станция за разработка"
-              width={780}
-              height={500}
-              className={styles.image}
-              priority
-            />
-          </figure>
+          </div>
+        </section>
+
+        <article className={styles.article}>
           <section>
             <p>
               Мощният сайт не е само красив дизайн. Нужни са стабилна

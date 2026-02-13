@@ -17,20 +17,21 @@ const SeoFashion = () => {
       </Head>
 
       <main className={styles.main} id="main-content">
-        <article className={styles.article}>
-          <header>
+        <section className={styles.heroBanner} aria-label="В ерата на смартфоните">
+          <Image
+            src="/desk.webp"
+            alt="Работно бюро с фокус върху мобилни устройства"
+            fill
+            sizes="100vw"
+            priority
+            className={styles.heroImage}
+          />
+          <div className={styles.heroOverlay}>
             <h1>В ерата на смартфоните</h1>
-          </header>
-          <figure className={styles.picture}>
-            <Image
-              src="/desk.webp"
-              alt="Работно бюро с фокус върху мобилни устройства"
-              width={780}
-              height={500}
-              className={styles.image}
-              priority
-            />
-          </figure>
+          </div>
+        </section>
+
+        <article className={styles.article}>
           <section>
             <p>
               Повечето посещения вече идват от мобилни устройства. Затова

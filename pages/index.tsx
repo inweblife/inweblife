@@ -18,21 +18,20 @@ export default function Home() {
       </Head>
 
       <main className={styles.main} id="main-content">
-        <figure className={styles.picture}>
+        <section className={styles.heroBanner} aria-label="Въведение">
           <Image
             src="/working.webp"
             alt="Работно пространство за уеб разработка"
-            width={900}
-            height={540}
+            fill
+            sizes="100vw"
             priority
-            className={styles.image}
+            className={styles.heroImage}
           />
-        </figure>
-
-        <header className={styles.hero}>
-          <h1 className={styles.title}>Животът в мрежата</h1>
-          <p className={styles.subtitle}>Заемете своето онлайн пространство</p>
-        </header>
+          <div className={styles.heroOverlay}>
+            <h1 className={styles.title}>Животът в мрежата</h1>
+            <p className={styles.subtitle}>Заемете своето онлайн пространство</p>
+          </div>
+        </section>
 
         <section className={styles.highlightSection} aria-labelledby="hero-expertise-title">
           <article className={styles.highlightCard}>
@@ -79,15 +78,6 @@ export default function Home() {
               </Link>
               .
             </p>
-            <figure className={styles.picture}>
-              <Image
-                src="/desk.webp"
-                alt="Бюро с компютър и работни материали"
-                width={600}
-                height={500}
-                className={styles.image}
-              />
-            </figure>
             <p>
               Работя с бизнеси, които искат устойчиво онлайн присъствие:
               технически надежден сайт, ясна структура на съдържанието и

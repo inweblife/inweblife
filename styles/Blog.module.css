@@ -4,10 +4,35 @@
   padding: clamp(1rem, 2.1vw, 2rem);
 }
 
-.heading {
+.heroBanner {
+  position: relative;
+  width: 100vw;
+  height: min(60vh, 500px);
+  min-height: 340px;
+  margin: calc(-1 * clamp(1rem, 2.1vw, 2rem)) calc(50% - 50vw) 1.4rem;
+  overflow: hidden;
+}
+
+.heroImage {
+  object-fit: cover;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 12, 26, 0.52), rgba(8, 12, 26, 0.6));
+  display: grid;
+  align-content: center;
+  justify-items: center;
   text-align: center;
-  margin: 0 auto clamp(1.35rem, 2.4vw, 2rem);
+  padding: 1rem;
+}
+
+.heading {
+  margin: 0;
+  color: #ffffff;
   max-width: 18ch;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
 .grid {
@@ -22,7 +47,7 @@
   border-radius: 24px;
   border: 1px solid color-mix(in srgb, var(--border) 75%, transparent);
   background: linear-gradient(160deg, var(--surface) 0%, var(--surface-raised) 100%);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.14);
   transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 
