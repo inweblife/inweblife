@@ -6,7 +6,7 @@
           <ul className="menuList">
             <li>
               <a href="https://twitter.com/inweblife" target="_blank" rel="noopener noreferrer">
-                Twitter
+                X
               </a>
             </li>
             <li>

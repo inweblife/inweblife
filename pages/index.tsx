@@ -1,4 +1,5 @@
-﻿import Image from "next/image";
+﻿import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
@@ -26,12 +27,13 @@ export default function Home() {
         image="/working.webp"
         imageAlt="Работно пространство за уеб разработка"
         type="website"
-      >
+      />
+      <Head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
-      </SeoHead>
+      </Head>
 
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Въведение">
@@ -107,7 +109,7 @@ export default function Home() {
               пресечната точка между безпрецедентен мащаб и технологична прецизност. С опит в
               стратегическото управление на маркетингови бюджети за милиони евро и изграждането на
               семантична архитектура за индустриални лидери като „Карко Индъстри“ ЕООД и
-              „Екометал Инженеринг“ ЕООД, аз не просто разработвам софтуер – аз създавам дигитални
+              „Екометал Инженеринг“ ЕООД, аз не просто разработвам софтуер - аз създавам дигитални
               активи с висок авторитет.
             </p>
             <p>
