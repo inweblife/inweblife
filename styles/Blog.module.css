@@ -8,7 +8,7 @@
   position: relative;
   width: 100vw;
   height: min(60vh, 500px);
-  min-height: 340px;
+  min-height: 500px;
   margin: calc(-1 * clamp(1rem, 2.1vw, 2rem)) calc(50% - 50vw) 1.4rem;
   overflow: hidden;
 }
