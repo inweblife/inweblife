@@ -1,6 +1,7 @@
-﻿import Head from "next/head";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Home.module.css";
@@ -17,7 +18,35 @@ const websiteSchema = {
   },
 };
 
+const successCounters = [
+  { target: 10, suffix: "M+", label: "Управляван бюджет (PPC, SEO)" },
+  { target: 10, suffix: "+", label: "Сайта на първо място в Индекса на Гугъл" },
+  { target: 10, suffix: "+", label: "Години опит" },
+];
+
 export default function Home() {
+  const [counterValues, setCounterValues] = useState(successCounters.map(() => 0));
+
+  useEffect(() => {
+    const duration = 1400;
+    const start = performance.now();
+
+    const animate = (timestamp: number) => {
+      const elapsed = timestamp - start;
+      const progress = Math.min(elapsed / duration, 1);
+
+      setCounterValues(successCounters.map((item) => Math.floor(item.target * progress)));
+
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      } else {
+        setCounterValues(successCounters.map((item) => item.target));
+      }
+    };
+
+    requestAnimationFrame(animate);
+  }, []);
+
   return (
     <>
       <SeoHead
@@ -64,6 +93,23 @@ export default function Home() {
               от данни и стратегическо планиране.
             </p>
           </article>
+        </section>
+
+        <section className={styles.countersSection} aria-labelledby="success-counters-title">
+          <h2 id="success-counters-title" className={styles.countersTitle}>
+            Броячи на успеха
+          </h2>
+          <div className={styles.countersGrid}>
+            {successCounters.map((item, index) => (
+              <article className={styles.counterCard} key={item.label}>
+                <p className={styles.counterValue}>
+                  {counterValues[index]}
+                  {item.suffix}
+                </p>
+                <p className={styles.counterLabel}>{item.label}</p>
+              </article>
+            ))}
+          </div>
         </section>
 
         <section className={styles.text}>

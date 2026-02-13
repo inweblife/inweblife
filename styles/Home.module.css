@@ -49,6 +49,43 @@
   margin-top: clamp(1.3rem, 2.5vw, 2rem);
 }
 
+.countersSection {
+  margin-top: clamp(1.1rem, 2.2vw, 1.8rem);
+}
+
+.countersTitle {
+  margin: 0 0 clamp(0.85rem, 1.8vw, 1.1rem);
+  text-align: center;
+}
+
+.countersGrid {
+  display: grid;
+  gap: clamp(0.7rem, 1.8vw, 1rem);
+}
+
+.counterCard {
+  text-align: center;
+  padding: clamp(0.9rem, 2vw, 1.15rem);
+  border-radius: 18px;
+  border: 1px solid color-mix(in srgb, var(--accent) 20%, var(--border));
+  background: linear-gradient(135deg, #eef4ff 0%, #ffffff 70%);
+}
+
+.counterValue {
+  margin: 0;
+  color: var(--accent-strong);
+  font-size: clamp(1.65rem, 4.2vw, 2.25rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.counterLabel {
+  margin: 0.45rem 0 0;
+  color: var(--text);
+  font-weight: 600;
+  line-height: 1.45;
+}
+
 .highlightCard {
   display: grid;
   gap: 0.75rem;
@@ -129,4 +166,10 @@
   transform: translateY(-2px);
   background: color-mix(in srgb, var(--accent) 10%, var(--surface));
   box-shadow: 0 24px 60px rgba(15, 23, 42, 0.14);
+}
+
+@media (min-width: 48rem) {
+  .countersGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
