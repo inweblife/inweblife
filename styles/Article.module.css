@@ -44,6 +44,26 @@
 
 .article section {
   max-width: 76ch;
+  margin: 0 auto;
+  padding: 0 clamp(0rem, 1vw, 0.4rem);
+}
+
+.article section + section {
+  margin-top: clamp(1.2rem, 2.4vw, 1.8rem);
+}
+
+.article h2 {
+  margin: 0 0 0.7rem;
+  line-height: 1.25;
+}
+
+.article p {
+  margin: 0 0 1rem;
+  line-height: 1.75;
+}
+
+.article p:last-child {
+  margin-bottom: 0;
 }
 
 .next {

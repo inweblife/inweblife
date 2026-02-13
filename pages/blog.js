@@ -1,6 +1,6 @@
-import Head from "next/head";
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
+import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Blog.module.css";
 
@@ -19,7 +19,7 @@ const posts = [
     image: "/desk.webp",
     alt: "Бюро с техника за работа",
     summary:
-      "Mobile-first подходът е стандарт за индексиране, използваемост и конверсии.",
+      "Mobile-first подходът е стандарт за индексиране, използваемост и по-силни конверсии.",
   },
   {
     href: "/powerful-site",
@@ -42,15 +42,14 @@ const posts = [
 const Blog = () => {
   return (
     <>
-      <Head>
-        <title>inweblife - блог</title>
-        <meta
-          name="description"
-          content="Статии за уеб разработка, SEO и digital стратегии."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.webp" />
-      </Head>
+      <SeoHead
+        title="Блог | inweblife"
+        description="Статии за уеб разработка, SEO и digital стратегии."
+        path="/blog"
+        image="/workplace.webp"
+        imageAlt="Съвременна работна станция за уеб проекти"
+        type="website"
+      />
 
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Блог хедър">
