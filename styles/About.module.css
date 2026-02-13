@@ -21,6 +21,13 @@
   border-radius: 10px;
 }
 
+.portrait {
+  width: min(100%, 600px);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
 .title {
   margin: 1rem 0 0.2rem;
   font-size: clamp(1.6rem, 4vw, 2.3rem);

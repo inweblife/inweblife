@@ -110,9 +110,10 @@ const About = () => {
               <Image
                 src="/ivan.webp"
                 alt="Портрет на Иван Димитров"
-                width={500}
-                height={400}
-                className={styles.image}
+                width={600}
+                height={600}
+                className={styles.portrait}
+                priority
               />
             </figure>
           </article>
