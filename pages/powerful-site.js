@@ -46,7 +46,16 @@ const PowerfulSite = () => {
           </section>
 
           <section>
-            <h2>SEO и PPC в единна стратегия</h2>
+            <h2>
+              <a
+                href="https://inweblife.pages.dev/posts/seo-mit-bezplatno"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong>SEO</strong>
+              </a>{" "}
+              и PPC в единна стратегия
+            </h2>
             <p>
               Най-силните дигитални резултати идват от синхрон между органичен трафик и платени
               кампании. SEO изгражда авторитет, а PPC ускорява валидирането на оферти и лендинг
