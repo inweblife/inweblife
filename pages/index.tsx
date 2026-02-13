@@ -12,7 +12,7 @@ const websiteSchema = {
   name: "inweblife",
   url: "https://inweblife.vercel.app/",
   description:
-    "PPC експерт и SEO експерт с фокус върху Next.js, JavaScript и WordPress екосистеми, semantic clusters, pillar content и topical authority за устойчив растеж.",
+    "SEO&PPC експерт с опит в Next.js и WordPress: semantic clusters, pillar content и техническа архитектура за устойчив органичен ръст и силни конверсии.",
   inLanguage: "bg",
   publisher: {
     "@type": "Person",
@@ -22,7 +22,7 @@ const websiteSchema = {
 
 const successCounters = [
   { target: 10, suffix: "M+", label: "Управляван бюджет (PPC, SEO)" },
-  { target: 10, suffix: "+", label: "Сайта на първо място в Индекса на Гугъл" },
+  { target: 10, suffix: "+", label: "сайта на първо място в индекса на Google" },
   { target: 10, suffix: "+", label: "Години опит" },
 ];
 
@@ -52,8 +52,8 @@ export default function Home() {
   return (
     <>
       <SeoHead
-        title="PPC & SEO Експерт | Next.js и JavaScript Developer"
-        description="PPC експерт и SEO експерт с фокус върху Next.js, JavaScript и WordPress екосистеми, semantic clusters, pillar content и topical authority за устойчив растеж."
+        title="SEO&PPC експерт и Full-Stack Developer"
+        description="SEO&PPC експерт с опит в Next.js и WordPress: semantic clusters, pillar content и техническа архитектура за устойчив органичен ръст и силни конверсии."
         keywords="PPC експерт, SEO експерт, Next.js специалист, JavaScript Developer, WordPress Developer, topical authority, semantic clusters, pillar content, technical SEO"
         path="/"
         image="/working.webp"
@@ -78,7 +78,7 @@ export default function Home() {
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>
-            <h1 className={styles.title}>PPC Експерт, SEO Архитект и Full-Stack Developer</h1>
+            <h1 className={styles.title}>SEO&PPC експерт и Full-Stack Developer</h1>
             <p className={styles.subtitle}>Заемете своето онлайн пространство</p>
           </div>
         </section>
