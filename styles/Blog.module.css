@@ -35,6 +35,21 @@
   text-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
+.intro {
+  max-width: 78ch;
+  margin: 0 auto;
+  padding: 0 clamp(0rem, 1vw, 0.4rem);
+}
+
+.intro p {
+  margin: 0 0 0.9rem;
+  line-height: 1.75;
+}
+
+.intro p:last-child {
+  margin-bottom: 0;
+}
+
 .grid {
   display: grid;
   gap: clamp(1rem, 2vw, 1.5rem);
