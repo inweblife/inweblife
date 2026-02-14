@@ -94,6 +94,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.45rem;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: color-mix(in srgb, var(--surface) 92%, #ffffff);
@@ -102,6 +103,20 @@
   text-decoration: none;
   color: var(--text);
   transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.shareButtonIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  line-height: 1;
+  font-weight: 800;
+  color: #ffffff;
+  background: color-mix(in srgb, var(--accent) 70%, #0f172a);
 }
 
 .shareButton:hover {

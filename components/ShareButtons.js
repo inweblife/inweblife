@@ -10,21 +10,24 @@ const ShareButtons = ({ path, title, styles }) => {
   const links = [
     {
       name: "LinkedIn",
+      icon: "in",
       href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
     },
     {
       name: "X",
+      icon: "X",
       href: `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`,
     },
     {
       name: "Facebook",
+      icon: "f",
       href: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
     },
   ];
 
   return (
-    <section className={styles.shareSection} aria-label="Share article">
-      <p className={styles.shareLabel}>Share this article:</p>
+    <section className={styles.shareSection} aria-label="Споделяне на статия">
+      <p className={styles.shareLabel}>Споделете в:</p>
       <div className={styles.shareList}>
         {links.map((link) => (
           <a
@@ -33,9 +36,12 @@ const ShareButtons = ({ path, title, styles }) => {
             target="_blank"
             rel="noopener noreferrer"
             className={styles.shareButton}
-            aria-label={`Share on ${link.name}`}
+            aria-label={`Споделете в ${link.name}`}
           >
-            {link.name}
+            <span className={styles.shareButtonIcon} aria-hidden="true">
+              {link.icon}
+            </span>
+            <span>{link.name}</span>
           </a>
         ))}
       </div>
