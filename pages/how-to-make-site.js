@@ -3,6 +3,7 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import ShareButtons from "../components/ShareButtons";
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -207,6 +208,8 @@ const HowToMakeSite = () => {
               .
             </p>
           </section>
+
+          <ShareButtons path="/how-to-make-site" title="Как се прави сайт" styles={styles} />
 
           <nav className={styles.next} aria-label="Свързани статии">
             <Link href="/powerful-site">Създайте мощен сайт</Link>

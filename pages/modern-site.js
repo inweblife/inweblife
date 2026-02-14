@@ -3,6 +3,7 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import ShareButtons from "../components/ShareButtons";
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -191,6 +192,8 @@ const ModernSite = () => {
               бъде - на първа страница.
             </p>
           </section>
+
+          <ShareButtons path="/modern-site" title="Как се прави модерен сайт" styles={styles} />
 
           <nav className={styles.next} aria-label="Свързани статии">
             <Link href="/seo-fashion">В ерата на смартфоните</Link>

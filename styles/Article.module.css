@@ -73,6 +73,43 @@
   gap: 0.75rem;
 }
 
+.shareSection {
+  margin-top: clamp(1.4rem, 2.8vw, 2rem);
+  max-width: 76ch;
+  padding: 0 clamp(0rem, 1vw, 0.4rem);
+}
+
+.shareLabel {
+  margin: 0 0 0.55rem;
+  font-weight: 700;
+}
+
+.shareList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.shareButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface) 92%, #ffffff);
+  padding: 0.56rem 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.shareButton:hover {
+  transform: translateY(-2px);
+  background: color-mix(in srgb, var(--accent) 10%, var(--surface));
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.14);
+}
+
 .next a {
   display: inline-flex;
   align-items: center;

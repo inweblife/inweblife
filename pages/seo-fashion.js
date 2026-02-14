@@ -3,6 +3,7 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import ShareButtons from "../components/ShareButtons";
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -199,6 +200,8 @@ const SeoFashion = () => {
               през следващите години.
             </p>
           </section>
+
+          <ShareButtons path="/seo-fashion" title="В ерата на смартфоните" styles={styles} />
 
           <nav className={styles.next} aria-label="Свързани статии">
             <Link href="/modern-site">Как се прави модерен сайт</Link>

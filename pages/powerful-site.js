@@ -3,6 +3,7 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import ShareButtons from "../components/ShareButtons";
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -198,6 +199,8 @@ const PowerfulSite = () => {
               .
             </p>
           </section>
+
+          <ShareButtons path="/powerful-site" title="Създайте мощен сайт" styles={styles} />
 
           <nav className={styles.next} aria-label="Свързани статии">
             <Link href="/seo-fashion">В ерата на смартфоните</Link>
