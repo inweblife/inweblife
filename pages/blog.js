@@ -4,6 +4,17 @@ import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Blog.module.css";
 
+const SITE_URL = "https://inweblife.vercel.app";
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Начало", item: `${SITE_URL}/` },
+    { "@type": "ListItem", position: 2, name: "Блог", item: `${SITE_URL}/blog` },
+  ],
+};
+
 const posts = [
   {
     href: "/ai-seo-lie",
@@ -66,7 +77,12 @@ const Blog = () => {
         image="/workplace.webp"
         imageAlt="Съвременна работна станция за уеб проекти"
         type="website"
-      />
+      >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+      </SeoHead>
 
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Блог хедър">

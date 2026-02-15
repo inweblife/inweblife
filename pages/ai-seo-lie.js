@@ -5,6 +5,8 @@ import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
 import ShareButtons from "../components/ShareButtons";
 
+const SITE_URL = "https://inweblife.vercel.app";
+
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -15,14 +17,35 @@ const articleSchema = {
   author: {
     "@type": "Person",
     name: "Иван Димитров",
+    url: `${SITE_URL}/about`,
   },
   publisher: {
     "@type": "Organization",
     name: "inweblife",
+    url: SITE_URL,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/favicon.webp`,
+    },
   },
+  inLanguage: "bg-BG",
   datePublished: "2026-02-15",
   dateModified: "2026-02-15",
-  mainEntityOfPage: "https://inweblife.vercel.app/ai-seo-lie",
+  mainEntityOfPage: `${SITE_URL}/ai-seo-lie`,
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Начало", item: `${SITE_URL}/` },
+    { "@type": "ListItem", position: 2, name: "Блог", item: `${SITE_URL}/blog` },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: "Голямата лъжа за SEO оптимизацията за AI",
+      item: `${SITE_URL}/ai-seo-lie`,
+    },
+  ],
 };
 
 const AiSeoLie = () => {
@@ -42,6 +65,10 @@ const AiSeoLie = () => {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
       </SeoHead>
 
@@ -176,6 +203,7 @@ const AiSeoLie = () => {
               качество. Това са факторите, които правят съдържанието устойчиво както в
               класическите резултати, така и в AI обобщенията.
             </p>
+            <h2>AI SEO по български</h2>
             <p>
               На практика в България често се продава „AI SEO пакет“, който всъщност съдържа
               стандартни SEO дейности: структуриране на заглавия, базови мета данни и вътрешни

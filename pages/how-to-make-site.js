@@ -5,6 +5,8 @@ import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
 import ShareButtons from "../components/ShareButtons";
 
+const SITE_URL = "https://inweblife.vercel.app";
+
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -15,14 +17,35 @@ const articleSchema = {
   author: {
     "@type": "Person",
     name: "Иван Димитров",
+    url: `${SITE_URL}/about`,
   },
   publisher: {
     "@type": "Organization",
     name: "inweblife",
+    url: SITE_URL,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/favicon.webp`,
+    },
   },
+  inLanguage: "bg-BG",
   datePublished: "2026-02-13",
   dateModified: "2026-02-13",
-  mainEntityOfPage: "https://inweblife.vercel.app/how-to-make-site",
+  mainEntityOfPage: `${SITE_URL}/how-to-make-site`,
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Начало", item: `${SITE_URL}/` },
+    { "@type": "ListItem", position: 2, name: "Блог", item: `${SITE_URL}/blog` },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: "Как се прави сайт",
+      item: `${SITE_URL}/how-to-make-site`,
+    },
+  ],
 };
 
 const HowToMakeSite = () => {
@@ -42,6 +65,10 @@ const HowToMakeSite = () => {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
       </SeoHead>
 
