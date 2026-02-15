@@ -28,8 +28,8 @@ const SeoHead = ({
   imageAlt = "inweblife",
   type = "website",
   robots = "index, follow, max-image-preview:large",
-  publishedTime,
-  modifiedTime,
+  publishedTime = undefined,
+  modifiedTime = undefined,
   children = null,
 }) => {
   const canonicalUrl = toAbsoluteUrl(path);
