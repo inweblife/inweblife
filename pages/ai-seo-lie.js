@@ -10,7 +10,7 @@ const articleSchema = {
   "@type": "Article",
   headline: "Голямата лъжа за SEO оптимизацията за AI",
   description:
-    "Защо „отделната AI оптимизация“ често е маркетингов шум, а реалният фундамент остава качественото SEO.",
+    "LLM оптимизацията е мит. Разбери защо доброто SEO вече те позиционира и в AI резултатите без излишен бюджет.",
   image: ["https://inweblife.vercel.app/about%20the%20hype.webp"],
   author: {
     "@type": "Person",
@@ -30,7 +30,7 @@ const AiSeoLie = () => {
     <>
       <SeoHead
         title="Голямата лъжа за SEO оптимизацията за AI"
-        description="Защо „отделната AI оптимизация“ често е маркетингов шум, а реалният фундамент остава качественото SEO."
+        description="LLM оптимизацията е мит. Разбери защо доброто SEO вече те позиционира и в AI резултатите без излишен бюджет."
         keywords="SEO за AI, LLM оптимизация, ChatGPT SEO, Gemini, Perplexity, AI Overviews, техническо SEO"
         path="/ai-seo-lie"
         image="/about the hype.webp"
