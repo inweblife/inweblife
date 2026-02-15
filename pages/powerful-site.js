@@ -205,6 +205,10 @@ const PowerfulSite = () => {
           <nav className={styles.next} aria-label="Свързани статии">
             <Link href="/seo-fashion">В ерата на смартфоните</Link>
             <Link href="/how-to-make-site">Как се прави сайт</Link>
+            <Link href="/telemarketing-seo">
+              Телемаркетингът – последното убежище на слабия SEO специалист
+            </Link>
+            <Link href="/ai-seo-lie">Голямата лъжа за SEO оптимизацията за AI</Link>
           </nav>
         </article>
       </main>

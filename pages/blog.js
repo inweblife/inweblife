@@ -6,6 +6,22 @@ import styles from "../styles/Blog.module.css";
 
 const posts = [
   {
+    href: "/ai-seo-lie",
+    title: "Голямата лъжа за SEO оптимизацията за AI",
+    image: "/about the hype.webp",
+    alt: "Визуална метафора за AI hype и SEO",
+    summary:
+      "Митът за отделна LLM оптимизация често е маркетингов шум върху фундаменти, които доброто SEO вече покрива.",
+  },
+  {
+    href: "/telemarketing-seo",
+    title: "Телемаркетингът – последното убежище на слабия SEO специалист",
+    image: "/A high-quality digital.webp",
+    alt: "Дигитална работна среда за маркетинг и SEO",
+    summary:
+      "Когато SEO се продава със студени обаждания, проблемът обикновено е в липсата на позициониране и авторитет.",
+  },
+  {
     href: "/modern-site",
     title: "Как се прави модерен сайт",
     image: "/workplace.webp",
