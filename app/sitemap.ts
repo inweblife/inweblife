@@ -15,26 +15,28 @@ const staticRoutes: Array<{
   { path: "/blog", changeFrequency: "weekly", priority: 0.95 },
 ];
 
-const blogPostRoutes = [
-  "/modern-site",
-  "/seo-fashion",
-  "/powerful-site",
-  "/how-to-make-site",
+const blogPostRoutes: Array<{ path: string; lastModified: string }> = [
+  { path: "/modern-site", lastModified: "2026-02-13" },
+  { path: "/seo-fashion", lastModified: "2026-02-13" },
+  { path: "/powerful-site", lastModified: "2026-02-13" },
+  { path: "/how-to-make-site", lastModified: "2026-02-13" },
+  { path: "/telemarketing-seo", lastModified: "2026-02-15" },
+  { path: "/ai-seo-lie", lastModified: "2026-02-15" },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+  const staticLastModified = new Date("2026-02-15");
 
   const pages = staticRoutes.map((route) => ({
     url: `${SITE_URL}${route.path}`,
-    lastModified: now,
+    lastModified: staticLastModified,
     changeFrequency: route.changeFrequency,
     priority: route.priority,
   }));
 
-  const posts = blogPostRoutes.map((path) => ({
-    url: `${SITE_URL}${path}`,
-    lastModified: now,
+  const posts = blogPostRoutes.map((post) => ({
+    url: `${SITE_URL}${post.path}`,
+    lastModified: new Date(post.lastModified),
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));

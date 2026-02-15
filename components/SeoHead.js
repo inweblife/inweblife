@@ -3,6 +3,7 @@
 const SITE_URL = "https://inweblife.vercel.app";
 const SITE_NAME = "inweblife";
 const PERSON_NAME = "Иван Димитров";
+const LOGO_URL = `${SITE_URL}/favicon.webp`;
 const EXPERTISE_LABELS = [
   "High-Budget PPC Strategist",
   "Semantic SEO Expert",
@@ -27,10 +28,13 @@ const SeoHead = ({
   imageAlt = "inweblife",
   type = "website",
   robots = "index, follow, max-image-preview:large",
+  publishedTime,
+  modifiedTime,
   children = null,
 }) => {
   const canonicalUrl = toAbsoluteUrl(path);
   const ogImageUrl = toAbsoluteUrl(image);
+  const isArticle = type === "article";
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -45,6 +49,17 @@ const SeoHead = ({
     ],
     description: `${PERSON_NAME} е ${EXPERTISE_LABELS[0]}, ${EXPERTISE_LABELS[1]} и ${EXPERTISE_LABELS[2]}.`,
     url: SITE_URL,
+  };
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: SITE_NAME,
+    url: SITE_URL,
+    logo: LOGO_URL,
+    founder: {
+      "@type": "Person",
+      name: PERSON_NAME,
+    },
   };
 
   return (
@@ -72,9 +87,16 @@ const SeoHead = ({
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:image" content={ogImageUrl} />
       <meta property="og:image:secure_url" content={ogImageUrl} />
+      <meta property="og:image:type" content="image/webp" />
       <meta property="og:image:width" content={String(imageWidth)} />
       <meta property="og:image:height" content={String(imageHeight)} />
       <meta property="og:image:alt" content={imageAlt} />
+      {isArticle && publishedTime ? (
+        <meta property="article:published_time" content={publishedTime} />
+      ) : null}
+      {isArticle && modifiedTime ? (
+        <meta property="article:modified_time" content={modifiedTime} />
+      ) : null}
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@inweblife" />
@@ -83,10 +105,18 @@ const SeoHead = ({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImageUrl} />
       <meta name="twitter:image:alt" content={imageAlt} />
+      <meta name="twitter:url" content={canonicalUrl} />
+      <meta name="format-detection" content="telephone=no" />
+      <link rel="alternate" hrefLang="bg-BG" href={canonicalUrl} />
+      <link rel="alternate" hrefLang="x-default" href={canonicalUrl} />
 
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
 
       {children}

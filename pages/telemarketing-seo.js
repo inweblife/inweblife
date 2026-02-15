@@ -36,6 +36,8 @@ const TelemarketingSeo = () => {
         image="/A high-quality digital.webp"
         imageAlt="Дигитална работна среда за маркетинг и SEO"
         type="article"
+        publishedTime="2026-02-15T00:00:00+02:00"
+        modifiedTime="2026-02-15T00:00:00+02:00"
       >
         <script
           type="application/ld+json"

@@ -36,6 +36,8 @@ const PowerfulSite = () => {
         image="/computer.webp"
         imageAlt="Компютърна станция за разработка"
         type="article"
+        publishedTime="2026-02-13T00:00:00+02:00"
+        modifiedTime="2026-02-13T00:00:00+02:00"
       >
         <script
           type="application/ld+json"

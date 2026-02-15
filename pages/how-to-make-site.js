@@ -36,6 +36,8 @@ const HowToMakeSite = () => {
         image="/working.webp"
         imageAlt="Процес по изграждане на уеб сайт"
         type="article"
+        publishedTime="2026-02-13T00:00:00+02:00"
+        modifiedTime="2026-02-13T00:00:00+02:00"
       >
         <script
           type="application/ld+json"
