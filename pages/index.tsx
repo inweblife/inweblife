@@ -169,6 +169,28 @@ export default function Home() {
           </article>
         </section>
 
+        <section className={styles.expertArchitecture} aria-labelledby="ai-seo-title">
+          <article className={styles.highlightCard}>
+            <h2 id="ai-seo-title">AI като модерна част от SEO</h2>
+            <p>
+              AI не заменя SEO. Той променя начина, по който потребителят получава отговори, но
+              източникът на доверие остава същият: ясна структура, доказуема експертиза и
+              последователно съдържание.
+            </p>
+            <p>
+              Когато сайтът е изграден с тематична дълбочина и силни поведенчески сигнали, той е
+              подготвен едновременно за класически резултати и за AI обобщения.
+            </p>
+            <p>
+              Разгледай и{" "}
+              <Link href="/ai-seo-lie">
+                <strong>Голямата лъжа за SEO оптимизацията за AI</strong>
+              </Link>
+              , където темата е анализирана технически и практически.
+            </p>
+          </article>
+        </section>
+
         <section className={styles.cta}>
           <Link className={styles.ctaLink} href="/about">
             За мен
