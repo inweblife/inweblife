@@ -19,6 +19,20 @@ const websiteSchema = {
     name: "Иван Димитров",
   },
 };
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Начало | inweblife",
+  url: "https://inweblife.vercel.app/",
+  inLanguage: "bg-BG",
+  description:
+    "SEO, PPC и Full-Stack експертиза за устойчив органичен растеж, техническа архитектура и AI-ready съдържателна стратегия.",
+  isPartOf: {
+    "@type": "WebSite",
+    name: "inweblife",
+    url: "https://inweblife.vercel.app/",
+  },
+};
 
 const successCounters = [
   { target: 10, suffix: "M+", label: "Управляван бюджет (PPC, SEO)" },
@@ -56,7 +70,7 @@ export default function Home() {
         description="SEO&PPC експерт с опит в Next.js и WordPress: semantic clusters, pillar content и техническа архитектура за устойчив органичен ръст"
         keywords="PPC експерт, SEO експерт, Next.js специалист, JavaScript Developer, WordPress Developer, topical authority, semantic clusters, pillar content, technical SEO"
         path="/"
-        image="/working.webp"
+        image="/og/home-og.png"
         imageAlt="Работно пространство за уеб разработка"
         type="website"
       />
@@ -64,6 +78,10 @@ export default function Home() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
         />
       </Head>
 

@@ -56,7 +56,7 @@ const TelemarketingSeo = () => {
         description="Телемаркетингът в SEO е симптом на липса на стратегия. Виж защо истинската експертиза привлича клиенти органично."
         keywords="SEO, телемаркетинг, позициониране, авторитет, органичен растеж, дигитална стратегия"
         path="/telemarketing-seo"
-        image="/A high-quality digital.webp"
+        image="/og/telemarketing-seo-og.png"
         imageAlt="Дигитална работна среда за маркетинг и SEO"
         type="article"
         publishedTime="2026-02-15T00:00:00+02:00"

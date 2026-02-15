@@ -56,7 +56,7 @@ const ModernSite = () => {
         description="Как се прави модерен сайт: semantic clusters, pillar content, mobile-first UX и SEO/PPC стратегия с Next.js фокус."
         keywords="модерен сайт, SEO експерт, PPC експерт, Next.js специалист, JavaScript Developer, semantic clusters, pillar content, mobile-first UX"
         path="/modern-site"
-        image="/workplace.webp"
+        image="/og/modern-site-og.png"
         imageAlt="Модерен работен кът за уеб разработка"
         type="article"
         publishedTime="2026-02-13T00:00:00+02:00"

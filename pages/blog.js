@@ -14,6 +14,20 @@ const breadcrumbSchema = {
     { "@type": "ListItem", position: 2, name: "Блог", item: `${SITE_URL}/blog` },
   ],
 };
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Блог | inweblife",
+  url: `${SITE_URL}/blog`,
+  inLanguage: "bg-BG",
+  description:
+    "Блог с практически статии за SEO, PPC, техническа архитектура, вътрешна свързаност и AI-ready съдържание.",
+  isPartOf: {
+    "@type": "WebSite",
+    name: "inweblife",
+    url: `${SITE_URL}/`,
+  },
+};
 
 const posts = [
   {
@@ -74,13 +88,17 @@ const Blog = () => {
         description="Блог за SEO, PPC, JavaScript и WordPress: semantic clusters, pillar content, technical SEO, mobile-first UX и topical authority."
         keywords="SEO блог, PPC стратегии, Next.js специалист, JavaScript Developer, WordPress Developer, semantic clusters, pillar content, topical authority, technical SEO"
         path="/blog"
-        image="/workplace.webp"
+        image="/og/blog-og.png"
         imageAlt="Съвременна работна станция за уеб проекти"
         type="website"
       >
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
         />
       </SeoHead>
 

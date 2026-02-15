@@ -56,7 +56,7 @@ const PowerfulSite = () => {
         description="Създайте мощен сайт с CMS стратегия, mobile-first архитектура, pillar content и topical authority за SEO и PPC растеж."
         keywords="мощен сайт, PPC експерт, SEO експерт, Full-Stack Developer, Next.js специалист, WordPress Developer, topical authority, pillar content"
         path="/powerful-site"
-        image="/computer.webp"
+        image="/og/powerful-site-og.png"
         imageAlt="Компютърна станция за разработка"
         type="article"
         publishedTime="2026-02-13T00:00:00+02:00"

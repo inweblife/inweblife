@@ -56,7 +56,7 @@ const SeoFashion = () => {
         description="Mobile-first SEO и PPC за AI търсене: ChatGPT, Gemini, Perplexity, semantic clarity и topical authority с практичен подход."
         keywords="mobile-first SEO, PPC експерт, AI търсене, ChatGPT SEO, Gemini, Perplexity, semantic clarity, topical authority, Next.js специалист"
         path="/seo-fashion"
-        image="/desk.webp"
+        image="/og/seo-fashion-og.png"
         imageAlt="Работно бюро с фокус върху мобилни устройства"
         type="article"
         publishedTime="2026-02-13T00:00:00+02:00"

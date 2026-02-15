@@ -34,6 +34,14 @@ const SeoHead = ({
 }) => {
   const canonicalUrl = toAbsoluteUrl(path);
   const ogImageUrl = toAbsoluteUrl(image);
+  const lowerImageUrl = ogImageUrl.toLowerCase();
+  const ogImageType = lowerImageUrl.endsWith(".png")
+    ? "image/png"
+    : lowerImageUrl.endsWith(".jpg") || lowerImageUrl.endsWith(".jpeg")
+      ? "image/jpeg"
+      : lowerImageUrl.endsWith(".svg")
+        ? "image/svg+xml"
+        : "image/webp";
   const isArticle = type === "article";
   const personSchema = {
     "@context": "https://schema.org",
@@ -87,7 +95,7 @@ const SeoHead = ({
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:image" content={ogImageUrl} />
       <meta property="og:image:secure_url" content={ogImageUrl} />
-      <meta property="og:image:type" content="image/webp" />
+      <meta property="og:image:type" content={ogImageType} />
       <meta property="og:image:width" content={String(imageWidth)} />
       <meta property="og:image:height" content={String(imageHeight)} />
       <meta property="og:image:alt" content={imageAlt} />

@@ -56,7 +56,7 @@ const AiSeoLie = () => {
         description="LLM оптимизацията е мит. Разбери защо доброто SEO вече те позиционира и в AI резултатите без излишен бюджет."
         keywords="SEO за AI, LLM оптимизация, ChatGPT SEO, Gemini, Perplexity, AI Overviews, техническо SEO"
         path="/ai-seo-lie"
-        image="/about the hype.webp"
+        image="/og/ai-seo-lie-og.png"
         imageAlt="Визуална метафора за AI hype и SEO"
         type="article"
         publishedTime="2026-02-15T00:00:00+02:00"

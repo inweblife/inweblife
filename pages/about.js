@@ -37,6 +37,20 @@ const personSchema = {
     },
   ],
 };
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "За мен | inweblife",
+  url: "https://inweblife.vercel.app/about",
+  inLanguage: "bg-BG",
+  description:
+    "Профил на Иван Димитров с SEO, PPC и Full-Stack експертиза, фокус върху техническа архитектура и устойчив органичен растеж.",
+  isPartOf: {
+    "@type": "WebSite",
+    name: "inweblife",
+    url: "https://inweblife.vercel.app/",
+  },
+};
 
 const About = () => {
   return (
@@ -46,13 +60,17 @@ const About = () => {
         description="Профил на Иван Димитров: SEO&PPC експерт и Full-Stack Developer с 10+ години опит в PPC кампании, Next.js/WordPress и technical SEO."
         keywords="Иван Димитров, PPC експерт, SEO експерт, Full-Stack Developer, JavaScript Developer, WordPress Developer, Next.js специалист, semantic clusters, topical authority"
         path="/about"
-        image="/ivan.webp"
+        image="/og/about-og.png"
         imageAlt="Портрет на Иван Димитров"
         type="profile"
       >
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
         />
       </SeoHead>
 

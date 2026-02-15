@@ -56,7 +56,7 @@ const HowToMakeSite = () => {
         description="Как се прави сайт: структура, semantic clusters, pillar content и вътрешни връзки с SEO, PPC и WordPress/Next.js подход."
         keywords="как се прави сайт, SEO експерт, PPC експерт, WordPress Developer, Next.js специалист, semantic clusters, pillar content, вътрешни връзки"
         path="/how-to-make-site"
-        image="/working.webp"
+        image="/og/how-to-make-site-og.png"
         imageAlt="Процес по изграждане на уеб сайт"
         type="article"
         publishedTime="2026-02-13T00:00:00+02:00"
