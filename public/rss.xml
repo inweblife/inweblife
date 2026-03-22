@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>inweblife</title>
+    <link>https://inweblife.com/</link>
+    <description>Последни публикации от inweblife</description>
+    <language>bg-BG</language>
+    <lastBuildDate>Sat, 22 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Добре дошли в inweblife</title>
+      <link>https://inweblife.com/</link>
+      <description>RSS емисията ще бъде актуализирана с нови статии.</description>
+      <pubDate>Sat, 22 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://inweblife.com/</guid>
+    </item>
+  </channel>
+</rss>

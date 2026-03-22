@@ -55,6 +55,23 @@ const Footer = () => {
                 <span className="srOnly">GitHub</span>
               </a>
             </li>
+            <li>
+              <a
+                className="socialLink"
+                href="/rss.xml"
+                rel="alternate"
+                type="application/rss+xml"
+                aria-label="RSS"
+              >
+                <svg className="socialIcon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path
+                    fill="currentColor"
+                    d="M4.5 16.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zm0-5a9 9 0 019 9h2a11 11 0 00-11-11v2zm0-5a14 14 0 0114 14h2A16 16 0 004.5 6.5v2z"
+                  />
+                </svg>
+                <span className="srOnly">RSS</span>
+              </a>
+            </li>
           </ul>
         </nav>
         <small>Copyright {new Date().getFullYear()} inweblife - животът в мрежата</small>
