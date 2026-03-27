@@ -77,7 +77,7 @@ const WebsiteAndGoogleAds = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Изработка на сайт и реклама в Гугъл">
           <Image
-            src="/website and google ads.webp"
+            src="/website-and-google-ads.webp"
             alt="Изработка на сайт и реклама в Google Ads"
             fill
             sizes="100vw"

@@ -79,7 +79,7 @@ const TelemarketingSeo = () => {
           aria-label="Телемаркетингът – последното убежище на слабия SEO специалист"
         >
           <Image
-            src="/A high-quality digital.webp"
+            src="/a-high-quality-digital.webp"
             alt="Дигитална работна среда за маркетинг и SEO"
             fill
             sizes="100vw"
