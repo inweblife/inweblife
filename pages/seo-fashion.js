@@ -108,6 +108,13 @@ const SeoFashion = () => {
               </Link>
               .
             </p>
+            <p>
+              За конкретни цени на изработка, SEO и Google Ads управление вижте
+              <Link href="/website-and-google-ads">
+                <strong>Изработка на сайт и реклама в Гугъл</strong>
+              </Link>
+              .
+            </p>
           </section>
 
           <section>

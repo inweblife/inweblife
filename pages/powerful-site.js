@@ -108,6 +108,10 @@ const PowerfulSite = () => {
               <Link href="/how-to-make-site">
                 <strong>как се прави сайт</strong>
               </Link>
+              . За практически бюджетен пример с домейн, хостинг, SEO и Google Ads вижте
+              <Link href="/website-and-google-ads">
+                <strong>Изработка на сайт и реклама в Гугъл</strong>
+              </Link>
               .
             </p>
           </section>
