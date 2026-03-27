@@ -113,7 +113,6 @@ const SeoHead = ({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImageUrl} />
       <meta name="twitter:image:alt" content={imageAlt} />
-      <meta name="twitter:url" content={canonicalUrl} />
       <meta name="format-detection" content="telephone=no" />
       <link rel="alternate" hrefLang="bg-BG" href={canonicalUrl} />
       <link rel="alternate" hrefLang="x-default" href={canonicalUrl} />

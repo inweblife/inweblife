@@ -57,7 +57,7 @@ const WebsiteAndGoogleAds = () => {
         description="Изработка на сайт и реклама в Гугъл: реални бюджети, оптимизация и ефективен подход за бизнес растеж."
         keywords="изработка на сайт, реклама в гугъл, google ads, seo оптимизация, дигитален маркетинг, бюджет сайт"
         path="/website-and-google-ads"
-        image="/og/website-and-google-ads-og.png"
+        image="/website-and-google-ads.webp"
         imageAlt="Изработка на сайт и реклама в Google Ads"
         type="article"
         publishedTime="2026-03-27T00:00:00+02:00"
