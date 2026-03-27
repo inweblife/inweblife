@@ -85,6 +85,7 @@ const SeoHead = ({
 
       <link rel="icon" href="/favicon.webp" />
       <link rel="canonical" href={canonicalUrl} />
+      <link rel="alternate" type="application/rss+xml" title={SITE_NAME} href={`${SITE_URL}/rss.xml`} />
 
       <meta property="og:locale" content="bg_BG" />
       <meta property="og:type" content={type} />
