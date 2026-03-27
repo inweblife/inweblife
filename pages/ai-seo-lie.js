@@ -76,7 +76,7 @@ const AiSeoLie = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Голямата лъжа за SEO оптимизацията за AI">
           <Image
-            src="/about the hype.webp"
+            src="/about-the-hype.webp"
             alt="Визуална метафора за AI hype и SEO"
             fill
             sizes="100vw"
