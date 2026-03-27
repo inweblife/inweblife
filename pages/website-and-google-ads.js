@@ -111,9 +111,9 @@ const WebsiteAndGoogleAds = () => {
               случва всичко.
             </p>
             <p>
-              Вижте също: <Link href="/how-to-make-site"> Как се прави сайт</Link>,
-              <Link href="/powerful-site"> Създайте мощен сайт</Link> и
-              <Link href="/seo-fashion"> В ерата на смартфоните</Link> за допълнителна стратегия.
+              Вижте също: <Link href="/how-to-make-site"><strong>Как се прави сайт</strong></Link>,
+              <Link href="/powerful-site"><strong>Създайте мощен сайт</strong></Link> и
+              <Link href="/seo-fashion"><strong>В ерата на смартфоните</strong></Link> за допълнителна стратегия.
             </p>
             <p>
               Изработката на уеб сайт не е някаква сложна и мистична задача. Базовият фирмен сайт
@@ -281,10 +281,10 @@ const WebsiteAndGoogleAds = () => {
           </nav>
 
           <nav className={styles.next} aria-label="Свързани статии">
-            <Link href="/how-to-make-site">Как се прави сайт</Link>
-            <Link href="/powerful-site">Създайте мощен сайт</Link>
-            <Link href="/telemarketing-seo">Телемаркетингът – последното убежище на слабия SEO специалист</Link>
-            <Link href="/ai-seo-lie">Голямата лъжа за SEO оптимизацията за AI</Link>
+            <Link href="/how-to-make-site"><strong>Как се прави сайт</strong></Link>
+            <Link href="/powerful-site"><strong>Създайте мощен сайт</strong></Link>
+            <Link href="/telemarketing-seo"><strong>Телемаркетингът – последното убежище на слабия SEO специалист</strong></Link>
+            <Link href="/ai-seo-lie"><strong>Голямата лъжа за SEO оптимизацията за AI</strong></Link>
           </nav>
         </article>
       </main>
