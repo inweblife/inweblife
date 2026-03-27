@@ -33,7 +33,7 @@ const posts = [
   {
     href: "/website-and-google-ads",
     title: "Изработка на сайт и реклама в Гугъл",
-    image: "/website and google ads.webp",
+    image: "/website-and-google-ads.webp",
     alt: "Изработка на сайт и реклама в Google Ads",
     summary:
       "Защо сайтът е само началото и как SEO + Google Ads дават устойчив бизнес растеж.",
@@ -41,7 +41,7 @@ const posts = [
   {
     href: "/ai-seo-lie",
     title: "Голямата лъжа за SEO оптимизацията за AI",
-    image: "/about the hype.webp",
+    image: "/about-the-hype.webp",
     alt: "Визуална метафора за AI hype и SEO",
     summary:
       "Митът за отделна LLM оптимизация често е маркетингов шум върху фундаменти, които доброто SEO вече покрива.",
@@ -49,7 +49,7 @@ const posts = [
   {
     href: "/telemarketing-seo",
     title: "Телемаркетингът – последното убежище на слабия SEO специалист",
-    image: "/A high-quality digital.webp",
+    image: "/a-high-quality-digital.webp",
     alt: "Дигитална работна среда за маркетинг и SEO",
     summary:
       "Когато SEO се продава със студени обаждания, проблемът обикновено е в липсата на позициониране и авторитет.",
