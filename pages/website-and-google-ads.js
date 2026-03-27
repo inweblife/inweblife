@@ -111,9 +111,9 @@ const WebsiteAndGoogleAds = () => {
               случва всичко.
             </p>
             <p>
-              Вижте също: <Link href="/how-to-make-site">Как се прави сайт</Link>,
-              <Link href="/powerful-site">Създайте мощен сайт</Link> и
-              <Link href="/seo-fashion">В ерата на смартфоните</Link> за допълнителна стратегия.
+              Вижте също: <Link href="/how-to-make-site"> Как се прави сайт</Link>,
+              <Link href="/powerful-site"> Създайте мощен сайт</Link> и
+              <Link href="/seo-fashion"> В ерата на смартфоните</Link> за допълнителна стратегия.
             </p>
             <p>
               Изработката на уеб сайт не е някаква сложна и мистична задача. Базовият фирмен сайт
@@ -270,6 +270,15 @@ const WebsiteAndGoogleAds = () => {
             title="Изработка на сайт и реклама в Гугъл"
             styles={styles}
           />
+
+          <nav className={styles.next} aria-label="Навигация между постове">
+            <Link href="/how-to-make-site" aria-label="Предишна публикация">
+              ← <strong>Как се прави сайт</strong>
+            </Link>
+            <Link href="/powerful-site" aria-label="Следваща публикация">
+              <strong>Създайте мощен сайт</strong> →
+            </Link>
+          </nav>
 
           <nav className={styles.next} aria-label="Свързани статии">
             <Link href="/how-to-make-site">Как се прави сайт</Link>

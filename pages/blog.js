@@ -31,6 +31,14 @@ const webPageSchema = {
 
 const posts = [
   {
+    href: "/website-and-google-ads",
+    title: "Изработка на сайт и реклама в Гугъл",
+    image: "/website and google ads.webp",
+    alt: "Изработка на сайт и реклама в Google Ads",
+    summary:
+      "Защо сайтът е само началото и как SEO + Google Ads дават устойчив бизнес растеж.",
+  },
+  {
     href: "/ai-seo-lie",
     title: "Голямата лъжа за SEO оптимизацията за AI",
     image: "/about the hype.webp",
