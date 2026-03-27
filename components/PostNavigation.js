@@ -1,14 +1,5 @@
 import Link from "next/link";
-
-const posts = [
-  { href: "/modern-site", title: "Как се прави модерен сайт" },
-  { href: "/seo-fashion", title: "В ерата на смартфоните" },
-  { href: "/powerful-site", title: "Създайте мощен сайт" },
-  { href: "/how-to-make-site", title: "Как се прави сайт" },
-  { href: "/telemarketing-seo", title: "Телемаркетингът – последното убежище на слабия SEO специалист" },
-  { href: "/ai-seo-lie", title: "Голямата лъжа за SEO оптимизацията за AI" },
-  { href: "/website-and-google-ads", title: "Изработка на сайт и реклама в Гугъл" },
-];
+import { posts } from "../lib/posts";
 
 const PostNavigation = ({ currentHref, styles }) => {
   const index = posts.findIndex((post) => post.href === currentHref);

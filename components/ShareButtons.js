@@ -1,4 +1,4 @@
-const SITE_URL = "https://inweblife.vercel.app";
+import { SITE_URL } from "../lib/config";
 
 const toAbsoluteUrl = (path) => `${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`;
 

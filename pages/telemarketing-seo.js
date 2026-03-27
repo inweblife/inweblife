@@ -5,8 +5,7 @@ import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
-
-const SITE_URL = "https://inweblife.vercel.app";
+import { SITE_URL } from "../lib/config";
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -14,7 +13,7 @@ const articleSchema = {
   headline: "Телемаркетингът – последното убежище на слабия SEO специалист",
   description:
     "Телемаркетингът в SEO е симптом на липса на стратегия. Виж защо истинската експертиза привлича клиенти органично.",
-  image: ["https://inweblife.vercel.app/A%20high-quality%20digital.webp"],
+  image: ["https://inweblife.vercel.app/a-high-quality-digital.webp"],
   author: {
     "@type": "Person",
     name: "Иван Димитров",

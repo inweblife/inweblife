@@ -1,6 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-
-const SITE_URL = "https://inweblife.vercel.app";
+import { SITE_URL } from "../../lib/config";
 
 const ROBOTS_TXT = `User-agent: *
 Allow: /

@@ -5,8 +5,7 @@ import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
-
-const SITE_URL = "https://inweblife.vercel.app";
+import { SITE_URL } from "../lib/config";
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -14,7 +13,7 @@ const articleSchema = {
   headline: "Голямата лъжа за SEO оптимизацията за AI",
   description:
     "LLM оптимизацията е мит. Разбери защо доброто SEO вече те позиционира и в AI резултатите без излишен бюджет.",
-  image: ["https://inweblife.vercel.app/about%20the%20hype.webp"],
+  image: [`${SITE_URL}/about-the-hype.webp`],
   author: {
     "@type": "Person",
     name: "Иван Димитров",

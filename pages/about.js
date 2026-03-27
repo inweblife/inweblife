@@ -3,6 +3,7 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/About.module.css";
+import { SITE_URL } from "../lib/config";
 
 const personSchema = {
   "@context": "https://schema.org",
@@ -41,14 +42,14 @@ const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   name: "За мен | inweblife",
-  url: "https://inweblife.vercel.app/about",
+  url: `${SITE_URL}/about`,
   inLanguage: "bg-BG",
   description:
     "Профил на Иван Димитров с SEO, PPC и Full-Stack експертиза, фокус върху техническа архитектура и устойчив органичен растеж.",
   isPartOf: {
     "@type": "WebSite",
     name: "inweblife",
-    url: "https://inweblife.vercel.app/",
+    url: `${SITE_URL}/`,
   },
 };
 

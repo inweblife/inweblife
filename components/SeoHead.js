@@ -1,6 +1,5 @@
 ﻿import Head from "next/head";
-
-const SITE_URL = "https://inweblife.vercel.app";
+import { SITE_URL } from "../lib/config";
 const SITE_NAME = "inweblife";
 const PERSON_NAME = "Иван Димитров";
 const LOGO_URL = `${SITE_URL}/favicon.webp`;

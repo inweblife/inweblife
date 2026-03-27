@@ -5,12 +5,13 @@ import { useEffect, useState } from "react";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Home.module.css";
+import { SITE_URL } from "../lib/config";
 
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "inweblife",
-  url: "https://inweblife.vercel.app/",
+  url: `${SITE_URL}/`,
   description:
     "SEO&PPC експерт с опит в Next.js и WordPress: semantic clusters, pillar content и техническа архитектура за устойчив органичен ръст",
   inLanguage: "bg",
@@ -23,14 +24,14 @@ const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   name: "Начало | inweblife",
-  url: "https://inweblife.vercel.app/",
+  url: `${SITE_URL}/`,
   inLanguage: "bg-BG",
   description:
     "SEO, PPC и Full-Stack експертиза за устойчив органичен растеж, техническа архитектура и AI-ready съдържателна стратегия.",
   isPartOf: {
     "@type": "WebSite",
     name: "inweblife",
-    url: "https://inweblife.vercel.app/",
+    url: `${SITE_URL}/`,
   },
 };
 

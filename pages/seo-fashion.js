@@ -5,8 +5,7 @@ import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
-
-const SITE_URL = "https://inweblife.vercel.app";
+import { SITE_URL } from "../lib/config";
 
 const articleSchema = {
   "@context": "https://schema.org",

@@ -1,6 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-
-const SITE_URL = "https://inweblife.vercel.app";
+import { SITE_URL } from "../../lib/config";
 
 function formatDate(date: string | Date): string {
   const d = typeof date === "string" ? new Date(date) : date;

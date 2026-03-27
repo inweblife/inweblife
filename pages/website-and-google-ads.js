@@ -5,8 +5,7 @@ import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
-
-const SITE_URL = "https://inweblife.vercel.app";
+import { SITE_URL } from "../lib/config";
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -14,7 +13,7 @@ const articleSchema = {
   headline: "Изработка на сайт и реклама в Гугъл",
   description:
     "Изработка на сайт и реклама в Гугъл: реални бюджети, SEO подготовка и чести грешки в агенциите за дигитален маркетинг.",
-  image: ["https://inweblife.vercel.app/website and google ads.webp"],
+  image: ["https://inweblife.vercel.app/website-and-google-ads.webp"],
   author: {
     "@type": "Person",
     name: "Иван Димитров",
