@@ -280,12 +280,7 @@ const WebsiteAndGoogleAds = () => {
             </Link>
           </nav>
 
-          <nav className={styles.next} aria-label="Свързани статии">
-            <Link href="/how-to-make-site"><strong>Как се прави сайт</strong></Link>
-            <Link href="/powerful-site"><strong>Създайте мощен сайт</strong></Link>
-            <Link href="/telemarketing-seo"><strong>Телемаркетингът – последното убежище на слабия SEO специалист</strong></Link>
-            <Link href="/ai-seo-lie"><strong>Голямата лъжа за SEO оптимизацията за AI</strong></Link>
-          </nav>
+
         </article>
       </main>
     </>
