@@ -4,6 +4,7 @@ import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
 import ShareButtons from "../components/ShareButtons";
+import PostNavigation from "../components/PostNavigation";
 
 const SITE_URL = "https://inweblife.vercel.app";
 
@@ -229,12 +230,7 @@ const AiSeoLie = () => {
 
           <ShareButtons path="/ai-seo-lie" title="Голямата лъжа за SEO оптимизацията за AI" styles={styles} />
 
-          <nav className={styles.next} aria-label="Свързани статии">
-            <Link href="/seo-fashion">В ерата на смартфоните</Link>
-            <Link href="/telemarketing-seo">
-              Телемаркетингът – последното убежище на слабия SEO специалист
-            </Link>
-          </nav>
+          <PostNavigation currentHref="/ai-seo-lie" styles={styles} />
         </article>
       </main>
     </>

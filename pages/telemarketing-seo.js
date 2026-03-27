@@ -4,6 +4,7 @@ import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
 import ShareButtons from "../components/ShareButtons";
+import PostNavigation from "../components/PostNavigation";
 
 const SITE_URL = "https://inweblife.vercel.app";
 
@@ -253,11 +254,7 @@ const TelemarketingSeo = () => {
             styles={styles}
           />
 
-          <nav className={styles.next} aria-label="Свързани статии">
-            <Link href="/seo-fashion">В ерата на смартфоните</Link>
-            <Link href="/modern-site">Как се прави модерен сайт</Link>
-            <Link href="/ai-seo-lie">Голямата лъжа за SEO оптимизацията за AI</Link>
-          </nav>
+          <PostNavigation currentHref="/telemarketing-seo" styles={styles} />
         </article>
       </main>
     </>

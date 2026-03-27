@@ -4,6 +4,7 @@ import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
 import ShareButtons from "../components/ShareButtons";
+import PostNavigation from "../components/PostNavigation";
 
 const SITE_URL = "https://inweblife.vercel.app";
 
@@ -266,14 +267,7 @@ const HowToMakeSite = () => {
 
           <ShareButtons path="/how-to-make-site" title="Как се прави сайт" styles={styles} />
 
-          <nav className={styles.next} aria-label="Свързани статии">
-            <Link href="/powerful-site">Създайте мощен сайт</Link>
-            <Link href="/modern-site">Как се прави модерен сайт</Link>
-            <Link href="/telemarketing-seo">
-              Телемаркетингът – последното убежище на слабия SEO специалист
-            </Link>
-            <Link href="/ai-seo-lie">Голямата лъжа за SEO оптимизацията за AI</Link>
-          </nav>
+          <PostNavigation currentHref="/how-to-make-site" styles={styles} />
         </article>
       </main>
     </>

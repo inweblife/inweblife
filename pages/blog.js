@@ -86,14 +86,6 @@ const posts = [
     summary:
       "Основни стъпки от планиране до публикуване и последваща оптимизация.",
   },
-  {
-    href: "/website-and-google-ads",
-    title: "Изработка на сайт и реклама в Гугъл",
-    image: "/website and google ads.webp",
-    alt: "Изработка на сайт и реклама в Google Ads",
-    summary:
-      "Защо сайтът е само началото и как SEO + Google Ads дават устойчив бизнес растеж.",
-  },
 ];
 
 const Blog = () => {

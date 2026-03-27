@@ -4,6 +4,7 @@ import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
 import ShareButtons from "../components/ShareButtons";
+import PostNavigation from "../components/PostNavigation";
 
 const SITE_URL = "https://inweblife.vercel.app";
 
@@ -271,14 +272,7 @@ const WebsiteAndGoogleAds = () => {
             styles={styles}
           />
 
-          <nav className={styles.next} aria-label="Навигация между постове">
-            <Link href="/how-to-make-site" aria-label="Предишна публикация">
-              ← <strong>Как се прави сайт</strong>
-            </Link>
-            <Link href="/powerful-site" aria-label="Следваща публикация">
-              <strong>Създайте мощен сайт</strong> →
-            </Link>
-          </nav>
+          <PostNavigation currentHref="/website-and-google-ads" styles={styles} />
 
 
         </article>
