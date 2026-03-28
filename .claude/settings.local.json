@@ -4,7 +4,11 @@
       "Bash(./node_modules/.bin/next build:*)",
       "Bash(curl -i https://inweblife.vercel.app/api/rss)",
       "Bash(curl -i https://inweblife.vercel.app/rss.xml)",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "Bash(for f:*)",
+      "Bash(do echo:*)",
+      "Read(//c/Users/ivan7/Documents/Dev/inweblife/pages/**)",
+      "Bash(done)"
     ]
   }
 }

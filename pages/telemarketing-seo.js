@@ -121,15 +121,19 @@ const TelemarketingSeo = () => {
             <p>
               За да видиш как изглежда устойчивият модел на практика, разгледай{" "}
               <Link href="/powerful-site">
-                <strong>създайте мощен сайт</strong>
+                <strong>мощен сайт, ориентиран към конверсии</strong>
               </Link>
               ,{" "}
-              <Link href="/ai-seo-lie">
-                <strong>голямата лъжа за SEO оптимизацията за AI</strong>
-              </Link>{" "}
-              и{" "}
               <Link href="/how-to-make-site">
                 <strong>основните стъпки при изработката на сайт</strong>
+              </Link>
+              , техническите изисквания в{" "}
+              <Link href="/modern-site">
+                <strong>как се прави модерен сайт</strong>
+              </Link>{" "}
+              и{" "}
+              <Link href="/ai-seo-lie">
+                <strong>голямата лъжа за SEO оптимизацията за AI</strong>
               </Link>
               .
             </p>
