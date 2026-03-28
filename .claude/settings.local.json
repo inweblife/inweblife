@@ -3,7 +3,8 @@
     "allow": [
       "Bash(./node_modules/.bin/next build:*)",
       "Bash(curl -i https://inweblife.vercel.app/api/rss)",
-      "Bash(curl -i https://inweblife.vercel.app/rss.xml)"
+      "Bash(curl -i https://inweblife.vercel.app/rss.xml)",
+      "Bash(npx tsc:*)"
     ]
   }
 }
