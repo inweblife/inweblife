@@ -5,6 +5,7 @@ import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
+import RelatedPosts from "../components/RelatedPosts";
 import { SITE_URL } from "../lib/config";
 
 const articleSchema = {
@@ -121,10 +122,14 @@ const TelemarketingSeo = () => {
               За да видиш как изглежда устойчивият модел на практика, разгледай{" "}
               <Link href="/powerful-site">
                 <strong>създайте мощен сайт</strong>
-              </Link>{" "}
-              и{" "}
+              </Link>
+              ,{" "}
               <Link href="/ai-seo-lie">
                 <strong>голямата лъжа за SEO оптимизацията за AI</strong>
+              </Link>{" "}
+              и{" "}
+              <Link href="/how-to-make-site">
+                <strong>основните стъпки при изработката на сайт</strong>
               </Link>
               .
             </p>
@@ -246,6 +251,8 @@ const TelemarketingSeo = () => {
               си. Силният изгражда система, в която клиентите сами го намират.
             </p>
           </section>
+
+          <RelatedPosts currentHref="/telemarketing-seo" styles={styles} />
 
           <ShareButtons
             path="/telemarketing-seo"

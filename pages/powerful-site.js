@@ -5,6 +5,7 @@ import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
+import RelatedPosts from "../components/RelatedPosts";
 import { SITE_URL } from "../lib/config";
 
 const articleSchema = {
@@ -244,6 +245,8 @@ const PowerfulSite = () => {
               .
             </p>
           </section>
+
+          <RelatedPosts currentHref="/powerful-site" styles={styles} />
 
           <ShareButtons path="/powerful-site" title="Създайте мощен сайт" styles={styles} />
 

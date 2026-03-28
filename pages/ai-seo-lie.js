@@ -5,6 +5,7 @@ import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
+import RelatedPosts from "../components/RelatedPosts";
 import { SITE_URL } from "../lib/config";
 
 const articleSchema = {
@@ -128,6 +129,10 @@ const AiSeoLie = () => {
               <Link href="/modern-site">
                 <strong>как се прави модерен сайт</strong>
               </Link>
+              . Ако тепърва изграждаш основата, виж и{" "}
+              <Link href="/how-to-make-site">
+                <strong>основните етапи на изработката</strong>
+              </Link>
               .
             </p>
           </section>
@@ -226,6 +231,8 @@ const AiSeoLie = () => {
               технологична терминология.
             </p>
           </section>
+
+          <RelatedPosts currentHref="/ai-seo-lie" styles={styles} />
 
           <ShareButtons path="/ai-seo-lie" title="Голямата лъжа за SEO оптимизацията за AI" styles={styles} />
 

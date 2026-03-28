@@ -5,6 +5,7 @@ import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
+import RelatedPosts from "../components/RelatedPosts";
 import { SITE_URL } from "../lib/config";
 
 const articleSchema = {
@@ -233,6 +234,8 @@ const ModernSite = () => {
               бъде - на първа страница.
             </p>
           </section>
+
+          <RelatedPosts currentHref="/modern-site" styles={styles} />
 
           <ShareButtons path="/modern-site" title="Как се прави модерен сайт" styles={styles} />
 

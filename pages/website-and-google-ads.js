@@ -5,6 +5,7 @@ import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
+import RelatedPosts from "../components/RelatedPosts";
 import { SITE_URL } from "../lib/config";
 
 const articleSchema = {
@@ -271,6 +272,8 @@ const WebsiteAndGoogleAds = () => {
               които живеят от това, че клиентите им не знаят.
             </p>
           </section>
+
+          <RelatedPosts currentHref="/website-and-google-ads" styles={styles} />
 
           <ShareButtons
             path="/website-and-google-ads"

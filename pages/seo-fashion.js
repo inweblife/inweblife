@@ -5,6 +5,7 @@ import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
+import RelatedPosts from "../components/RelatedPosts";
 import { SITE_URL } from "../lib/config";
 
 const articleSchema = {
@@ -243,6 +244,8 @@ const SeoFashion = () => {
               през следващите години.
             </p>
           </section>
+
+          <RelatedPosts currentHref="/seo-fashion" styles={styles} />
 
           <ShareButtons path="/seo-fashion" title="В ерата на смартфоните" styles={styles} />
 
