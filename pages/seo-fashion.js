@@ -185,7 +185,7 @@ const SeoFashion = () => {
               <Link href="/powerful-site">
                 <strong>мощен сайт, ориентиран към конверсии</strong>
               </Link>
-              . Защо продаването на „AI SEO" за мобилно е маркетингов шум —{" "}
+              . Защо продаването на „AI SEO&quot; за мобилно е маркетингов шум —{" "}
               <Link href="/ai-seo-lie">
                 <strong>голямата лъжа за SEO оптимизацията за AI</strong>
               </Link>

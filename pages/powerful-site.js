@@ -204,7 +204,7 @@ const PowerfulSite = () => {
               <Link href="/seo-fashion">
                 <strong>SEO в ерата на смартфоните</strong>
               </Link>
-              , а защо „AI SEO" не е самостоятелна дисциплина —{" "}
+              , а защо „AI SEO&quot; не е самостоятелна дисциплина —{" "}
               <Link href="/ai-seo-lie">
                 <strong>голямата лъжа за SEO оптимизацията за AI</strong>
               </Link>

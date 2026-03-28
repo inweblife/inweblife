@@ -201,7 +201,7 @@ const ModernSite = () => {
               <Link href="/powerful-site">
                 <strong>мощен сайт, ориентиран към конверсии</strong>
               </Link>
-              . А защо „AI SEO" не е различно от техническото SEO, което правите днес —{" "}
+              . А защо „AI SEO&quot; не е различно от техническото SEO, което правите днес —{" "}
               <Link href="/ai-seo-lie">
                 <strong>голямата лъжа за SEO оптимизацията за AI</strong>
               </Link>
