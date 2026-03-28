@@ -30,8 +30,8 @@ const articleSchema = {
     },
   },
   inLanguage: "bg-BG",
-  datePublished: "2026-02-13",
-  dateModified: "2026-02-13",
+  datePublished: "2026-02-03",
+  dateModified: "2026-02-03",
   mainEntityOfPage: `${SITE_URL}/modern-site`,
 };
 const breadcrumbSchema = {
@@ -60,8 +60,8 @@ const ModernSite = () => {
         image="/og/modern-site-og.png"
         imageAlt="Модерен работен кът за уеб разработка"
         type="article"
-        publishedTime="2026-02-13T00:00:00+02:00"
-        modifiedTime="2026-02-13T00:00:00+02:00"
+        publishedTime="2026-02-03T00:00:00+02:00"
+        modifiedTime="2026-02-03T00:00:00+02:00"
       >
         <script
           type="application/ld+json"
@@ -92,7 +92,7 @@ const ModernSite = () => {
           <section>
             <p>
               <strong>Автор:</strong> Иван Димитров | <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-02-13">13 февруари 2026</time>
+              <time dateTime="2026-02-03">3 февруари 2026</time>
             </p>
             <p>
               &quot;Модерен сайт&quot; в 2026 не означава тъмен режим и микроанимации. Означава конкретни

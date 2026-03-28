@@ -30,8 +30,8 @@ const articleSchema = {
     },
   },
   inLanguage: "bg-BG",
-  datePublished: "2026-02-15",
-  dateModified: "2026-02-15",
+  datePublished: "2026-02-25",
+  dateModified: "2026-02-25",
   mainEntityOfPage: `${SITE_URL}/ai-seo-lie`,
 };
 const breadcrumbSchema = {
@@ -60,8 +60,8 @@ const AiSeoLie = () => {
         image="/og/ai-seo-lie-og.png"
         imageAlt="Визуална метафора за AI hype и SEO"
         type="article"
-        publishedTime="2026-02-15T00:00:00+02:00"
-        modifiedTime="2026-02-15T00:00:00+02:00"
+        publishedTime="2026-02-25T00:00:00+02:00"
+        modifiedTime="2026-02-25T00:00:00+02:00"
       >
         <script
           type="application/ld+json"
@@ -92,7 +92,7 @@ const AiSeoLie = () => {
           <section>
             <p>
               <strong>Автор:</strong> Иван Димитров | <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-02-15">15 февруари 2026</time>
+              <time dateTime="2026-02-25">25 февруари 2026</time>
             </p>
             <p>
               LLM оптимизацията често се продава като нова услуга, но фундаментът е същият. Тази

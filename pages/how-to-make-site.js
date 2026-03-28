@@ -30,8 +30,8 @@ const articleSchema = {
     },
   },
   inLanguage: "bg-BG",
-  datePublished: "2026-02-13",
-  dateModified: "2026-02-13",
+  datePublished: "2026-01-27",
+  dateModified: "2026-01-27",
   mainEntityOfPage: `${SITE_URL}/how-to-make-site`,
 };
 const breadcrumbSchema = {
@@ -60,8 +60,8 @@ const HowToMakeSite = () => {
         image="/og/how-to-make-site-og.png"
         imageAlt="Процес по изграждане на уеб сайт"
         type="article"
-        publishedTime="2026-02-13T00:00:00+02:00"
-        modifiedTime="2026-02-13T00:00:00+02:00"
+        publishedTime="2026-01-27T00:00:00+02:00"
+        modifiedTime="2026-01-27T00:00:00+02:00"
       >
         <script
           type="application/ld+json"
@@ -92,7 +92,7 @@ const HowToMakeSite = () => {
           <section>
             <p>
               <strong>Автор:</strong> Иван Димитров | <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-02-13">13 февруари 2026</time>
+              <time dateTime="2026-01-27">27 януари 2026</time>
             </p>
             <p>
               Повечето хора питат &quot;как се прави сайт&quot; и очакват отговор от типа: избираш WordPress,

@@ -30,8 +30,8 @@ const articleSchema = {
     },
   },
   inLanguage: "bg-BG",
-  datePublished: "2026-02-15",
-  dateModified: "2026-02-15",
+  datePublished: "2026-03-10",
+  dateModified: "2026-03-10",
   mainEntityOfPage: `${SITE_URL}/telemarketing-seo`,
 };
 const breadcrumbSchema = {
@@ -60,8 +60,8 @@ const TelemarketingSeo = () => {
         image="/og/telemarketing-seo-og.png"
         imageAlt="Дигитална работна среда за маркетинг и SEO"
         type="article"
-        publishedTime="2026-02-15T00:00:00+02:00"
-        modifiedTime="2026-02-15T00:00:00+02:00"
+        publishedTime="2026-03-10T00:00:00+02:00"
+        modifiedTime="2026-03-10T00:00:00+02:00"
       >
         <script
           type="application/ld+json"
@@ -95,7 +95,7 @@ const TelemarketingSeo = () => {
           <section>
             <p>
               <strong>Автор:</strong> Иван Димитров | <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-02-15">15 февруари 2026</time>
+              <time dateTime="2026-03-10">10 март 2026</time>
             </p>
             <p>
               Телемаркетингът в SEO е симптом за липса на стратегия и авторитет. Тук ще видиш

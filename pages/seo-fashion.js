@@ -30,8 +30,8 @@ const articleSchema = {
     },
   },
   inLanguage: "bg-BG",
-  datePublished: "2026-02-13",
-  dateModified: "2026-02-13",
+  datePublished: "2026-02-18",
+  dateModified: "2026-02-18",
   mainEntityOfPage: `${SITE_URL}/seo-fashion`,
 };
 const breadcrumbSchema = {
@@ -60,8 +60,8 @@ const SeoFashion = () => {
         image="/og/seo-fashion-og.png"
         imageAlt="Работно бюро с фокус върху мобилни устройства"
         type="article"
-        publishedTime="2026-02-13T00:00:00+02:00"
-        modifiedTime="2026-02-13T00:00:00+02:00"
+        publishedTime="2026-02-18T00:00:00+02:00"
+        modifiedTime="2026-02-18T00:00:00+02:00"
       >
         <script
           type="application/ld+json"
@@ -92,7 +92,7 @@ const SeoFashion = () => {
           <section>
             <p>
               <strong>Автор:</strong> Иван Димитров | <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-02-13">13 февруари 2026</time>
+              <time dateTime="2026-02-18">18 февруари 2026</time>
             </p>
             <p>
               Смартфонът промени не само как хората сърфират — промени как мислят, как търсят и
