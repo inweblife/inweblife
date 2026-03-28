@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>inweblife</title>
+    <link>https://inweblife.vercel.app/</link>
+    <description>Последни публикации от inweblife — SEO, PPC и уеб разработка</description>
+    <language>bg</language>
+    <lastBuildDate>Thu, 27 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <copyright>© 2026 inweblife</copyright>
+    <atom:link href="https://inweblife.vercel.app/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Изработка на сайт и реклама в Гугъл</title>
+      <link>https://inweblife.vercel.app/website-and-google-ads</link>
+      <description>Изработка на сайт и реклама в Гугъл: реални бюджети, оптимизация и ефективен подход за бизнес растеж.</description>
+      <pubDate>Thu, 27 Mar 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://inweblife.vercel.app/website-and-google-ads</guid>
+    </item>
+
+    <item>
+      <title>Голямата лъжа за SEO оптимизацията за AI</title>
+      <link>https://inweblife.vercel.app/ai-seo-lie</link>
+      <description>LLM оптимизацията е мит. Разбери защо доброто SEO вече те позиционира и в AI резултатите без излишен бюджет.</description>
+      <pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://inweblife.vercel.app/ai-seo-lie</guid>
+    </item>
+
+    <item>
+      <title>Телемаркетинг + SEO</title>
+      <link>https://inweblife.vercel.app/telemarketing-seo</link>
+      <description>Синергия между директната продажба по телефон и оптимизацията за търсачки.</description>
+      <pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://inweblife.vercel.app/telemarketing-seo</guid>
+    </item>
+
+    <item>
+      <title>Как да направим сайт: основни етапи</title>
+      <link>https://inweblife.vercel.app/how-to-make-site</link>
+      <description>Ръководство за успешна разработка на сайт, от концепция до публикуване.</description>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://inweblife.vercel.app/how-to-make-site</guid>
+    </item>
+
+    <item>
+      <title>Мощен сайт за бизнеса ви</title>
+      <link>https://inweblife.vercel.app/powerful-site</link>
+      <description>Как да изградиш сайт, който продава и поддържа марката ти.</description>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://inweblife.vercel.app/powerful-site</guid>
+    </item>
+
+    <item>
+      <title>Модерен сайт: дизайн и изпълнение</title>
+      <link>https://inweblife.vercel.app/modern-site</link>
+      <description>Построяване на модерен сайт с УX, SEO и мобилна скорост.</description>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://inweblife.vercel.app/modern-site</guid>
+    </item>
+
+    <item>
+      <title>SEO за модната индустрия</title>
+      <link>https://inweblife.vercel.app/seo-fashion</link>
+      <description>Как модните брандове да печелят от органичния трафик.</description>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://inweblife.vercel.app/seo-fashion</guid>
+    </item>
+
+  </channel>
+</rss>
