@@ -5,6 +5,7 @@ const nextConfig = {
     return [
       { source: '/robots.txt', destination: '/api/robots' },
       { source: '/sitemap.xml', destination: '/api/sitemap' },
+      { source: '/rss.xml', destination: '/api/rss' },
     ];
   },
   async headers() {
