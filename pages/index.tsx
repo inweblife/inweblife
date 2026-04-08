@@ -13,7 +13,7 @@ const websiteSchema = {
   name: "inweblife",
   url: `${SITE_URL}/`,
   description:
-    "SEO&PPC експерт с опит в Next.js и WordPress: semantic clusters, pillar content и техническа архитектура за устойчив органичен ръст",
+    "Изработка на сайтове с Next.js и WordPress, SEO оптимизация и Google Ads управление с 10+ години опит.",
   inLanguage: "bg",
   publisher: {
     "@type": "Person",
@@ -23,11 +23,11 @@ const websiteSchema = {
 const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "SEO оптимизация и Google Ads реклама | inweblife",
+  name: "Изработка на сайтове, SEO и Google Ads | inweblife",
   url: `${SITE_URL}/`,
   inLanguage: "bg-BG",
   description:
-    "SEO, PPC и Full-Stack експертиза за устойчив органичен растеж, техническа архитектура и AI-ready съдържателна стратегия.",
+    "Иван Димитров – изработвам сайтове с Next.js и WordPress и ги оптимизирам за Google. SEO консултант и Google Ads специалист с 10+ години опит.",
   isPartOf: {
     "@type": "WebSite",
     name: "inweblife",
@@ -67,8 +67,8 @@ export default function Home() {
   return (
     <>
       <SeoHead
-        title="SEO оптимизация и Google Ads реклама | inweblife"
-        description="Иван Димитров – SEO консултант и Google Ads специалист с 10+ години опит. Управлявам мащабни PPC кампании и изграждам SEO архитектура за устойчив органичен ръст."
+        title="Изработка на сайтове, SEO и Google Ads | inweblife"
+        description="Иван Димитров – изработвам сайтове с Next.js и WordPress и ги оптимизирам за Google. SEO консултант и Google Ads специалист с 10+ години опит."
         keywords="PPC експерт, SEO експерт, Next.js специалист, JavaScript Developer, WordPress Developer, topical authority, semantic clusters, pillar content, technical SEO"
         path="/"
         image="/og/home-og.png"
@@ -97,8 +97,8 @@ export default function Home() {
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>
-            <h1 className={styles.title}>SEO Консултант и Google Ads Специалист</h1>
-            <p className={styles.subtitle}>Заемете своето онлайн пространство</p>
+            <h1 className={styles.title}>Изработка на сайтове, SEO и Google Ads</h1>
+            <p className={styles.subtitle}>Изработвам сайтове и ги правя видими — SEO, Google Ads и Full-Stack разработка</p>
           </div>
         </section>
 
@@ -107,12 +107,12 @@ export default function Home() {
             <p className={styles.highlightIcon} aria-hidden="true">
               •
             </p>
-            <h2 id="hero-expertise-title">Експертиза в мащабни дигитални екосистеми</h2>
+            <h2 id="hero-expertise-title">Изработка на сайтове, SEO и Google Ads — всичко под един покрив</h2>
             <p>
-              С над 10 години опит в управлението на сложни онлайн структури, моят фокус е върху
-              изграждането на семантичен авторитет и високоефективна архитектура. Специализирам в
-              мащабни PPC кампании с бюджети над милиони евро, където всяко решение е подкрепено
-              от данни и стратегическо планиране.
+              Изграждам сайтове с Next.js и WordPress, оптимизирам ги за Google и управлявам
+              Google Ads кампании с бюджети над милиони евро. С над 10 години опит работя по
+              целия процес — от архитектурата на сайта до устойчивия органичен ръст и платения
+              трафик.
             </p>
           </article>
         </section>

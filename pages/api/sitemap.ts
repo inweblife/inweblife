@@ -28,16 +28,16 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
   ];
 
   const blogPostRoutes = [
-    { path: "/modern-site", lastModified: "2026-02-13" },
-    { path: "/seo-fashion", lastModified: "2026-02-13" },
-    { path: "/powerful-site", lastModified: "2026-02-13" },
-    { path: "/how-to-make-site", lastModified: "2026-02-13" },
-    { path: "/telemarketing-seo", lastModified: "2026-02-15" },
-    { path: "/ai-seo-lie", lastModified: "2026-02-15" },
-    { path: "/website-and-google-ads", lastModified: "2026-03-27" },
+    { path: "/modern-site", lastModified: "2026-04-08" },
+    { path: "/seo-fashion", lastModified: "2026-04-08" },
+    { path: "/powerful-site", lastModified: "2026-04-08" },
+    { path: "/how-to-make-site", lastModified: "2026-04-08" },
+    { path: "/telemarketing-seo", lastModified: "2026-04-08" },
+    { path: "/ai-seo-lie", lastModified: "2026-04-08" },
+    { path: "/website-and-google-ads", lastModified: "2026-04-08" },
   ];
 
-  const staticLastModified = new Date("2026-02-15");
+  const staticLastModified = new Date("2026-04-08");
 
   const pages = staticRoutes.map((route) => ({
     url: `${SITE_URL}${route.path}`,

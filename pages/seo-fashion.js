@@ -84,7 +84,7 @@ const SeoFashion = () => {
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>
-            <h1>В ерата на смартфоните</h1>
+            <h1>Mobile-First SEO и видимост в Google и AI търсачки</h1>
           </div>
         </section>
 
