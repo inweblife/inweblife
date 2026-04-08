@@ -23,7 +23,7 @@ const websiteSchema = {
 const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Начало | inweblife",
+  name: "SEO оптимизация и Google Ads реклама | inweblife",
   url: `${SITE_URL}/`,
   inLanguage: "bg-BG",
   description:
@@ -67,7 +67,7 @@ export default function Home() {
   return (
     <>
       <SeoHead
-        title="SEO&PPC експерт и Full-Stack Developer"
+        title="SEO оптимизация и Google Ads реклама | inweblife"
         description="SEO&PPC експерт с опит в Next.js и WordPress: semantic clusters, pillar content и техническа архитектура за устойчив органичен ръст"
         keywords="PPC експерт, SEO експерт, Next.js специалист, JavaScript Developer, WordPress Developer, topical authority, semantic clusters, pillar content, technical SEO"
         path="/"
