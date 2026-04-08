@@ -111,7 +111,7 @@ const ModernSite = () => {
           </section>
 
           <section>
-            <h2>Core Web Vitals — числата, по които Google ви оценява</h2>
+            <h2>Какво представляват Core Web Vitals и как влияят на позициите в Google?</h2>
             <p>
               Google измерва три показателя, наречени Core Web Vitals. Те влияят директно на
               класирането и се проверяват безплатно в PageSpeed Insights.
@@ -137,7 +137,7 @@ const ModernSite = () => {
           </section>
 
           <section>
-            <h2>Mobile-first индексиране — какво реално проверява Googlebot</h2>
+            <h2>Какво е mobile-first индексиране и защо Google обхожда мобилната версия първа?</h2>
             <p>
               Google обхожда мобилната версия на сайта ви първа. Не е настройка, която може да
               се изключи. Ако мобилната версия крие съдържание, което е на десктоп (чрез
@@ -162,7 +162,7 @@ const ModernSite = () => {
           </section>
 
           <section>
-            <h2>WordPress vs Next.js — кога скоростта оправдава цената</h2>
+            <h2>WordPress или Next.js – кога по-бързият сайт оправдава по-високата цена?</h2>
             <p>
               WordPress с добра тема (Kadence, GeneratePress) и базова оптимизация дава 70–85
               точки в PageSpeed на мобилно. За 90% от бизнесите е напълно достатъчно.
@@ -181,7 +181,8 @@ const ModernSite = () => {
           </section>
 
           <section>
-            <h2>Техническото SEO, което повечето пропускат</h2>
+            <h2>Какво техническо SEO пропускат повечето сайтове и как да го поправите?</h2>
+            <h3>robots.txt, sitemap и 301 пренасочвания – трите задачи, които повечето пропускат</h3>
             <p>
               <strong>robots.txt</strong> — проверете, че не блокирате случайно целия сайт.
               Виждал съм WordPress инсталации, при които &quot;Discourage search engines&quot; е
