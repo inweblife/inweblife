@@ -53,8 +53,8 @@ const HowToMakeSite = () => {
   return (
     <>
       <SeoHead
-        title="Как се прави сайт | SEO, PPC и WordPress/Next.js стратегия"
-        description="Как се прави сайт: структура, semantic clusters, pillar content и вътрешни връзки с SEO, PPC и WordPress/Next.js подход."
+        title="Как се прави сайт с правилна SEO структура | inweblife"
+        description="Как се прави сайт: семантична структура, вътрешни връзки и SEO архитектура за устойчива видимост в Google."
         keywords="как се прави сайт, SEO експерт, PPC експерт, WordPress Developer, Next.js специалист, semantic clusters, pillar content, вътрешни връзки"
         path="/how-to-make-site"
         image="/og/how-to-make-site-og.png"

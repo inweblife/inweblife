@@ -34,8 +34,8 @@ const Blog = () => {
   return (
     <>
       <SeoHead
-        title="Блог | SEO, PPC и Full-Stack стратегии за дигитален растеж"
-        description="Блог за SEO, PPC, JavaScript и WordPress: semantic clusters, pillar content, technical SEO, mobile-first UX и topical authority."
+        title="Блог за SEO оптимизация и Google Ads | inweblife"
+        description="Статии за SEO оптимизация, Google Ads стратегии, уеб разработка и дигитален маркетинг от Иван Димитров."
         keywords="SEO блог, PPC стратегии, Next.js специалист, JavaScript Developer, WordPress Developer, semantic clusters, pillar content, topical authority, technical SEO"
         path="/blog"
         image="/og/blog-og.png"

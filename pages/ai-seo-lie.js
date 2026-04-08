@@ -53,7 +53,7 @@ const AiSeoLie = () => {
   return (
     <>
       <SeoHead
-        title="Голямата лъжа за SEO оптимизацията за AI"
+        title="Голямата лъжа за SEO оптимизацията за AI | inweblife"
         description="LLM оптимизацията е мит. Разбери защо доброто SEO вече те позиционира и в AI резултатите без излишен бюджет."
         keywords="SEO за AI, LLM оптимизация, ChatGPT SEO, Gemini, Perplexity, AI Overviews, техническо SEO"
         path="/ai-seo-lie"

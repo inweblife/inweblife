@@ -53,8 +53,8 @@ const ModernSite = () => {
   return (
     <>
       <SeoHead
-        title="Как се прави модерен сайт | SEO, PPC и Next.js подход"
-        description="Как се прави модерен сайт: semantic clusters, pillar content, mobile-first UX и SEO/PPC стратегия с Next.js фокус."
+        title="Модерен уеб сайт с Next.js и техническо SEO | inweblife"
+        description="Как се прави модерен уеб сайт с Next.js: mobile-first архитектура, Core Web Vitals и техническо SEO за максимална видимост в Google."
         keywords="модерен сайт, SEO експерт, PPC експерт, Next.js специалист, JavaScript Developer, semantic clusters, pillar content, mobile-first UX"
         path="/modern-site"
         image="/og/modern-site-og.png"

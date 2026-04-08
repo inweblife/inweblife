@@ -68,7 +68,7 @@ export default function Home() {
     <>
       <SeoHead
         title="SEO оптимизация и Google Ads реклама | inweblife"
-        description="SEO&PPC експерт с опит в Next.js и WordPress: semantic clusters, pillar content и техническа архитектура за устойчив органичен ръст"
+        description="Иван Димитров – SEO консултант и Google Ads специалист с 10+ години опит. Управлявам мащабни PPC кампании и изграждам SEO архитектура за устойчив органичен ръст."
         keywords="PPC експерт, SEO експерт, Next.js специалист, JavaScript Developer, WordPress Developer, topical authority, semantic clusters, pillar content, technical SEO"
         path="/"
         image="/og/home-og.png"
@@ -97,7 +97,7 @@ export default function Home() {
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>
-            <h1 className={styles.title}>SEO&PPC експерт и Full-Stack Developer</h1>
+            <h1 className={styles.title}>SEO Консултант и Google Ads Специалист</h1>
             <p className={styles.subtitle}>Заемете своето онлайн пространство</p>
           </div>
         </section>

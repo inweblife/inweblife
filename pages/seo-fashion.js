@@ -53,8 +53,8 @@ const SeoFashion = () => {
   return (
     <>
       <SeoHead
-        title="В ерата на смартфоните | SEO, PPC и AI видимост в търсене"
-        description="Mobile-first SEO и PPC за AI търсене: ChatGPT, Gemini, Perplexity, semantic clarity и topical authority с практичен подход."
+        title="Mobile-First SEO и видимост в AI търсачки | inweblife"
+        description="Mobile-first SEO стратегия за видимост в Google и AI търсачки: semantic clarity, topical authority и поведенчески сигнали."
         keywords="mobile-first SEO, PPC експерт, AI търсене, ChatGPT SEO, Gemini, Perplexity, semantic clarity, topical authority, Next.js специалист"
         path="/seo-fashion"
         image="/og/seo-fashion-og.png"

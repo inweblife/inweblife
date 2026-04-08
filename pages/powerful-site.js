@@ -53,8 +53,8 @@ const PowerfulSite = () => {
   return (
     <>
       <SeoHead
-        title="Създайте мощен сайт | SEO, PPC и Topical Authority"
-        description="Създайте мощен сайт с CMS стратегия, mobile-first архитектура, pillar content и topical authority за SEO и PPC растеж."
+        title="Мощен сайт с Topical Authority и SEO | inweblife"
+        description="Изградете мощен сайт с topical authority, pillar content и семантична SEO архитектура за доминираща видимост в Google."
         keywords="мощен сайт, PPC експерт, SEO експерт, Full-Stack Developer, Next.js специалист, WordPress Developer, topical authority, pillar content"
         path="/powerful-site"
         image="/og/powerful-site-og.png"
