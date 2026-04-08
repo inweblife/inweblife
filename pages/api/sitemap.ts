@@ -32,9 +32,9 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
     { path: "/seo-fashion", lastModified: "2026-04-08" },
     { path: "/powerful-site", lastModified: "2026-04-08" },
     { path: "/how-to-make-site", lastModified: "2026-04-08" },
-    { path: "/telemarketing-seo", lastModified: "2026-04-08" },
-    { path: "/ai-seo-lie", lastModified: "2026-04-08" },
-    { path: "/website-and-google-ads", lastModified: "2026-04-08" },
+    { path: "/telemarketing-seo", lastModified: "2026-03-10" },
+    { path: "/ai-seo-lie", lastModified: "2026-02-25" },
+    { path: "/website-and-google-ads", lastModified: "2026-03-27" },
   ];
 
   const staticLastModified = new Date("2026-04-08");
