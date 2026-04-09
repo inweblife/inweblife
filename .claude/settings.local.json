@@ -12,7 +12,8 @@
       "Bash(npm run:*)",
       "Bash(python3 -c \":*)",
       "Bash(node -e \":*)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(grep -v \"^\\\\s*//\")"
     ]
   }
 }
