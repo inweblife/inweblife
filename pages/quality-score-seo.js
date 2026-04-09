@@ -35,6 +35,53 @@ const articleSchema = {
   mainEntityOfPage: `${SITE_URL}/quality-score-seo`,
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Какво е добър Quality Score в Google Ads?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Quality Score от 7 до 10 се счита за добър. Score 7–8 означава, че рекламата и landing page-ът ви са над средното за дадената ключова дума. Score 9–10 е отличен и носи до 50% намаление на цената на клик спрямо средното ниво. Score под 5 е сигнал за сериозен проблем — несъответствие между ключова дума, реклама и целева страница.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Как Quality Score влияе на цената на клик (CPC)?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Quality Score влияе директно на CPC чрез формулата Ad Rank = Max CPC × Quality Score. По-висок Quality Score означава по-висок Ad Rank при по-ниска оферта. Рекламодател с Quality Score 10 може да плати с 30–50% по-малко за клик от рекламодател с Quality Score 5, дори при идентична ключова дума. Ако конкурентът ви залага двойна оферта, но Quality Score ви е два пъти по-висок, вие се появявате над него на по-ниска цена.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Влияе ли Quality Score директно на органичните позиции в Google?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Quality Score сам по себе си не е директен фактор за органично класиране. Но трите компонента, от които се формира — Landing Page Experience, Ad Relevance и Expected CTR — се основават на сигнали, които Google измерва и за органичното търсене. Core Web Vitals, мобилна оптимизация, скорост на зареждане и уместност на съдържанието са едновременно компоненти на Landing Page Experience и официални фактори за органично класиране. Подобряването им повишава Quality Score и органичните позиции едновременно.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Как да проверя Quality Score на ключовите си думи?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Quality Score се вижда директно в Google Ads. Влезте в акаунта си, отидете в раздел Кампании → Ключови думи → Ключови думи за търсене. Добавете колоната 'Quality Score' от менюто с колони (иконата с молив горе вдясно). Можете да добавите и трите компонента поотделно: Очакван CTR, Уместност на рекламата и Опит на целевата страница — всеки показан като 'Под средното', 'Средно' или 'Над средното'. Тези три оценки ви казват точно откъде да започнете оптимизацията.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Колко дълго отнема подобряването на Quality Score?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Зависи от компонента. Уместността на рекламата може да се подобри веднага — редактирате рекламния текст и при следващото показване Google прилага новата оценка. Очакваният CTR изисква натрупване на статистика — обикновено няколко седмици с достатъчно импресии. Landing Page Experience реагира след техническите промени по страницата, но Google трябва да я обходи отново, което може да отнеме от дни до няколко седмици. SEO сигналите като E-E-A-T и тематичен авторитет се изграждат за месеци.",
+      },
+    },
+  ],
+};
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -71,6 +118,10 @@ const QualityScoreSeo = () => {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       </SeoHead>
 
@@ -378,6 +429,83 @@ const QualityScoreSeo = () => {
               </Link>
               .
             </p>
+          </section>
+
+          <section aria-label="Често задавани въпроси">
+            <h2>Често задавани въпроси за Quality Score</h2>
+
+            <div itemScope itemType="https://schema.org/FAQPage">
+              <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+                <h3 itemProp="name">Какво е добър Quality Score в Google Ads?</h3>
+                <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                  <p itemProp="text">
+                    Quality Score от 7 до 10 се счита за добър. Score 7–8 означава, че рекламата
+                    и landing page-ът ви са над средното за дадената ключова дума. Score 9–10 е
+                    отличен и носи до 50% намаление на цената на клик спрямо средното ниво. Score
+                    под 5 е сигнал за сериозен проблем — несъответствие между ключова дума,
+                    реклама и целева страница.
+                  </p>
+                </div>
+              </div>
+
+              <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+                <h3 itemProp="name">Как Quality Score влияе на цената на клик (CPC)?</h3>
+                <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                  <p itemProp="text">
+                    Quality Score влияе директно на CPC чрез формулата{" "}
+                    <strong>Ad Rank = Max CPC × Quality Score</strong>. По-висок Quality Score
+                    означава по-висок Ad Rank при по-ниска оферта. Рекламодател с Quality Score 10
+                    може да плати с 30–50% по-малко за клик от рекламодател с Quality Score 5,
+                    дори при идентична ключова дума. Ако конкурентът ви залага двойна оферта, но
+                    Quality Score ви е два пъти по-висок, вие се появявате над него на по-ниска цена.
+                  </p>
+                </div>
+              </div>
+
+              <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+                <h3 itemProp="name">Влияе ли Quality Score директно на органичните позиции?</h3>
+                <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                  <p itemProp="text">
+                    Quality Score сам по себе си не е директен фактор за органично класиране. Но
+                    трите компонента, от които се формира — Landing Page Experience, Ad Relevance и
+                    Expected CTR — се основават на сигнали, които Google измерва и за органичното
+                    търсене. Core Web Vitals, мобилна оптимизация, скорост и уместност на
+                    съдържанието са едновременно компоненти на Landing Page Experience и официални
+                    фактори за органично класиране. Подобряването им повишава Quality Score и
+                    органичните позиции едновременно.
+                  </p>
+                </div>
+              </div>
+
+              <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+                <h3 itemProp="name">Как да проверя Quality Score на ключовите си думи?</h3>
+                <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                  <p itemProp="text">
+                    Quality Score се вижда директно в Google Ads. Влезте в акаунта си, отидете в
+                    Кампании → Ключови думи → Ключови думи за търсене и добавете колоната
+                    &quot;Quality Score&quot; от менюто с колони. Можете да добавите и трите
+                    компонента поотделно — Очакван CTR, Уместност на рекламата и Опит на целевата
+                    страница — всеки показан като &quot;Под средното&quot;, &quot;Средно&quot; или
+                    &quot;Над средното&quot;. Тези три оценки ви казват точно откъде да започнете
+                    оптимизацията.
+                  </p>
+                </div>
+              </div>
+
+              <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+                <h3 itemProp="name">Колко дълго отнема подобряването на Quality Score?</h3>
+                <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                  <p itemProp="text">
+                    Зависи от компонента. Уместността на рекламата може да се подобри веднага —
+                    редактирате рекламния текст и при следващото показване Google прилага новата
+                    оценка. Очакваният CTR изисква натрупване на статистика — обикновено няколко
+                    седмици. Landing Page Experience реагира след техническите промени по страницата,
+                    но Google трябва да я обходи отново, което може да отнеме от дни до няколко
+                    седмици. SEO сигналите като E-E-A-T и тематичен авторитет се изграждат за месеци.
+                  </p>
+                </div>
+              </div>
+            </div>
           </section>
 
           <RelatedPosts currentHref="/quality-score-seo" styles={styles} />
