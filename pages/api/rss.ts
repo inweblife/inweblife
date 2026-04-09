@@ -6,6 +6,13 @@ const SITE_NAME = "inweblife";
 
 const posts = [
   {
+    path: "/quality-score-seo",
+    title: "Как работи Quality Score и защо засяга и SEO",
+    description: "Quality Score и органичното SEO използват едни и същи сигнали. Разберете как подобряването на Landing Page Experience, CTR и уместността на рекламата намалява CPC и едновременно повишава органичните позиции.",
+    category: "SEO",
+    date: new Date("2026-04-09"),
+  },
+  {
     path: "/website-and-google-ads",
     title: "Изработка на сайт и реклама в Гугъл",
     description: "Колко струва реално да имаш сайт и Google Ads? Без маркетингови клишета — числа, логика и кое работи за малкия бизнес.",

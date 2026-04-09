@@ -86,18 +86,25 @@ const Blog = () => {
 
         <section className={styles.grid} aria-label="Списък със статии">
           {posts.map((post) => (
-            <article key={post.href} className={styles.card}>
-              <Image
-                src={post.image}
-                alt={post.alt}
-                width={780}
-                height={500}
-                className={styles.image}
-              />
-              <h2>{post.title}</h2>
-              <p>{post.summary}</p>
-              <Link href={post.href}>Виж още</Link>
-            </article>
+            <Link
+              key={post.href}
+              href={post.href}
+              className={styles.cardLink}
+              aria-label={post.title}
+            >
+              <article className={styles.card}>
+                <Image
+                  src={post.image}
+                  alt={post.alt}
+                  width={780}
+                  height={500}
+                  className={styles.image}
+                />
+                <h2>{post.title}</h2>
+                <p>{post.summary}</p>
+                <span className={styles.readMore}>Виж още →</span>
+              </article>
+            </Link>
           ))}
         </section>
       </main>
