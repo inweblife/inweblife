@@ -31,7 +31,7 @@ const articleSchema = {
   },
   inLanguage: "bg-BG",
   datePublished: "2026-02-03",
-  dateModified: "2026-02-03",
+  dateModified: "2026-04-09",
   mainEntityOfPage: `${SITE_URL}/modern-site`,
 };
 const breadcrumbSchema = {
@@ -61,7 +61,7 @@ const ModernSite = () => {
         imageAlt="Модерен работен кът за уеб разработка"
         type="article"
         publishedTime="2026-02-03T00:00:00+02:00"
-        modifiedTime="2026-02-03T00:00:00+02:00"
+        modifiedTime="2026-04-09T00:00:00+03:00"
       >
         <script
           type="application/ld+json"

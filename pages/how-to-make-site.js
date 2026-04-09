@@ -31,7 +31,7 @@ const articleSchema = {
   },
   inLanguage: "bg-BG",
   datePublished: "2026-01-27",
-  dateModified: "2026-01-27",
+  dateModified: "2026-04-09",
   mainEntityOfPage: `${SITE_URL}/how-to-make-site`,
 };
 const breadcrumbSchema = {
@@ -61,7 +61,7 @@ const HowToMakeSite = () => {
         imageAlt="Процес по изграждане на уеб сайт"
         type="article"
         publishedTime="2026-01-27T00:00:00+02:00"
-        modifiedTime="2026-01-27T00:00:00+02:00"
+        modifiedTime="2026-04-09T00:00:00+03:00"
       >
         <script
           type="application/ld+json"
@@ -170,7 +170,13 @@ const HowToMakeSite = () => {
               Най-честата грешка, която виждам: една огромна начална страница с всичко —
               услуги, цени, портфолио, форма за контакт. Резултатът е страница, която Google
               не може да класира за нищо конкретно. Всяка услуга заслужава отделна страница,
-              написана около въпроса, който клиентът реално задава в търсачката. Как сайтът
+              написана около въпроса, който клиентът реално задава в търсачката. Отделната
+              целева страница е и основата на добрия Landing Page Experience — пряк компонент
+              на{" "}
+              <Link href="/quality-score-seo">
+                <strong>Quality Score в Google Ads</strong>
+              </Link>
+              , който директно определя колко плащате за клик. Как сайтът
               превръща тези посещения в запитвания е тема на{" "}
               <Link href="/powerful-site">
                 <strong>мощния сайт, ориентиран към конверсии</strong>

@@ -31,7 +31,7 @@ const articleSchema = {
   },
   inLanguage: "bg-BG",
   datePublished: "2026-02-10",
-  dateModified: "2026-02-10",
+  dateModified: "2026-04-09",
   mainEntityOfPage: `${SITE_URL}/powerful-site`,
 };
 const breadcrumbSchema = {
@@ -61,7 +61,7 @@ const PowerfulSite = () => {
         imageAlt="Компютърна станция за разработка"
         type="article"
         publishedTime="2026-02-10T00:00:00+02:00"
-        modifiedTime="2026-02-10T00:00:00+02:00"
+        modifiedTime="2026-04-09T00:00:00+03:00"
       >
         <script
           type="application/ld+json"
@@ -160,10 +160,13 @@ const PowerfulSite = () => {
           <section>
             <h2>Как да подготвите сайта преди да пуснете реклама в Google Ads?</h2>
             <p>
-              Google Ads наказва бавните landing pages чрез Quality Score. Страница, която се
-              зарежда за 5 секунди, може да ви струва два пъти повече на клик от конкурент с
-              идентична реклама, но по-бърз сайт. Не е хипотеза — Google го документира
-              публично.
+              Google Ads наказва бавните landing pages чрез{" "}
+              <Link href="/quality-score-seo">
+                <strong>Quality Score</strong>
+              </Link>
+              . Страница, която се зарежда за 5 секунди, може да ви струва два пъти повече на
+              клик от конкурент с идентична реклама, но по-бърз сайт. Не е хипотеза — Google
+              го документира публично.
             </p>
             <p>
               Conversion tracking трябва да е настроен преди да похарчите и лев за реклама.

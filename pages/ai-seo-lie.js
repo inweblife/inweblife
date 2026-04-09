@@ -31,7 +31,7 @@ const articleSchema = {
   },
   inLanguage: "bg-BG",
   datePublished: "2026-02-25",
-  dateModified: "2026-02-25",
+  dateModified: "2026-04-09",
   mainEntityOfPage: `${SITE_URL}/ai-seo-lie`,
 };
 const breadcrumbSchema = {
@@ -61,7 +61,7 @@ const AiSeoLie = () => {
         imageAlt="Визуална метафора за AI hype и SEO"
         type="article"
         publishedTime="2026-02-25T00:00:00+02:00"
-        modifiedTime="2026-02-25T00:00:00+02:00"
+        modifiedTime="2026-04-09T00:00:00+03:00"
       >
         <script
           type="application/ld+json"

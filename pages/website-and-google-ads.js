@@ -31,7 +31,7 @@ const articleSchema = {
   },
   inLanguage: "bg-BG",
   datePublished: "2026-03-27",
-  dateModified: "2026-03-27",
+  dateModified: "2026-04-09",
   mainEntityOfPage: `${SITE_URL}/website-and-google-ads`,
 };
 
@@ -62,7 +62,7 @@ const WebsiteAndGoogleAds = () => {
         imageAlt="Изработка на сайт и реклама в Google Ads"
         type="article"
         publishedTime="2026-03-27T00:00:00+02:00"
-        modifiedTime="2026-03-27T00:00:00+02:00"
+        modifiedTime="2026-04-09T00:00:00+03:00"
       >
         <script
           type="application/ld+json"

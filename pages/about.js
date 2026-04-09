@@ -17,6 +17,7 @@ const personSchema = {
   knowsAbout: [
     "Semantic SEO",
     "High-Budget PPC Strategy",
+    "Quality Score Optimization",
     "Next.js",
     "Software Architecture",
   ],
@@ -132,7 +133,11 @@ const About = () => {
                   <h3>Управление на милионни бюджети</h3>
                   <p className={styles.premiumText}>
                     Доказана експертиза в Google Ads и социални мрежи с фокус върху максимална
-                    възвръщаемост (ROAS).
+                    възвръщаемост (ROAS). Максималният ROAS започва от висок{" "}
+                    <Link href="/quality-score-seo">
+                      <strong>Quality Score</strong>
+                    </Link>
+                    , който намалява CPC и подобрява позицията едновременно.
                   </p>
                 </article>
                 <article className={styles.capabilityCard}>

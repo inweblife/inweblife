@@ -33,9 +33,9 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
     { path: "/ai-seo-lie", lastModified: "2026-04-09" },
     { path: "/modern-site", lastModified: "2026-04-09" },
     { path: "/telemarketing-seo", lastModified: "2026-03-10" },
+    { path: "/powerful-site", lastModified: "2026-04-09" },
+    { path: "/how-to-make-site", lastModified: "2026-04-09" },
     { path: "/seo-fashion", lastModified: "2026-04-08" },
-    { path: "/powerful-site", lastModified: "2026-04-08" },
-    { path: "/how-to-make-site", lastModified: "2026-04-08" },
   ];
 
   const staticLastModified = new Date("2026-04-09");
