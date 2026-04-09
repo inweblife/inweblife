@@ -14,7 +14,7 @@ const articleSchema = {
   headline: "Как работи Quality Score и защо засяга и SEO",
   description:
     "Как работи Quality Score и защо засяга и SEO: пълно обяснение на трите компонента, директната връзка с органичните позиции и как едно SEO инвестиция носи ползи и за двата канала.",
-  image: ["https://inweblife.vercel.app/quality%20score.webp"],
+  image: ["https://inweblife.vercel.app/quality-score.webp"],
   author: {
     "@type": "Person",
     name: "Иван Димитров",
@@ -105,7 +105,7 @@ const QualityScoreSeo = () => {
         description="Как работи Quality Score и защо засяга и SEO: CTR, уместност на рекламата, Landing Page Experience и как оптимизацията за PPC подобрява органичните позиции в Google."
         keywords="quality score, quality score seo, как работи quality score, очаквана честота на кликване, landing page experience, уместност на рекламата, google ads качество"
         path="/quality-score-seo"
-        image="/quality%20score.webp"
+        image="/quality-score.webp"
         imageAlt="Диаграма на Quality Score в Google Ads"
         type="article"
         publishedTime="2026-04-09T00:00:00+03:00"
@@ -128,7 +128,7 @@ const QualityScoreSeo = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Как работи Quality Score">
           <Image
-            src="/quality%20score.webp"
+            src="/quality-score.webp"
             alt="Диаграма на Quality Score в Google Ads"
             fill
             sizes="100vw"
