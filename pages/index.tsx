@@ -98,7 +98,7 @@ export default function Home() {
           />
           <div className={styles.heroOverlay}>
             <h1 className={styles.title}>Изработка на сайтове, SEO и Google Ads</h1>
-            <p className={styles.subtitle}>Изработвам сайтове и ги правя видими — SEO, Google Ads и Full-Stack разработка</p>
+            <p className={styles.subtitle}>Изработвам сайтове и ги правя видими - SEO, Google Ads и Full-Stack разработка</p>
           </div>
         </section>
 
@@ -107,7 +107,7 @@ export default function Home() {
             <p className={styles.highlightIcon} aria-hidden="true">
               •
             </p>
-            <h2 id="hero-expertise-title">Изработка на сайтове, SEO и Google Ads — всичко под един покрив</h2>
+            <h2 id="hero-expertise-title">Изработка на сайтове, SEO и Google Ads - всичко под един покрив</h2>
             <p>
               Изграждам сайтове с Next.js и WordPress, оптимизирам ги за Google и управлявам
               Google Ads кампании с бюджети над милиони евро. С над 10 години опит работя по
