@@ -68,7 +68,7 @@ export default function Home() {
     <>
       <SeoHead
         title="Изработка на сайтове, SEO и Google Ads | inweblife"
-        description="Иван Димитров – изработвам сайтове с Next.js и WordPress и ги оптимизирам за Google. SEO консултант и Google Ads специалист с 10+ години опит."
+        description="Иван Димитров - изработвам сайтове с Next.js и WordPress и ги оптимизирам за Google. SEO консултант и Google Ads специалист с 10+ години опит."
         keywords="PPC експерт, SEO експерт, Next.js специалист, JavaScript Developer, WordPress Developer, topical authority, semantic clusters, pillar content, technical SEO"
         path="/"
         image="/og/home-og.png"
@@ -111,7 +111,7 @@ export default function Home() {
             <p>
               Изграждам сайтове с Next.js и WordPress, оптимизирам ги за Google и управлявам
               Google Ads кампании с бюджети над милиони евро. С над 10 години опит работя по
-              целия процес — от архитектурата на сайта до устойчивия органичен ръст и платения
+              целия процес - от архитектурата на сайта до устойчивия органичен ръст и платения
               трафик.
             </p>
           </article>
