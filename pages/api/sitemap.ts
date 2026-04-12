@@ -29,7 +29,7 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
 
   const blogPostRoutes = [
     { path: "/izrabotka-na-sait", lastModified: "2026-04-12" },
-    { path: "/quality-score-seo", lastModified: "2026-04-09" },
+    { path: "/quality-score-seo", lastModified: "2026-04-12" },
     { path: "/website-and-google-ads", lastModified: "2026-04-12" },
     { path: "/ai-seo-lie", lastModified: "2026-04-09" },
     { path: "/modern-site", lastModified: "2026-04-12" },

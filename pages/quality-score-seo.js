@@ -31,7 +31,7 @@ const articleSchema = {
   },
   inLanguage: "bg-BG",
   datePublished: "2026-04-09",
-  dateModified: "2026-04-09",
+  dateModified: "2026-04-12",
   mainEntityOfPage: `${SITE_URL}/quality-score-seo`,
 };
 
@@ -109,7 +109,7 @@ const QualityScoreSeo = () => {
         imageAlt="Диаграма на Quality Score в Google Ads"
         type="article"
         publishedTime="2026-04-09T00:00:00+03:00"
-        modifiedTime="2026-04-09T00:00:00+03:00"
+        modifiedTime="2026-04-12T00:00:00+03:00"
       >
         <script
           type="application/ld+json"
@@ -358,7 +358,7 @@ const QualityScoreSeo = () => {
           </section>
 
           <section>
-            <h2>Високото качество на сайта води до по-добри реклами</h2>
+            <h2>Как да плащате по-малко за реклами в Гугъл без да намалявате бюджета?</h2>
             <p>
               Логичният извод от всичко казано дотук е следният: не оптимизирайте за Google
               Ads и SEO поотделно. Оптимизирайте за потребителя и Google ще ви награди и
