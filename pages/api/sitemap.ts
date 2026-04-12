@@ -30,13 +30,13 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
   const blogPostRoutes = [
     { path: "/izrabotka-na-sait", lastModified: "2026-04-12" },
     { path: "/quality-score-seo", lastModified: "2026-04-09" },
-    { path: "/website-and-google-ads", lastModified: "2026-04-09" },
+    { path: "/website-and-google-ads", lastModified: "2026-04-12" },
     { path: "/ai-seo-lie", lastModified: "2026-04-09" },
-    { path: "/modern-site", lastModified: "2026-04-09" },
+    { path: "/modern-site", lastModified: "2026-04-12" },
     { path: "/telemarketing-seo", lastModified: "2026-03-10" },
-    { path: "/powerful-site", lastModified: "2026-04-09" },
-    { path: "/how-to-make-site", lastModified: "2026-04-09" },
-    { path: "/seo-fashion", lastModified: "2026-04-08" },
+    { path: "/powerful-site", lastModified: "2026-04-12" },
+    { path: "/how-to-make-site", lastModified: "2026-04-12" },
+    { path: "/seo-fashion", lastModified: "2026-04-12" },
   ];
 
   const staticLastModified = new Date("2026-04-12");
