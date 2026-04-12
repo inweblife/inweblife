@@ -14,7 +14,7 @@ const articleSchema = {
   headline: "В ерата на смартфоните",
   description:
     "Mobile-first SEO и PPC за AI търсене: ChatGPT, Gemini, Perplexity, semantic clarity и topical authority с практичен подход.",
-  image: ["https://inweblife.vercel.app/desk.webp"],
+  image: [`${SITE_URL}/og/seo-fashion-og.png`],
   author: {
     "@type": "Person",
     name: "Иван Димитров",

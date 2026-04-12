@@ -14,7 +14,7 @@ const articleSchema = {
   headline: "Създайте мощен сайт",
   description:
     "Създайте мощен сайт с CMS стратегия, mobile-first архитектура, pillar content и topical authority за SEO и PPC растеж.",
-  image: ["https://inweblife.vercel.app/computer.webp"],
+  image: [`${SITE_URL}/og/powerful-site-og.png`],
   author: {
     "@type": "Person",
     name: "Иван Димитров",

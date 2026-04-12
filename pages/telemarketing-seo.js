@@ -14,7 +14,7 @@ const articleSchema = {
   headline: "Телемаркетингът – последното убежище на слабия SEO специалист",
   description:
     "Телемаркетингът в SEO е симптом на липса на стратегия. Виж защо истинската експертиза привлича клиенти органично.",
-  image: ["https://inweblife.vercel.app/a-high-quality-digital.webp"],
+  image: [`${SITE_URL}/og/telemarketing-seo-og.png`],
   author: {
     "@type": "Person",
     name: "Иван Димитров",

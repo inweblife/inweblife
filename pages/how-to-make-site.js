@@ -14,7 +14,7 @@ const articleSchema = {
   headline: "Как се прави сайт",
   description:
     "Как се прави сайт: структура, semantic clusters, pillar content и вътрешни връзки с SEO, PPC и WordPress/Next.js подход.",
-  image: ["https://inweblife.vercel.app/working.webp"],
+  image: [`${SITE_URL}/og/how-to-make-site-og.png`],
   author: {
     "@type": "Person",
     name: "Иван Димитров",

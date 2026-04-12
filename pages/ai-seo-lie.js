@@ -14,7 +14,7 @@ const articleSchema = {
   headline: "Голямата лъжа за SEO оптимизацията за AI",
   description:
     "LLM оптимизацията е мит. Разбери защо доброто SEO вече те позиционира и в AI резултатите без излишен бюджет.",
-  image: [`${SITE_URL}/about-the-hype.webp`],
+  image: [`${SITE_URL}/og/ai-seo-lie-og.png`],
   author: {
     "@type": "Person",
     name: "Иван Димитров",

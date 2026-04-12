@@ -14,7 +14,7 @@ const articleSchema = {
   headline: "Как се прави модерен сайт",
   description:
     "Как се прави модерен сайт: semantic clusters, pillar content, mobile-first UX и SEO/PPC стратегия с Next.js фокус.",
-  image: ["https://inweblife.vercel.app/workplace.webp"],
+  image: [`${SITE_URL}/og/modern-site-og.png`],
   author: {
     "@type": "Person",
     name: "Иван Димитров",
