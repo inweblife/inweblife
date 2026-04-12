@@ -45,15 +45,6 @@ const ShareButtons = ({ path, title, styles }) => {
     },
   ];
 
-  const handleShareClick = (href) => (event) => {
-    event.preventDefault();
-    if (typeof window === "undefined") return;
-    const shareWindow = window.open(href, "_blank", "noopener,noreferrer");
-    if (!shareWindow) {
-      window.location.href = href;
-    }
-  };
-
   return (
     <section className={styles.shareSection} aria-label="Споделяне на статия">
       <p className={styles.shareLabel}>Споделете в:</p>
@@ -62,7 +53,6 @@ const ShareButtons = ({ path, title, styles }) => {
           <a
             key={link.name}
             href={link.href}
-            onClick={handleShareClick(link.href)}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.shareButton}
