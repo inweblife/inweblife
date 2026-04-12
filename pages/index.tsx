@@ -220,13 +220,13 @@ export default function Home() {
             </p>
             <p>
               Професионалният ми подход към уеб разработката е подкрепен от солидна теоретична
-              основа и доказани технически умения като <strong>JavaScript разработчик</strong> -{" "}
+              основа и доказани технически умения като{" "}
               <a
                 href="https://verify.w3schools.com/1ML447N7UP"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                виж сертификата
+                <strong>JavaScript разработчик</strong>
               </a>
               .
             </p>
