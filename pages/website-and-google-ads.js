@@ -14,7 +14,7 @@ const articleSchema = {
   headline: "Изработка на сайт и реклама в Гугъл",
   description:
     "Изработка на сайт и реклама в Гугъл: реални бюджети, SEO подготовка и чести грешки в агенциите за дигитален маркетинг.",
-  image: ["https://inweblife.vercel.app/og/website-and-google-ads-og.png"],
+  image: [`${SITE_URL}/og/website-and-google-ads-og.png`],
   author: {
     "@type": "Person",
     name: "Иван Димитров",

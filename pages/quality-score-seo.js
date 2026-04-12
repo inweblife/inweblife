@@ -14,7 +14,7 @@ const articleSchema = {
   headline: "Как работи Quality Score и защо засяга и SEO",
   description:
     "Как работи Quality Score и защо засяга и SEO: пълно обяснение на трите компонента, директната връзка с органичните позиции и как едно SEO инвестиция носи ползи и за двата канала.",
-  image: ["https://inweblife.vercel.app/og/quality-score-seo-og.png"],
+  image: [`${SITE_URL}/og/quality-score-seo-og.png`],
   author: {
     "@type": "Person",
     name: "Иван Димитров",
