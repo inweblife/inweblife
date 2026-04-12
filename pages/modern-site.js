@@ -113,6 +113,10 @@ const ModernSite = () => {
               <Link href="/how-to-make-site">
                 <strong>как се прави сайт</strong>
               </Link>
+              . За пълния процес по изработка на уебсайт вижте{" "}
+              <Link href="/izrabotka-na-sait">
+                <strong>изработка на сайт</strong>
+              </Link>
               .
             </p>
           </section>

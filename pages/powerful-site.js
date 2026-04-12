@@ -109,6 +109,10 @@ const PowerfulSite = () => {
               <Link href="/website-and-google-ads">
                 <strong>изработка на сайт и реклама в Гугъл</strong>
               </Link>
+              . За пълния процес по изработка на уебсайт вижте{" "}
+              <Link href="/izrabotka-na-sait">
+                <strong>изработка на сайт</strong>
+              </Link>
               .
             </p>
           </section>

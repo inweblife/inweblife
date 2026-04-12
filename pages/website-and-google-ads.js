@@ -115,6 +115,11 @@ const WebsiteAndGoogleAds = () => {
               Вижте също: <Link href="/how-to-make-site"><strong>Как се прави сайт</strong></Link>,
               <Link href="/powerful-site"><strong> Създайте мощен сайт</strong></Link> и
               <Link href="/seo-fashion"><strong> В ерата на смартфоните</strong></Link> за допълнителна стратегия.
+              За подробно ръководство по изработка на уебсайт вижте{" "}
+              <Link href="/izrabotka-na-sait">
+                <strong>изработка на сайт</strong>
+              </Link>
+              .
             </p>
             <p>
               Изработката на уеб сайт не е някаква сложна и мистична задача. Базовият фирмен сайт
