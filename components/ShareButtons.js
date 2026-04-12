@@ -1,16 +1,24 @@
+import { useEffect, useState } from "react";
 import { SITE_URL } from "../lib/config";
 
 const toAbsoluteUrl = (path) => `${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`;
 
 const ShareButtons = ({ path, title, styles }) => {
-  const articleUrl = toAbsoluteUrl(path);
+  const [articleUrl, setArticleUrl] = useState(() => toAbsoluteUrl(path));
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const origin = window.location.origin;
+    setArticleUrl(`${origin}${path.startsWith("/") ? path : `/${path}`}`);
+  }, [path]);
+
   const encodedUrl = encodeURIComponent(articleUrl);
   const encodedTitle = encodeURIComponent(title);
 
   const links = [
     {
       name: "LinkedIn",
-      href: `https://www.linkedin.com/shareArticle?mini=true&url=${encodedUrl}&title=${encodedTitle}`,
+      href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
       icon: (
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.38a1.56 1.56 0 0 1 0 3.12ZM8.3 10H5.6v8.4h2.7V10Zm4.3 0H10v8.4h2.6v-4.5c0-1.2.23-2.3 1.72-2.3 1.47 0 1.49 1.37 1.49 2.38v4.42h2.7v-4.97c0-2.44-.53-4.32-3.38-4.32-1.37 0-2.3.75-2.69 1.46H12.6V10Z" />
