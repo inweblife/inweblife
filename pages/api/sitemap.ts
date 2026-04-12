@@ -28,6 +28,7 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
   ];
 
   const blogPostRoutes = [
+    { path: "/izrabotka-na-sait", lastModified: "2026-04-12" },
     { path: "/quality-score-seo", lastModified: "2026-04-09" },
     { path: "/website-and-google-ads", lastModified: "2026-04-09" },
     { path: "/ai-seo-lie", lastModified: "2026-04-09" },
@@ -38,7 +39,7 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
     { path: "/seo-fashion", lastModified: "2026-04-08" },
   ];
 
-  const staticLastModified = new Date("2026-04-09");
+  const staticLastModified = new Date("2026-04-12");
 
   const pages = staticRoutes.map((route) => ({
     url: `${SITE_URL}${route.path}`,
