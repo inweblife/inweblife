@@ -15,7 +15,8 @@
       "WebSearch",
       "Bash(grep -v \"^\\\\s*//\")",
       "Bash(python3 -c ':*)",
-      "Bash(node -e ':*)"
+      "Bash(node -e ':*)",
+      "Bash(npx next:*)"
     ]
   }
 }
