@@ -205,11 +205,11 @@ const PowerfulSite = () => {
               следващото подобрение. Мощният сайт не е проект с краен срок — той е система, която
               расте от данните. Техническата страна на тази система е в{" "}
               <Link href="/modern-site">
-                <strong>как се прави технически модерен сайт</strong>
+                <strong>модерен сайт</strong>
               </Link>
               , мобилното поведение на потребителите —{" "}
               <Link href="/seo-fashion">
-                <strong>SEO в ерата на смартфоните</strong>
+                <strong>Mobile-First SEO</strong>
               </Link>
               , а защо „AI SEO&quot; не е самостоятелна дисциплина —{" "}
               <Link href="/ai-seo-lie">

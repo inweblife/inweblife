@@ -213,7 +213,7 @@ const HowToMakeSite = () => {
               нито една. Една силна статия, покриваща темата в дълбочина, бие пет тънки всеки
               път. За mobile-first перспектива разгледай{" "}
               <Link href="/seo-fashion">
-                <strong>SEO в ерата на смартфоните</strong>
+                <strong>Mobile-First SEO</strong>
               </Link>
               . Защо уж новата „AI SEO оптимизация&rdquo; е само преопакована стара услуга —{" "}
               <Link href="/ai-seo-lie">
