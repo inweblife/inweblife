@@ -11,9 +11,9 @@ import { SITE_URL } from "../lib/config";
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Голямата лъжа за SEO оптимизацията за AI",
+  headline: "SEO оптимизация за AI Overview",
   description:
-    "LLM оптимизацията е мит. Разбери защо доброто SEO вече те позиционира и в AI резултатите без излишен бюджет.",
+    "Как AI агентите намират и цитират сайтове в реално време и защо доброто SEO е единственото условие да се появите в Google AI Overview.",
   image: [`${SITE_URL}/og/ai-seo-lie-og.png`],
   author: {
     "@type": "Person",
@@ -43,7 +43,7 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "Голямата лъжа за SEO оптимизацията за AI",
+      name: "SEO оптимизация за AI Overview",
       item: `${SITE_URL}/ai-seo-lie`,
     },
   ],
@@ -53,9 +53,9 @@ const AiSeoLie = () => {
   return (
     <>
       <SeoHead
-        title="Голямата лъжа за SEO оптимизацията за AI | inweblife"
+        title="SEO оптимизация за AI Overview | inweblife"
         description="LLM оптимизацията е мит. Разбери защо доброто SEO вече те позиционира и в AI резултатите без излишен бюджет."
-        keywords="SEO за AI, LLM оптимизация, ChatGPT SEO, Gemini, Perplexity, AI Overviews, техническо SEO"
+        keywords="SEO оптимизация за AI, Google AI Overview, как да се появя в AI Overview, LLM оптимизация, GEO оптимизация"
         path="/ai-seo-lie"
         image="/og/ai-seo-lie-og.png"
         imageAlt="Визуална метафора за AI hype и SEO"
@@ -74,7 +74,7 @@ const AiSeoLie = () => {
       </SeoHead>
 
       <main className={styles.main} id="main-content">
-        <section className={styles.heroBanner} aria-label="Голямата лъжа за SEO оптимизацията за AI">
+        <section className={styles.heroBanner} aria-label="SEO оптимизация за AI Overview">
           <Image
             src="/about-the-hype.webp"
             alt="Визуална метафора за AI hype и SEO"
@@ -84,7 +84,7 @@ const AiSeoLie = () => {
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>
-            <h1>Голямата лъжа за SEO оптимизацията за AI</h1>
+            <h1>SEO оптимизация за AI Overview</h1>
           </div>
         </section>
 
@@ -214,6 +214,37 @@ const AiSeoLie = () => {
               {" "}— и обясняват защо инвестицията в качество носи ползи едновременно в органичното
               и платеното търсене.
             </p>
+            <h2>Как AI агентите намират и цитират сайтове в реално време</h2>
+            <h3>От заявката на потребителя до отговора — как работи процесът стъпка по стъпка</h3>
+            <p>
+              Когато потребител зададе въпрос в Google AI Overview, Perplexity или ChatGPT с активирано
+              търсене, AI агентът не отговаря от паметта си. Той изпраща заявки в реално време към
+              индексите на търсачките — основно Google и Bing. Тази заявка не е просто едно търсене.
+              Агентът я разклонява на няколко по-малки под-заявки, всяка от които покрива различен
+              аспект на въпроса.
+            </p>
+            <p>
+              За всяка под-заявка агентът взима най-релевантните резултати от индекса, отива до
+              съответните сайтове, прочита реалното съдържание на страниците и след това синтезира
+              обобщен отговор. Едва тогава потребителят вижда резултата — с цитирани източници.
+              Целият процес се случва за секунди, но включва реално обхождане на живи страници.
+            </p>
+            <h3>Защо доброто SEO е единственото условие да те намери AI агентът</h3>
+            <p>
+              От описания процес следва едно просто заключение: ако сайтът ви е индексиран в Google
+              и се класира добре за дадена тема, AI агентът ще го намери, ще го прочете и ще го
+              цитира. Не е нужна отделна „AI оптимизация". Агентът не работи с тайни списъци от
+              „AI-приятелски&rdquo; сайтове. Той работи с индекса на търсачките — същия индекс,
+              за който правите SEO.
+            </p>
+            <p>
+              Обратното също е вярно: ако сайтът не се вижда в SERP, AI агентът няма как да го
+              намери. Никакъв „AI пакет&rdquo; не може да компенсира липсата на органична видимост,
+              защото агентът просто не стига до сайтове, които не са в индекса.
+            </p>
+          </section>
+
+          <section>
             <h2>Как изглежда &bdquo;AI SEO пакетът&ldquo; на практика в България?</h2>
             <p>
               На практика в България често се продава „AI SEO пакет“, който всъщност съдържа
@@ -245,7 +276,7 @@ const AiSeoLie = () => {
 
           <RelatedPosts currentHref="/ai-seo-lie" styles={styles} />
 
-          <ShareButtons path="/ai-seo-lie" title="Голямата лъжа за SEO оптимизацията за AI" styles={styles} />
+          <ShareButtons path="/ai-seo-lie" title="SEO оптимизация за AI Overview" styles={styles} />
 
           <PostNavigation currentHref="/ai-seo-lie" styles={styles} />
         </article>
