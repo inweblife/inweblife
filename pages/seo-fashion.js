@@ -188,15 +188,15 @@ const SeoFashion = () => {
               детайли — но точно те решават дали потребителят ще се свърже или ще потърси
               конкурента. За conversion архитектурата, когато всичко е наред, виж{" "}
               <Link href="/powerful-site">
-                <strong>мощен сайт, ориентиран към конверсии</strong>
+                <strong>мощен сайт</strong>
               </Link>
               . Защо продаването на „AI SEO&quot; за мобилно е маркетингов шум —{" "}
               <Link href="/ai-seo-lie">
-                <strong>голямата лъжа за SEO оптимизацията за AI</strong>
+                <strong>SEO оптимизация за AI Overview</strong>
               </Link>
               . А как агенциите без органично присъствие компенсират с телефонни обаждания —{" "}
               <Link href="/telemarketing-seo">
-                <strong>телемаркетингът като последно убежище на слабия SEO специалист</strong>
+                <strong>доброто SEO в SERP</strong>
               </Link>
               .
             </p>

@@ -155,7 +155,7 @@ const PowerfulSite = () => {
               B2B — сигнализира, че сте реална организация, не анонимен сайт. За по-дълбок
               анализ на доверието в дигиталната среда виж{" "}
               <Link href="/telemarketing-seo">
-                <strong>телемаркетингът – последното убежище на слабия SEO специалист</strong>
+                <strong>доброто SEO в SERP</strong>
               </Link>
               .
             </p>
@@ -213,7 +213,7 @@ const PowerfulSite = () => {
               </Link>
               , а защо „AI SEO&quot; не е самостоятелна дисциплина —{" "}
               <Link href="/ai-seo-lie">
-                <strong>голямата лъжа за SEO оптимизацията за AI</strong>
+                <strong>SEO оптимизация за AI Overview</strong>
               </Link>
               .
             </p>

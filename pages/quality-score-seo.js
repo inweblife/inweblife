@@ -165,7 +165,7 @@ const QualityScoreSeo = () => {
             <p>
               За контекст, преди да стартирате реклами в Google е важно да разберете и{" "}
               <Link href="/website-and-google-ads">
-                <strong>какво включва изработката на сайт и рекламата в Гугъл</strong>
+                <strong>изработка на сайт и реклама в Гугъл</strong>
               </Link>
               .
             </p>
@@ -351,7 +351,7 @@ const QualityScoreSeo = () => {
             <p>
               За техническата страна на модерното уеб качество, което Google очаква —{" "}
               <Link href="/modern-site">
-                <strong>прочетете как се прави модерен сайт</strong>
+                <strong>модерен сайт</strong>
               </Link>
               .
             </p>
@@ -421,11 +421,11 @@ const QualityScoreSeo = () => {
               Ако искате да разберете дали агенцията, с която работите, е ориентирана към
               истински резултати или разчита на обаждания и маркетингови обещания, прочетете{" "}
               <Link href="/telemarketing-seo">
-                <strong>телемаркетингът като последно убежище на слабия SEO специалист</strong>
+                <strong>доброто SEO в SERP</strong>
               </Link>
               . А ако сте чували, че „AI SEO&rdquo; е нещо различно от доброто старо SEO, погледнете{" "}
               <Link href="/ai-seo-lie">
-                <strong>голямата лъжа за SEO оптимизацията за AI</strong>
+                <strong>SEO оптимизация за AI Overview</strong>
               </Link>
               .
             </p>

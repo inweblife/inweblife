@@ -193,7 +193,7 @@ const IzrabotkaNaSait = () => {
               означава, че пръстите ги пропускат. Никакво хоризонтално скролване, ако
               потребителят трябва да скролва встрани на телефон, сайтът е счупен. За детайлите на{" "}
               <Link href="/seo-fashion">
-                <strong>mobile-first подхода и SEO в ерата на смартфоните</strong>
+                <strong>SEO в ерата на смартфоните</strong>
               </Link>{" "}
               имам отделна публикация.
             </p>
@@ -202,7 +202,7 @@ const IzrabotkaNaSait = () => {
               WordPress, Next.js или custom решение. Тук се настройва хостингът, SSL
               сертификатът, Google Analytics 4 и Search Console. За техническите детайли на{" "}
               <Link href="/modern-site">
-                <strong>модерния сайт и Core Web Vitals</strong>
+                <strong>модерен сайт</strong>
               </Link>{" "}
               вече съм писал подробно.
             </p>

@@ -186,7 +186,7 @@ const HowToMakeSite = () => {
               , който директно определя колко плащате за клик. Как сайтът
               превръща тези посещения в запитвания е тема на{" "}
               <Link href="/powerful-site">
-                <strong>мощния сайт, ориентиран към конверсии</strong>
+                <strong>мощен сайт</strong>
               </Link>
               .
             </p>
@@ -217,11 +217,11 @@ const HowToMakeSite = () => {
               </Link>
               . Защо уж новата „AI SEO оптимизация&rdquo; е само преопакована стара услуга —{" "}
               <Link href="/ai-seo-lie">
-                <strong>голямата лъжа за SEO оптимизацията за AI</strong>
+                <strong>SEO оптимизация за AI Overview</strong>
               </Link>
               . А защо агенциите, които не изграждат съдържание, компенсират с обаждания —{" "}
               <Link href="/telemarketing-seo">
-                <strong>телемаркетингът като последно убежище на слабия SEO специалист</strong>
+                <strong>доброто SEO в SERP</strong>
               </Link>
               .
             </p>

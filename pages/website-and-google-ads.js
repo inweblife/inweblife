@@ -231,7 +231,7 @@ const WebsiteAndGoogleAds = () => {
               всеки клик зависи пряко от Quality Score на кампанията — показател, при който
               по-качественият сайт директно намалява рекламните разходи. Виж подробно{" "}
               <Link href="/quality-score-seo">
-                <strong>как работи Quality Score и защо засяга и SEO</strong>
+                <strong>Quality Score</strong>
               </Link>
               .
             </p>
@@ -289,11 +289,11 @@ const WebsiteAndGoogleAds = () => {
               </Link>
               . Защо &quot;AI SEO пакетът&quot; е същото старо SEO с нов етикет —{" "}
               <Link href="/ai-seo-lie">
-                <strong>голямата лъжа за SEO оптимизацията за AI</strong>
+                <strong>SEO оптимизация за AI Overview</strong>
               </Link>
               . А как агенциите без резултати ви намират по телефона —{" "}
               <Link href="/telemarketing-seo">
-                <strong>телемаркетингът като последно убежище на слабия SEO специалист</strong>
+                <strong>доброто SEO в SERP</strong>
               </Link>
               .
             </p>
