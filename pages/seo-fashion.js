@@ -11,9 +11,9 @@ import { SITE_URL } from "../lib/config";
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "В ерата на смартфоните",
+  headline: "Mobile-First SEO и поведението на мобилния потребител",
   description:
-    "Mobile-first SEO и PPC за AI търсене: ChatGPT, Gemini, Perplexity, semantic clarity и topical authority с практичен подход.",
+    "Мобилният потребител е по-нетърпелив, по-конкретен и по-близо до решение. Как се проектира сайт около това поведение и защо mobile-first е директен SEO сигнал.",
   image: [`${SITE_URL}/og/seo-fashion-og.png`],
   author: {
     "@type": "Person",
@@ -43,7 +43,7 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "В ерата на смартфоните",
+      name: "Mobile-First SEO и поведението на мобилния потребител",
       item: `${SITE_URL}/seo-fashion`,
     },
   ],
@@ -53,9 +53,9 @@ const SeoFashion = () => {
   return (
     <>
       <SeoHead
-        title="Mobile-First SEO и видимост в AI търсачки | inweblife"
-        description="Mobile-first SEO стратегия за видимост в Google и AI търсачки: semantic clarity, topical authority и поведенчески сигнали."
-        keywords="mobile-first SEO, PPC експерт, AI търсене, ChatGPT SEO, Gemini, Perplexity, semantic clarity, topical authority, Next.js специалист"
+        title="Mobile-First SEO и поведението на мобилния потребител | inweblife"
+        description="Мобилният потребител е по-нетърпелив, по-конкретен и по-близо до решение. Как се проектира сайт около това поведение и защо mobile-first е директен SEO сигнал."
+        keywords="mobile-first SEO, мобилна оптимизация, мобилно индексиране Google, mobile UX SEO, Core Web Vitals мобилни"
         path="/seo-fashion"
         image="/og/seo-fashion-og.png"
         imageAlt="Работно бюро с фокус върху мобилни устройства"
@@ -74,7 +74,7 @@ const SeoFashion = () => {
       </SeoHead>
 
       <main className={styles.main} id="main-content">
-        <section className={styles.heroBanner} aria-label="В ерата на смартфоните">
+        <section className={styles.heroBanner} aria-label="Mobile-First SEO и поведението на мобилния потребител">
           <Image
             src="/desk.webp"
             alt="Работно бюро с фокус върху мобилни устройства"
@@ -84,7 +84,7 @@ const SeoFashion = () => {
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>
-            <h1>Mobile-First SEO и видимост в Google и AI търсачки</h1>
+            <h1>Mobile-First SEO и поведението на мобилния потребител</h1>
           </div>
         </section>
 
