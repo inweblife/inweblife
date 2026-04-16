@@ -256,7 +256,7 @@ const ModernSite = () => {
                 <strong>мощен сайт</strong>
               </Link>
               . А защо „AI SEO&quot; не е различно от техническото SEO, което
-              правите днес —{" "}
+              правите днес -{" "}
               <Link href="/ai-seo-lie">
                 <strong>SEO оптимизация за AI Overview</strong>
               </Link>

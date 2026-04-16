@@ -215,11 +215,11 @@ const HowToMakeSite = () => {
               <Link href="/seo-fashion">
                 <strong>Mobile-First SEO</strong>
               </Link>
-              . Защо уж новата „AI SEO оптимизация&rdquo; е само преопакована стара услуга —{" "}
+              . Защо уж новата „AI SEO оптимизация&rdquo; е само преопакована стара услуга -{" "}
               <Link href="/ai-seo-lie">
                 <strong>SEO оптимизация за AI Overview</strong>
               </Link>
-              . А защо агенциите, които не изграждат съдържание, компенсират с обаждания —{" "}
+              . А защо агенциите, които не изграждат съдържание, компенсират с обаждания -{" "}
               <Link href="/telemarketing-seo">
                 <strong>доброто SEO в SERP</strong>
               </Link>

@@ -29,7 +29,7 @@ const posts = [
   {
     path: "/website-and-google-ads",
     title: "Изработка на сайт и реклама в Гугъл",
-    description: "Колко струва реално да имаш сайт и Google Ads? Без маркетингови клишета — числа, логика и кое работи за малкия бизнес.",
+    description: "Колко струва реално да имаш сайт и Google Ads? Без маркетингови клишета - числа, логика и кое работи за малкия бизнес.",
     category: "PPC",
     date: new Date("2026-03-27"),
   },
@@ -64,14 +64,14 @@ const posts = [
   {
     path: "/modern-site",
     title: "Как се прави модерен сайт",
-    description: "Core Web Vitals, mobile-first индексиране и техническото SEO, което повечето агенции пропускат. С конкретни числа — LCP, CLS, INP.",
+    description: "Core Web Vitals, mobile-first индексиране и техническото SEO, което повечето агенции пропускат. С конкретни числа - LCP, CLS, INP.",
     category: "Уеб разработка",
     date: new Date("2026-02-03"),
   },
   {
     path: "/how-to-make-site",
     title: "Как се прави сайт",
-    description: "Повечето сайтове се провалят още преди да е написан ред код. Ето 5-те решения, които определят дали сайтът ще работи за бизнеса — с реални цени и рамка за избор.",
+    description: "Повечето сайтове се провалят още преди да е написан ред код. Ето 5-те решения, които определят дали сайтът ще работи за бизнеса - с реални цени и рамка за избор.",
     category: "Уеб разработка",
     date: new Date("2026-01-27"),
   },
@@ -80,7 +80,7 @@ const posts = [
 export default function handler(_req: NextApiRequest, res: NextApiResponse) {
   const feed = new Feed({
     title: SITE_NAME,
-    description: "Последни публикации от inweblife — SEO, PPC и уеб разработка",
+    description: "Последни публикации от inweblife - SEO, PPC и уеб разработка",
     id: `${SITE_URL}/`,
     link: `${SITE_URL}/`,
     language: "bg",
