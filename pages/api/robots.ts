@@ -10,7 +10,6 @@ Disallow: /admin/
 Disallow: /dashboard/
 Disallow: /private/
 Disallow: /auth/
-Host: ${SITE_URL}
 Sitemap: ${SITE_URL}/sitemap.xml
 `;
 
