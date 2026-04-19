@@ -11,7 +11,7 @@ import { SITE_URL } from "../lib/config";
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Мобилна оптимизация на сайт — UX, скорост и SEO класиране",
+  headline: "Мобилна оптимизация на сайт - UX, скорост и SEO класиране",
   description:
     "Мобилният потребител е по-нетърпелив, по-конкретен и по-близо до решение. Как се проектира сайт около това поведение и защо mobile-first е директен SEO сигнал.",
   image: [`${SITE_URL}/og/seo-fashion-og.png`],
@@ -43,7 +43,7 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "Мобилна оптимизация на сайт — UX, скорост и SEO класиране",
+      name: "Мобилна оптимизация на сайт - UX, скорост и SEO класиране",
       item: `${SITE_URL}/seo-fashion`,
     },
   ],
@@ -53,7 +53,7 @@ const SeoFashion = () => {
   return (
     <>
       <SeoHead
-        title="Мобилна оптимизация на сайт — UX, скорост и SEO класиране | inweblife"
+        title="Мобилна оптимизация на сайт - UX, скорост и SEO класиране | inweblife"
         description="Мобилният потребител е по-нетърпелив, по-конкретен и по-близо до решение. Как се проектира сайт около това поведение и защо mobile-first е директен SEO сигнал."
         keywords="mobile-first SEO, мобилна оптимизация, мобилно индексиране Google, mobile UX SEO, Core Web Vitals мобилни"
         path="/seo-fashion"
@@ -74,7 +74,7 @@ const SeoFashion = () => {
       </SeoHead>
 
       <main className={styles.main} id="main-content">
-        <section className={styles.heroBanner} aria-label="Мобилна оптимизация на сайт — UX, скорост и SEO класиране">
+        <section className={styles.heroBanner} aria-label="Мобилна оптимизация на сайт - UX, скорост и SEO класиране">
           <Image
             src="/desk.webp"
             alt="Работно бюро с фокус върху мобилни устройства"
@@ -84,7 +84,7 @@ const SeoFashion = () => {
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>
-            <h1>Мобилна оптимизация на сайт — UX, скорост и SEO класиране</h1>
+            <h1>Мобилна оптимизация на сайт - UX, скорост и SEO класиране</h1>
           </div>
         </section>
 
