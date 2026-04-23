@@ -129,10 +129,22 @@ button:focus-visible {
 }
 
 .siteTitle {
-  margin: 0;
-  font-weight: 700;
+  font-family: var(--font-brand), "Avenir Next", sans-serif;
+  font-weight: 800;
   font-size: clamp(1.2rem, 2.5vw, 1.5rem);
-  letter-spacing: -0.01em;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+  text-decoration: none;
+  background: linear-gradient(135deg, #1f4fd1 0%, #2f6df6 50%, #1f4fd1 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 0.2s ease;
+}
+
+.siteTitle:hover {
+  opacity: 0.8;
+  color: unset;
 }
 
 .menuList {
@@ -173,20 +185,9 @@ button:focus-visible {
 
   .siteTitle {
     display: block;
-    width: auto;
     margin: 0 auto;
     text-align: center;
-    font-family: "Avenir Next", "Segoe UI Variable Display", "Montserrat", sans-serif;
     font-size: clamp(1.55rem, 7vw, 1.95rem);
-    font-weight: 800;
-    letter-spacing: 0.015em;
-    line-height: 1.05;
-    color: var(--accent-strong);
-    background: linear-gradient(135deg, #1f4fd1 0%, #2f6df6 45%, #1f4fd1 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 8px 24px rgba(31, 79, 209, 0.2);
   }
 
   .topBar nav {
