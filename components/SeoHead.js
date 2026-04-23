@@ -105,6 +105,9 @@ const SeoHead = ({
       {isArticle && modifiedTime ? (
         <meta property="article:modified_time" content={modifiedTime} />
       ) : null}
+      {isArticle ? (
+        <meta property="article:author" content={PERSON_NAME} />
+      ) : null}
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@inweblife" />
