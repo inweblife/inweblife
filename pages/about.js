@@ -164,8 +164,8 @@ const About = () => {
               <h2 id="strategy-title">Стратегическо управление и бизнес растеж</h2>
               <p>
                 Моят път в дигиталния свят е белязан от работа по ключови индустриални проекти като{" "}
-                <strong>Carco.bg</strong>, <strong>Ecometal.bg</strong> и{" "}
-                <strong>Kolazascrap.com</strong>. Опитът ми включва:
+                <strong>Carco.bg</strong>, <strong>Ecometal.bg</strong>,{" "}
+                <strong>Kolazascrap.com</strong> и <strong>Kolizascrap.com</strong>. Опитът ми включва:
               </p>
               <div className={styles.capabilityGrid}>
                 <article className={styles.capabilityCard}>
