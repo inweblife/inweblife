@@ -55,6 +55,11 @@ const personSchema = {
       name: "Kolazascrap.com",
       url: "https://kolazascrap.com/",
     },
+    {
+      "@type": "CreativeWork",
+      name: "Kolizascrap.com",
+      url: "https://kolizascrap.com/",
+    },
   ],
 };
 const webPageSchema = {
