@@ -3,7 +3,7 @@ import path from "node:path";
 
 const ROOT = process.cwd();
 const PAGES_DIR = path.join(ROOT, "pages");
-const SITEMAP_FILE = path.join(ROOT, "app", "sitemap.ts");
+const SITEMAP_FILE = path.join(ROOT, "pages", "api", "sitemap.ts");
 
 const PAGE_EXTENSIONS = new Set([".js", ".tsx"]);
 const SKIP_FILES = new Set(["_app.tsx", "_document.tsx"]);
