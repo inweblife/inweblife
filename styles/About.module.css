@@ -87,6 +87,12 @@
   gap: 0.75rem;
 }
 
+.capabilityGrid4 {
+  margin: 1rem 0 0.8rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
 .capabilityCard {
   padding: 0.9rem;
   border-radius: 16px;
@@ -270,6 +276,10 @@
 @media (min-width: 48rem) {
   .capabilityGrid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .capabilityGrid4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .expertiseSection {
