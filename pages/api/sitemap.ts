@@ -28,6 +28,7 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
   ];
 
   const blogPostRoutes = [
+    { path: "/google-ads-reklama", lastModified: "2026-04-23" },
     { path: "/ads-without-seo", lastModified: "2026-04-22" },
     { path: "/seo-optimizaciya-na-ueb-sait", lastModified: "2026-04-16" },
     { path: "/izrabotka-na-sait", lastModified: "2026-04-12" },
