@@ -133,6 +133,7 @@ const QualityScoreSeo = () => {
             fill
             sizes="100vw"
             priority
+            fetchPriority="high"
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>

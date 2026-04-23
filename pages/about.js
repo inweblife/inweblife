@@ -107,6 +107,7 @@ const About = () => {
             fill
             sizes="100vw"
             priority
+            fetchPriority="high"
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>
@@ -279,7 +280,6 @@ const About = () => {
                         width={600}
                         height={600}
                         className={styles.portrait}
-                        priority
                       />
                     </div>
                   </aside>
