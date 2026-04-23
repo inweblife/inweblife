@@ -9,6 +9,10 @@ const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Иван Димитров",
+  url: `${SITE_URL}/about`,
+  image: `${SITE_URL}/ivan.webp`,
+  description:
+    "SEO консултант, Google Ads специалист и Full-Stack Developer с 10+ години опит в Automotive и Recycling индустрията. Архитект на семантични SEO стратегии и управлявани PPC бюджети над €1M.",
   jobTitle: [
     "High-Budget PPC Strategist",
     "Semantic SEO Expert",
@@ -16,11 +20,25 @@ const personSchema = {
   ],
   knowsAbout: [
     "Semantic SEO",
+    "Topical Authority",
+    "Pillar Page Architecture",
+    "Keyword Mapping",
     "High-Budget PPC Strategy",
+    "Google Ads",
+    "Performance Max",
     "Quality Score Optimization",
+    "Google Tag Manager",
+    "Google Analytics 4",
+    "Conversion Tracking",
+    "Core Web Vitals",
+    "Technical SEO",
     "Next.js",
+    "WordPress",
+    "HTML",
+    "CSS",
     "Software Architecture",
   ],
+  sameAs: ["https://www.linkedin.com/in/inweblife/"],
   workExample: [
     {
       "@type": "CreativeWork",
@@ -111,6 +129,40 @@ const About = () => {
               работи - той доминира семантично.
             </p>
 
+            <section className={styles.strategySection} aria-labelledby="story-title">
+              <h2 id="story-title">Как стигнах дотук</h2>
+              <p>
+                Всичко започна като хоби. Правех сайтове на приятели - без бюджет, без клиенти,
+                само за да разбера как работи. Постепенно хобито се превърна в занаят: поех
+                поддръжката на сайт за авточасти втора употреба и за пръв път видях как добре
+                структурираната страница директно определя броя обаждания и реалните продажби.
+                Разликата между сайт, направен &bdquo;да изглежда добре&ldquo;, и сайт, изграден
+                да носи клиенти, стана очевидна от първия месец.
+              </p>
+              <p>
+                Оттам нататък нещата се развиха логично. Днес обслужвам SEO и{" "}
+                <Link href="/google-ads-reklama">
+                  <strong>реклама в Гугъл</strong>
+                </Link>{" "}
+                на сайтове в бранша - изкупуване на коли, авточасти и рециклиране на автомобили.
+                Индустрия с конкретни бизнес нужди, измерими резултати и нулева търпимост към
+                маркетингови клишета. Тук не работиш с хипотези - работиш с обаждания, запитвания
+                и реални сделки. Тази среда те учи да мислиш в резултати, не в метрики.
+              </p>
+              <p>
+                В същото това време управлявам значителни бюджети - не само за{" "}
+                <Link href="/google-ads-reklama">
+                  <strong>реклама в Гугъл</strong>
+                </Link>
+                , но и за{" "}
+                <Link href="/seo-optimizaciya-na-ueb-sait">
+                  <strong>SEO оптимизация</strong>
+                </Link>{" "}
+                - и поддържам блог с материали, базирани на реална практика, писани по
+                най-съвременните стандарти за семантична архитектура и тематичен авторитет.
+              </p>
+            </section>
+
             <section className={styles.strategySection} aria-labelledby="strategy-title">
               <h2 id="strategy-title">Стратегическо управление и бизнес растеж</h2>
               <p>
@@ -162,6 +214,78 @@ const About = () => {
               <p className={styles.strategyConclusion}>
                 Вярвам, че истинският авторитет се гради чрез комбинация от техническо съвършенство
                 и дълбоко разбиране на бизнес логиката.
+              </p>
+            </section>
+
+            <section className={styles.strategySection} aria-labelledby="casestudy-title">
+              <h2 id="casestudy-title">
+                Казус: Kolazascrap.com - четири години реална SEO работа
+              </h2>
+              <p>
+                Най-убедителното доказателство за начина ми на работа не е в описания, а в
+                резултатите, натрупани с времето. Ето как изграждах тематичен авторитет по
+                стъпките на един проект - от празна страница до нишово лидерство.
+              </p>
+              <div className={styles.capabilityGrid}>
+                <article className={styles.capabilityCard}>
+                  <h3>2021 - Изграждане от нулата</h3>
+                  <p>
+                    Сайтът стартира с ясна семантична структура, оптимизиран HTML и съдържание,
+                    организирано около реалните въпроси на хората, продаващи коли за скрап.
+                    Фундаментът беше положен правилно от самото начало - техническа изрядност,
+                    бърза скорост и мобилна оптимизация.
+                  </p>
+                </article>
+                <article className={styles.capabilityCard}>
+                  <h3>2023 - Редизайн, реклами и оптимизация</h3>
+                  <p>
+                    Пълен редизайн с ново техническо ядро и разработено от нулата семантично SEO
+                    ядро. Пуснати{" "}
+                    <Link href="/google-ads-reklama">
+                      <strong>Google Ads кампании</strong>
+                    </Link>{" "}
+                    за изкупуване на автомобили за скрап. Landing pages оптимизирани за
+                    конверсии - целта не е трафик, а реални обаждания и запитвания.
+                  </p>
+                </article>
+                <article className={styles.capabilityCard}>
+                  <h3>2024 - Органично изкачване</h3>
+                  <p>
+                    Системната работа по съдържание, вътрешна структура и технически показатели
+                    доведе до видимо изкачване в органичните резултати. Сайтът започна да
+                    доминира за ключови заявки в нишата - конкурентна среда, в която всяка
+                    позиция се печели с реален авторитет.
+                  </p>
+                </article>
+                <article className={styles.capabilityCard}>
+                  <h3>2025 - Калкулатор и тематично лидерство</h3>
+                  <p>
+                    Добавен интерактивен{" "}
+                    <a
+                      href="https://kolizascrap.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <strong>калкулатор за оценка на автомобил за скрап</strong>
+                    </a>
+                    . Резултатът: изключителен тематичен авторитет по всички процедури,
+                    свързани с бракуването на МПС - от документите и цените до логистиката
+                    и правните изисквания.
+                  </p>
+                </article>
+              </div>
+              <p className={styles.strategyConclusion}>
+                Това е начинът, по който работя: стъпка по стъпка, с ясна стратегия и
+                реална поддръжка, докато сайтът не стане истински авторитет в своята ниша.
+                Резултатите на{" "}
+                <a
+                  href="https://kolazascrap.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <strong>Kolazascrap.com</strong>
+                </a>{" "}
+                са живото доказателство.
               </p>
             </section>
 
