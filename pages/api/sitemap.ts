@@ -29,11 +29,11 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
 
   const blogPostRoutes = [
     { path: "/google-ads-reklama", lastModified: "2026-04-23" },
-    { path: "/ads-without-seo", lastModified: "2026-04-22" },
+    { path: "/ads-without-seo", lastModified: "2026-04-23" },
     { path: "/seo-optimizaciya-na-ueb-sait", lastModified: "2026-04-16" },
     { path: "/izrabotka-na-sait", lastModified: "2026-04-12" },
-    { path: "/quality-score-seo", lastModified: "2026-04-22" },
-    { path: "/website-and-google-ads", lastModified: "2026-04-22" },
+    { path: "/quality-score-seo", lastModified: "2026-04-23" },
+    { path: "/website-and-google-ads", lastModified: "2026-04-23" },
     { path: "/ai-seo-lie", lastModified: "2026-04-14" },
     { path: "/modern-site", lastModified: "2026-04-12" },
     { path: "/telemarketing-seo", lastModified: "2026-04-14" },

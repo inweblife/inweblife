@@ -173,6 +173,9 @@ const GoogleAdsReklama = () => {
               оптимизацията и Google Ads работят заедно като система, в която нито едно
               посещение не е изгубено.
             </p>
+            <p>
+              <strong>TL;DR</strong>
+            </p>
           </section>
 
           <section>
