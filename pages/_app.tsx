@@ -1,6 +1,7 @@
 import Layout from '../components/Layout'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/next"
+import Script from "next/script"
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { Inter, Space_Grotesk, Manrope } from "next/font/google"
@@ -28,6 +29,12 @@ const manrope = Manrope({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className={`${inter.variable} ${spaceGrotesk.variable} ${manrope.variable} ${inter.className}`}>
+      <Script
+        id="ahrefs-analytics"
+        src="https://analytics.ahrefs.com/analytics.js"
+        data-key="xxvM7kuGS/Qg1K4VAPJsOg"
+        strategy="lazyOnload"
+      />
       <Layout>
         <Component {...pageProps} />
         <Analytics />

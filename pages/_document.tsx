@@ -8,11 +8,6 @@ export default function Document() {
           name="google-site-verification"
           content="sfRPcXRVIhRKjhZZpZq4w-Z2eWaHcXE8C-G-Ntxkrd0"
         />
-        <script
-          src="https://analytics.ahrefs.com/analytics.js"
-          data-key="xxvM7kuGS/Qg1K4VAPJsOg"
-          async
-        />
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/favicon.png" />
