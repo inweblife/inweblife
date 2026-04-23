@@ -121,7 +121,7 @@ const About = () => {
               <Link href="/how-to-make-site">
                 <strong>архитектура</strong>
               </Link>
-              , съдържание, техническа оптимизация и рекламна подготовка. Разгледайте и моите материали в <Link href="/blog">блога</Link>.
+              , съдържание, техническа оптимизация и рекламна подготовка.
             </p>
             <p className={styles.authorityCopy}>
               Експерт с доказан опит в управлението на PPC бюджети за милиони евро и архитект на
@@ -150,11 +150,8 @@ const About = () => {
                 и реални сделки. Тази среда те учи да мислиш в резултати, не в метрики.
               </p>
               <p>
-                В същото това време управлявам значителни бюджети - не само за{" "}
-                <Link href="/google-ads-reklama">
-                  <strong>реклама в Гугъл</strong>
-                </Link>
-                , но и за{" "}
+                В същото това време управлявам значителни бюджети - не само за реклама в Гугъл,
+                но и за{" "}
                 <Link href="/seo-optimizaciya-na-ueb-sait">
                   <strong>SEO оптимизация</strong>
                 </Link>{" "}
@@ -167,18 +164,8 @@ const About = () => {
               <h2 id="strategy-title">Стратегическо управление и бизнес растеж</h2>
               <p>
                 Моят път в дигиталния свят е белязан от работа по ключови индустриални проекти като{" "}
-                <a href="https://carco.bg/" target="_blank" rel="noopener noreferrer">
-                  <strong>Carco.bg</strong>
-                </a>
-                ,{" "}
-                <a href="https://ecometal.bg/" target="_blank" rel="noopener noreferrer">
-                  <strong>Ecometal.bg</strong>
-                </a>{" "}
-                и{" "}
-                <a href="https://kolazascrap.com/" target="_blank" rel="noopener noreferrer">
-                  <strong>Kolazascrap.com</strong>
-                </a>
-                . Опитът ми включва:
+                <strong>Carco.bg</strong>, <strong>Ecometal.bg</strong> и{" "}
+                <strong>Kolazascrap.com</strong>. Опитът ми включва:
               </p>
               <div className={styles.capabilityGrid}>
                 <article className={styles.capabilityCard}>
@@ -240,11 +227,8 @@ const About = () => {
                   <h3>2023 - Редизайн, реклами и оптимизация</h3>
                   <p>
                     Пълен редизайн с ново техническо ядро и разработено от нулата семантично SEO
-                    ядро. Пуснати{" "}
-                    <Link href="/google-ads-reklama">
-                      <strong>Google Ads кампании</strong>
-                    </Link>{" "}
-                    за изкупуване на автомобили за скрап. Landing pages оптимизирани за
+                    ядро. Пуснати <strong>Google Ads кампании</strong> за изкупуване на автомобили
+                    за скрап. Landing pages оптимизирани за
                     конверсии - целта не е трафик, а реални обаждания и запитвания.
                   </p>
                 </article>
