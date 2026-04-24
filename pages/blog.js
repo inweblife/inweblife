@@ -38,8 +38,8 @@ const Blog = () => {
         description="Статии за SEO оптимизация, Google Ads стратегии, уеб разработка и дигитален маркетинг от Иван Димитров."
         keywords="SEO блог, PPC стратегии, Next.js специалист, JavaScript Developer, WordPress Developer, semantic clusters, pillar content, topical authority, technical SEO"
         path="/blog"
-        image="/og/blog-og.png"
-        imageAlt="Съвременна работна станция за уеб проекти"
+        image="/og/blog.png"
+        imageAlt="Блог страница с подбрани статии за SEO и дигитален маркетинг"
         type="website"
       >
         <script
@@ -55,8 +55,8 @@ const Blog = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Блог хедър">
           <Image
-            src="/workplace.webp"
-            alt="Съвременна работна станция за уеб проекти"
+            src="/blog.webp"
+            alt="Блог страница с подбрани статии за SEO и дигитален маркетинг"
             fill
             sizes="100vw"
             priority

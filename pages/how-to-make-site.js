@@ -76,7 +76,7 @@ const HowToMakeSite = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Как се прави сайт">
           <Image
-            src="/working.webp"
+            src="/how-to-make-site.webp"
             alt="Процес по изграждане на уеб сайт"
             fill
             sizes="100vw"

@@ -9,7 +9,7 @@ export default function NotFoundPage() {
         description="Страницата не е налична. Продължете към SEO, PPC, Next.js и Full-Stack ресурси чрез главната навигация."
         keywords="404, SEO експерт, PPC кампании, Next.js development, Full-Stack Developer, semantic content"
         path="/404"
-        image="/working.webp"
+        image="/404.webp"
         type="website"
         robots="noindex, nofollow"
       />

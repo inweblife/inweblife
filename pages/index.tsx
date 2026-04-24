@@ -71,7 +71,7 @@ export default function Home() {
         description="Иван Димитров - изработвам сайтове с Next.js и WordPress и ги оптимизирам за Google. SEO консултант и Google Ads специалист с 10+ години опит."
         keywords="PPC експерт, SEO експерт, Next.js специалист, JavaScript Developer, WordPress Developer, topical authority, semantic clusters, pillar content, technical SEO"
         path="/"
-        image="/og/home-og.png"
+        image="/og/home.png"
         imageAlt="Работно пространство за уеб разработка"
         type="website"
       />
@@ -89,7 +89,7 @@ export default function Home() {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Въведение">
           <Image
-            src="/working.webp"
+            src="/home.webp"
             alt="Работно пространство за уеб разработка"
             fill
             sizes="100vw"

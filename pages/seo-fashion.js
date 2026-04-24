@@ -76,7 +76,7 @@ const SeoFashion = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Мобилна оптимизация на сайт - UX, скорост и SEO класиране">
           <Image
-            src="/desk.webp"
+            src="/seo-fashion.webp"
             alt="Работно бюро с фокус върху мобилни устройства"
             fill
             sizes="100vw"
