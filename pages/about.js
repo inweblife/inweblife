@@ -85,7 +85,7 @@ const About = () => {
         description="Иван Димитров – SEO консултант и Google Ads специалист с 10+ години опит. Full-stack developer с портфолио от мащабни проекти и управляван PPC бюджет над €1M."
         keywords="Иван Димитров, PPC експерт, SEO експерт, Full-Stack Developer, JavaScript Developer, WordPress Developer, Next.js специалист, semantic clusters, topical authority"
         path="/about"
-        image="/og/about-og.png"
+        image="/og/about.png"
         imageAlt="Портрет на Иван Димитров"
         type="profile"
       >
