@@ -27,7 +27,11 @@
 .heroOverlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(8, 12, 26, 0.52), rgba(8, 12, 26, 0.6));
+  background: linear-gradient(
+    180deg,
+    rgba(8, 12, 26, 0.52),
+    rgba(8, 12, 26, 0.6)
+  );
   display: grid;
   align-content: center;
   justify-items: center;
@@ -72,9 +76,15 @@
   padding: clamp(1rem, 2vw, 1.35rem);
   border-radius: 24px;
   border: 1px solid color-mix(in srgb, var(--border) 75%, transparent);
-  background: linear-gradient(160deg, var(--surface) 0%, var(--surface-raised) 100%);
+  background: linear-gradient(
+    160deg,
+    var(--surface) 0%,
+    var(--surface-raised) 100%
+  );
   box-shadow: 0 24px 60px rgba(15, 23, 42, 0.14);
-  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
 }
 
 .card:hover {
@@ -97,6 +107,7 @@
 .cardLink {
   display: flex;
   flex-direction: column;
+  height: 100%;
   text-decoration: none;
   color: inherit;
   border-radius: 24px;
