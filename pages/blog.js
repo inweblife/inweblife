@@ -98,7 +98,8 @@ const Blog = () => {
                   src={post.image}
                   alt={post.alt}
                   width={780}
-                  height={post.href === '/telemarketing-seo' ? 400 : 410}
+                  height={410}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className={styles.image}
                 />
                 <h2>{post.title}</h2>
