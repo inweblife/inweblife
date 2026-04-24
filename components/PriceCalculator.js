@@ -1,32 +1,33 @@
 import React, { useState, useEffect, useRef } from 'react';
 
+const SERVICES = [
+  {
+    id: 'site',
+    label: 'Изработка на сайт (5 страници)',
+    price: 300,
+    bonus: null
+  },
+  {
+    id: 'seo',
+    label: 'SEO оптимизация',
+    price: 300,
+    bonus: null
+  },
+  {
+    id: 'maintenance',
+    label: 'Месечна поддръжка (SEO + сайт)',
+    price: 300,
+    bonus: 'Бонус: Безплатен GAds акаунт или Дигитален маркетинг (5 публ. + 2 видеа)'
+  },
+  {
+    id: 'gads',
+    label: 'Google Ads управление (+300 месечно бюджет)',
+    price: 300,
+    bonus: 'Бонус: Дигитален маркетинг в социалните мрежи'
+  },
+];
+
 const PriceCalculator = () => {
-  const services = [
-    {
-      id: 'site',
-      label: 'Изработка на сайт (5 страници)',
-      price: 300,
-      bonus: null
-    },
-    {
-      id: 'seo',
-      label: 'SEO оптимизация',
-      price: 300,
-      bonus: null
-    },
-    {
-      id: 'maintenance',
-      label: 'Месечна поддръжка (SEO + сайт)',
-      price: 300,
-      bonus: 'Бонус: Безплатен GAds акаунт или Дигитален маркетинг (5 публ. + 2 видеа)'
-    },
-    {
-      id: 'gads',
-      label: 'Google Ads управление (+300 месечно бюджет)',
-      price: 300,
-      bonus: 'Бонус: Дигитален маркетинг в социалните мрежи'
-    },
-  ];
 
   const [selectedServices, setSelectedServices] = useState([]);
   const canvasRef = useRef(null);
@@ -45,7 +46,7 @@ const PriceCalculator = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     const total = selectedServices.reduce((sum, id) => {
-      const service = services.find(s => s.id === id);
+      const service = SERVICES.find(s => s.id === id);
       return sum + (service ? service.price : 0);
     }, 0);
 
@@ -60,7 +61,7 @@ const PriceCalculator = () => {
       let yOffset = 70;
 
       selectedServices.forEach(id => {
-        const service = services.find(s => s.id === id);
+        const service = SERVICES.find(s => s.id === id);
         if (service && service.bonus) {
           ctx.fillText(`✔ ${service.bonus}`, 20, yOffset);
           yOffset += 25;
@@ -82,7 +83,7 @@ const PriceCalculator = () => {
     <div style={styles.container}>
       <h3 style={styles.header}>Калкулатор за услуги</h3>
       <div style={styles.menu}>
-        {services.map((service) => (
+        {SERVICES.map((service) => (
           <div
             key={service.id}
             style={{
