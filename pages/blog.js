@@ -94,14 +94,16 @@ const Blog = () => {
               aria-label={post.title}
             >
               <article className={styles.card}>
-                <Image
-                  src={post.image}
-                  alt={post.alt}
-                  width={780}
-                  height={410}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className={styles.image}
-                />
+                <div className={styles.imageFrame}>
+                  <Image
+                    src={post.image}
+                    alt={post.alt}
+                    width={780}
+                    height={410}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className={styles.image}
+                  />
+                </div>
                 <h2>{post.title}</h2>
                 <p>{post.summary}</p>
                 <span className={styles.readMore}>Виж още →</span>
