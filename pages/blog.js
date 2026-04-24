@@ -98,7 +98,7 @@ const Blog = () => {
                   src={post.image}
                   alt={post.alt}
                   width={780}
-                  height={500}
+                  height={410}
                   className={styles.image}
                 />
                 <h2>{post.title}</h2>
