@@ -136,14 +136,7 @@ export default function KalkulatorDigitalenMarketing() {
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
 
-    if (selected.length === 0) {
-      canvas.height = 60;
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.font = "17px Arial";
-      ctx.fillStyle = "#7f8c8d";
-      ctx.fillText("Изберете поне една услуга, за да видите диапазона...", 16, 36);
-      return;
-    }
+    if (selected.length === 0) return;
 
     const tm = TYPE_M[bizType] || 1;
     const sm = SIZE_M[bizSize] || 1;
@@ -384,13 +377,17 @@ export default function KalkulatorDigitalenMarketing() {
                 ))}
               </div>
 
-              <canvas
-                ref={canvasRef}
-                width={800}
-                height={60}
-                style={cs.canvas}
-                aria-label="Примерни цени за избраните услуги"
-              />
+              {selected.length === 0 ? (
+                <p style={cs.placeholder}>Изберете поне една услуга, за да видите диапазона...</p>
+              ) : (
+                <canvas
+                  ref={canvasRef}
+                  width={800}
+                  height={60}
+                  style={cs.canvas}
+                  aria-label="Примерни цени за избраните услуги"
+                />
+              )}
 
             </div>
           </section>
@@ -707,5 +704,15 @@ const cs = {
     backgroundColor: "#fff",
     display: "block",
     marginBottom: "16px",
+  },
+  placeholder: {
+    fontSize: "16px",
+    color: "#7f8c8d",
+    textAlign: "center",
+    padding: "20px 16px",
+    border: "2px dashed #bdc3c7",
+    borderRadius: "8px",
+    backgroundColor: "#fff",
+    margin: "0 0 16px",
   },
 };
