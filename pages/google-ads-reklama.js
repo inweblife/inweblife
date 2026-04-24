@@ -688,6 +688,18 @@ const GoogleAdsReklama = () => {
             </div>
           </section>
 
+          <section>
+            <p>
+              Google Ads е един канал в по-широката рамка на{" "}
+              <Link href="/kalkulator-digitalen-marketing">
+                <strong>дигиталния маркетинг</strong>
+              </Link>
+              . Реалистичните пазарни диапазони за всички канали заедно - сайт, SEO, Ads и
+              социални мрежи - зависят от типа и размера на бизнеса и рядко се обясняват
+              открито от агенциите. Калкулаторът с примерни цени дава тази рамка.
+            </p>
+          </section>
+
           <RelatedPosts currentHref="/google-ads-reklama" styles={styles} />
 
           <ShareButtons

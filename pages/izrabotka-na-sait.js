@@ -460,6 +460,18 @@ const IzrabotkaNaSait = () => {
             </p>
           </section>
 
+          <section>
+            <p>
+              Изработката на сайта е еднократната инвестиция. Месечните разходи за{" "}
+              <Link href="/kalkulator-digitalen-marketing">
+                <strong>дигитален маркетинг</strong>
+              </Link>{" "}
+              - SEO, Google Ads, социални мрежи - са отделни и продължаващи. Пазарните им
+              нива зависят от типа на бизнеса и нишата и рядко се обясняват открито преди
+              подписване на договор.
+            </p>
+          </section>
+
           <RelatedPosts currentHref="/izrabotka-na-sait" styles={styles} />
 
           <ShareButtons

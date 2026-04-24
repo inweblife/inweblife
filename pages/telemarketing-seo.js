@@ -200,7 +200,10 @@ const TelemarketingSeo = () => {
                 <strong>Quality Score</strong>
               </Link>{" "}
               влияе едновременно на рекламните и органичните ви резултати - и защо агенция, която не
-              го обяснява, не разбира достатъчно от дигитален маркетинг.
+              го обяснява, не разбира достатъчно от{" "}
+              <Link href="/kalkulator-digitalen-marketing">
+                <strong>дигитален маркетинг</strong>
+              </Link>.
             </p>
           </section>
 
