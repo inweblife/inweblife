@@ -76,7 +76,7 @@ const PowerfulSite = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Мощен сайт">
           <Image
-            src="/computer.webp"
+            src="/powerful-site.webp"
             alt="Компютърна станция за разработка"
             fill
             sizes="100vw"

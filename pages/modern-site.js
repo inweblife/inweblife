@@ -81,7 +81,7 @@ const ModernSite = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Модерен сайт">
           <Image
-            src="/workplace.webp"
+            src="/modern-site.webp"
             alt="Модерен работен кът за уеб разработка"
             fill
             sizes="100vw"
