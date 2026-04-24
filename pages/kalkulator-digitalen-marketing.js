@@ -127,9 +127,22 @@ export default function KalkulatorDigitalenMarketing() {
   const [bizSize, setBizSize] = useState("micro");
   const [selected, setSelected] = useState([]);
   const canvasRef = useRef(null);
+  const wrapRef = useRef(null);
+  const [canvasWidth, setCanvasWidth] = useState(800);
 
   const toggle = (id) =>
     setSelected((prev) => (prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]));
+
+  useEffect(() => {
+    const el = wrapRef.current;
+    if (!el) return;
+    const ro = new ResizeObserver(([entry]) => {
+      const w = Math.round(entry.contentRect.width);
+      if (w > 0) setCanvasWidth(w);
+    });
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -137,6 +150,9 @@ export default function KalkulatorDigitalenMarketing() {
     const ctx = canvas.getContext("2d");
 
     if (selected.length === 0) return;
+
+    canvas.width = canvasWidth;
+    const maxW = canvasWidth - 32;
 
     const tm = TYPE_M[bizType] || 1;
     const sm = SIZE_M[bizSize] || 1;
@@ -176,7 +192,7 @@ export default function KalkulatorDigitalenMarketing() {
     ctx.fillStyle = "#2c3e50";
     ctx.fillText(
       `Примерна оценка - ${TYPE_LABELS[bizType]} бизнес, ${SIZE_LABELS[bizSize]}`,
-      16, y
+      16, y, maxW
     );
     y += LH + 4;
 
@@ -184,11 +200,11 @@ export default function KalkulatorDigitalenMarketing() {
       const tag = line.oneTime ? "(еднократно)" : "(месечно)";
       ctx.font = "bold 14px Arial";
       ctx.fillStyle = "#2c3e50";
-      ctx.fillText(`${line.label}: ${line.min}-${line.max} EUR ${tag}`, 16, y);
+      ctx.fillText(`${line.label}: ${line.min}-${line.max} EUR ${tag}`, 16, y, maxW);
       y += LH - 4;
       ctx.font = "italic 12px Arial";
       ctx.fillStyle = "#7f8c8d";
-      ctx.fillText(`   ${line.note}`, 16, y);
+      ctx.fillText(`   ${line.note}`, 16, y, maxW);
       y += LH + 2;
     });
 
@@ -204,32 +220,32 @@ export default function KalkulatorDigitalenMarketing() {
     ctx.font = "bold 15px Arial";
     ctx.fillStyle = "#e67e22";
     if (totOne.min > 0) {
-      ctx.fillText(`Общо еднократно: ${totOne.min}-${totOne.max} EUR`, 16, y);
+      ctx.fillText(`Общо еднократно: ${totOne.min}-${totOne.max} EUR`, 16, y, maxW);
       y += LH;
     }
     if (totMon.min > 0) {
-      ctx.fillText(`Общо месечно: ${totMon.min}-${totMon.max} EUR/мес`, 16, y);
+      ctx.fillText(`Общо месечно: ${totMon.min}-${totMon.max} EUR/мес`, 16, y, maxW);
       y += LH;
     }
     if (gadsBudget) {
       y += 4;
       ctx.font = "13px Arial";
       ctx.fillStyle = "#8e44ad";
-      ctx.fillText(`+ Препоръчителен Ads бюджет: ${gadsBudget.min}-${gadsBudget.max} EUR/мес`, 16, y);
+      ctx.fillText(`+ Препоръчителен Ads бюджет: ${gadsBudget.min}-${gadsBudget.max} EUR/мес`, 16, y, maxW);
       y += LH - 4;
       ctx.font = "italic 12px Arial";
       ctx.fillStyle = "#7f8c8d";
-      ctx.fillText("   (тези пари отиват директно към Google, не към специалиста)", 16, y);
+      ctx.fillText("   (тези пари отиват директно към Google, не към специалиста)", 16, y, maxW);
       y += LH;
     }
 
     y += 8;
     ctx.font = "italic bold 12px Arial";
     ctx.fillStyle = "#c0392b";
-    ctx.fillText("Всичко над тези цени е необоснована претенция", 16, y);
+    ctx.fillText("Всичко над тези цени е необоснована претенция", 16, y, maxW);
     y += LH - 4;
-    ctx.fillText("и нахален каприз!", 16, y);
-  }, [selected, bizType, bizSize]);
+    ctx.fillText("и нахален каприз!", 16, y, maxW);
+  }, [selected, bizType, bizSize, canvasWidth]);
 
   return (
     <>
@@ -331,7 +347,7 @@ export default function KalkulatorDigitalenMarketing() {
               повече целеви пазари и по-висок очакван обхват. Резултатът е диапазон, не оферта.
             </p>
 
-            <div style={cs.wrap}>
+            <div ref={wrapRef} style={cs.wrap}>
               <div style={cs.row}>
                 <div style={cs.field}>
                   <label style={cs.label} htmlFor="biz-type">Тип бизнес</label>
@@ -382,7 +398,7 @@ export default function KalkulatorDigitalenMarketing() {
               ) : (
                 <canvas
                   ref={canvasRef}
-                  width={800}
+                  width={canvasWidth}
                   height={60}
                   style={cs.canvas}
                   aria-label="Примерни цени за избраните услуги"

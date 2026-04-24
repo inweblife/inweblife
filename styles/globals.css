@@ -213,6 +213,10 @@ button:focus-visible {
     width: 100%;
     justify-content: center;
   }
+
+  .menuList a {
+    padding: 0.75rem 1rem;
+  }
 }
 
 footer {
@@ -245,8 +249,8 @@ footer small {
 }
 
 .socialLink {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2.75rem;
+  height: 2.75rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
