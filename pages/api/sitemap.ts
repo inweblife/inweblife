@@ -28,6 +28,7 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
   ];
 
   const blogPostRoutes = [
+    { path: "/kalkulator-digitalen-marketing", lastModified: "2026-04-24" },
     { path: "/google-ads-reklama", lastModified: "2026-04-23" },
     { path: "/ads-without-seo", lastModified: "2026-04-23" },
     { path: "/seo-optimizaciya-na-ueb-sait", lastModified: "2026-04-16" },
