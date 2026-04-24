@@ -10,5 +10,4 @@ Disallow: /admin/
 Disallow: /dashboard/
 Disallow: /private/
 Disallow: /auth/
-Host: inweblife.net
 Sitemap: https://inweblife.net/sitemap.xml
