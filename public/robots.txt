@@ -1,0 +1,14 @@
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/data/
+Disallow: /_vercel/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /private/
+Disallow: /auth/
+Host: inweblife.net
+Sitemap: https://inweblife.net/sitemap.xml
