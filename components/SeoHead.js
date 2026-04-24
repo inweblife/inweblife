@@ -21,7 +21,7 @@ const SeoHead = ({
   description,
   keywords = `${PERSON_NAME}, PPC експерт, SEO експерт, Full-Stack Developer, JavaScript Developer, WordPress Developer, Next.js специалист, topical authority, semantic clusters, pillar content`,
   path = "/",
-  image = "/working.webp",
+  image = "/default.webp",
   imageWidth = 1200,
   imageHeight = 630,
   imageAlt = "inweblife",
