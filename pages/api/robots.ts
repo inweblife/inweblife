@@ -1,7 +1,10 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { SITE_HOST, SITE_URL } from "../../lib/config";
 
-const ROBOTS_TXT = `User-agent: *
+const ROBOTS_TXT = `User-agent: facebookexternalhit
+Allow: /
+
+User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /_next/data/
