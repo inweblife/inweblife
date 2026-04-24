@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(node -e ' *)",
-      "WebFetch(domain:xseobg.com)"
+      "WebFetch(domain:xseobg.com)",
+      "Bash(python -c \"from PIL import Image; img = Image.open\\('public/og/google-ads-reklama.png'\\); print\\(img.size\\)\")",
+      "Bash(powershell -Command '\\(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\\(Resolve-Path '\\\\''public/og/google-ads-reklama.png'\\\\''\\)\\); Write-Output \"$\\($img.Width\\)x$\\($img.Height\\)\"; $img.Dispose\\(\\)\\)')",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\\(Resolve-Path 'c:\\\\Users\\\\ivan7\\\\Documents\\\\Dev\\\\inweblife\\\\public\\\\og\\\\google-ads-reklama.png'\\)\\); Write-Output \"$\\($img.Width\\)x$\\($img.Height\\)\"; $img.Dispose\\(\\))"
     ]
   }
 }
