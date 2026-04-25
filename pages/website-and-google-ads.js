@@ -113,9 +113,6 @@ const WebsiteAndGoogleAds = () => {
               случва всичко.
             </p>
             <p>
-              Вижте също: <Link href="/how-to-make-site"><strong>Как се прави сайт</strong></Link>,
-              <Link href="/powerful-site"><strong> Създайте мощен сайт</strong></Link> и
-              <Link href="/seo-fashion"><strong> В ерата на смартфоните</strong></Link> за допълнителна стратегия.
               За подробно ръководство по изработка на уебсайт вижте{" "}
               <Link href="/izrabotka-na-sait">
                 <strong>изработка на сайт</strong>
@@ -300,20 +297,7 @@ const WebsiteAndGoogleAds = () => {
             </p>
             <p>
               Знанието предварително какво ви очаква е вашият единствен реален коз срещу агенциите,
-              които живеят от това, че клиентите им не знаят. Как изглежда технически изправният
-              сайт преди да пуснете реклама -{" "}
-              <Link href="/modern-site">
-                <strong>как се прави модерен сайт</strong>
-              </Link>
-              . Защо &quot;AI SEO пакетът&quot; е същото старо SEO с нов етикет -{" "}
-              <Link href="/ai-seo-lie">
-                <strong>SEO оптимизация за AI Overview</strong>
-              </Link>
-              . А как агенциите без резултати ви намират по телефона -{" "}
-              <Link href="/telemarketing-seo">
-                <strong>доброто SEO в SERP</strong>
-              </Link>
-              .
+              които живеят от това, че клиентите им не знаят.
             </p>
           </section>
 
