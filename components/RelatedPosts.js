@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { posts } from "../lib/posts";
 
-const RelatedPosts = ({ currentHref, styles }) => {
-  const related = posts.filter((p) => p.href !== currentHref).slice(0, 3);
+const RelatedPosts = ({ currentHref, styles, hrefs }) => {
+  const related = hrefs
+    ? hrefs.map((href) => posts.find((p) => p.href === href)).filter(Boolean)
+    : posts.filter((p) => p.href !== currentHref).slice(0, 3);
 
   return (
     <section className={styles.relatedSection} aria-labelledby="related-posts-title">

@@ -347,6 +347,12 @@ export default function KalkulatorDigitalenMarketing() {
               повече целеви пазари и по-висок очакван обхват. Резултатът е диапазон, не оферта.
             </p>
 
+            <p>
+              Изберете типа и размера на бизнеса от двете падащи менюта. Отметнете услугите,
+              за които искате примерна цена. Резултатът ще се появи като изображение под
+              списъка - числа в графичен формат, не текст.
+            </p>
+
             <div ref={wrapRef} style={cs.wrap}>
               <div style={cs.row}>
                 <div style={cs.field}>
@@ -641,7 +647,16 @@ export default function KalkulatorDigitalenMarketing() {
             </p>
           </section>
 
-          <RelatedPosts currentHref="/kalkulator-digitalen-marketing" styles={styles} />
+          <RelatedPosts
+            currentHref="/kalkulator-digitalen-marketing"
+            styles={styles}
+            hrefs={[
+              "/izrabotka-na-sait",
+              "/seo-optimizaciya-na-ueb-sait",
+              "/google-ads-reklama",
+              "/ads-without-seo",
+            ]}
+          />
           <ShareButtons
             path="/kalkulator-digitalen-marketing"
             title="Калкулатор за дигитален маркетинг - примерни цени"
