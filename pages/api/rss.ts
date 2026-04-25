@@ -122,6 +122,7 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
       date: post.date,
       category: [{ name: post.category }],
       author: [{ name: SITE_NAME, link: SITE_URL }],
+      image: `${SITE_URL}/og${post.path}.png`,
     });
   }
 

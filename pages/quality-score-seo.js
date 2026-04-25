@@ -14,7 +14,7 @@ const articleSchema = {
   headline: "Как работи Quality Score и защо засяга и SEO",
   description:
     "Как работи Quality Score и защо засяга и SEO: пълно обяснение на трите компонента, директната връзка с органичните позиции и как едно SEO инвестиция носи ползи и за двата канала.",
-  image: [`${SITE_URL}/og/quality-score-seo-og.png`],
+  image: [`${SITE_URL}/og/quality-score-seo.png`],
   author: {
     "@type": "Person",
     name: "Иван Димитров",
@@ -105,7 +105,7 @@ const QualityScoreSeo = () => {
         description="Как работи Quality Score и защо засяга и SEO: CTR, уместност на рекламата, Landing Page Experience и как оптимизацията за PPC подобрява органичните позиции в Google."
         keywords="quality score, quality score seo, как работи quality score, очаквана честота на кликване, landing page experience, уместност на рекламата, google ads качество"
         path="/quality-score-seo"
-        image="/og/quality-score-seo-og.png"
+        image="/og/quality-score-seo.png"
         imageAlt="Диаграма на Quality Score в Google Ads"
         type="article"
         publishedTime="2026-04-09T00:00:00+03:00"

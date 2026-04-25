@@ -14,7 +14,7 @@ const articleSchema = {
   headline: "SEO оптимизация за AI Overview",
   description:
     "Как AI агентите намират и цитират сайтове в реално време и защо доброто SEO е единственото условие да се появите в Google AI Overview.",
-  image: [`${SITE_URL}/og/ai-seo-lie-og.png`],
+  image: [`${SITE_URL}/og/ai-seo-lie.png`],
   author: {
     "@type": "Person",
     name: "Иван Димитров",
@@ -57,7 +57,7 @@ const AiSeoLie = () => {
         description="LLM оптимизацията е мит. Разбери защо доброто SEO вече те позиционира и в AI резултатите без излишен бюджет."
         keywords="SEO оптимизация за AI, Google AI Overview, как да се появя в AI Overview, LLM оптимизация, GEO оптимизация"
         path="/ai-seo-lie"
-        image="/og/ai-seo-lie-og.png"
+        image="/og/ai-seo-lie.png"
         imageAlt="Визуална метафора за AI hype и SEO"
         type="article"
         publishedTime="2026-02-25T00:00:00+02:00"

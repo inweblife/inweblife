@@ -14,7 +14,7 @@ const articleSchema = {
   headline: "SEO оптимизация на уеб сайт - цени, процес и стратегия",
   description:
     "Какво е SEO оптимизация и колко струва? Вижте как се прави, кога има резултати и как да изберете правилната стратегия за своя сайт.",
-  image: [`${SITE_URL}/og/seo-optimizaciya-na-ueb-sait-og.png`],
+  image: [`${SITE_URL}/og/seo-optimizaciya-na-ueb-sait.png`],
   author: {
     "@type": "Person",
     name: "Иван Димитров",
@@ -121,7 +121,7 @@ const SeoOptimizaciya = () => {
         description="Какво е SEO оптимизация и колко струва? Вижте как се прави, кога има резултати и как да изберете правилната стратегия за своя сайт."
         keywords="seo оптимизация, оптимизация на сайт, seo оптимизация на сайт, seo услуга, оптимизация на уеб сайт, on page seo, off page seo, техническо seo, семантично ядро, лематизация, канибализация на ключови думи, seo цена"
         path="/seo-optimizaciya-na-ueb-sait"
-        image="/og/seo-optimizaciya-na-ueb-sait-og.png"
+        image="/og/seo-optimizaciya-na-ueb-sait.png"
         imageAlt="SEO оптимизация на уеб сайт - пълно ръководство"
         type="article"
         publishedTime="2026-04-16T00:00:00+03:00"

@@ -14,7 +14,7 @@ const articleSchema = {
   headline: "Създайте мощен сайт",
   description:
     "Създайте мощен сайт с CMS стратегия, mobile-first архитектура, pillar content и topical authority за SEO и PPC растеж.",
-  image: [`${SITE_URL}/og/powerful-site-og.png`],
+  image: [`${SITE_URL}/og/powerful-site.png`],
   author: {
     "@type": "Person",
     name: "Иван Димитров",
@@ -57,7 +57,7 @@ const PowerfulSite = () => {
         description="Изградете мощен сайт с topical authority, pillar content и семантична SEO архитектура за доминираща видимост в Google."
         keywords="мощен сайт, PPC експерт, SEO експерт, Full-Stack Developer, Next.js специалист, WordPress Developer, topical authority, pillar content"
         path="/powerful-site"
-        image="/og/powerful-site-og.png"
+        image="/og/powerful-site.png"
         imageAlt="Компютърна станция за разработка"
         type="article"
         publishedTime="2026-02-10T00:00:00+02:00"

@@ -14,7 +14,7 @@ const articleSchema = {
   headline: "Как се прави сайт",
   description:
     "Как се прави сайт: структура, semantic clusters, pillar content и вътрешни връзки с SEO, PPC и WordPress/Next.js подход.",
-  image: [`${SITE_URL}/og/how-to-make-site-og.png`],
+  image: [`${SITE_URL}/og/how-to-make-site.png`],
   author: {
     "@type": "Person",
     name: "Иван Димитров",
@@ -57,7 +57,7 @@ const HowToMakeSite = () => {
         description="Как се прави сайт: семантична структура, вътрешни връзки и SEO архитектура за устойчива видимост в Google."
         keywords="как се прави сайт, SEO експерт, PPC експерт, WordPress Developer, Next.js специалист, semantic clusters, pillar content, вътрешни връзки"
         path="/how-to-make-site"
-        image="/og/how-to-make-site-og.png"
+        image="/og/how-to-make-site.png"
         imageAlt="Процес по изграждане на уеб сайт"
         type="article"
         publishedTime="2026-01-27T00:00:00+02:00"

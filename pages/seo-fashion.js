@@ -14,7 +14,7 @@ const articleSchema = {
   headline: "Мобилна оптимизация на сайт - UX, скорост и SEO класиране",
   description:
     "Мобилният потребител е по-нетърпелив, по-конкретен и по-близо до решение. Как се проектира сайт около това поведение и защо mobile-first е директен SEO сигнал.",
-  image: [`${SITE_URL}/og/seo-fashion-og.png`],
+  image: [`${SITE_URL}/og/seo-fashion.png`],
   author: {
     "@type": "Person",
     name: "Иван Димитров",
@@ -57,7 +57,7 @@ const SeoFashion = () => {
         description="Мобилният потребител е по-нетърпелив, по-конкретен и по-близо до решение. Как се проектира сайт около това поведение и защо mobile-first е директен SEO сигнал."
         keywords="mobile-first SEO, мобилна оптимизация, мобилно индексиране Google, mobile UX SEO, Core Web Vitals мобилни"
         path="/seo-fashion"
-        image="/og/seo-fashion-og.png"
+        image="/og/seo-fashion.png"
         imageAlt="Работно бюро с фокус върху мобилни устройства"
         type="article"
         publishedTime="2026-02-18T00:00:00+02:00"

@@ -14,7 +14,7 @@ const articleSchema = {
   headline: "Как се прави модерен сайт",
   description:
     "Как се прави модерен сайт: semantic clusters, pillar content, mobile-first UX и SEO/PPC стратегия с Next.js фокус.",
-  image: [`${SITE_URL}/og/modern-site-og.png`],
+  image: [`${SITE_URL}/og/modern-site.png`],
   author: {
     "@type": "Person",
     name: "Иван Димитров",
@@ -62,7 +62,7 @@ const ModernSite = () => {
         description="Как се прави модерен уеб сайт с Next.js: mobile-first архитектура, Core Web Vitals и техническо SEO за максимална видимост в Google."
         keywords="модерен сайт, SEO експерт, PPC експерт, Next.js специалист, JavaScript Developer, semantic clusters, pillar content, mobile-first UX"
         path="/modern-site"
-        image="/og/modern-site-og.png"
+        image="/og/modern-site.png"
         imageAlt="Модерен работен кът за уеб разработка"
         type="article"
         publishedTime="2026-02-03T00:00:00+02:00"

@@ -14,7 +14,7 @@ const articleSchema = {
   headline: "Доброто SEO, което продава, се вижда в SERP",
   description:
     "Ако SEO агенцията не се появява в Google, как ще ви класира там вас? Разберете защо агенциите без органична видимост звънят по фирмите и заплашват с Google.",
-  image: [`${SITE_URL}/og/telemarketing-seo-og.png`],
+  image: [`${SITE_URL}/og/telemarketing-seo.png`],
   author: {
     "@type": "Person",
     name: "Иван Димитров",
@@ -58,7 +58,7 @@ const TelemarketingSeo = () => {
         description="Ако SEO агенцията не се появява в Google, как ще ви класира там вас? Разберете защо агенциите без органична видимост звънят по фирмите и заплашват с Google."
         keywords="добро SEO, SEO което продава, SEO агенция SERP, SEO агенция обещава резултати, SEO оптимизация България, SEO агенция телефонни обаждания"
         path="/telemarketing-seo"
-        image="/og/telemarketing-seo-og.png"
+        image="/og/telemarketing-seo.png"
         imageAlt="Дигитална работна среда за маркетинг и SEO"
         type="article"
         publishedTime="2026-03-10T00:00:00+02:00"
