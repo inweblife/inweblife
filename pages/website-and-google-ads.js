@@ -317,7 +317,6 @@ const WebsiteAndGoogleAds = () => {
             </p>
           </section>
 
-          <RelatedPosts currentHref="/website-and-google-ads" styles={styles} />
 
           <ShareButtons
             path="/website-and-google-ads"

@@ -221,15 +221,15 @@ const SeoFashion = () => {
               Практическото следствие: ако пишете за мобилен потребител, автоматично пишете и
               за AI Overview. Не е нужна отделна оптимизация - нужна е дисциплина в структурата
               на съдържанието. За пълния процес по изработка на уебсайт, оптимизиран за тези
-              изисквания, вижте{" "}
-              <Link href="/izrabotka-na-sait">
-                <strong>изработка на сайт</strong>
-              </Link>
-              .
+              изисквания, вижте <strong>изработка на сайт</strong>.
             </p>
           </section>
 
-          <RelatedPosts currentHref="/seo-fashion" styles={styles} />
+          <RelatedPosts
+            currentHref="/seo-fashion"
+            styles={styles}
+            exclude={["/modern-site", "/izrabotka-na-sait", "/how-to-make-site", "/powerful-site", "/ai-seo-lie", "/telemarketing-seo"]}
+          />
 
           <ShareButtons path="/seo-fashion" title="В ерата на смартфоните" styles={styles} />
 

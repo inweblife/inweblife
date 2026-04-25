@@ -268,7 +268,11 @@ const TelemarketingSeo = () => {
             </p>
           </section>
 
-          <RelatedPosts currentHref="/telemarketing-seo" styles={styles} />
+          <RelatedPosts
+            currentHref="/telemarketing-seo"
+            styles={styles}
+            exclude={["/seo-optimizaciya-na-ueb-sait", "/ai-seo-lie", "/website-and-google-ads", "/izrabotka-na-sait", "/quality-score-seo", "/kalkulator-digitalen-marketing"]}
+          />
 
           <ShareButtons
             path="/telemarketing-seo"

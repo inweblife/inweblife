@@ -671,7 +671,11 @@ const SeoOptimizaciya = () => {
             </p>
           </section>
 
-          <RelatedPosts currentHref="/seo-optimizaciya-na-ueb-sait" styles={styles} />
+          <RelatedPosts
+            currentHref="/seo-optimizaciya-na-ueb-sait"
+            styles={styles}
+            exclude={["/ads-without-seo", "/telemarketing-seo", "/seo-fashion", "/izrabotka-na-sait", "/website-and-google-ads", "/ai-seo-lie", "/kalkulator-digitalen-marketing"]}
+          />
 
           <ShareButtons
             path="/seo-optimizaciya-na-ueb-sait"

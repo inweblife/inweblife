@@ -642,7 +642,11 @@ const AdsWithoutSeo = () => {
             </p>
           </section>
 
-          <RelatedPosts currentHref="/ads-without-seo" styles={styles} />
+          <RelatedPosts
+            currentHref="/ads-without-seo"
+            styles={styles}
+            exclude={["/kalkulator-digitalen-marketing", "/google-ads-reklama", "/seo-optimizaciya-na-ueb-sait", "/quality-score-seo", "/modern-site", "/website-and-google-ads", "/ai-seo-lie"]}
+          />
 
           <ShareButtons
             path="/ads-without-seo"

@@ -514,7 +514,11 @@ const QualityScoreSeo = () => {
             </div>
           </section>
 
-          <RelatedPosts currentHref="/quality-score-seo" styles={styles} />
+          <RelatedPosts
+            currentHref="/quality-score-seo"
+            styles={styles}
+            exclude={["/website-and-google-ads", "/seo-fashion", "/ads-without-seo", "/modern-site", "/google-ads-reklama", "/seo-optimizaciya-na-ueb-sait", "/telemarketing-seo", "/ai-seo-lie"]}
+          />
 
           <ShareButtons
             path="/quality-score-seo"

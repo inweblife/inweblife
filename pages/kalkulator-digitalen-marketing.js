@@ -525,11 +525,7 @@ export default function KalkulatorDigitalenMarketing() {
               да уточнява колко е управлението и колко отива директно към Google - не
               знаете за какво точно плащате. Може да се окаже, че 1 200 EUR отиват за
               реклама и 300 за управление. Може и обратното. Прозрачното разделяне е
-              стандарт в{" "}
-              <Link href="/google-ads-reklama">
-                <strong>управлението на Google Ads кампании</strong>
-              </Link>{" "}
-              и е един от основните признаци за сериозен партньор.
+              стандарт в <strong>управлението на Google Ads кампании</strong> и е един от основните признаци за сериозен партньор.
             </p>
 
             <h3>&bdquo;Фиксирана цена без одит на сайта ви&ldquo;</h3>
@@ -650,12 +646,7 @@ export default function KalkulatorDigitalenMarketing() {
           <RelatedPosts
             currentHref="/kalkulator-digitalen-marketing"
             styles={styles}
-            hrefs={[
-              "/izrabotka-na-sait",
-              "/seo-optimizaciya-na-ueb-sait",
-              "/google-ads-reklama",
-              "/ads-without-seo",
-            ]}
+            exclude={["/izrabotka-na-sait", "/seo-optimizaciya-na-ueb-sait", "/google-ads-reklama", "/ads-without-seo"]}
           />
           <ShareButtons
             path="/kalkulator-digitalen-marketing"

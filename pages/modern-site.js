@@ -288,7 +288,11 @@ const ModernSite = () => {
             </p>
           </section>
 
-          <RelatedPosts currentHref="/modern-site" styles={styles} />
+          <RelatedPosts
+            currentHref="/modern-site"
+            styles={styles}
+            exclude={["/how-to-make-site", "/izrabotka-na-sait", "/quality-score-seo", "/seo-fashion", "/powerful-site", "/ai-seo-lie"]}
+          />
 
           <ShareButtons
             path="/modern-site"

@@ -284,7 +284,11 @@ const AiSeoLie = () => {
             </p>
           </section>
 
-          <RelatedPosts currentHref="/ai-seo-lie" styles={styles} />
+          <RelatedPosts
+            currentHref="/ai-seo-lie"
+            styles={styles}
+            exclude={["/seo-fashion", "/modern-site", "/how-to-make-site", "/seo-optimizaciya-na-ueb-sait", "/quality-score-seo", "/powerful-site", "/ads-without-seo"]}
+          />
 
           <ShareButtons path="/ai-seo-lie" title="SEO оптимизация за AI Overview" styles={styles} />
 

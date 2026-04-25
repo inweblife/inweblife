@@ -244,15 +244,15 @@ const HowToMakeSite = () => {
             </p>
             <p>
               Правилният въпрос не е &quot;колко да похарча за сайта?&quot;, а &quot;колко ще ми струва цялото
-              онлайн присъствие за първата година?&quot;. Пълният анализ с реални числа е в{" "}
-              <Link href="/website-and-google-ads">
-                <strong>изработка на сайт и реклама в Гугъл</strong>
-              </Link>
-              .
+              онлайн присъствие за първата година?&quot;. Пълният анализ с реални числа е в <strong>изработка на сайт и реклама в Гугъл</strong>.
             </p>
           </section>
 
-          <RelatedPosts currentHref="/how-to-make-site" styles={styles} />
+          <RelatedPosts
+            currentHref="/how-to-make-site"
+            styles={styles}
+            exclude={["/izrabotka-na-sait", "/website-and-google-ads", "/modern-site", "/quality-score-seo", "/powerful-site", "/seo-fashion", "/ai-seo-lie", "/telemarketing-seo"]}
+          />
 
           <ShareButtons path="/how-to-make-site" title="Как се прави сайт" styles={styles} />
 
