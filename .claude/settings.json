@@ -8,7 +8,9 @@
       "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\\(Resolve-Path 'c:\\\\Users\\\\ivan7\\\\Documents\\\\Dev\\\\inweblife\\\\public\\\\og\\\\google-ads-reklama.png'\\)\\); Write-Output \"$\\($img.Width\\)x$\\($img.Height\\)\"; $img.Dispose\\(\\))",
       "Bash(xargs grep *)",
       "Bash(xargs basename *)",
-      "Bash(grep -E \"\\\\.js$\")"
+      "Bash(grep -E \"\\\\.js$\")",
+      "Bash(git commit *)",
+      "Bash(git push *)"
     ],
     "additionalDirectories": [
       "c:\\Users\\ivan7\\.claude\\projects\\c--Users-ivan7-Documents-Dev-inweblife\\memory"
