@@ -145,7 +145,7 @@ const SeoOptimizaciya = () => {
         <section className={styles.heroBanner} aria-label="SEO оптимизация на уеб сайт">
           <Image
             src="/seo-optimisation.webp"
-            alt="SEO оптимизация на уеб сайт - цени, процес и стратегия"
+            alt="SEO оптимизация на сайт - как да класирате сайта си в Google"
             fill
             sizes="100vw"
             priority
@@ -153,7 +153,7 @@ const SeoOptimizaciya = () => {
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>
-            <h1>SEO оптимизация на уеб сайт - цени, процес и стратегия</h1>
+            <h1>SEO оптимизация на сайт - как да класирате сайта си в Google</h1>
           </div>
         </section>
 
@@ -671,7 +671,7 @@ const SeoOptimizaciya = () => {
 
           <ShareButtons
             path="/seo-optimizaciya-na-ueb-sait"
-            title="SEO оптимизация на уеб сайт - цени, процес и стратегия"
+            title="SEO оптимизация на сайт - как да класирате сайта си в Google"
             styles={styles}
           />
 
