@@ -122,7 +122,7 @@ const SeoOptimizaciya = () => {
         keywords="seo оптимизация, оптимизация на сайт, seo оптимизация на сайт, seo услуга, оптимизация на уеб сайт, on page seo, off page seo, техническо seo, семантично ядро, лематизация, канибализация на ключови думи, seo цена"
         path="/seo-optimizaciya-na-ueb-sait"
         image="/og/seo-optimizaciya-na-ueb-sait.png"
-        imageAlt="SEO оптимизация на уеб сайт - пълно ръководство"
+        imageAlt="SEO оптимизация на сайт - как да класирате сайта си в Google"
         type="article"
         publishedTime="2026-04-16T00:00:00+03:00"
         modifiedTime="2026-04-16T00:00:00+03:00"
@@ -142,7 +142,7 @@ const SeoOptimizaciya = () => {
       </SeoHead>
 
       <main className={styles.main} id="main-content">
-        <section className={styles.heroBanner} aria-label="SEO оптимизация на уеб сайт">
+        <section className={styles.heroBanner} aria-label="SEO оптимизация на сайт">
           <Image
             src="/seo-optimisation.webp"
             alt="SEO оптимизация на сайт - как да класирате сайта си в Google"
