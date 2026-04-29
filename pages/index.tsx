@@ -13,7 +13,7 @@ const websiteSchema = {
   name: "inweblife",
   url: `${SITE_URL}/`,
   description:
-    "Изработка на сайтове с Next.js и WordPress, SEO оптимизация и Google Ads управление с 10+ години опит.",
+    "Иван Димитров - над 10 години опит в изработката на сайтове, SEO оптимизация и Google Ads. Сайтове, които работят за бизнеса.",
   inLanguage: "bg",
   publisher: {
     "@type": "Person",
@@ -27,7 +27,7 @@ const webPageSchema = {
   url: `${SITE_URL}/`,
   inLanguage: "bg-BG",
   description:
-    "Иван Димитров – изработвам сайтове с Next.js и WordPress и ги оптимизирам за Google. SEO консултант и Google Ads специалист с 10+ години опит.",
+    "Иван Димитров - над 10 години опит в изработката на сайтове, SEO оптимизация и Google Ads. Сайтове, които работят за бизнеса.",
   isPartOf: {
     "@type": "WebSite",
     name: "inweblife",
@@ -68,7 +68,7 @@ export default function Home() {
     <>
       <SeoHead
         title="Изработка на сайтове, SEO и Google Ads | inweblife"
-        description="Иван Димитров - изработвам сайтове с Next.js и WordPress и ги оптимизирам за Google. SEO консултант и Google Ads специалист с 10+ години опит."
+        description="Иван Димитров - над 10 години опит в изработката на сайтове, SEO оптимизация и Google Ads. Сайтове, които работят за бизнеса."
         keywords="PPC експерт, SEO експерт, Next.js специалист, JavaScript Developer, WordPress Developer, topical authority, semantic clusters, pillar content, technical SEO"
         path="/"
         image="/og/home.png"

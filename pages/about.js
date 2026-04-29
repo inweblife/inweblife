@@ -12,7 +12,7 @@ const personSchema = {
   url: `${SITE_URL}/about`,
   image: `${SITE_URL}/ivan.webp`,
   description:
-    "SEO консултант, Google Ads специалист и Full-Stack Developer с 10+ години опит в Automotive и Recycling индустрията. Архитект на семантични SEO стратегии и управлявани PPC бюджети над €1M.",
+    "Иван Димитров | Web Developer, SEO консултант и Google Ads специалист с 10+ години опит и портфолио от проекти с огромен бюджет.",
   jobTitle: [
     "High-Budget PPC Strategist",
     "Semantic SEO Expert",
@@ -69,7 +69,7 @@ const webPageSchema = {
   url: `${SITE_URL}/about`,
   inLanguage: "bg-BG",
   description:
-    "Профил на Иван Димитров с SEO, PPC и Full-Stack експертиза, фокус върху техническа архитектура и устойчив органичен растеж.",
+    "Иван Димитров | Web Developer, SEO консултант и Google Ads специалист с 10+ години опит и портфолио от проекти с огромен бюджет.",
   isPartOf: {
     "@type": "WebSite",
     name: "inweblife",
@@ -82,7 +82,7 @@ const About = () => {
     <>
       <SeoHead
         title="Иван Димитров | Уеб разработчик, SEO и Google Ads"
-        description="Иван Димитров – SEO консултант и Google Ads специалист с 10+ години опит. Full-stack developer с портфолио от мащабни проекти и управляван PPC бюджет над €1M."
+        description="Иван Димитров | Web Developer, SEO консултант и Google Ads специалист с 10+ години опит и портфолио от проекти с огромен бюджет."
         keywords="Иван Димитров, PPC експерт, SEO експерт, Full-Stack Developer, JavaScript Developer, WordPress Developer, Next.js специалист, semantic clusters, topical authority"
         path="/about"
         image="/og/about.png"
