@@ -260,14 +260,20 @@ const TelemarketingSeo = () => {
             </ul>
             <p>
               Правилото е просто: агенцията, която не може да намери себе си в Google, не може да
-              ви намери там и вас.
+              ви намери там и вас. И ако вече работите с агенция, но сайтът стои на позиции 11-20
+              за заявки, по които би трябвало да доминирате, проверете дали проблемът не е в URL
+              архитектурата - тихата{" "}
+              <Link href="/seo-slug-kanibalizaciya">
+                <strong>SEO slug канибализация</strong>
+              </Link>{" "}
+              се открива само в Search Console и рядко се диагностицира при стандартен одит.
             </p>
           </section>
 
           <RelatedPosts
             currentHref="/telemarketing-seo"
             styles={styles}
-            exclude={["/seo-optimizaciya-na-ueb-sait", "/ai-seo-lie", "/website-and-google-ads", "/izrabotka-na-sait", "/quality-score-seo", "/kalkulator-digitalen-marketing"]}
+            exclude={["/seo-optimizaciya-na-ueb-sait", "/ai-seo-lie", "/website-and-google-ads", "/izrabotka-na-sait", "/quality-score-seo", "/kalkulator-digitalen-marketing", "/seo-slug-kanibalizaciya"]}
           />
 
           <ShareButtons

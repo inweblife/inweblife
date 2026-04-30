@@ -289,6 +289,14 @@ const AiSeoLie = () => {
               <li>
                 <strong>Защо работи:</strong> AI моделите &bdquo;четат&ldquo; структура, не ключови думи
               </li>
+              <li>
+                Преди структура на съдържанието, трябва да е наред структурата на URL адресите -{" "}
+                <Link href="/seo-slug-kanibalizaciya">
+                  <strong>slug канибализацията</strong>
+                </Link>{" "}
+                е по-скрита причина за нестабилно класиране, която блокира дори добре написаното
+                съдържание
+              </li>
             </ul>
 
             <h3>2. Покажи реална компетентност - без жаргон</h3>
@@ -329,7 +337,7 @@ const AiSeoLie = () => {
           <RelatedPosts
             currentHref="/ai-seo-lie"
             styles={styles}
-            exclude={["/seo-fashion", "/modern-site", "/how-to-make-site", "/seo-optimizaciya-na-ueb-sait", "/quality-score-seo", "/powerful-site", "/ads-without-seo"]}
+            exclude={["/seo-fashion", "/modern-site", "/how-to-make-site", "/seo-optimizaciya-na-ueb-sait", "/quality-score-seo", "/powerful-site", "/ads-without-seo", "/seo-slug-kanibalizaciya"]}
           />
 
           <ShareButtons path="/ai-seo-lie" title="SEO оптимизация за AI Overview" styles={styles} />
