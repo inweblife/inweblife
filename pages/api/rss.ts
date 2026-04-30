@@ -6,6 +6,13 @@ const SITE_NAME = "inweblife";
 
 const posts = [
   {
+    path: "/seo-slug-kanibalizaciya",
+    title: "SEO slug канибализация - къде Гугъл се обърква",
+    description: "Какво е SEO slug канибализация? Как обърква Google и защо вреди. Вижте я в Search Console и спрете вътрешната конкуренция с 301 редирект.",
+    category: "SEO",
+    date: new Date("2026-04-30"),
+  },
+  {
     path: "/kalkulator-digitalen-marketing",
     title: "Калкулатор за дигитален маркетинг - примерни цени",
     description: "Примерни цени за дигитален маркетинг в България: изработка на сайт, SEO, Google Ads, социални мрежи. Реалистични диапазони, не агенционни обещания.",

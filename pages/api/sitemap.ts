@@ -50,6 +50,7 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
     { path: "/powerful-site", lastModified: "2026-04-12" },
     { path: "/how-to-make-site", lastModified: "2026-04-23" },
     { path: "/seo-fashion", lastModified: "2026-04-18" },
+    { path: "/seo-slug-kanibalizaciya", lastModified: "2026-04-30" },
   ];
 
   const staticLastModified = new Date("2026-04-12");
