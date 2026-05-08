@@ -23,7 +23,12 @@
       "Bash(Select-Object -First 20 FullName)"
     ],
     "additionalDirectories": [
-      "c:\\Users\\ivan7\\.claude\\projects\\c--Users-ivan7-Documents-Dev-inweblife\\memory"
+      "c:\\Users\\ivan7\\.claude\\projects\\c--Users-ivan7-Documents-Dev-inweblife\\memory",
+      "c:\\Users\\ivan7\\Documents\\Dev\\autoblog\\app\\blog\\priznaci-na-povreda-skoresna-kutiya",
+      "c:\\Users\\ivan7\\Documents\\Dev\\autoblog\\app\\about",
+      "c:\\Users\\ivan7\\Documents\\Dev\\autoblog\\app\\feed.xml",
+      "c:\\Users\\ivan7\\Documents\\Dev\\autoblog\\lib",
+      "c:\\Users\\ivan7\\Documents\\Dev\\autoblog\\app"
     ]
   }
 }
