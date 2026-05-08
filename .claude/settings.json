@@ -10,7 +10,9 @@
       "Bash(xargs basename *)",
       "Bash(grep -E \"\\\\.js$\")",
       "Bash(git commit *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(ls \"C:\\\\Users\\\\ivan7\\\\Documents\\\\Dev\")",
+      "Read(//c/Users/ivan7/Documents/Dev/**)"
     ],
     "additionalDirectories": [
       "c:\\Users\\ivan7\\.claude\\projects\\c--Users-ivan7-Documents-Dev-inweblife\\memory"
