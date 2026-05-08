@@ -1,17 +1,9 @@
-import { useEffect, useState } from "react";
 import { SITE_URL } from "../lib/config";
 
 const toAbsoluteUrl = (path) => `${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`;
 
 const ShareButtons = ({ path, title, styles }) => {
-  const [articleUrl, setArticleUrl] = useState(() => toAbsoluteUrl(path));
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    const origin = window.location.origin;
-    setArticleUrl(`${origin}${path.startsWith("/") ? path : `/${path}`}`);
-  }, [path]);
-
+  const articleUrl = toAbsoluteUrl(path);
   const encodedUrl = encodeURIComponent(articleUrl);
   const encodedTitle = encodeURIComponent(title);
 
