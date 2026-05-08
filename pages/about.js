@@ -111,7 +111,7 @@ const About = () => {
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>
-            <h1 className={styles.title}>Иван Димитров – Уеб разработчик, SEO и Google Ads</h1>
+            <h1 className={styles.title}>Иван Димитров - Уеб разработчик, SEO и Google Ads</h1>
             <p className={styles.subtitle}>Full-Stack JavaScript Developer</p>
           </div>
         </section>
