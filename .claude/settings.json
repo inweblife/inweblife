@@ -14,7 +14,10 @@
       "Bash(ls \"C:\\\\Users\\\\ivan7\\\\Documents\\\\Dev\")",
       "Read(//c/Users/ivan7/Documents/Dev/**)",
       "Bash(for dir *)",
-      "Read(//c/Users/ivan7/Documents/Dev$dir/**)"
+      "Read(//c/Users/ivan7/Documents/Dev$dir/**)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\ivan7\\\\Documents\\\\Dev\\\\inweblife\" -Recurse -Depth 2 -ErrorAction SilentlyContinue | Select-Object FullName | ForEach-Object { $_.FullName } | Sort-Object)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\ivan7\\\\Documents\\\\Dev\\\\inweblife\" -Force | Where-Object { $_.PSIsContainer } | Select-Object -ExpandProperty Name)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\ivan7\\\\Documents\\\\Dev\\\\inweblife\" -Force | Where-Object { -not $_.PSIsContainer } | Select-Object -ExpandProperty Name | Sort-Object)"
     ],
     "additionalDirectories": [
       "c:\\Users\\ivan7\\.claude\\projects\\c--Users-ivan7-Documents-Dev-inweblife\\memory"
