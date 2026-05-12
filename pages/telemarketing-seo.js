@@ -268,6 +268,14 @@ const TelemarketingSeo = () => {
               </Link>{" "}
               се открива само в Search Console и рядко се диагностицира при стандартен одит.
             </p>
+            <p>
+              Агенцията, която разбира от SEO, разбира и от това как AI системите цитират сайтове.
+              Ако искаш да знаеш как се пише съдържание, което Google AI Overviews извлича, прочети
+              за{" "}
+              <Link href="/aeo-ai-overview">
+                <strong>AEO оптимизация</strong>
+              </Link>.
+            </p>
           </section>
 
           <RelatedPosts
