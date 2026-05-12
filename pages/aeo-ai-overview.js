@@ -12,7 +12,7 @@ const articleSchema = {
   "@type": "Article",
   headline: "AEO оптимизация - как AI Overview променя SEO",
   description:
-    "Какво е AEO оптимизация, как Google AI Overviews извлича съдържание с RAG и query fan-out, как да пишете пасажи, които AI цитира - практически workflow за SEO в 2026 г.",
+    "Практическо ръководство за AEO оптимизация: как да структурираш съдържание, така че AI системи като Google да го извличат и цитират.",
   image: [`${SITE_URL}/og/aeo-ai-overview.png`],
   author: {
     "@type": "Person",
@@ -109,7 +109,7 @@ const AeoAiOverview = () => {
     <>
       <SeoHead
         title="AEO оптимизация - как AI Overview променя SEO | inweblife"
-        description="Какво е AEO оптимизация, как Google AI Overviews извлича съдържание с RAG и query fan-out, как да пишете пасажи, които AI цитира - практически workflow за SEO в 2026 г."
+        description="Практическо ръководство за AEO оптимизация: как да структурираш съдържание, така че AI системи като Google да го извличат и цитират."
         keywords="AEO оптимизация, Answer Engine Optimization, AI Overview SEO, Google AI Overviews, AEO vs SEO, passage retrieval, query fan-out, RAG"
         path="/aeo-ai-overview"
         image="/og/aeo-ai-overview.png"
@@ -152,6 +152,8 @@ const AeoAiOverview = () => {
           <section>
             <p>
               <strong>Автор:</strong> Иван Димитров | <strong>Публикувано:</strong>{" "}
+              <time dateTime="2026-05-12">12 май 2026</time>{" "}
+              | <strong>Актуализирано:</strong>{" "}
               <time dateTime="2026-05-12">12 май 2026</time>
             </p>
             <p>
@@ -673,7 +675,10 @@ const AeoAiOverview = () => {
             <h3>Замества ли AEO класическото SEO?</h3>
             <p>
               Не. AEO надгражда SEO, не го заменя. Ако сайтът ви не е технически индексируем и не
-              е семантично релевантен на класическо ниво, AI Overviews също няма да го извлече. SEO
+              е семантично релевантен на класическо ниво, AI Overviews също няма да го извлече.{" "}
+              <Link href="/seo-optimizaciya-na-ueb-sait">
+                <strong>SEO оптимизация</strong>
+              </Link>{" "}
               остава фундамент - AEO е слоят, който превръща SEO видимост в AI цитируемост.
             </p>
 
