@@ -6,6 +6,14 @@ const SITE_NAME = "inweblife";
 
 const posts = [
   {
+    path: "/aeo-ai-overview",
+    title: "AEO оптимизация - как AI Overview променя SEO",
+    description:
+      "Какво е AEO оптимизация, как Google AI Overviews извлича съдържание с RAG и query fan-out и как да пишете пасажи, които AI цитира. Практически workflow за 2026 г.",
+    category: "SEO",
+    date: new Date("2026-05-12"),
+  },
+  {
     path: "/seo-slug-kanibalizaciya",
     title: "SEO slug канибализация - къде Гугъл се обърква",
     description: "Какво е SEO slug канибализация? Как обърква Google и защо вреди. Вижте я в Search Console и спрете вътрешната конкуренция с 301 редирект.",
