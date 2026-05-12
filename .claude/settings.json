@@ -20,7 +20,8 @@
       "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\ivan7\\\\Documents\\\\Dev\\\\inweblife\" -Force | Where-Object { -not $_.PSIsContainer } | Select-Object -ExpandProperty Name | Sort-Object)",
       "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(json.dumps\\({k:d[k] for k in ['main','exports','module'] if k in d}, indent=2\\)\\)\")",
       "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\ivan7\\\\Documents\\\\Dev\\\\inweblife\" -Recurse -Directory)",
-      "Bash(Select-Object -First 20 FullName)"
+      "Bash(Select-Object -First 20 FullName)",
+      "PowerShell($lines = Get-Content 'c:\\\\Users\\\\ivan7\\\\Documents\\\\Dev\\\\inweblife\\\\pages\\\\seo-optimizaciya-na-ueb-sait.js' -Encoding UTF8; $lines[582..590] | ForEach-Object { Write-Output \"[$_]\" })"
     ],
     "additionalDirectories": [
       "c:\\Users\\ivan7\\.claude\\projects\\c--Users-ivan7-Documents-Dev-inweblife\\memory",
