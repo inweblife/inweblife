@@ -35,52 +35,6 @@ const articleSchema = {
   mainEntityOfPage: `${SITE_URL}/ads-without-seo`,
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "Трябва ли да започна със SEO оптимизация или с платени реклами?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Трябва да започнете с SEO. Платената реклама е наем - спирате бюджета, трафикът умира. SEO е актив, който работи 24/7. В 9 от 10 случая, когато бизнесът стартира с платени реклами без SEO основа, бюджетът отива в трафик, който сайтът не може да монетизира.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Какво е семантично ядро и защо липсата му прахосва рекламния бюджет?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Семантичното ядро е организираната съвкупност от всички ключови думи и тематични клъстери, около които е изграден сайтът. Без него рекламите изпращат потребителите на грешни страници, bounce rate расте и Quality Score в Google Ads спада - което директно увеличава цената на клик.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Помагат ли социалните мрежи за SEO оптимизацията?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Социалните мрежи не класират директно в Google, но са мощен канал за дистрибуция на SEO съдържание. LinkedIn изгражда авторитет (E-E-A-T) и генерира качествени обратни линкове, когато публикувате задълбочено и авторитетно съдържание за B2B аудитории.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Защо пилар страниците и блог клъстерите са задължителни преди платен трафик?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Пилар/клъстер моделът изгражда тематичен авторитет, задържа потребителите и ги води плавно към конверсия - тоест към превръщането им от посетители в клиенти. Без тази структура платеният трафик се разпилява - посетителите пристигат, не намират нужното и напускат.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Как стабилната SEO основа гарантира място в AI Overviews на Google?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Google AI Overviews работят чрез Retrieval-Augmented Generation (RAG) - AI извършва скрито търсене в SERP и цитира сайтовете с най-висок авторитет. Ако сайтът не се класира органично, AI агентът никога не го достига. Платените реклами не влияят на избора на AI.",
-      },
-    },
-  ],
-};
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -123,10 +77,6 @@ const AdsWithoutSeo = () => {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       </SeoHead>
 
