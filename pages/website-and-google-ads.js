@@ -11,7 +11,7 @@ import { SITE_URL } from "../lib/config";
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Колко струват сайт и реклама: разходите, които остават скрити",
+  headline: "Колко струват сайт и реклама: скритите разходи",
   description:
     "Колко реално струват сайт и реклама в Google и кои разходи най-често не се включват в първоначалните оферти на агенции и изпълнители.",
   image: [`${SITE_URL}/og/website-and-google-ads.png`],
@@ -44,7 +44,7 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "Колко струват сайт и реклама: разходите, които остават скрити",
+      name: "Колко струват сайт и реклама: скритите разходи",
       item: `${SITE_URL}/website-and-google-ads`,
     },
   ],
@@ -54,7 +54,7 @@ const WebsiteAndGoogleAds = () => {
   return (
     <>
       <SeoHead
-        title="Колко струват сайт и реклама: разходите, които остават скрити | inweblife"
+        title="Колко струват сайт и реклама: скритите разходи | inweblife"
         description="Колко реално струват сайт и реклама в Google и кои разходи най-често не се включват в първоначалните оферти на агенции и изпълнители."
         keywords="скрити разходи сайт реклама, колко струва сайт и реклама, реални разходи онлайн присъствие, реална цена google ads, разходи при изграждане на сайт, скрити разходи дигитален маркетинг"
         path="/website-and-google-ads"
@@ -75,7 +75,7 @@ const WebsiteAndGoogleAds = () => {
       </SeoHead>
 
       <main className={styles.main} id="main-content">
-        <section className={styles.heroBanner} aria-label="Колко струват сайт и реклама: разходите, които остават скрити">
+        <section className={styles.heroBanner} aria-label="Колко струват сайт и реклама: скритите разходи">
           <Image
             src="/website-and-google-ads.webp"
             alt="Разходи при сайт и реклама в Google - какво остава скрито"
@@ -86,7 +86,7 @@ const WebsiteAndGoogleAds = () => {
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>
-            <h1>Колко струват сайт и реклама: разходите, които остават скрити</h1>
+            <h1>Колко струват сайт и реклама: скритите разходи</h1>
           </div>
         </section>
 
@@ -268,7 +268,7 @@ const WebsiteAndGoogleAds = () => {
 
           <ShareButtons
             path="/website-and-google-ads"
-            title="Колко струват сайт и реклама: разходите, които остават скрити"
+            title="Колко струват сайт и реклама: скритите разходи"
             styles={styles}
           />
 
