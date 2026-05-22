@@ -6,6 +6,14 @@ const SITE_NAME = "inweblife";
 
 const posts = [
   {
+    path: "/kak-raboti-seo",
+    title: "Как работи SEO и защо някои сайтове са невидими в Google",
+    description:
+      "Как работи SEO - как Google обхожда, индексира и класира сайтовете, защо линковете още имат значение и как AI променя търсенето.",
+    category: "SEO",
+    date: new Date("2026-05-22"),
+  },
+  {
     path: "/aeo-ai-overview",
     title: "AEO оптимизация - как AI Overview променя SEO",
     description:
