@@ -264,7 +264,12 @@ const KakRabotiSeo = () => {
               покрив, но без него цялата сграда пада. Не печели награди, но е задължително.
               Повечето сайтове в България имат сериозни технически проблеми, които никой не е
               оправял от години - счупени линкове, бавно зареждане, грешни canonical тагове,
-              страници, които съществуват, но Google не знае за тях.
+              страници, които съществуват, но Google не знае за тях. Когато платформата е
+              WordPress, спецификите на тези проблеми са разгледани в{" "}
+              <Link href="/wordpress-seo">
+                <strong>WordPress SEO</strong>
+              </Link>
+              .
             </p>
             <p>
               Тази стара таксономия - On-Page, Off-Page, техническо - е полезна за обучение. Но
@@ -559,7 +564,7 @@ const KakRabotiSeo = () => {
           <RelatedPosts
             currentHref="/kak-raboti-seo"
             styles={styles}
-            exclude={["/seo-optimizaciya-na-ueb-sait", "/aeo-ai-overview", "/ai-seo-lie", "/seo-slug-kanibalizaciya"]}
+            exclude={["/seo-optimizaciya-na-ueb-sait", "/aeo-ai-overview", "/ai-seo-lie", "/seo-slug-kanibalizaciya", "/wordpress-seo"]}
           />
 
           <ShareButtons

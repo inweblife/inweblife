@@ -203,6 +203,11 @@ const PowerfulSite = () => {
               <Link href="/modern-site">
                 <strong>модерен сайт</strong>
               </Link>
+              . Ако основата е WordPress, как тази архитектура се превръща в реална видимост в
+              Google е разгледано в{" "}
+              <Link href="/wordpress-seo">
+                <strong>WordPress SEO</strong>
+              </Link>
               .
             </p>
           </section>
@@ -210,7 +215,7 @@ const PowerfulSite = () => {
           <RelatedPosts
             currentHref="/powerful-site"
             styles={styles}
-            exclude={["/how-to-make-site", "/website-and-google-ads", "/izrabotka-na-sait", "/telemarketing-seo", "/quality-score-seo", "/modern-site", "/seo-fashion", "/ai-seo-lie"]}
+            exclude={["/how-to-make-site", "/website-and-google-ads", "/izrabotka-na-sait", "/telemarketing-seo", "/quality-score-seo", "/modern-site", "/seo-fashion", "/ai-seo-lie", "/wordpress-seo"]}
           />
 
           <ShareButtons path="/powerful-site" title="Създайте мощен сайт" styles={styles} />

@@ -153,7 +153,12 @@ const HowToMakeSite = () => {
             <p>
               Грешният въпрос е &quot;кое е по-добро?&quot; Правилният е: &quot;кой ще поддържа този сайт след
               две години?&quot; Ако отговорът е клиентът сам - WordPress. Ако отговорът е разработчик
-              - може и Next.js. Техническото сравнение продължава в{" "}
+              - може и Next.js. Ако решите WordPress, SEO спецификите - от темата и плъгините до
+              permalink структурата - са разгледани в{" "}
+              <Link href="/wordpress-seo">
+                <strong>WordPress SEO</strong>
+              </Link>
+              . Техническото сравнение продължава в{" "}
               <Link href="/modern-site">
                 <strong>как се прави модерен сайт</strong>
               </Link>
@@ -239,7 +244,7 @@ const HowToMakeSite = () => {
           <RelatedPosts
             currentHref="/how-to-make-site"
             styles={styles}
-            exclude={["/izrabotka-na-sait", "/website-and-google-ads", "/modern-site", "/quality-score-seo", "/powerful-site", "/seo-fashion", "/ai-seo-lie", "/telemarketing-seo"]}
+            exclude={["/izrabotka-na-sait", "/website-and-google-ads", "/modern-site", "/quality-score-seo", "/powerful-site", "/seo-fashion", "/ai-seo-lie", "/telemarketing-seo", "/wordpress-seo"]}
           />
 
           <ShareButtons path="/how-to-make-site" title="Как се прави сайт" styles={styles} />
