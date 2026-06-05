@@ -54,7 +54,7 @@ const WordPressSeo = () => {
   return (
     <>
       <SeoHead
-        title="WordPress SEO за най-добрата видимост в търсачките | inweblife"
+        title="WordPress SEO за най-добрата видимост в търсачките"
         description="Как да настроите сайта си за максимален трафик? WordPress SEO за най-добрата видимост в търсачките. Вижте как да сте на първа страница."
         keywords="wordpress seo, WordPress SEO оптимизация, page builder SEO, Elementor SEO, Yoast vs Rank Math, permalink структура, WordPress тема SEO, мобилна оптимизация WordPress"
         path="/wordpress-seo"
