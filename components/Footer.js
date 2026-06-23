@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer>
@@ -91,6 +93,7 @@ const Footer = () => {
             </li>
           </ul>
         </nav>
+        <Link href="/karta-na-saita" className="footerLink">Карта на сайта</Link>
         <small>Copyright {new Date().getFullYear()} inweblife - животът в мрежата</small>
       </div>
     </footer>

@@ -1,0 +1,28 @@
+.main {
+  width: min(900px, 94%);
+  margin: clamp(1.5rem, 3vw, 2.5rem) auto;
+}
+
+.main h1 {
+  margin: 0 0 clamp(1.2rem, 2.5vw, 2rem);
+}
+
+.section + .section {
+  margin-top: clamp(1.4rem, 2.8vw, 2rem);
+}
+
+.section h2 {
+  margin: 0 0 0.6rem;
+}
+
+.list {
+  margin: 0;
+  padding: 0 0 0 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.list a {
+  font-weight: 600;
+}

@@ -238,6 +238,11 @@ footer small {
   color: var(--text-muted);
 }
 
+.footerLink {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
 .socialList {
   margin: 0;
   padding: 0;
