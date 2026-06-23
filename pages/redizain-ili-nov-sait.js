@@ -6,7 +6,18 @@ import styles from "../styles/Article.module.css";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
+import Breadcrumb from "../components/Breadcrumb";
+import TableOfContents from "../components/TableOfContents";
 import { SITE_URL } from "../lib/config";
+
+const tocItems = [
+  { id: "razlikata", label: "Редизайн или нов сайт - каква е разликата" },
+  { id: "koga-redizain", label: "Кога редизайнът е достатъчен" },
+  { id: "koga-nov-sait", label: "Кога ви трябва изцяло нов сайт" },
+  { id: "cena-vreme-risk", label: "Цена, време и риск" },
+  { id: "seo-risk", label: "SEO рискът при миграция" },
+  { id: "reshenie", label: "Как да вземете правилното решение" },
+];
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -94,6 +105,8 @@ const RedizainIliNovSait = () => {
         </section>
 
         <article className={styles.article}>
+          <Breadcrumb title="Редизайн на сайт или нов сайт" styles={styles} />
+
           <section>
             <p>
               <strong>Автор:</strong> Иван Димитров | <strong>Публикувано:</strong>{" "}
@@ -133,8 +146,10 @@ const RedizainIliNovSait = () => {
             </p>
           </section>
 
+          <TableOfContents items={tocItems} styles={styles} />
+
           <section>
-            <h2>Редизайн или нов сайт - каква е разликата всъщност</h2>
+            <h2 id="razlikata">Редизайн или нов сайт - каква е разликата всъщност</h2>
             <p>
               Преди да изберете път, трябва да сте наясно какво точно стои зад всяка дума - защото
               двете решения носят различна цена, срок и риск.
@@ -192,7 +207,7 @@ const RedizainIliNovSait = () => {
           </section>
 
           <section>
-            <h2>Кога редизайнът е достатъчен</h2>
+            <h2 id="koga-redizain">Кога редизайнът е достатъчен</h2>
             <p>
               Редизайнът е правилният избор, когато проблемът е на повърхността, а основата под него
               е здрава.
@@ -250,7 +265,7 @@ const RedizainIliNovSait = () => {
           </section>
 
           <section>
-            <h2>Кога ви трябва изцяло нов сайт</h2>
+            <h2 id="koga-nov-sait">Кога ви трябва изцяло нов сайт</h2>
             <p>
               Новият сайт е оправдан, когато основата е в задънена улица и никаква повърхностна
               промяна не я спасява.
@@ -304,7 +319,7 @@ const RedizainIliNovSait = () => {
           </section>
 
           <section>
-            <h2>Цена, време и риск - какво да очаквате</h2>
+            <h2 id="cena-vreme-risk">Цена, време и риск - какво да очаквате</h2>
             <p>
               Трите фактора, които реално определят избора, рядко са само за визия - те са за бюджет,
               срок и колко имате да губите.
@@ -361,7 +376,7 @@ const RedizainIliNovSait = () => {
           </section>
 
           <section>
-            <h2>SEO рискът, който почти всички подценяват</h2>
+            <h2 id="seo-risk">SEO рискът, който почти всички подценяват</h2>
             <p>
               <strong>SEO миграцията на сайт</strong> е темата, заради която поемам най-много
               &bdquo;спасителни&ldquo; проекти - и точно тя отличава контролираната промяна от
@@ -427,7 +442,7 @@ const RedizainIliNovSait = () => {
           </section>
 
           <section>
-            <h2>Как да вземете правилното решение за вашия случай</h2>
+            <h2 id="reshenie">Как да вземете правилното решение за вашия случай</h2>
             <p>
               Решението не започва с дизайнерска идея, а с честна оценка на основата под сайта ви.
             </p>

@@ -31,7 +31,7 @@ const articleSchema = {
   },
   inLanguage: "bg-BG",
   datePublished: "2026-06-05",
-  dateModified: "2026-06-05",
+  dateModified: "2026-06-23",
   mainEntityOfPage: `${SITE_URL}/wordpress-seo`,
 };
 
@@ -62,7 +62,7 @@ const WordPressSeo = () => {
         imageAlt="WordPress SEO за най-добрата видимост в търсачките"
         type="article"
         publishedTime="2026-06-05T00:00:00+03:00"
-        modifiedTime="2026-06-05T00:00:00+03:00"
+        modifiedTime="2026-06-23T00:00:00+03:00"
       >
         <script
           type="application/ld+json"

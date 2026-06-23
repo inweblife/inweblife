@@ -31,7 +31,7 @@ const articleSchema = {
   },
   inLanguage: "bg-BG",
   datePublished: "2026-04-12",
-  dateModified: "2026-05-20",
+  dateModified: "2026-06-23",
   mainEntityOfPage: `${SITE_URL}/izrabotka-na-sait`,
 };
 
@@ -62,7 +62,7 @@ const IzrabotkaNaSait = () => {
         imageAlt="Изработка на сайт - стъпки, технологии и реална цена"
         type="article"
         publishedTime="2026-04-12T00:00:00+03:00"
-        modifiedTime="2026-05-20T00:00:00+03:00"
+        modifiedTime="2026-06-23T00:00:00+03:00"
       >
         <script
           type="application/ld+json"
