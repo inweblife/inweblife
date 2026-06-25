@@ -38,7 +38,7 @@
   color: #ffffff;
   margin: 0;
   max-width: 20ch;
-  font-size: clamp(1.2rem, 3.5vw, 3.4rem);
+  font-size: clamp(1.55rem, 3.5vw, 3.4rem);
   text-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
