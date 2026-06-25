@@ -227,13 +227,8 @@ export default function KalkulatorDigitalenMarketing() {
             fetchPriority="high"
             className={styles.heroImage}
           />
-          <div
-            className={styles.heroOverlay}
-            style={{ background: "linear-gradient(180deg, rgba(8,12,26,0.78) 0%, rgba(8,12,26,0.88) 100%)" }}
-          >
-            <h1 style={{ textShadow: "0 2px 16px rgba(0,0,0,0.9), 0 0 40px rgba(0,0,0,0.7)" }}>
-              Калкулатор за дигитален маркетинг
-            </h1>
+          <div className={styles.heroOverlay}>
+            <h1>Калкулатор за дигитален маркетинг</h1>
           </div>
         </section>
 
