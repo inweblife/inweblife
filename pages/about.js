@@ -60,6 +60,11 @@ const personSchema = {
       name: "Kolizascrap.com",
       url: "https://kolizascrap.com/",
     },
+    {
+      "@type": "CreativeWork",
+      name: "Kniajevo.bg",
+      url: "https://kniajevo.bg/",
+    },
   ],
 };
 const webPageSchema = {
@@ -328,6 +333,16 @@ const About = () => {
                     <span className={styles.projectTag}>TOOLING</span>
                     <strong>Kolizascrap.com</strong>
                     <span>Коли за скрап калкулатор</span>
+                  </a>
+                  <a
+                    className={styles.projectCard}
+                    href="https://kniajevo.bg/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className={styles.projectTag}>BRAND</span>
+                    <strong>Kniajevo.bg</strong>
+                    <span>Натурална минерална вода &bdquo;Княжево&ldquo;</span>
                   </a>
                 </div>
                 <p>

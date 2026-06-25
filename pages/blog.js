@@ -86,7 +86,7 @@ const Blog = () => {
         </section>
 
         <section className={styles.grid} aria-label="Списък със статии">
-          {posts.map((post) => (
+          {[...posts].reverse().map((post) => (
             <Link
               key={post.href}
               href={post.href}
