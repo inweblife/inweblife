@@ -54,7 +54,7 @@ const KakRabotiGoogleAds = () => {
   return (
     <>
       <SeoHead
-        title="Как работи Google Ads: Къде печелите и къде губите пари | inweblife"
+        title="Как работи Google Ads: Къде печелите и къде губите пари"
         description="Как работи Google Ads на практика. Вижте как се определя цената на клик, как Quality Score ви пести пари и кои настройки източват бюджета ви."
         keywords="как работи Google Ads, Google Ads аукцион, Quality Score, Ad Rank, цена на клик, PPC реклама, стратегия за наддаване, Maximize Clicks, Maximize Conversions, дневен бюджет Google Ads, месечен бюджет Google Ads, рекламни активи Google Ads"
         path="/kak-raboti-google-ads"
