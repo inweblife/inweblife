@@ -37,6 +37,9 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
   ];
 
   const blogPostRoutes = [
+    { path: "/kak-raboti-google-ads", lastModified: "2026-06-25" },
+    { path: "/redizain-ili-nov-sait", lastModified: "2026-06-23" },
+    { path: "/wordpress-seo", lastModified: "2026-06-23" },
     { path: "/kak-raboti-seo", lastModified: "2026-05-22" },
     { path: "/aeo-ai-overview", lastModified: "2026-05-12" },
     { path: "/digitalen-marketing", lastModified: "2026-04-27" },
