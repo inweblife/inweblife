@@ -6,6 +6,30 @@ const SITE_NAME = "inweblife";
 
 const posts = [
   {
+    path: "/kak-raboti-google-ads",
+    title: "Как работи Google Ads: Къде печелите и къде губите пари",
+    description:
+      "Как работи Google Ads на практика. Вижте как се определя цената на клик, как Quality Score ви пести пари и кои настройки източват бюджета ви.",
+    category: "PPC",
+    date: new Date("2026-06-25"),
+  },
+  {
+    path: "/redizain-ili-nov-sait",
+    title: "Редизайн на сайт или нов сайт - кое е по-доброто решение",
+    description:
+      "Редизайн на сайт или нов сайт? Кога редизайнът е достатъчен, кога ви трябва нов сайт и как да запазите SEO класиранията при миграция.",
+    category: "Уеб разработка",
+    date: new Date("2026-06-23"),
+  },
+  {
+    path: "/wordpress-seo",
+    title: "WordPress SEO за най-добрата видимост в търсачките",
+    description:
+      "Как да настроите сайта си за максимален трафик? WordPress SEO за най-добрата видимост в търсачките. Вижте как да сте на първа страница.",
+    category: "SEO",
+    date: new Date("2026-06-05"),
+  },
+  {
     path: "/kak-raboti-seo",
     title: "Как работи SEO и защо някои сайтове са невидими в Google",
     description:
