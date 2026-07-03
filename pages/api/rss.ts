@@ -6,6 +6,15 @@ const SITE_NAME = "inweblife";
 
 const posts = [
   {
+    path: "/wordpress-site",
+    title: "Изработка на WordPress сайт",
+    description:
+      "Устойчиво дигитално присъствие. Професионалната изработка на WordPress сайт съчетава бързина, чист код и правилна SEO стратегия за успех",
+    category: "Уеб разработка",
+    date: new Date("2026-07-03"),
+    image: "/og/wordpress-sait.png",
+  },
+  {
     path: "/kak-raboti-google-ads",
     title: "Как работи Google Ads: Къде печелите и къде губите пари",
     description:
@@ -177,7 +186,7 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
       date: post.date,
       category: [{ name: post.category }],
       author: [{ name: SITE_NAME, link: SITE_URL }],
-      image: `${SITE_URL}/og${post.path}.png`,
+      image: `${SITE_URL}${post.image ?? `/og${post.path}.png`}`,
     });
   }
 

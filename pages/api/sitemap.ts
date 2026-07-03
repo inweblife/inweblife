@@ -37,6 +37,7 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
   ];
 
   const blogPostRoutes = [
+    { path: "/wordpress-site", lastModified: "2026-07-03", image: "/og/wordpress-sait.png" },
     { path: "/kak-raboti-google-ads", lastModified: "2026-06-25" },
     { path: "/redizain-ili-nov-sait", lastModified: "2026-06-23" },
     { path: "/wordpress-seo", lastModified: "2026-06-23" },
@@ -74,7 +75,7 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
     lastModified: new Date(post.lastModified),
     changeFrequency: "monthly",
     priority: 0.8,
-    image: `${SITE_URL}/og${post.path}.png`,
+    image: `${SITE_URL}${post.image ?? `/og${post.path}.png`}`,
   }));
 
   const entries = [...pages, ...posts];
