@@ -107,6 +107,16 @@
   margin-bottom: 0;
 }
 
+.code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 1.05em;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.15em 0.5em;
+  white-space: nowrap;
+}
+
 .next {
   margin-top: clamp(1.5rem, 3vw, 2.2rem);
   display: flex;
