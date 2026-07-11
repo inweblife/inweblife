@@ -31,6 +31,20 @@ const manrope = Manrope({
 })
 
 export default function App({ Component, pageProps }: AppProps) {
+  const [consent, setConsent] = useState<"accepted" | "rejected" | null>(null)
+
+  useEffect(() => {
+    const stored = window.localStorage.getItem(COOKIE_CONSENT_KEY)
+    if (stored === "accepted" || stored === "rejected") {
+      setConsent(stored)
+    }
+  }, [])
+
+  const handleConsent = (value: "accepted" | "rejected") => {
+    window.localStorage.setItem(COOKIE_CONSENT_KEY, value)
+    setConsent(value)
+  }
+
   return (
     <div className={`${inter.variable} ${spaceGrotesk.variable} ${manrope.variable} ${inter.className}`}>
       <Script
@@ -39,24 +53,34 @@ export default function App({ Component, pageProps }: AppProps) {
         data-key="xxvM7kuGS/Qg1K4VAPJsOg"
         strategy="lazyOnload"
       />
-      <Script
-        id="gtag-src"
-        src="https://www.googletagmanager.com/gtag/js?id=G-EY462S2611"
-        strategy="afterInteractive"
-      />
-      <Script id="gtag-init" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-EY462S2611');
-        `}
-      </Script>
+      {consent === "accepted" && (
+        <>
+          <Script
+            id="gtag-src"
+            src="https://www.googletagmanager.com/gtag/js?id=G-EY462S2611"
+            strategy="afterInteractive"
+          />
+          <Script id="gtag-init" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-EY462S2611');
+            `}
+          </Script>
+        </>
+      )}
       <Layout>
         <Component {...pageProps} />
         <Analytics />
         <SpeedInsights />
       </Layout>
+      {consent === null && (
+        <CookieConsent
+          onAccept={() => handleConsent("accepted")}
+          onReject={() => handleConsent("rejected")}
+        />
+      )}
     </div>
   )
 }
