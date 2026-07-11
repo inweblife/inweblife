@@ -290,6 +290,68 @@ footer small {
   border: 0;
 }
 
+.cookieBanner {
+  position: fixed;
+  left: 0.75rem;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.cookieBanner p {
+  flex: 1 1 320px;
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.cookieBannerActions {
+  display: flex;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.cookieBannerAccept,
+.cookieBannerReject {
+  padding: 0.55rem 1.1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.cookieBannerAccept {
+  background: var(--accent);
+  color: #fff;
+}
+
+.cookieBannerAccept:hover {
+  background: var(--accent-strong);
+}
+
+.cookieBannerReject {
+  background: transparent;
+  color: var(--text-muted);
+  border-color: var(--border);
+}
+
+.cookieBannerReject:hover {
+  color: var(--text);
+  border-color: var(--text-muted);
+}
+
 .notFoundMain {
   width: min(900px, 94%);
   margin: 2.5rem auto;
