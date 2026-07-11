@@ -35,6 +35,19 @@ export default function App({ Component, pageProps }: AppProps) {
         data-key="xxvM7kuGS/Qg1K4VAPJsOg"
         strategy="lazyOnload"
       />
+      <Script
+        id="gtag-src"
+        src="https://www.googletagmanager.com/gtag/js?id=G-EY462S2611"
+        strategy="afterInteractive"
+      />
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-EY462S2611');
+        `}
+      </Script>
       <Layout>
         <Component {...pageProps} />
         <Analytics />
