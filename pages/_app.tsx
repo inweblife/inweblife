@@ -33,16 +33,28 @@ const manrope = Manrope({
 export default function App({ Component, pageProps }: AppProps) {
   const [consent, setConsent] = useState<"accepted" | "rejected" | null>(null)
 
+  const grantConsent = () => {
+    const dataLayer = ((window as any).dataLayer = (window as any).dataLayer || [])
+    dataLayer.push(["consent", "update", {
+      ad_storage: "granted",
+      analytics_storage: "granted",
+      ad_user_data: "granted",
+      ad_personalization: "granted",
+    }])
+  }
+
   useEffect(() => {
     const stored = window.localStorage.getItem(COOKIE_CONSENT_KEY)
     if (stored === "accepted" || stored === "rejected") {
       setConsent(stored)
+      if (stored === "accepted") grantConsent()
     }
   }, [])
 
   const handleConsent = (value: "accepted" | "rejected") => {
     window.localStorage.setItem(COOKIE_CONSENT_KEY, value)
     setConsent(value)
+    if (value === "accepted") grantConsent()
   }
 
   return (
@@ -53,23 +65,26 @@ export default function App({ Component, pageProps }: AppProps) {
         data-key="xxvM7kuGS/Qg1K4VAPJsOg"
         strategy="lazyOnload"
       />
-      {consent === "accepted" && (
-        <>
-          <Script
-            id="gtag-src"
-            src="https://www.googletagmanager.com/gtag/js?id=G-HQF9CZ8HER"
-            strategy="afterInteractive"
-          />
-          <Script id="gtag-init" strategy="afterInteractive">
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-HQF9CZ8HER');
-            `}
-          </Script>
-        </>
-      )}
+      <Script
+        id="gtag-src"
+        src="https://www.googletagmanager.com/gtag/js?id=G-HQF9CZ8HER"
+        strategy="afterInteractive"
+      />
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('consent', 'default', {
+            ad_storage: 'denied',
+            analytics_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            wait_for_update: 500
+          });
+          gtag('js', new Date());
+          gtag('config', 'G-HQF9CZ8HER');
+        `}
+      </Script>
       <Layout>
         <Component {...pageProps} />
         <Analytics />
