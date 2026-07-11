@@ -1,10 +1,14 @@
+import { useEffect, useState } from "react"
 import Layout from '../components/Layout'
+import CookieConsent from '../components/CookieConsent'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/next"
 import Script from "next/script"
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { Inter, Space_Grotesk, Manrope } from "next/font/google"
+
+const COOKIE_CONSENT_KEY = "cookie-consent"
 
 const inter = Inter({
   subsets: ["latin", "cyrillic"],
