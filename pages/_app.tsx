@@ -57,7 +57,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <>
           <Script
             id="gtag-src"
-            src="https://www.googletagmanager.com/gtag/js?id=G-EY462S2611"
+            src="https://www.googletagmanager.com/gtag/js?id=G-HQF9CZ8HER"
             strategy="afterInteractive"
           />
           <Script id="gtag-init" strategy="afterInteractive">
@@ -65,7 +65,7 @@ export default function App({ Component, pageProps }: AppProps) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-EY462S2611');
+              gtag('config', 'G-HQF9CZ8HER');
             `}
           </Script>
         </>
