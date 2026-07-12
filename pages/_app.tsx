@@ -37,10 +37,7 @@ export default function App({ Component, pageProps }: AppProps) {
     const gtag = (window as any).gtag
     if (typeof gtag !== "function") return
     gtag("consent", "update", {
-      ad_storage: "granted",
       analytics_storage: "granted",
-      ad_user_data: "granted",
-      ad_personalization: "granted",
     })
     gtag("event", "page_view", {
       page_location: window.location.href,
