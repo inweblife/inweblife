@@ -41,6 +41,10 @@ export default function App({ Component, pageProps }: AppProps) {
       ad_user_data: "granted",
       ad_personalization: "granted",
     }])
+    dataLayer.push(["event", "page_view", {
+      page_location: window.location.href,
+      page_title: document.title,
+    }])
   }
 
   useEffect(() => {
