@@ -34,17 +34,18 @@ export default function App({ Component, pageProps }: AppProps) {
   const [consent, setConsent] = useState<"accepted" | "rejected" | null>(null)
 
   const grantConsent = () => {
-    const dataLayer = ((window as any).dataLayer = (window as any).dataLayer || [])
-    dataLayer.push(["consent", "update", {
+    const gtag = (window as any).gtag
+    if (typeof gtag !== "function") return
+    gtag("consent", "update", {
       ad_storage: "granted",
       analytics_storage: "granted",
       ad_user_data: "granted",
       ad_personalization: "granted",
-    }])
-    dataLayer.push(["event", "page_view", {
+    })
+    gtag("event", "page_view", {
       page_location: window.location.href,
       page_title: document.title,
-    }])
+    })
   }
 
   useEffect(() => {
