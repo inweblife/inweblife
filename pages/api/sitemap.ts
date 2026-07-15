@@ -45,7 +45,7 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
     { path: "/aeo-ai-overview", lastModified: "2026-05-12" },
     { path: "/digitalen-marketing", lastModified: "2026-04-27" },
     { path: "/kalkulator-digitalen-marketing", lastModified: "2026-04-24" },
-    { path: "/google-ads-reklama", lastModified: "2026-04-23" },
+    { path: "/google-ads-reklama", lastModified: "2026-07-15" },
     { path: "/ads-without-seo", lastModified: "2026-04-23" },
     { path: "/seo-optimizaciya-na-ueb-sait", lastModified: "2026-04-16" },
     { path: "/izrabotka-na-sait", lastModified: "2026-04-12" },
