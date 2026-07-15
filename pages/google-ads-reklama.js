@@ -777,6 +777,39 @@ const GoogleAdsReklama = () => {
               без риск. Обажданията за оферта пораснаха от 350 на месец до 1200, после 1500,
               а вече минават 2000.
             </p>
+            <div className={styles.tableWrap}>
+              <table className={styles.table}>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Преди Google Tag</th>
+                    <th>След Google Tag</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Проследяване на конверсии</td>
+                    <td>Tag Manager + GA4, 48 ч. закъснение</td>
+                    <td>Google Tag, моментално</td>
+                  </tr>
+                  <tr>
+                    <td>Стратегия за наддаване</td>
+                    <td>Maximize Clicks</td>
+                    <td>Maximize Conversions</td>
+                  </tr>
+                  <tr>
+                    <td>Цена на конверсия</td>
+                    <td>~6 €</td>
+                    <td>~2.20 €</td>
+                  </tr>
+                  <tr>
+                    <td>Обаждания на месец</td>
+                    <td>350</td>
+                    <td>2 000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <h3>Ремаркетинг - вторият шанс за всеки посетител</h3>
             <p>
               Вторият мощен механизъм е <strong>ремаркетингът</strong>. Потребителят,
