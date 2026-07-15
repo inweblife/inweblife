@@ -458,7 +458,7 @@ export default function KalkulatorDigitalenMarketing() {
               граница кампанията просто няма трафик за оптимизация. Логиката и
               разходите са разяснени подробно в{" "}
               <Link href="/google-ads-reklama">
-                <strong>реклама в Гугъл - от кликове към продажби</strong>
+                <strong>реклама в Гугъл</strong>
               </Link>.
             </p>
             <p>

@@ -6,7 +6,25 @@ import styles from "../styles/Article.module.css";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
+import TableOfContents from "../components/TableOfContents";
 import { SITE_URL } from "../lib/config";
+
+const tocItems = [
+  { id: "reklama-v-gugal", label: "Реклама в Гугъл" },
+  { id: "kakvo-e-reklama", label: "Какво е Реклама в Гугъл" },
+  { id: "kak-raboti-reklamata", label: "Как работи Гугъл Ads рекламата" },
+  { id: "kolko-struva", label: "Колко струва платената реклама в Гугъл" },
+  { id: "planirane-byudzhet", label: "Планиране и оценка на рекламния бюджет" },
+  { id: "reklama-v-google", label: "Реклама в Google" },
+  { id: "search-ili-pmax", label: "Избор на Search или Performance Max" },
+  { id: "krajna-cena", label: "Как се определя крайната цена на рекламата" },
+  { id: "google-reklama", label: "Google реклама" },
+  { id: "nastroiki", label: "Основните настройки на добрата Google Ads реклама" },
+  { id: "seo-i-reklama", label: "SEO оптимизация и реклама в Гугъл" },
+  { id: "gugal-reklama", label: "Гугъл реклама" },
+  { id: "kogato-agentsiya", label: "Защо бизнесът избира професионално управление" },
+  { id: "faq-upravlenie", label: "Google Ads управление" },
+];
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -98,6 +116,10 @@ const GoogleAdsReklama = () => {
               <time dateTime="2026-04-23">23 април 2026</time>
             </p>
             <p>
+              PPC специалист с 10+ години опит в управление на Google Ads кампании с голям
+              бюджет.
+            </p>
+            <p>
               <em>
                 Тази статия е за теб, ако си собственик на локален бизнес, онлайн магазин или
                 доставчик на услуги - и искаш да разбереш как рекламата в гугъл работи на практика,
@@ -135,8 +157,10 @@ const GoogleAdsReklama = () => {
             </p>
           </section>
 
+          <TableOfContents items={tocItems} styles={styles} />
+
           <section>
-            <h2>Реклама в Гугъл</h2>
+            <h2 id="reklama-v-gugal">Реклама в Гугъл</h2>
             <p>
               Рекламата в Гугъл е платена услуга, при която бизнесът плаща на Google, за да
               се появи над органичните резултати при конкретно търсене. Плащате само за клик
@@ -160,7 +184,7 @@ const GoogleAdsReklama = () => {
           </section>
 
           <section>
-            <h2>Какво е Реклама в Гугъл</h2>
+            <h2 id="kakvo-e-reklama">Какво е Реклама в Гугъл</h2>
             <p>
               Рекламата в Гугъл е платен канал за видимост в момента, в който потребителят
               търси точно това, което предлагате - и затова е един от най-директните начини
@@ -265,7 +289,7 @@ const GoogleAdsReklama = () => {
           </section>
 
           <section>
-            <h2>Как работи Гугъл Ads рекламата</h2>
+            <h2 id="kak-raboti-reklamata">Как работи Гугъл Ads рекламата</h2>
             <p>
               Зад всяко показване на реклама в Google стои невидим процес от милисекунди -
               система за наддаване, алгоритъм и решение в реално време. Разбирането на
@@ -345,7 +369,7 @@ const GoogleAdsReklama = () => {
           </section>
 
           <section>
-            <h2>Колко струва платената реклама в Гугъл</h2>
+            <h2 id="kolko-struva">Колко струва платената реклама в Гугъл</h2>
             <p>
               Цената на рекламата в Гугъл не е фиксирана - формира се на живо при всяко
               търсене и зависи от конкуренцията, нишата, избраните ключови думи и качеството
@@ -396,7 +420,7 @@ const GoogleAdsReklama = () => {
           </section>
 
           <section>
-            <h2>Планиране и оценка на рекламния бюджет</h2>
+            <h2 id="planirane-byudzhet">Планиране и оценка на рекламния бюджет</h2>
             <p>
               Един от най-честите въпроси при стартиране е колко точно пари трябва да
               заделите, за да има смисъл от рекламата. Влизането на пазара без предварителна
@@ -422,7 +446,7 @@ const GoogleAdsReklama = () => {
           </section>
 
           <section>
-            <h2>Реклама в Google</h2>
+            <h2 id="reklama-v-google">Реклама в Google</h2>
             <p>
               &bdquo;Реклама в Google&ldquo; обхваща далеч повече от текстовите обяви в
               резултатите от търсенето. Google Ads показва реклами и в YouTube, Gmail,
@@ -445,7 +469,7 @@ const GoogleAdsReklama = () => {
           </section>
 
           <section>
-            <h2>Избор на Search или Performance Max</h2>
+            <h2 id="search-ili-pmax">Избор на Search или Performance Max</h2>
             <p>
               Двата основни типа кампании за повечето бизнеси - и изборът между тях е едно
               от най-важните решения при настройката.
@@ -480,6 +504,49 @@ const GoogleAdsReklama = () => {
                 канали носят резултати
               </li>
             </ul>
+            <div className={styles.tableWrap}>
+              <table className={styles.table}>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Search</th>
+                    <th>Performance Max</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Контрол върху ключови думи</td>
+                    <td>Пълен</td>
+                    <td>Няма - AI решава</td>
+                  </tr>
+                  <tr>
+                    <td>Минимален препоръчителен бюджет</td>
+                    <td>от 8-10 €/ден</td>
+                    <td>от 500 €/месец</td>
+                  </tr>
+                  <tr>
+                    <td>Нужна конверсионна история</td>
+                    <td>Не е задължителна</td>
+                    <td>50+ конверсии/месец</td>
+                  </tr>
+                  <tr>
+                    <td>Отчетност по канал</td>
+                    <td>Пълна</td>
+                    <td>Ограничена</td>
+                  </tr>
+                  <tr>
+                    <td>Обхват</td>
+                    <td>Само търсене</td>
+                    <td>Search, YouTube, Display, Gmail, Maps</td>
+                  </tr>
+                  <tr>
+                    <td>Подходящо за</td>
+                    <td>Нови акаунти, малък бюджет</td>
+                    <td>Зрели акаунти с история</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <p>
               През 2026 г. ролята на специалиста по Google Ads се измества. Вече не
               говорим само за ръчно наддаване и управление на оферти - говорим за
@@ -501,7 +568,7 @@ const GoogleAdsReklama = () => {
           </section>
 
           <section>
-            <h2>Как се определя крайната цена на рекламата в Гугъл?</h2>
+            <h2 id="krajna-cena">Как се определя крайната цена на рекламата в Гугъл?</h2>
             <p>
               Когато планирате бюджет за онлайн присъствие, е важно да разберете, че сумата,
               която виждате в края на месеца, се формира от два напълно независими
@@ -531,7 +598,7 @@ const GoogleAdsReklama = () => {
           </section>
 
           <section>
-            <h2>Google реклама</h2>
+            <h2 id="google-reklama">Google реклама</h2>
             <p>
               Добрата Google реклама съчетава прецизно подбрани ключови думи, ясно послание
               в заглавието и целева страница, която отговаря точно на очакването на
@@ -553,7 +620,7 @@ const GoogleAdsReklama = () => {
           </section>
 
           <section>
-            <h2>Основните настройки на добрата Google Ads реклама</h2>
+            <h2 id="nastroiki">Основните настройки на добрата Google Ads реклама</h2>
             <p>
               Правилно настроената Google Ads кампания не е само въпрос на бюджет. Тя е
               прецизен механизъм, при който всяка настройка влияе пряко на разходите и
@@ -644,7 +711,7 @@ const GoogleAdsReklama = () => {
           </section>
 
           <section>
-            <h2>SEO оптимизация и реклама в Гугъл</h2>
+            <h2 id="seo-i-reklama">SEO оптимизация и реклама в Гугъл</h2>
             <p>
               Рекламата в Гугъл и SEO оптимизацията не са алтернативи, нито са независими
               канали. Те са два механизма, обменящи данни и укрепващи се взаимно - и
@@ -723,7 +790,7 @@ const GoogleAdsReklama = () => {
           </section>
 
           <section>
-            <h2>Гугъл реклама</h2>
+            <h2 id="gugal-reklama">Гугъл реклама</h2>
             <p>
               Гугъл реклама си заслужава инвестицията, когато бизнесът има ясна цел за
               конверсия (обаждане, поръчка, запитване), достатъчен бюджет за поне месец
@@ -746,7 +813,7 @@ const GoogleAdsReklama = () => {
           </section>
 
           <section>
-            <h2>Защо бизнесът избира професионално управление на Google реклами?</h2>
+            <h2 id="kogato-agentsiya">Защо бизнесът избира професионално управление на Google реклами?</h2>
             <p>
               Много собственици на бизнеси започват сами, подлъгани от лесното създаване на
               акаунт в Google Ads. Много бързо обаче откриват, че интерфейсът е едно, а
@@ -777,7 +844,7 @@ const GoogleAdsReklama = () => {
           </section>
 
           <section aria-label="Google Ads управление">
-            <h2>Google Ads управление</h2>
+            <h2 id="faq-upravlenie">Google Ads управление</h2>
             <p>
               Управлението на Google Ads акаунт включва повече от стартиране на кампания -
               изисква постоянен анализ, тестване и решение дали да го поверите на специалист,
