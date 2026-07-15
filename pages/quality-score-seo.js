@@ -138,7 +138,7 @@ const QualityScoreSeo = () => {
               по-голям бюджет, а от по-добро качество. За пълната картина на аукциона, бюджета
               и настройките, които влияят на цената, вижте{" "}
               <Link href="/kak-raboti-google-ads">
-                <strong>как работи Google Ads</strong>
+                <strong>къде печелите и къде губите пари в Google Ads</strong>
               </Link>
               .
             </p>
