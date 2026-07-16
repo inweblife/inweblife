@@ -31,7 +31,7 @@ const articleSchema = {
   },
   inLanguage: "bg-BG",
   datePublished: "2026-04-12",
-  dateModified: "2026-06-23",
+  dateModified: "2026-07-16",
   mainEntityOfPage: `${SITE_URL}/izrabotka-na-sait`,
 };
 
@@ -56,13 +56,13 @@ const IzrabotkaNaSait = () => {
       <SeoHead
         title="Изработка на сайт: стъпки, технологии и реална цена | inweblife"
         description="Изработка на сайт за бизнеса - колко струва реално, как да оцените оферта и как да не платите повече от нужното. Реални числа без клишета."
-        keywords="изработка на сайт, изработка на уебсайт, изработка на сайт цена, изработка на фирмен сайт, изграждане на уеб сайт, WordPress сайт цена, как да изберем агенция за сайт"
+        keywords="изработка на сайт, изработка на уебсайт, изработка на сайт цена, изработка на фирмен сайт, изграждане на уеб сайт, изработване на сайт, изработване на сайтове, как се прави сайт, WordPress сайт цена, как да изберем агенция за сайт"
         path="/izrabotka-na-sait"
         image="/og/izrabotka-na-sait.png"
         imageAlt="Изработка на сайт - стъпки, технологии и реална цена"
         type="article"
         publishedTime="2026-04-12T00:00:00+03:00"
-        modifiedTime="2026-06-23T00:00:00+03:00"
+        modifiedTime="2026-07-16T00:00:00+03:00"
       >
         <script
           type="application/ld+json"
