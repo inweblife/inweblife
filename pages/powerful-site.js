@@ -83,6 +83,7 @@ const PowerfulSite = () => {
             priority
             fetchPriority="high"
             className={styles.heroImage}
+            style={{ objectPosition: "bottom" }}
           />
           <div className={styles.heroOverlay}>
             <h1>Създайте мощен сайт</h1>

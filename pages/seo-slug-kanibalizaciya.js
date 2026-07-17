@@ -88,6 +88,7 @@ const SeoSlugKanibalizaciya = () => {
             priority
             fetchPriority="high"
             className={styles.heroImage}
+            style={{ objectPosition: "top" }}
           />
           <div className={styles.heroOverlay}>
             <h1>SEO slug канибализация - къде Гугъл се обърква</h1>

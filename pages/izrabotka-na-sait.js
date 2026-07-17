@@ -84,6 +84,7 @@ const IzrabotkaNaSait = () => {
             priority
             fetchPriority="high"
             className={styles.heroImage}
+            style={{ objectPosition: "top" }}
           />
           <div className={styles.heroOverlay}>
             <h1>Изработка на сайт: стъпки, технологии и реална цена</h1>

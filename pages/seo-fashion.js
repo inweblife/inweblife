@@ -83,6 +83,7 @@ const SeoFashion = () => {
             priority
             fetchPriority="high"
             className={styles.heroImage}
+            style={{ objectPosition: "top" }}
           />
           <div className={styles.heroOverlay}>
             <h1>Мобилна оптимизация на сайт - UX, скорост и SEO класиране</h1>

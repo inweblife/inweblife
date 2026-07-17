@@ -14,7 +14,6 @@
 
 .heroImage {
   object-fit: cover;
-  object-position: top;
 }
 
 @media (max-width: 48rem) {

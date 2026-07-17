@@ -84,6 +84,7 @@ const LokalnoSeo = () => {
             priority
             fetchPriority="high"
             className={styles.heroImage}
+            style={{ objectPosition: "top" }}
           />
           <div className={styles.heroOverlay}>
             <h1>Локално SEO - как да получите повече клиенти от Google</h1>
