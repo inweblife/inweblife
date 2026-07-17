@@ -1,4 +1,5 @@
 ﻿import Image from "next/image";
+import heroImg from "../public/modern-site.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
@@ -81,12 +82,13 @@ const ModernSite = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Модерен сайт">
           <Image
-            src="/modern-site.webp"
+            src={heroImg}
             alt="Модерен работен кът за уеб разработка"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>

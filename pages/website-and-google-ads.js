@@ -1,4 +1,5 @@
 import Image from "next/image";
+import heroImg from "../public/website-and-google-ads.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
@@ -77,12 +78,13 @@ const WebsiteAndGoogleAds = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Колко струват сайт и реклама: скритите разходи">
           <Image
-            src="/website-and-google-ads.webp"
+            src={heroImg}
             alt="Разходи при сайт и реклама в Google - какво остава скрито"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>

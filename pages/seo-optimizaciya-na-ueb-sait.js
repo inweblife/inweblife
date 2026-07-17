@@ -1,4 +1,5 @@
 import Image from "next/image";
+import heroImg from "../public/seo-optimisation.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
@@ -78,12 +79,13 @@ const SeoOptimizaciya = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="SEO оптимизация на сайт">
           <Image
-            src="/seo-optimisation.webp"
+            src={heroImg}
             alt="SEO оптимизация на сайт - как да класирате сайта си в Google"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>

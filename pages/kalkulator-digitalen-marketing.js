@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
+import heroImg from "../public/kalkulator-digitalen-marketing.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
@@ -219,12 +220,13 @@ export default function KalkulatorDigitalenMarketing() {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Калкулатор за дигитален маркетинг">
           <Image
-            src="/kalkulator-digitalen-marketing.webp"
+            src={heroImg}
             alt="Калкулатор за дигитален маркетинг - примерни цени"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>

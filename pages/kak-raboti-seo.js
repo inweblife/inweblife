@@ -1,4 +1,5 @@
 import Image from "next/image";
+import heroImg from "../public/kak-raboti-seo.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
@@ -78,12 +79,13 @@ const KakRabotiSeo = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Как работи SEO">
           <Image
-            src="/kak-raboti-seo.webp"
+            src={heroImg}
             alt="Как работи SEO и защо някои сайтове са невидими в Google"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>

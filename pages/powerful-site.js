@@ -1,4 +1,5 @@
 ﻿import Image from "next/image";
+import heroImg from "../public/powerful-site.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
@@ -76,12 +77,13 @@ const PowerfulSite = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Мощен сайт">
           <Image
-            src="/powerful-site.webp"
+            src={heroImg}
             alt="Компютърна станция за разработка"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImage}
             style={{ objectPosition: "bottom" }}
           />

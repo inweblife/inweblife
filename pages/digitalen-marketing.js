@@ -1,4 +1,5 @@
 import Image from "next/image";
+import heroImg from "../public/digitalen-marketing.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
@@ -78,12 +79,13 @@ const DigitalenMarketing = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Дигитален маркетинг за печеливш бизнес">
           <Image
-            src="/digitalen-marketing.webp"
+            src={heroImg}
             alt="Дигитален маркетинг за малкия бизнес - стратегии и канали"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>

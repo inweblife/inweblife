@@ -1,4 +1,5 @@
 import Image from "next/image";
+import heroImg from "../public/aeo-ai-overview.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
@@ -77,12 +78,13 @@ const AeoAiOverview = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="AEO оптимизация - как AI Overview променя SEO">
           <Image
-            src="/aeo-ai-overview.webp"
+            src={heroImg}
             alt="AEO оптимизация - как AI Overview извлича съдържание"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImage}
             style={{ objectPosition: "bottom" }}
           />

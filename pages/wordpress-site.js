@@ -1,4 +1,5 @@
 import Image from "next/image";
+import heroImg from "../public/wordpress-sait.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
@@ -92,12 +93,13 @@ const WordPressSite = () => {
           aria-label="Изработка на WordPress сайт"
         >
           <Image
-            src="/wordpress-sait.webp"
+            src={heroImg}
             alt="Изработка на WordPress сайт - защо платформата е стратегическо решение"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImage}
             style={{ objectPosition: "top" }}
           />

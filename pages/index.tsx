@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import homeHero from "../public/home.webp";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import SeoHead from "../components/SeoHead";
@@ -89,12 +90,13 @@ export default function Home() {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Въведение">
           <Image
-            src="/home.webp"
+            src={homeHero}
             alt="Работно пространство за уеб разработка"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>

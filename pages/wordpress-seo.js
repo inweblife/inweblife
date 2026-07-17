@@ -1,4 +1,5 @@
 import Image from "next/image";
+import heroImg from "../public/wordpress-seo.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
@@ -80,12 +81,13 @@ const WordPressSeo = () => {
           aria-label="WordPress SEO за най-добрата видимост в търсачките"
         >
           <Image
-            src="/wordpress-seo.webp"
+            src={heroImg}
             alt="WordPress SEO за най-добрата видимост в търсачките"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>

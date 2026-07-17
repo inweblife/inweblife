@@ -1,4 +1,5 @@
 ﻿import Image from "next/image";
+import aboutHero from "../public/about.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
@@ -107,12 +108,13 @@ const About = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="За Иван">
           <Image
-            src="/about.webp"
+            src={aboutHero}
             alt="Работно бюро с лаптоп и чаша кафе"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>

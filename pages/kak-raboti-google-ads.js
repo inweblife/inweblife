@@ -1,4 +1,5 @@
 import Image from "next/image";
+import heroImg from "../public/kak-raboti-google-ads.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
@@ -77,12 +78,13 @@ const KakRabotiGoogleAds = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Как работи Google Ads: Къде печелите и къде губите пари">
           <Image
-            src="/kak-raboti-google-ads.webp"
+            src={heroImg}
             alt="Как работи Google Ads - механика на аукциона и цената на клик"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImage}
             style={{ objectPosition: "top" }}
           />

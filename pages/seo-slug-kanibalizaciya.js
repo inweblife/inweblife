@@ -1,4 +1,5 @@
 import Image from "next/image";
+import heroImg from "../public/seo-slug-kanibalizaciya.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
@@ -81,12 +82,13 @@ const SeoSlugKanibalizaciya = () => {
           aria-label="SEO slug канибализация - къде Гугъл се обърква"
         >
           <Image
-            src="/seo-slug-kanibalizaciya.webp"
+            src={heroImg}
             alt="SEO slug канибализация - визуализация на URL конкуренция"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImage}
             style={{ objectPosition: "top" }}
           />

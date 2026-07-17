@@ -1,4 +1,5 @@
 import Image from "next/image";
+import heroImg from "../public/a-high-quality-digital.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
@@ -80,12 +81,13 @@ const TelemarketingSeo = () => {
           aria-label="Доброто SEO, което продава, се вижда в SERP"
         >
           <Image
-            src="/a-high-quality-digital.webp"
+            src={heroImg}
             alt="Дигитална работна среда за маркетинг и SEO"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>

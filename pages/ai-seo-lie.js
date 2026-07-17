@@ -1,4 +1,5 @@
 import Image from "next/image";
+import heroImg from "../public/about-the-hype.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
@@ -76,12 +77,13 @@ const AiSeoLie = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="SEO оптимизация за AI Overview">
           <Image
-            src="/about-the-hype.webp"
+            src={heroImg}
             alt="Визуална метафора за AI hype и SEO"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>

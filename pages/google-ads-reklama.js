@@ -1,4 +1,5 @@
 import Image from "next/image";
+import heroImg from "../public/google-ads-reklama.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
@@ -96,12 +97,13 @@ const GoogleAdsReklama = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Реклама в Гугъл: Как работи най-добре за бизнеса">
           <Image
-            src="/google-ads-reklama.webp"
+            src={heroImg}
             alt="Реклама в Гугъл - от кликове към продажби"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>

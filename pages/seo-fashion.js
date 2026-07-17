@@ -1,4 +1,5 @@
 ﻿import Image from "next/image";
+import heroImg from "../public/seo-fashion.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
@@ -76,12 +77,13 @@ const SeoFashion = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Мобилна оптимизация на сайт - UX, скорост и SEO класиране">
           <Image
-            src="/seo-fashion.webp"
+            src={heroImg}
             alt="Работно бюро с фокус върху мобилни устройства"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImageDeskRight}
           />
           <div className={styles.heroOverlay}>

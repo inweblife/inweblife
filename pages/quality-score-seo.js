@@ -1,4 +1,5 @@
 import Image from "next/image";
+import heroImg from "../public/quality-score.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
@@ -78,12 +79,13 @@ const QualityScoreSeo = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Как работи Quality Score">
           <Image
-            src="/quality-score.webp"
+            src={heroImg}
             alt="Диаграма на Quality Score в Google Ads"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>

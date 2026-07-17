@@ -1,4 +1,5 @@
 import Image from "next/image";
+import heroImg from "../public/izrabotka-na-uebsait.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
@@ -77,12 +78,13 @@ const IzrabotkaNaSait = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Изработка на сайт: стъпки, технологии и реална цена">
           <Image
-            src="/izrabotka-na-uebsait.webp"
+            src={heroImg}
             alt="Изработка на сайт - стъпки, технологии и реална цена"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImage}
             style={{ objectPosition: "top" }}
           />

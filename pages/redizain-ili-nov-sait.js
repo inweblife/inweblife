@@ -1,4 +1,5 @@
 import Image from "next/image";
+import heroImg from "../public/redizain-ili-nov-sait.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
@@ -91,12 +92,13 @@ const RedizainIliNovSait = () => {
           aria-label="Редизайн на сайт или нов сайт - кое е по-доброто решение"
         >
           <Image
-            src="/redizain-ili-nov-sait.webp"
+            src={heroImg}
             alt="Редизайн на сайт срещу нов сайт - сравнение на двете решения"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>

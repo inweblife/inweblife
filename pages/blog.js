@@ -1,4 +1,5 @@
 ﻿import Image from "next/image";
+import blogHero from "../public/blog.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
@@ -55,12 +56,13 @@ const Blog = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Блог хедър">
           <Image
-            src="/blog.webp"
+            src={blogHero}
             alt="Блог страница с подбрани статии за SEO и дигитален маркетинг"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>

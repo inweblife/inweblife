@@ -1,4 +1,5 @@
 import Image from "next/image";
+import heroImg from "../public/lokalno-seo.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
@@ -77,12 +78,13 @@ const LokalnoSeo = () => {
       <main className={styles.main} id="main-content">
         <section className={styles.heroBanner} aria-label="Локално SEO">
           <Image
-            src="/lokalno-seo.webp"
+            src={heroImg}
             alt="Локално SEO - как да получите повече клиенти от Google"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImage}
             style={{ objectPosition: "top" }}
           />

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import heroImg from "../public/ads-without-seo.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
@@ -86,12 +87,13 @@ const AdsWithoutSeo = () => {
           aria-label="Реклама в LinkedIn без SEO? Не хвърляйте пари на вятъра"
         >
           <Image
-            src="/ads-without-seo.webp"
+            src={heroImg}
             alt="Реклама в LinkedIn без SEO - не хвърляйте пари на вятъра"
             fill
             sizes="100vw"
             priority
             fetchPriority="high"
+            placeholder="blur"
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>
