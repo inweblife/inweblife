@@ -1,5 +1,6 @@
 ﻿import Image from "next/image";
 import aboutHero from "../public/about.webp";
+import ivanPortrait from "../public/ivan.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
@@ -282,10 +283,11 @@ const About = () => {
                   <aside className={styles.portraitInline} aria-label="Профил">
                     <div className={styles.portraitFrame}>
                       <Image
-                        src="/ivan.webp"
+                        src={ivanPortrait}
                         alt="Портрет на Иван Димитров"
                         width={600}
                         height={600}
+                        placeholder="blur"
                         className={styles.portrait}
                       />
                     </div>

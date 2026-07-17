@@ -6,6 +6,7 @@ import SeoHead from "../components/SeoHead";
 import styles from "../styles/Blog.module.css";
 import { SITE_URL } from "../lib/config";
 import { posts } from "../lib/posts";
+import blurPlaceholders from "../lib/blurPlaceholders.json";
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -103,6 +104,8 @@ const Blog = () => {
                     width={780}
                     height={410}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    placeholder="blur"
+                    blurDataURL={blurPlaceholders[post.image]}
                     className={styles.image}
                   />
                 </div>
