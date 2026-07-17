@@ -86,7 +86,7 @@ const AeoAiOverview = () => {
             fetchPriority="high"
             placeholder="blur"
             className={styles.heroImage}
-            style={{ objectPosition: "bottom" }}
+            style={{ objectPosition: "top" }}
           />
           <div className={styles.heroOverlay}>
             <h1>AEO оптимизация - как AI Overview променя SEO</h1>

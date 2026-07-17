@@ -95,6 +95,7 @@ const AdsWithoutSeo = () => {
             fetchPriority="high"
             placeholder="blur"
             className={styles.heroImage}
+            style={{ objectPosition: "bottom" }}
           />
           <div className={styles.heroOverlay}>
             <h1>Реклама в LinkedIn без SEO? Не хвърляйте пари на вятъра</h1>
