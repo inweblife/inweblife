@@ -310,6 +310,137 @@
   background: color-mix(in srgb, var(--surface-raised) 45%, transparent);
 }
 
+.summaryBox {
+  margin: 0 0 1.2rem;
+  padding: 1.1rem 1.3rem;
+  background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--border));
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-sm);
+}
+
+.summaryTitle {
+  margin: 0 0 0.6rem;
+  font-weight: 800;
+  color: var(--accent-strong);
+  font-size: 1.02rem;
+  letter-spacing: -0.01em;
+}
+
+.summaryList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.summaryList li {
+  padding-left: 1.6rem;
+  position: relative;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.summaryList li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  color: var(--accent-strong);
+  font-weight: 800;
+}
+
+.localPack {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 1rem;
+  margin: 1.2rem 0 1.4rem;
+  padding: 1rem;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+@media (max-width: 40rem) {
+  .localPack {
+    grid-template-columns: 1fr;
+  }
+}
+
+.localPackMap {
+  border-radius: var(--radius-sm);
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--accent) 20%, var(--surface)),
+    color-mix(in srgb, var(--accent) 6%, var(--surface))
+  );
+  border: 1px solid var(--border);
+  display: grid;
+  place-items: center;
+  min-height: 160px;
+  font-size: 2.2rem;
+}
+
+.localPackList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.localPackItem {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.55rem 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.localPackRank {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.localPackInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 0;
+}
+
+.localPackName {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--text);
+}
+
+.localPackMeta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.localPackCaption {
+  grid-column: 1 / -1;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 0.1rem 0 0;
+}
+
 .toc {
   max-width: 76ch;
   margin: 0 auto clamp(1.2rem, 2.4vw, 1.8rem);
