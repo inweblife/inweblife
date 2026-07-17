@@ -16,10 +16,19 @@
   object-fit: cover;
 }
 
+.heroImageDeskRight {
+  object-fit: cover;
+  object-position: top;
+}
+
 @media (max-width: 48rem) {
   .heroBanner {
     min-height: 260px;
     height: min(45vh, 260px);
+  }
+
+  .heroImageDeskRight {
+    object-position: right top;
   }
 }
 
