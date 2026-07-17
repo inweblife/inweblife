@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "node tools/generate-blur-placeholders.mjs",
     "dev": "next dev",
+    "prebuild": "node tools/generate-blur-placeholders.mjs",
     "build": "next build",
     "postbuild": "node tools/submit-indexnow.mjs",
     "start": "next start",
@@ -26,6 +28,7 @@
     "@types/react-dom": "^18.3.1",
     "eslint": "^9.0.0",
     "eslint-config-next": "^16.2.6",
+    "sharp": "^0.34.5",
     "typescript": "~5.6.3"
   }
 }
