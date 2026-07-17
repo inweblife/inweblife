@@ -37,6 +37,7 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
   ];
 
   const blogPostRoutes = [
+    { path: "/lokalno-seo", lastModified: "2026-07-17", image: "/og/lokalno-seo.png" },
     { path: "/wordpress-site", lastModified: "2026-07-03", image: "/og/wordpress-sait.png" },
     { path: "/kak-raboti-google-ads", lastModified: "2026-06-25" },
     { path: "/redizain-ili-nov-sait", lastModified: "2026-06-23" },

@@ -6,6 +6,15 @@ const SITE_NAME = "inweblife";
 
 const posts = [
   {
+    path: "/lokalno-seo",
+    title: "Локално SEO - как да получите повече клиенти от Google",
+    description:
+      "Как работи адреса на бизнеса като локално SEO, кои фактори влияят на класирането и как да получите повече клиенти от Google и Google Maps.",
+    category: "SEO",
+    date: new Date("2026-07-17"),
+    image: "/og/lokalno-seo.png",
+  },
+  {
     path: "/wordpress-site",
     title: "Изработка на WordPress сайт",
     description:
