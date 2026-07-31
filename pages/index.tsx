@@ -6,7 +6,12 @@ import { useEffect, useState } from "react";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Home.module.css";
+import blogStyles from "../styles/Blog.module.css";
 import { SITE_URL } from "../lib/config";
+import { posts } from "../lib/posts";
+import blurPlaceholders from "../lib/blurPlaceholders.json";
+
+const latestPosts = posts.slice(0, 3);
 
 const websiteSchema = {
   "@context": "https://schema.org",
@@ -256,6 +261,45 @@ export default function Home() {
               , където темата е анализирана технически и практически.
             </p>
           </article>
+        </section>
+
+        <section className={styles.text} aria-labelledby="latest-posts-title">
+          <h2 id="latest-posts-title" className={styles.sectionTitle}>
+            Последни публикации
+          </h2>
+          <div className={blogStyles.grid}>
+            {latestPosts.map((post) => (
+              <Link
+                key={post.href}
+                href={post.href}
+                className={blogStyles.cardLink}
+                aria-label={post.title}
+              >
+                <article className={blogStyles.card}>
+                  <div className={blogStyles.imageFrame}>
+                    <Image
+                      src={post.image}
+                      alt={post.alt}
+                      width={780}
+                      height={410}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      placeholder="blur"
+                      blurDataURL={(blurPlaceholders as Record<string, string>)[post.image]}
+                      className={blogStyles.image}
+                    />
+                  </div>
+                  <h3 className={styles.postCardTitle}>{post.title}</h3>
+                  <p>{post.summary}</p>
+                  <span className={blogStyles.readMore}>Виж още →</span>
+                </article>
+              </Link>
+            ))}
+          </div>
+          <p className={styles.allPostsLink}>
+            <Link href="/blog">
+              <strong>Всички публикации →</strong>
+            </Link>
+          </p>
         </section>
 
         <section className={styles.cta}>
