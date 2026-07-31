@@ -32,7 +32,7 @@ const articleSchema = {
   },
   inLanguage: "bg-BG",
   datePublished: "2026-04-16",
-  dateModified: "2026-07-16",
+  dateModified: "2026-07-31",
   mainEntityOfPage: `${SITE_URL}/seo-optimizaciya-na-ueb-sait`,
 };
 
@@ -64,7 +64,7 @@ const SeoOptimizaciya = () => {
         imageAlt="SEO оптимизация на сайт - как да класирате сайта си в Google"
         type="article"
         publishedTime="2026-04-16T00:00:00+03:00"
-        modifiedTime="2026-07-16T00:00:00+03:00"
+        modifiedTime="2026-07-31T00:00:00+03:00"
       >
         <script
           type="application/ld+json"

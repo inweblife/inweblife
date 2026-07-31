@@ -32,7 +32,7 @@ const articleSchema = {
   },
   inLanguage: "bg-BG",
   datePublished: "2026-04-30",
-  dateModified: "2026-04-30",
+  dateModified: "2026-07-31",
   mainEntityOfPage: `${SITE_URL}/seo-slug-kanibalizaciya`,
 };
 
@@ -64,7 +64,7 @@ const SeoSlugKanibalizaciya = () => {
         imageAlt="SEO slug канибализация - визуализация на URL конкуренция"
         type="article"
         publishedTime="2026-04-30T00:00:00+03:00"
-        modifiedTime="2026-04-30T00:00:00+03:00"
+        modifiedTime="2026-07-31T00:00:00+03:00"
       >
         <script
           type="application/ld+json"
