@@ -2,6 +2,7 @@
 import { SITE_URL } from "../lib/config";
 const SITE_NAME = "inweblife";
 const PERSON_NAME = "Иван Димитров";
+const PERSON_SAME_AS = ["https://www.linkedin.com/in/inweblife/"];
 const LOGO_URL = `${SITE_URL}/favicon.webp`;
 const EXPERTISE_LABELS = [
   "High-Budget PPC Strategist",
@@ -55,7 +56,8 @@ const SeoHead = ({
       "Web Architecture",
     ],
     description: `${PERSON_NAME} е ${EXPERTISE_LABELS[0]}, ${EXPERTISE_LABELS[1]} и ${EXPERTISE_LABELS[2]}.`,
-    url: SITE_URL,
+    url: `${SITE_URL}/about`,
+    sameAs: PERSON_SAME_AS,
   };
   const organizationSchema = {
     "@context": "https://schema.org",
