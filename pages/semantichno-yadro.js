@@ -604,6 +604,20 @@ const SemantichnoYadro = () => {
               какво липсва и в какъв ред се прави.
             </p>
 
+            <div className={styles.downloadBox}>
+              <p className={styles.downloadBoxText}>
+                <strong>Готов шаблон за семантично ядро</strong> - същите осем колони, с примера от
+                статията вече попълнен. Съвместим с Google Sheets и Excel (CSV, UTF-8).
+              </p>
+              <a
+                className={styles.downloadButton}
+                href="/semantichno-yadro-shablon.csv"
+                download
+              >
+                Изтегли шаблона →
+              </a>
+            </div>
+
             <h3>По какво се определя кой клъстер се прави първи?</h3>
             <p>
               Приоритетът се дава на клъстера, който е едновременно най-близо до парите и

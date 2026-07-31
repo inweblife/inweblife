@@ -368,6 +368,44 @@
   font-weight: 800;
 }
 
+.downloadBox {
+  margin: 0 0 1.2rem;
+  padding: 1.1rem 1.3rem;
+  background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--border));
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.9rem;
+  justify-content: space-between;
+}
+
+.downloadBoxText {
+  margin: 0;
+  flex: 1 1 320px;
+}
+
+.downloadButton {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.1rem;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+.downloadButton:hover {
+  background: var(--accent-strong);
+}
+
 .localPack {
   display: grid;
   grid-template-columns: 1fr 1.3fr;
