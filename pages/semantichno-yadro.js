@@ -98,7 +98,8 @@ const SemantichnoYadro = () => {
         <article className={styles.article}>
           <section>
             <p>
-              <strong>Автор:</strong> Иван Димитров | <strong>Публикувано:</strong>{" "}
+              <strong>Автор:</strong> <Link href="/about">Иван Димитров</Link> |{" "}
+              <strong>Публикувано:</strong>{" "}
               <time dateTime="2026-07-31">31 юли 2026</time>
             </p>
             <p>
