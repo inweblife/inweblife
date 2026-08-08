@@ -25,7 +25,7 @@ const tocItems = [
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Колко струва реклама в Гугъл",
+  headline: "Колко струва реклама в Гугъл - цена на клик и бюджет",
   description:
     "Колко струва реклама в Гугъл? Виж реални цени на клик, дневни бюджети, месечни разходи, ДДС и колко клика ще получите с 300, 500 и 1000 €.",
   image: [`${SITE_URL}/og/kolko-struva-reklama-v-google.png`],
@@ -58,7 +58,7 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "Колко струва реклама в Гугъл",
+      name: "Колко струва реклама в Гугъл - цена на клик и бюджет",
       item: `${SITE_URL}/kolko-struva-reklama-v-google`,
     },
   ],
@@ -68,7 +68,7 @@ const KolkoStruvaReklamaVGoogle = () => {
   return (
     <>
       <SeoHead
-        title="Колко струва реклама в Гугъл"
+        title="Колко струва реклама в Гугъл - цена на клик и бюджет"
         description="Колко струва реклама в Гугъл? Виж реални цени на клик, дневни бюджети, месечни разходи, ДДС и колко клика ще получите с 300, 500 и 1000 €."
         keywords="колко струва реклама в Гугъл, цена на google ads, цена на клик google ads, CPC България, дневен бюджет google ads, такса за управление google ads, ДДС google ads чл 97а, цена на запитване google ads, колко клика получавам с google ads"
         path="/kolko-struva-reklama-v-google"
@@ -101,7 +101,7 @@ const KolkoStruvaReklamaVGoogle = () => {
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>
-            <h1>Колко струва реклама в Гугъл</h1>
+            <h1>Колко струва реклама в Гугъл - цена на клик и бюджет</h1>
           </div>
         </section>
 
@@ -330,8 +330,9 @@ const KolkoStruvaReklamaVGoogle = () => {
             <p>
               Диапазонът 200-500 € месечно, посочен в началото, важи за локални услуги и
               по-тесни ниши. Онлайн магазините и B2B услугите изискват повече, защото им
-              трябват значително повече кликове за една продажба. Стойностите в таблицата са
-              обобщени от публично достъпни пазарни данни за 2026 г.
+              трябват значително повече кликове за една продажба. Стойностите в таблицата
+              съм обобщил от пазарните бенчмаркове на Google Ads за България и от разходите,
+              които реално виждам при управление на кампании в тези ниши.
             </p>
             <p>
               Тези числа са отправна точка, не прогноза. Реалната ви цена на клик се вижда чак
@@ -769,12 +770,12 @@ const KolkoStruvaReklamaVGoogle = () => {
           <RelatedPosts
             currentHref="/kolko-struva-reklama-v-google"
             styles={styles}
-            exclude={["/google-ads-reklama", "/kak-raboti-google-ads", "/website-and-google-ads"]}
+            hrefs={["/google-ads-reklama", "/quality-score-seo", "/kalkulator-digitalen-marketing"]}
           />
 
           <ShareButtons
             path="/kolko-struva-reklama-v-google"
-            title="Колко струва реклама в Гугъл"
+            title="Колко струва реклама в Гугъл - цена на клик и бюджет"
             styles={styles}
           />
 
