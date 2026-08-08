@@ -357,6 +357,14 @@ export default function KalkulatorDigitalenMarketing() {
               )}
 
             </div>
+            <p>
+              Резултатът по-горе е обобщена оценка. За{" "}
+              <Link href="/kolko-struva-reklama-v-google">
+                <strong>ориентировъчни цени за Google Ads</strong>
+              </Link>{" "}
+              по бранш - CPC, дневен бюджет и реалната месечна сметка с ДДС - вижте
+              посветената статия.
+            </p>
           </section>
 
           {/* ── H2 #2 ── */}
