@@ -3,7 +3,6 @@ import { useRouter } from "next/router"
 import Layout from '../components/Layout'
 import CookieConsent from '../components/CookieConsent'
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Analytics } from "@vercel/analytics/next"
 import Script from "next/script"
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
@@ -35,36 +34,40 @@ export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
   const isDev = process.env.NODE_ENV !== "production"
   const [consent, setConsent] = useState<"accepted" | "rejected" | null>(null)
-  const [gtagReady, setGtagReady] = useState(false)
   const [hasSentInitialPageView, setHasSentInitialPageView] = useState(false)
 
-  const getGtag = () => {
-    const gtag = (window as any).gtag
-    return typeof gtag === "function" ? gtag : null
+  const pushGtag = (...args: unknown[]) => {
+    const win = window as any
+    if (typeof win.gtag === "function") {
+      win.gtag(...args)
+      return
+    }
+    win.dataLayer = win.dataLayer || []
+    win.dataLayer.push(args)
   }
 
   const sendPageView = () => {
-    const gtag = getGtag()
-    if (!gtag) return
-    gtag("event", "page_view", {
+    pushGtag("event", "page_view", {
+      send_to: "G-HQF9CZ8HER",
       page_location: window.location.href,
       page_title: document.title,
     })
   }
 
   const grantConsent = () => {
-    const gtag = getGtag()
-    if (!gtag) return
-    gtag("consent", "update", {
+    pushGtag("consent", "update", {
+      ad_storage: "granted",
       analytics_storage: "granted",
     })
+    pushGtag("config", "G-HQF9CZ8HER", { send_page_view: false })
     sendPageView()
+    return true
   }
 
   const handleConsent = (value: "accepted" | "rejected") => {
     window.localStorage.setItem(COOKIE_CONSENT_KEY, value)
     setConsent(value)
-    if (value === "accepted" && gtagReady && !hasSentInitialPageView) {
+    if (value === "accepted" && !hasSentInitialPageView) {
       grantConsent()
       setHasSentInitialPageView(true)
     }
@@ -109,7 +112,6 @@ export default function App({ Component, pageProps }: AppProps) {
         id="gtag-src"
         src="https://www.googletagmanager.com/gtag/js?id=G-HQF9CZ8HER"
         strategy="beforeInteractive"
-        onLoad={() => setGtagReady(true)}
       />
       <Script id="gtag-init" strategy="beforeInteractive">
         {`
@@ -128,7 +130,6 @@ export default function App({ Component, pageProps }: AppProps) {
       </Script>
       <Layout>
         <Component {...pageProps} />
-        <Analytics />
         <SpeedInsights />
       </Layout>
       {consent === null && (
