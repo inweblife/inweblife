@@ -33,6 +33,7 @@ const manrope = Manrope({
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
+  const isDev = process.env.NODE_ENV !== "production"
   const [consent, setConsent] = useState<"accepted" | "rejected" | null>(null)
 
   const getGtag = () => {
@@ -104,7 +105,7 @@ export default function App({ Component, pageProps }: AppProps) {
             wait_for_update: 500
           });
           gtag('js', new Date());
-          gtag('config', 'G-HQF9CZ8HER', { send_page_view: false });
+          gtag('config', 'G-HQF9CZ8HER', { send_page_view: false${isDev ? ", debug_mode: true" : ""} });
         `}
       </Script>
       <Layout>
