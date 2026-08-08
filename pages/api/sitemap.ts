@@ -37,6 +37,7 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
   ];
 
   const blogPostRoutes = [
+    { path: "/kolko-struva-reklama-v-google", lastModified: "2026-08-08", image: "/og/kolko-struva-reklama-v-google.png" },
     { path: "/lokalno-seo", lastModified: "2026-07-17", image: "/og/lokalno-seo.png" },
     { path: "/wordpress-site", lastModified: "2026-07-03", image: "/og/wordpress-sait.png" },
     { path: "/kak-raboti-google-ads", lastModified: "2026-06-25" },

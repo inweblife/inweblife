@@ -6,6 +6,15 @@ const SITE_NAME = "inweblife";
 
 const posts = [
   {
+    path: "/kolko-struva-reklama-v-google",
+    title: "Колко струва реклама в Гугъл - цена на клик и бюджет",
+    description:
+      "Колко струва реклама в Гугъл? Виж реални цени на клик, дневни бюджети, месечни разходи, ДДС и колко клика ще получите с 300, 500 и 1000 €.",
+    category: "PPC",
+    date: new Date("2026-08-08"),
+    image: "/og/kolko-struva-reklama-v-google.png",
+  },
+  {
     path: "/lokalno-seo",
     title: "Локално SEO - как да получите повече клиенти от Google",
     description:
