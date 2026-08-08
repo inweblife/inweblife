@@ -35,6 +35,8 @@ export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
   const isDev = process.env.NODE_ENV !== "production"
   const [consent, setConsent] = useState<"accepted" | "rejected" | null>(null)
+  const [gtagReady, setGtagReady] = useState(false)
+  const [hasSentInitialPageView, setHasSentInitialPageView] = useState(false)
 
   const getGtag = () => {
     const gtag = (window as any).gtag
@@ -59,13 +61,28 @@ export default function App({ Component, pageProps }: AppProps) {
     sendPageView()
   }
 
+  const handleConsent = (value: "accepted" | "rejected") => {
+    window.localStorage.setItem(COOKIE_CONSENT_KEY, value)
+    setConsent(value)
+    if (value === "accepted" && gtagReady && !hasSentInitialPageView) {
+      grantConsent()
+      setHasSentInitialPageView(true)
+    }
+  }
+
   useEffect(() => {
     const stored = window.localStorage.getItem(COOKIE_CONSENT_KEY)
     if (stored === "accepted" || stored === "rejected") {
       setConsent(stored)
-      if (stored === "accepted") grantConsent()
     }
   }, [])
+
+  useEffect(() => {
+    if (consent === "accepted" && gtagReady && !hasSentInitialPageView) {
+      grantConsent()
+      setHasSentInitialPageView(true)
+    }
+  }, [consent, gtagReady, hasSentInitialPageView])
 
   useEffect(() => {
     if (consent !== "accepted") return
@@ -92,6 +109,7 @@ export default function App({ Component, pageProps }: AppProps) {
         id="gtag-src"
         src="https://www.googletagmanager.com/gtag/js?id=G-HQF9CZ8HER"
         strategy="beforeInteractive"
+        onLoad={() => setGtagReady(true)}
       />
       <Script id="gtag-init" strategy="beforeInteractive">
         {`
