@@ -67,7 +67,7 @@ const KolkoStruvaReklamaVGoogle = () => {
   return (
     <>
       <SeoHead
-        title="Колко струва реклама в Гугъл: реална цена на Google Ads | inweblife"
+        title="Колко струва реклама в Гугъл: реална цена на Google Ads"
         description="Колко струва реклама в Гугъл? Виж реални цени на клик, дневни бюджети, месечни разходи, ДДС и колко клика ще получите с 300, 500 и 1000 €."
         keywords="колко струва реклама в Гугъл, цена на google ads, цена на клик google ads, CPC България, дневен бюджет google ads, такса за управление google ads, ДДС google ads чл 97а, цена на запитване google ads, колко клика получавам с google ads"
         path="/kolko-struva-reklama-v-google"
