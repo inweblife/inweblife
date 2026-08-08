@@ -18,7 +18,8 @@
       "Bash(node -e ':*)",
       "Bash(npx next:*)",
       "WebFetch(domain:inweblife.vercel.app)",
-      "WebFetch(domain:searchengineland.com)"
+      "WebFetch(domain:searchengineland.com)",
+      "Bash(pkill -f \"next start -p 3999\")"
     ]
   }
 }
