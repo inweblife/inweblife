@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { useRouter } from "next/router"
 import Layout from '../components/Layout'
 import CookieConsent from '../components/CookieConsent'
 import { SpeedInsights } from "@vercel/speed-insights/next"
@@ -31,18 +32,30 @@ const manrope = Manrope({
 })
 
 export default function App({ Component, pageProps }: AppProps) {
+  const router = useRouter()
   const [consent, setConsent] = useState<"accepted" | "rejected" | null>(null)
 
-  const grantConsent = () => {
+  const getGtag = () => {
     const gtag = (window as any).gtag
-    if (typeof gtag !== "function") return
-    gtag("consent", "update", {
-      analytics_storage: "granted",
-    })
+    return typeof gtag === "function" ? gtag : null
+  }
+
+  const sendPageView = () => {
+    const gtag = getGtag()
+    if (!gtag) return
     gtag("event", "page_view", {
       page_location: window.location.href,
       page_title: document.title,
     })
+  }
+
+  const grantConsent = () => {
+    const gtag = getGtag()
+    if (!gtag) return
+    gtag("consent", "update", {
+      analytics_storage: "granted",
+    })
+    sendPageView()
   }
 
   useEffect(() => {
@@ -53,11 +66,18 @@ export default function App({ Component, pageProps }: AppProps) {
     }
   }, [])
 
-  const handleConsent = (value: "accepted" | "rejected") => {
-    window.localStorage.setItem(COOKIE_CONSENT_KEY, value)
-    setConsent(value)
-    if (value === "accepted") grantConsent()
-  }
+  useEffect(() => {
+    if (consent !== "accepted") return
+
+    const handleRouteChange = () => {
+      sendPageView()
+    }
+
+    router.events.on("routeChangeComplete", handleRouteChange)
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange)
+    }
+  }, [consent, router.events])
 
   return (
     <div className={`${inter.variable} ${spaceGrotesk.variable} ${manrope.variable} ${inter.className}`}>
@@ -84,7 +104,7 @@ export default function App({ Component, pageProps }: AppProps) {
             wait_for_update: 500
           });
           gtag('js', new Date());
-          gtag('config', 'G-HQF9CZ8HER');
+          gtag('config', 'G-HQF9CZ8HER', { send_page_view: false });
         `}
       </Script>
       <Layout>
