@@ -12,9 +12,9 @@ import { SITE_URL } from "../lib/config";
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "SEO оптимизация за AI Overview",
+  headline: "AI SEO услуги - измама или реална нужда?",
   description:
-    "Как AI агентите намират и цитират сайтове в реално време и защо доброто SEO е единственото условие да се появите в Google AI Overview.",
+    "Защо повечето &bdquo;AI SEO&ldquo; пакети, продавани от агенции, са преопакован маркетингов страх и как разпознаваш дали услугата ти носи реална стойност.",
   image: [`${SITE_URL}/og/ai-seo-lie.png`],
   author: {
     "@type": "Person",
@@ -32,7 +32,7 @@ const articleSchema = {
   },
   inLanguage: "bg-BG",
   datePublished: "2026-02-25",
-  dateModified: "2026-04-27",
+  dateModified: "2026-08-08",
   mainEntityOfPage: `${SITE_URL}/ai-seo-lie`,
 };
 const breadcrumbSchema = {
@@ -44,7 +44,7 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "SEO оптимизация за AI Overview",
+      name: "AI SEO услуги - измама или реална нужда?",
       item: `${SITE_URL}/ai-seo-lie`,
     },
   ],
@@ -54,15 +54,15 @@ const AiSeoLie = () => {
   return (
     <>
       <SeoHead
-        title="SEO оптимизация за AI Overview | inweblife"
-        description="LLM оптимизацията е мит. Разбери защо доброто SEO вече те позиционира и в AI резултатите без излишен бюджет."
-        keywords="SEO оптимизация за AI, Google AI Overview, как да се появя в AI Overview, LLM оптимизация, GEO оптимизация"
+        title="AI SEO услуги - измама или реална нужда? | inweblife"
+        description="AI SEO услугите масово се продават като задължителни, но много от тях са преопакован маркетингов страх. Разбери кога наистина ти трябва отделна оптимизация за AI."
+        keywords="AI SEO услуги, AI SEO пакет измама, LLM оптимизация мит, трябва ли ми AI SEO, GEO оптимизация"
         path="/ai-seo-lie"
         image="/og/ai-seo-lie.png"
         imageAlt="Визуална метафора за AI hype и SEO"
         type="article"
         publishedTime="2026-02-25T00:00:00+02:00"
-        modifiedTime="2026-04-27T00:00:00+03:00"
+        modifiedTime="2026-08-08T00:00:00+03:00"
       >
         <script
           type="application/ld+json"
@@ -75,7 +75,7 @@ const AiSeoLie = () => {
       </SeoHead>
 
       <main className={styles.main} id="main-content">
-        <section className={styles.heroBanner} aria-label="SEO оптимизация за AI Overview">
+        <section className={styles.heroBanner} aria-label="AI SEO услуги - измама или реална нужда?">
           <Image
             src={heroImg}
             alt="Визуална метафора за AI hype и SEO"
@@ -87,15 +87,18 @@ const AiSeoLie = () => {
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>
-            <h1>SEO оптимизация за AI Overview</h1>
+            <h1>AI SEO услуги - измама или реална нужда?</h1>
           </div>
         </section>
 
         <article className={styles.article}>
           <section>
             <p>
-              <strong>Автор:</strong> Иван Димитров | <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-02-25">25 февруари 2026</time>
+              <strong>Автор:</strong> <Link href="/about">Иван Димитров</Link> |{" "}
+              <strong>Публикувано:</strong>{" "}
+              <time dateTime="2026-02-25">25 февруари 2026</time>{" "}
+              | <strong>Актуализирано:</strong>{" "}
+              <time dateTime="2026-08-08">8 август 2026</time>
             </p>
             <p>
               LLM оптимизацията често се продава като нова услуга, но фундаментът е същият. Тази
@@ -349,7 +352,7 @@ const AiSeoLie = () => {
             exclude={["/seo-fashion", "/modern-site", "/how-to-make-site", "/seo-optimizaciya-na-ueb-sait", "/quality-score-seo", "/powerful-site", "/ads-without-seo", "/seo-slug-kanibalizaciya"]}
           />
 
-          <ShareButtons path="/ai-seo-lie" title="SEO оптимизация за AI Overview" styles={styles} />
+          <ShareButtons path="/ai-seo-lie" title="AI SEO услуги - измама или реална нужда?" styles={styles} />
 
           <PostNavigation currentHref="/ai-seo-lie" styles={styles} />
         </article>

@@ -11,9 +11,9 @@ import { SITE_URL } from "../lib/config";
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "AEO оптимизация - как AI Overview променя SEO",
+  headline: "AI SEO оптимизация - практическо ръководство за AEO",
   description:
-    "Практическо ръководство за AEO оптимизация: как да структурираш съдържание, така че AI системи като Google да го извличат и цитират.",
+    "Практическо ръководство за AI SEO оптимизация: как да структурираш съдържание, така че AI Overviews, ChatGPT и Perplexity да го извличат и цитират.",
   image: [`${SITE_URL}/og/aeo-ai-overview.png`],
   author: {
     "@type": "Person",
@@ -31,7 +31,7 @@ const articleSchema = {
   },
   inLanguage: "bg-BG",
   datePublished: "2026-05-12",
-  dateModified: "2026-05-12",
+  dateModified: "2026-08-08",
   mainEntityOfPage: `${SITE_URL}/aeo-ai-overview`,
 };
 
@@ -44,7 +44,7 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "AEO оптимизация - как AI Overview променя SEO",
+      name: "AI SEO оптимизация - практическо ръководство за AEO",
       item: `${SITE_URL}/aeo-ai-overview`,
     },
   ],
@@ -55,15 +55,15 @@ const AeoAiOverview = () => {
   return (
     <>
       <SeoHead
-        title="AEO оптимизация - как AI Overview променя SEO | inweblife"
-        description="Практическо ръководство за AEO оптимизация: как да структурираш съдържание, така че AI системи като Google да го извличат и цитират."
-        keywords="AEO оптимизация, Answer Engine Optimization, AI Overview SEO, Google AI Overviews, AEO vs SEO, passage retrieval, query fan-out, RAG"
+        title="AI SEO оптимизация - практическо ръководство за AEO | inweblife"
+        description="Практическо ръководство за AI SEO оптимизация: как да структурираш съдържание, така че AI Overviews, ChatGPT и Perplexity да го извличат и цитират."
+        keywords="AI SEO оптимизация, оптимизация за AI, оптимизация на страниците с AI, AEO оптимизация, Answer Engine Optimization, AI Overview SEO, Google AI Overviews, AEO vs SEO, passage retrieval, query fan-out, RAG"
         path="/aeo-ai-overview"
         image="/og/aeo-ai-overview.png"
-        imageAlt="AEO оптимизация - как AI Overview извлича съдържание"
+        imageAlt="AI SEO оптимизация - как AI Overview извлича съдържание"
         type="article"
         publishedTime="2026-05-12T00:00:00+03:00"
-        modifiedTime="2026-05-12T00:00:00+03:00"
+        modifiedTime="2026-08-08T00:00:00+03:00"
       >
         <script
           type="application/ld+json"
@@ -76,10 +76,10 @@ const AeoAiOverview = () => {
       </SeoHead>
 
       <main className={styles.main} id="main-content">
-        <section className={styles.heroBanner} aria-label="AEO оптимизация - как AI Overview променя SEO">
+        <section className={styles.heroBanner} aria-label="AI SEO оптимизация - практическо ръководство за AEO">
           <Image
             src={heroImg}
-            alt="AEO оптимизация - как AI Overview извлича съдържание"
+            alt="AI SEO оптимизация - как AI Overview извлича съдържание"
             fill
             sizes="100vw"
             priority
@@ -89,7 +89,7 @@ const AeoAiOverview = () => {
             style={{ objectPosition: "top" }}
           />
           <div className={styles.heroOverlay}>
-            <h1>AEO оптимизация - как AI Overview променя SEO</h1>
+            <h1>AI SEO оптимизация - практическо ръководство за AEO</h1>
           </div>
         </section>
 
@@ -100,7 +100,7 @@ const AeoAiOverview = () => {
               <strong>Публикувано:</strong>{" "}
               <time dateTime="2026-05-12">12 май 2026</time>{" "}
               | <strong>Актуализирано:</strong>{" "}
-              <time dateTime="2026-05-12">12 май 2026</time>
+              <time dateTime="2026-08-08">8 август 2026</time>
             </p>
             <p>
               <strong>AEO оптимизацията (Answer Engine Optimization)</strong> е процесът на
@@ -758,7 +758,7 @@ const AeoAiOverview = () => {
             exclude={["/ai-seo-lie", "/seo-optimizaciya-na-ueb-sait", "/ads-without-seo"]}
           />
 
-          <ShareButtons path="/aeo-ai-overview" title="AEO оптимизация в 2026 г." styles={styles} />
+          <ShareButtons path="/aeo-ai-overview" title="AI SEO оптимизация - практическо ръководство за AEO" styles={styles} />
 
           <PostNavigation currentHref="/aeo-ai-overview" styles={styles} />
         </article>

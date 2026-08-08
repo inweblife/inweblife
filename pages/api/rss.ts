@@ -66,11 +66,11 @@ const posts = [
   },
   {
     path: "/aeo-ai-overview",
-    title: "AEO оптимизация - как AI Overview променя SEO",
+    title: "AI SEO оптимизация - практическо ръководство за AEO",
     description:
-      "Какво е AEO оптимизация, как Google AI Overviews извлича съдържание с RAG и query fan-out и как да пишете пасажи, които AI цитира. Практически workflow за 2026 г.",
+      "Практическо ръководство за AI SEO оптимизация: как да структурираш съдържание, така че AI Overviews, ChatGPT и Perplexity да го извличат и цитират.",
     category: "SEO",
-    date: new Date("2026-05-12"),
+    date: new Date("2026-08-08"),
   },
   {
     path: "/seo-slug-kanibalizaciya",
@@ -145,10 +145,10 @@ const posts = [
   },
   {
     path: "/ai-seo-lie",
-    title: "SEO оптимизация за AI Overview",
-    description: "Как AI агентите намират и цитират сайтове в реално време и защо доброто SEO е единственото условие да се появите в Google AI Overview.",
+    title: "AI SEO услуги - измама или реална нужда?",
+    description: "AI SEO услугите масово се продават като задължителни, но много от тях са преопакован маркетингов страх. Разбери кога наистина ти трябва отделна оптимизация за AI.",
     category: "SEO",
-    date: new Date("2026-02-25"),
+    date: new Date("2026-08-08"),
   },
   {
     path: "/seo-fashion",
