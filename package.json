@@ -2,6 +2,7 @@
   "name": "inweblife",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "predev": "node tools/generate-blur-placeholders.mjs",
     "dev": "next dev",
