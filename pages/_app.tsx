@@ -81,11 +81,11 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [])
 
   useEffect(() => {
-    if (consent === "accepted" && gtagReady && !hasSentInitialPageView) {
+    if (consent === "accepted" && !hasSentInitialPageView) {
       grantConsent()
       setHasSentInitialPageView(true)
     }
-  }, [consent, gtagReady, hasSentInitialPageView])
+  }, [consent, hasSentInitialPageView])
 
   useEffect(() => {
     if (consent !== "accepted") return
