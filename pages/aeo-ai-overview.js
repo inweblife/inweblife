@@ -755,7 +755,7 @@ const AeoAiOverview = () => {
           <RelatedPosts
             currentHref="/aeo-ai-overview"
             styles={styles}
-            exclude={["/ai-seo-lie", "/seo-optimizaciya-na-ueb-sait", "/ads-without-seo"]}
+            exclude={["/seo-optimizaciya-na-ueb-sait", "/ads-without-seo"]}
           />
 
           <ShareButtons path="/aeo-ai-overview" title="AI SEO оптимизация - практическо ръководство за AEO" styles={styles} />
