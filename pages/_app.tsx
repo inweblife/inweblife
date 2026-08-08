@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useCallback, useEffect, useRef, useSyncExternalStore } from "react"
 import { useRouter } from "next/router"
 import Layout from '../components/Layout'
 import CookieConsent from '../components/CookieConsent'
@@ -9,6 +9,9 @@ import type { AppProps } from 'next/app'
 import { Inter, Space_Grotesk, Manrope } from "next/font/google"
 
 const COOKIE_CONSENT_KEY = "cookie-consent"
+const CONSENT_CHANGE_EVENT = "cookie-consent-change"
+
+type Consent = "accepted" | "rejected" | null
 
 const inter = Inter({
   subsets: ["latin", "cyrillic"],
@@ -30,13 +33,33 @@ const manrope = Manrope({
   variable: "--font-heading",
 })
 
+const subscribeToConsent = (callback: () => void) => {
+  window.addEventListener("storage", callback)
+  window.addEventListener(CONSENT_CHANGE_EVENT, callback)
+  return () => {
+    window.removeEventListener("storage", callback)
+    window.removeEventListener(CONSENT_CHANGE_EVENT, callback)
+  }
+}
+
+const getConsentSnapshot = (): Consent => {
+  const stored = window.localStorage.getItem(COOKIE_CONSENT_KEY)
+  return stored === "accepted" || stored === "rejected" ? stored : null
+}
+
+const getConsentServerSnapshot = (): Consent => null
+
+const storeConsent = (value: "accepted" | "rejected") => {
+  window.localStorage.setItem(COOKIE_CONSENT_KEY, value)
+  window.dispatchEvent(new Event(CONSENT_CHANGE_EVENT))
+}
+
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
-  const isDev = process.env.NODE_ENV !== "production"
-  const [consent, setConsent] = useState<"accepted" | "rejected" | null>(null)
-  const [hasSentInitialPageView, setHasSentInitialPageView] = useState(false)
+  const consent = useSyncExternalStore(subscribeToConsent, getConsentSnapshot, getConsentServerSnapshot)
+  const hasSentInitialPageView = useRef(false)
 
-  const pushGtag = (...args: unknown[]) => {
+  const pushGtag = useCallback((...args: unknown[]) => {
     const win = window as any
     if (typeof win.gtag === "function") {
       win.gtag(...args)
@@ -44,48 +67,35 @@ export default function App({ Component, pageProps }: AppProps) {
     }
     win.dataLayer = win.dataLayer || []
     win.dataLayer.push(args)
-  }
+  }, [])
 
-  const sendPageView = () => {
+  const sendPageView = useCallback(() => {
     pushGtag("event", "page_view", {
       send_to: "G-HQF9CZ8HER",
       page_location: window.location.href,
       page_title: document.title,
     })
-  }
+  }, [pushGtag])
 
-  const grantConsent = () => {
+  const grantConsent = useCallback(() => {
     pushGtag("consent", "update", {
       ad_storage: "granted",
       analytics_storage: "granted",
     })
     pushGtag("config", "G-HQF9CZ8HER", { send_page_view: false })
     sendPageView()
-    return true
-  }
+  }, [pushGtag, sendPageView])
 
   const handleConsent = (value: "accepted" | "rejected") => {
-    window.localStorage.setItem(COOKIE_CONSENT_KEY, value)
-    setConsent(value)
-    if (value === "accepted" && !hasSentInitialPageView) {
-      grantConsent()
-      setHasSentInitialPageView(true)
-    }
+    storeConsent(value)
   }
 
   useEffect(() => {
-    const stored = window.localStorage.getItem(COOKIE_CONSENT_KEY)
-    if (stored === "accepted" || stored === "rejected") {
-      setConsent(stored)
-    }
-  }, [])
-
-  useEffect(() => {
-    if (consent === "accepted" && !hasSentInitialPageView) {
+    if (consent === "accepted" && !hasSentInitialPageView.current) {
       grantConsent()
-      setHasSentInitialPageView(true)
+      hasSentInitialPageView.current = true
     }
-  }, [consent, hasSentInitialPageView])
+  }, [consent, grantConsent])
 
   useEffect(() => {
     if (consent !== "accepted") return
@@ -98,7 +108,7 @@ export default function App({ Component, pageProps }: AppProps) {
     return () => {
       router.events.off("routeChangeComplete", handleRouteChange)
     }
-  }, [consent, router.events])
+  }, [consent, router.events, sendPageView])
 
   return (
     <div className={`${inter.variable} ${spaceGrotesk.variable} ${manrope.variable} ${inter.className}`}>
@@ -108,26 +118,6 @@ export default function App({ Component, pageProps }: AppProps) {
         data-key="xxvM7kuGS/Qg1K4VAPJsOg"
         strategy="lazyOnload"
       />
-      <Script
-        id="gtag-src"
-        src="https://www.googletagmanager.com/gtag/js?id=G-HQF9CZ8HER"
-        strategy="beforeInteractive"
-      />
-      <Script id="gtag-init" strategy="beforeInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('consent', 'default', {
-            ad_storage: 'denied',
-            analytics_storage: 'denied',
-            ad_user_data: 'denied',
-            ad_personalization: 'denied',
-            wait_for_update: 500
-          });
-          gtag('js', new Date());
-          gtag('config', 'G-HQF9CZ8HER', { send_page_view: false${isDev ? ", debug_mode: true" : ""} });
-        `}
-      </Script>
       <Layout>
         <Component {...pageProps} />
         <SpeedInsights />

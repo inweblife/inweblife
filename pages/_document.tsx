@@ -1,4 +1,7 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import Script from 'next/script'
+
+const isDev = process.env.NODE_ENV !== "production"
 
 export default function Document() {
   return (
@@ -16,6 +19,26 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <Script
+          id="gtag-src"
+          src="https://www.googletagmanager.com/gtag/js?id=G-HQF9CZ8HER"
+          strategy="beforeInteractive"
+        />
+        <Script id="gtag-init" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('consent', 'default', {
+              ad_storage: 'denied',
+              analytics_storage: 'denied',
+              ad_user_data: 'denied',
+              ad_personalization: 'denied',
+              wait_for_update: 500
+            });
+            gtag('js', new Date());
+            gtag('config', 'G-HQF9CZ8HER', { send_page_view: false${isDev ? ", debug_mode: true" : ""} });
+          `}
+        </Script>
       </body>
     </Html>
   )
