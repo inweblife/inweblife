@@ -106,7 +106,7 @@ const AdsWithoutSeo = () => {
           {/* ── SECTION 1 ── */}
           <section>
             <p>
-              <strong>Автор:</strong> Иван Димитров |{" "}
+              <strong>Автор:</strong> <Link href="/about">Иван Димитров</Link> |{" "}
               <strong>Публикувано:</strong>{" "}
               <time dateTime="2026-04-22">22 април 2026</time>
             </p>

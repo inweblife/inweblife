@@ -17,7 +17,8 @@
       "Bash(python3 -c ':*)",
       "Bash(node -e ':*)",
       "Bash(npx next:*)",
-      "WebFetch(domain:inweblife.vercel.app)"
+      "WebFetch(domain:inweblife.vercel.app)",
+      "WebFetch(domain:searchengineland.com)"
     ]
   }
 }

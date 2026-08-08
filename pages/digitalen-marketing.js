@@ -96,7 +96,8 @@ const DigitalenMarketing = () => {
         <article className={styles.article}>
           <section>
             <p>
-              <strong>Автор:</strong> Иван Димитров | <strong>Публикувано:</strong>{" "}
+              <strong>Автор:</strong> <Link href="/about">Иван Димитров</Link> |{" "}
+              <strong>Публикувано:</strong>{" "}
               <time dateTime="2026-04-27">27 април 2026</time>
             </p>
             <p>
