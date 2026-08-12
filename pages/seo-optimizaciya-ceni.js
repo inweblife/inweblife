@@ -404,9 +404,9 @@ const SeoOptimizaciyaCeni = () => {
               >
                 <strong>профил в Google Business</strong>
               </a>
-              , отзиви, консистентност на адреса. Разглеждам ги отделно в{" "}
+              , отзиви, консистентност на адреса. Разглеждам ги отделно в текста за{" "}
               <Link href="/lokalno-seo">
-                <strong>текста за локално SEO</strong>
+                <strong>локално SEO</strong>
               </Link>
               .
             </p>
