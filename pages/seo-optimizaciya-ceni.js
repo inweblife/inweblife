@@ -791,7 +791,7 @@ const SeoOptimizaciyaCeni = () => {
           <RelatedPosts
             currentHref="/seo-optimizaciya-ceni"
             styles={styles}
-            hrefs={["/seo-optimizaciya-na-ueb-sait", "/semantichno-yadro", "/kalkulator-digitalen-marketing"]}
+            hrefs={["/kak-raboti-seo", "/ai-seo-lie", "/website-and-google-ads"]}
           />
 
           <ShareButtons
