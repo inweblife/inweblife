@@ -6,6 +6,15 @@ const SITE_NAME = "inweblife";
 
 const posts = [
   {
+    path: "/seo-optimizaciya-ceni",
+    title: "SEO оптимизация цени: Всичко зад офертите",
+    description:
+      "SEO оптимизация цени: Вижте какво реално съдържат офертите. Научете какво включва работещият базов пакет от 399 €.",
+    category: "SEO",
+    date: new Date("2026-08-12"),
+    image: "/og/seo-optimizaciya-ceni.png",
+  },
+  {
     path: "/kolko-struva-reklama-v-google",
     title: "Колко струва реклама в Гугъл - цена на клик и бюджет",
     description:
@@ -13,6 +22,15 @@ const posts = [
     category: "PPC",
     date: new Date("2026-08-08"),
     image: "/og/kolko-struva-reklama-v-google.png",
+  },
+  {
+    path: "/semantichno-yadro",
+    title: "Как да съставим семантично ядро от ключови думи",
+    description:
+      "Семантично ядро: как се съставя списъкът с ключови думи на един сайт - подробно обяснение на целия процес за най-успешна SEO архитектура",
+    category: "SEO",
+    date: new Date("2026-07-31"),
+    image: "/og/semantichno-yadro.png",
   },
   {
     path: "/lokalno-seo",
