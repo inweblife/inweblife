@@ -790,7 +790,7 @@ const KolkoStruvaReklamaVGoogle = () => {
           <RelatedPosts
             currentHref="/kolko-struva-reklama-v-google"
             styles={styles}
-            hrefs={["/google-ads-reklama", "/quality-score-seo", "/kalkulator-digitalen-marketing"]}
+            hrefs={["/digitalen-marketing", "/ads-without-seo", "/izrabotka-na-sait"]}
           />
 
           <ShareButtons
