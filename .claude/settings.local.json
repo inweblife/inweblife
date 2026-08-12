@@ -19,7 +19,14 @@
       "Bash(npx next:*)",
       "WebFetch(domain:inweblife.vercel.app)",
       "WebFetch(domain:searchengineland.com)",
-      "Bash(pkill -f \"next start -p 3999\")"
+      "Bash(pkill -f \"next start -p 3999\")",
+      "Bash(mkdir -p /tmp/docx_extract)",
+      "Bash(unzip -o \"/c/Users/ivan7/Desktop/seo-optimizaciya-ceni.docx\" -d extracted)",
+      "Bash(where python *)",
+      "Bash(py --version)",
+      "Bash(node \"C:\\\\Users\\\\ivan7\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-ivan7-Documents-Dev-inweblife\\\\e5c17ea4-9ec0-4182-b7bf-2ade123359fe\\\\scratchpad\\\\extract_docx.js\" \"/tmp/docx_extract/extracted/word/document.xml\" \"/tmp/docx_extract/extracted_text.txt\")",
+      "Bash(cygpath -w /tmp/docx_extract/extracted_text.txt)",
+      "Bash(node \"C:\\\\Users\\\\ivan7\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-ivan7-Documents-Dev-inweblife\\\\e5c17ea4-9ec0-4182-b7bf-2ade123359fe\\\\scratchpad\\\\extract_docx.js\" \"/tmp/docx_extract/extracted/word/document.xml\" \"/tmp/docx_extract/extracted_text2.txt\")"
     ]
   }
 }
