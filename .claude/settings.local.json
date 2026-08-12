@@ -26,7 +26,14 @@
       "Bash(py --version)",
       "Bash(node \"C:\\\\Users\\\\ivan7\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-ivan7-Documents-Dev-inweblife\\\\e5c17ea4-9ec0-4182-b7bf-2ade123359fe\\\\scratchpad\\\\extract_docx.js\" \"/tmp/docx_extract/extracted/word/document.xml\" \"/tmp/docx_extract/extracted_text.txt\")",
       "Bash(cygpath -w /tmp/docx_extract/extracted_text.txt)",
-      "Bash(node \"C:\\\\Users\\\\ivan7\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-ivan7-Documents-Dev-inweblife\\\\e5c17ea4-9ec0-4182-b7bf-2ade123359fe\\\\scratchpad\\\\extract_docx.js\" \"/tmp/docx_extract/extracted/word/document.xml\" \"/tmp/docx_extract/extracted_text2.txt\")"
+      "Bash(node \"C:\\\\Users\\\\ivan7\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-ivan7-Documents-Dev-inweblife\\\\e5c17ea4-9ec0-4182-b7bf-2ade123359fe\\\\scratchpad\\\\extract_docx.js\" \"/tmp/docx_extract/extracted/word/document.xml\" \"/tmp/docx_extract/extracted_text2.txt\")",
+      "Bash(node tools/generate-blur-placeholders.mjs)",
+      "Bash(rm -rf /tmp/docx_extract2)",
+      "Bash(mkdir -p /tmp/docx_extract2)",
+      "Bash(node \"C:\\\\Users\\\\ivan7\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-ivan7-Documents-Dev-inweblife\\\\e5c17ea4-9ec0-4182-b7bf-2ade123359fe\\\\scratchpad\\\\extract_docx.js\" \"extracted/word/document.xml\" \"extracted_text.txt\")",
+      "Bash(cygpath -w /tmp/docx_extract2/extracted_text.txt)",
+      "Bash(curl -s -o /dev/null -w \"HTTP Status: %{http_code}\\\\n\" http://localhost:3000/seo-optimizaciya-ceni)",
+      "Bash(curl -s http://localhost:3000/seo-optimizaciya-ceni)"
     ]
   }
 }
