@@ -36,7 +36,8 @@
       "Bash(curl -s http://localhost:3000/seo-optimizaciya-ceni)",
       "Bash(curl -s http://localhost:3000/api/sitemap)",
       "Bash(curl -s http://localhost:3000/blog)",
-      "Bash(curl -s http://localhost:3000/karta-na-saita)"
+      "Bash(curl -s http://localhost:3000/karta-na-saita)",
+      "Bash(python3 -c \"print\\('no file cmd'\\)\")"
     ]
   }
 }
