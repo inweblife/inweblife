@@ -26,7 +26,7 @@ const tocItems = [
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "SEO оптимизация цени: Всичко зад офертите",
+  headline: "SEO оптимизация цени: Какво реално получавате за парите си",
   description:
     "SEO оптимизация цени: Вижте какво реално съдържат офертите. Научете какво включва работещият базов пакет от 399 €.",
   image: [`${SITE_URL}/og/seo-optimizaciya-ceni.png`],
@@ -59,7 +59,7 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "SEO оптимизация цени: Всичко зад офертите",
+      name: "SEO оптимизация цени: Какво реално получавате за парите си",
       item: `${SITE_URL}/seo-optimizaciya-ceni`,
     },
   ],
@@ -69,7 +69,7 @@ const SeoOptimizaciyaCeni = () => {
   return (
     <>
       <SeoHead
-        title="SEO оптимизация цени: Всичко зад офертите"
+        title="SEO оптимизация цени: Какво реално получавате за парите си"
         description="SEO оптимизация цени: Вижте какво реално съдържат офертите. Научете какво включва работещият базов пакет от 399 €."
         keywords="колко струва SEO оптимизация, цена SEO оптимизация България, SEO пакети цени, цена на SEO одит, месечна SEO поддръжка цена, цена на SEO статия, цена на обратен линк"
         path="/seo-optimizaciya-ceni"
@@ -90,7 +90,7 @@ const SeoOptimizaciyaCeni = () => {
       </SeoHead>
 
       <main className={styles.main} id="main-content">
-        <section className={styles.heroBanner} aria-label="SEO оптимизация цени: Всичко зад офертите">
+        <section className={styles.heroBanner} aria-label="SEO оптимизация цени: Какво реално получавате за парите си">
           <Image
             src={heroImg}
             alt="Колко струва SEO оптимизация в България - ценови зони и пакети"
@@ -102,7 +102,7 @@ const SeoOptimizaciyaCeni = () => {
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay}>
-            <h1>SEO оптимизация цени: Всичко зад офертите</h1>
+            <h1>SEO оптимизация цени: Какво реално получавате за парите си</h1>
           </div>
         </section>
 
@@ -796,7 +796,7 @@ const SeoOptimizaciyaCeni = () => {
 
           <ShareButtons
             path="/seo-optimizaciya-ceni"
-            title="SEO оптимизация цени: Всичко зад офертите"
+            title="SEO оптимизация цени: Какво реално получавате за парите си"
             styles={styles}
           />
 

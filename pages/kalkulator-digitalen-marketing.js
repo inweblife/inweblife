@@ -569,7 +569,7 @@ export default function KalkulatorDigitalenMarketing() {
               и измерими цели. Как точно да разглобите такава оферта на съставните ѝ части,
               съм показал в{" "}
               <Link href="/seo-optimizaciya-ceni">
-                <strong>SEO оптимизация цени: Всичко зад офертите</strong>
+                <strong>SEO оптимизация цени: Какво реално получавате за парите си</strong>
               </Link>
               .
             </p>

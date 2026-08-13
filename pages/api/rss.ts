@@ -7,7 +7,7 @@ const SITE_NAME = "inweblife";
 const posts = [
   {
     path: "/seo-optimizaciya-ceni",
-    title: "SEO оптимизация цени: Всичко зад офертите",
+    title: "SEO оптимизация цени: Какво реално получавате за парите си",
     description:
       "SEO оптимизация цени: Вижте какво реално съдържат офертите. Научете какво включва работещият базов пакет от 399 €.",
     category: "SEO",
