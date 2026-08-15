@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
     "predev": "node tools/generate-blur-placeholders.mjs",
     "dev": "next dev",
