@@ -85,7 +85,6 @@ const SeoHead = ({
       <meta name="robots" content={robots} />
       <meta name="theme-color" content="#101828" />
 
-      <link rel="icon" href="/favicon.webp" />
       <link rel="canonical" href={canonicalUrl} />
       <link rel="alternate" type="application/rss+xml" title={SITE_NAME} href={`${SITE_URL}/rss.xml`} />
 
