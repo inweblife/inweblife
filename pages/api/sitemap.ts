@@ -41,7 +41,7 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
     { path: "/kolko-struva-reklama-v-google", lastModified: "2026-08-08", image: "/og/kolko-struva-reklama-v-google.png" },
     { path: "/semantichno-yadro", lastModified: "2026-07-31", image: "/og/semantichno-yadro.png" },
     { path: "/lokalno-seo", lastModified: "2026-07-17", image: "/og/lokalno-seo.png" },
-    { path: "/wordpress-site", lastModified: "2026-07-03", image: "/og/wordpress-sait.png" },
+    { path: "/wordpress-site", lastModified: "2026-08-23", image: "/og/wordpress-sait.png" },
     { path: "/kak-raboti-google-ads", lastModified: "2026-06-25" },
     { path: "/redizain-ili-nov-sait", lastModified: "2026-06-23" },
     { path: "/wordpress-seo", lastModified: "2026-06-23" },
