@@ -122,6 +122,7 @@ const Footer = () => {
             </li>
           </ul>
         </nav>
+        <div className="preferredSourceBtn" google-add-preferred-source-btn="" data-lang="bg"></div>
         <Link href="/karta-na-saita" className="footerLink">Карта на сайта</Link>
         <small>Copyright {new Date().getFullYear()} inweblife - животът в мрежата</small>
       </div>

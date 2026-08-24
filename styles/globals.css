@@ -243,6 +243,10 @@ footer small {
   font-size: 0.9rem;
 }
 
+.preferredSourceBtn {
+  min-height: 2.75rem;
+}
+
 .socialList {
   margin: 0;
   padding: 0;

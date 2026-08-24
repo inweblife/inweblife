@@ -118,6 +118,11 @@ export default function App({ Component, pageProps }: AppProps) {
         data-key="xxvM7kuGS/Qg1K4VAPJsOg"
         strategy="lazyOnload"
       />
+      <Script
+        id="google-preferred-sources"
+        src="https://news.google.com/swg/js/v1/publisher.js"
+        strategy="lazyOnload"
+      />
       <Layout>
         <Component {...pageProps} />
         <SpeedInsights />
