@@ -246,7 +246,7 @@ const HowToMakeSite = () => {
           <RelatedPosts
             currentHref="/how-to-make-site"
             styles={styles}
-            exclude={["/izrabotka-na-sait", "/website-and-google-ads", "/modern-site", "/quality-score-seo", "/powerful-site", "/seo-fashion", "/ai-seo-lie", "/telemarketing-seo", "/wordpress-seo"]}
+            exclude={["/izrabotka-na-sait", "/website-and-google-ads", "/modern-site", "/quality-score-seo", "/powerful-site", "/seo-fashion", "/ai-seo-lie", "/telemarketing-seo", "/wordpress-seo", "/lematizatsia-na-klyuchovi-dumi"]}
           />
 
           <ShareButtons path="/how-to-make-site" title="Как се прави сайт" styles={styles} />

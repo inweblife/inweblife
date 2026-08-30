@@ -598,7 +598,7 @@ const AdsWithoutSeo = () => {
           <RelatedPosts
             currentHref="/ads-without-seo"
             styles={styles}
-            exclude={["/kalkulator-digitalen-marketing", "/google-ads-reklama", "/seo-optimizaciya-na-ueb-sait", "/quality-score-seo", "/modern-site", "/website-and-google-ads", "/ai-seo-lie"]}
+            exclude={["/kalkulator-digitalen-marketing", "/google-ads-reklama", "/seo-optimizaciya-na-ueb-sait", "/quality-score-seo", "/modern-site", "/website-and-google-ads", "/ai-seo-lie", "/lematizatsia-na-klyuchovi-dumi"]}
           />
 
           <ShareButtons

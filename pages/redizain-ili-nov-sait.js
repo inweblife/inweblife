@@ -508,7 +508,7 @@ const RedizainIliNovSait = () => {
           <RelatedPosts
             currentHref="/redizain-ili-nov-sait"
             styles={styles}
-            exclude={["/izrabotka-na-sait", "/seo-optimizaciya-na-ueb-sait", "/kak-raboti-seo", "/seo-slug-kanibalizaciya"]}
+            exclude={["/izrabotka-na-sait", "/seo-optimizaciya-na-ueb-sait", "/kak-raboti-seo", "/seo-slug-kanibalizaciya", "/lematizatsia-na-klyuchovi-dumi"]}
           />
 
           <ShareButtons

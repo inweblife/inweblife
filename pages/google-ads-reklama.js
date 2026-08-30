@@ -971,7 +971,7 @@ const GoogleAdsReklama = () => {
           <RelatedPosts
             currentHref="/google-ads-reklama"
             styles={styles}
-            exclude={["/ads-without-seo", "/quality-score-seo", "/website-and-google-ads", "/kalkulator-digitalen-marketing"]}
+            exclude={["/ads-without-seo", "/quality-score-seo", "/website-and-google-ads", "/kalkulator-digitalen-marketing", "/lematizatsia-na-klyuchovi-dumi"]}
           />
 
           <ShareButtons

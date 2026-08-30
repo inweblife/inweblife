@@ -357,7 +357,7 @@ const DigitalenMarketing = () => {
           <RelatedPosts
             currentHref="/digitalen-marketing"
             styles={styles}
-            exclude={["/seo-optimizaciya-na-ueb-sait", "/google-ads-reklama", "/izrabotka-na-sait", "/kalkulator-digitalen-marketing", "/ads-without-seo"]}
+            exclude={["/seo-optimizaciya-na-ueb-sait", "/google-ads-reklama", "/izrabotka-na-sait", "/kalkulator-digitalen-marketing", "/ads-without-seo", "/lematizatsia-na-klyuchovi-dumi"]}
           />
 
           <ShareButtons

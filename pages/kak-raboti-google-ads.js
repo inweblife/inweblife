@@ -593,7 +593,7 @@ const KakRabotiGoogleAds = () => {
           <RelatedPosts
             currentHref="/kak-raboti-google-ads"
             styles={styles}
-            exclude={["/quality-score-seo", "/google-ads-reklama", "/kak-raboti-seo"]}
+            exclude={["/quality-score-seo", "/google-ads-reklama", "/kak-raboti-seo", "/lematizatsia-na-klyuchovi-dumi"]}
           />
 
           <ShareButtons

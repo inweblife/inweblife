@@ -842,6 +842,7 @@ const WordPressSite = () => {
               "/seo-slug-kanibalizaciya",
               "/redizain-ili-nov-sait",
               "/kak-raboti-seo",
+              "/lematizatsia-na-klyuchovi-dumi",
             ]}
           />
 

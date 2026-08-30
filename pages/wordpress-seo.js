@@ -543,7 +543,7 @@ const WordPressSeo = () => {
           <RelatedPosts
             currentHref="/wordpress-seo"
             styles={styles}
-            exclude={["/modern-site", "/seo-slug-kanibalizaciya", "/seo-optimizaciya-na-ueb-sait", "/seo-fashion"]}
+            exclude={["/modern-site", "/seo-slug-kanibalizaciya", "/seo-optimizaciya-na-ueb-sait", "/seo-fashion", "/lematizatsia-na-klyuchovi-dumi"]}
           />
 
           <ShareButtons

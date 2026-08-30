@@ -682,7 +682,7 @@ export default function KalkulatorDigitalenMarketing() {
           <RelatedPosts
             currentHref="/kalkulator-digitalen-marketing"
             styles={styles}
-            exclude={["/izrabotka-na-sait", "/seo-optimizaciya-na-ueb-sait", "/google-ads-reklama", "/ads-without-seo"]}
+            exclude={["/izrabotka-na-sait", "/seo-optimizaciya-na-ueb-sait", "/google-ads-reklama", "/ads-without-seo", "/lematizatsia-na-klyuchovi-dumi"]}
           />
           <ShareButtons
             path="/kalkulator-digitalen-marketing"

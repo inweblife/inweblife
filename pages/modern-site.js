@@ -288,7 +288,7 @@ const ModernSite = () => {
           <RelatedPosts
             currentHref="/modern-site"
             styles={styles}
-            exclude={["/how-to-make-site", "/izrabotka-na-sait", "/quality-score-seo", "/seo-fashion", "/powerful-site", "/ai-seo-lie"]}
+            exclude={["/how-to-make-site", "/izrabotka-na-sait", "/quality-score-seo", "/seo-fashion", "/powerful-site", "/ai-seo-lie", "/lematizatsia-na-klyuchovi-dumi"]}
           />
 
           <ShareButtons

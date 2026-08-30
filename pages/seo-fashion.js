@@ -231,7 +231,7 @@ const SeoFashion = () => {
           <RelatedPosts
             currentHref="/seo-fashion"
             styles={styles}
-            exclude={["/modern-site", "/izrabotka-na-sait", "/how-to-make-site", "/powerful-site", "/ai-seo-lie", "/telemarketing-seo"]}
+            exclude={["/modern-site", "/izrabotka-na-sait", "/how-to-make-site", "/powerful-site", "/ai-seo-lie", "/telemarketing-seo", "/lematizatsia-na-klyuchovi-dumi"]}
           />
 
           <ShareButtons path="/seo-fashion" title="В ерата на смартфоните" styles={styles} />

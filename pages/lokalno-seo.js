@@ -632,7 +632,7 @@ const LokalnoSeo = () => {
           <RelatedPosts
             currentHref="/lokalno-seo"
             styles={styles}
-            exclude={["/seo-optimizaciya-na-ueb-sait"]}
+            exclude={["/seo-optimizaciya-na-ueb-sait", "/lematizatsia-na-klyuchovi-dumi"]}
           />
 
           <ShareButtons

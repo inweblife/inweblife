@@ -435,7 +435,7 @@ const AiSeoLie = () => {
           <RelatedPosts
             currentHref="/ai-seo-lie"
             styles={styles}
-            exclude={["/seo-fashion", "/modern-site", "/how-to-make-site", "/seo-optimizaciya-na-ueb-sait", "/quality-score-seo", "/powerful-site", "/ads-without-seo", "/seo-slug-kanibalizaciya"]}
+            exclude={["/seo-fashion", "/modern-site", "/how-to-make-site", "/seo-optimizaciya-na-ueb-sait", "/quality-score-seo", "/powerful-site", "/ads-without-seo", "/seo-slug-kanibalizaciya", "/lematizatsia-na-klyuchovi-dumi"]}
           />
 
           <ShareButtons path="/ai-seo-lie" title="AI SEO услуги - измама или реална нужда?" styles={styles} />

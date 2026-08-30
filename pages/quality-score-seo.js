@@ -462,7 +462,7 @@ const QualityScoreSeo = () => {
           <RelatedPosts
             currentHref="/quality-score-seo"
             styles={styles}
-            exclude={["/website-and-google-ads", "/seo-fashion", "/ads-without-seo", "/modern-site", "/google-ads-reklama", "/seo-optimizaciya-na-ueb-sait", "/telemarketing-seo", "/ai-seo-lie"]}
+            exclude={["/website-and-google-ads", "/seo-fashion", "/ads-without-seo", "/modern-site", "/google-ads-reklama", "/seo-optimizaciya-na-ueb-sait", "/telemarketing-seo", "/ai-seo-lie", "/lematizatsia-na-klyuchovi-dumi"]}
           />
 
           <ShareButtons

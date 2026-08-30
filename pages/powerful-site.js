@@ -218,7 +218,7 @@ const PowerfulSite = () => {
           <RelatedPosts
             currentHref="/powerful-site"
             styles={styles}
-            exclude={["/how-to-make-site", "/website-and-google-ads", "/izrabotka-na-sait", "/telemarketing-seo", "/quality-score-seo", "/modern-site", "/seo-fashion", "/ai-seo-lie", "/wordpress-seo"]}
+            exclude={["/how-to-make-site", "/website-and-google-ads", "/izrabotka-na-sait", "/telemarketing-seo", "/quality-score-seo", "/modern-site", "/seo-fashion", "/ai-seo-lie", "/wordpress-seo", "/lematizatsia-na-klyuchovi-dumi"]}
           />
 
           <ShareButtons path="/powerful-site" title="Създайте мощен сайт" styles={styles} />
