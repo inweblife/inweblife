@@ -89,7 +89,7 @@ const posts = [
     description:
       "Как работи SEO - как Google обхожда, индексира и класира сайтовете, защо линковете още имат значение и как AI променя търсенето.",
     category: "SEO",
-    date: new Date("2026-05-22"),
+    date: new Date("2026-08-30"),
   },
   {
     path: "/aeo-ai-overview",
