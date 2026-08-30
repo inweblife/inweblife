@@ -31,22 +31,22 @@ function buildXml(entries: SitemapEntry[]) {
 
 export default function handler(_req: NextApiRequest, res: NextApiResponse) {
   const staticRoutes = [
-    { path: "/", changeFrequency: "weekly", priority: 1.0, imageSlug: "home", lastModified: "2026-08-23" },
+    { path: "/", changeFrequency: "weekly", priority: 1.0, imageSlug: "home", lastModified: "2026-08-30" },
     { path: "/about", changeFrequency: "monthly", priority: 0.9, imageSlug: "about" },
-    { path: "/blog", changeFrequency: "weekly", priority: 0.95, imageSlug: "blog" },
+    { path: "/blog", changeFrequency: "weekly", priority: 0.95, imageSlug: "blog", lastModified: "2026-08-30" },
   ];
 
   const blogPostRoutes = [
     { path: "/seo-optimizaciya-ceni", lastModified: "2026-08-12", image: "/og/seo-optimizaciya-ceni.png" },
     { path: "/kolko-struva-reklama-v-google", lastModified: "2026-08-08", image: "/og/kolko-struva-reklama-v-google.png" },
-    { path: "/semantichno-yadro", lastModified: "2026-07-31", image: "/og/semantichno-yadro.png" },
+    { path: "/semantichno-yadro", lastModified: "2026-08-30", image: "/og/semantichno-yadro.png" },
     { path: "/lematizatsia-na-klyuchovi-dumi", lastModified: "2026-08-30", image: "/og/lematizatsia-na-klyuchovi-dumi.png" },
     { path: "/lokalno-seo", lastModified: "2026-07-17", image: "/og/lokalno-seo.png" },
     { path: "/wordpress-site", lastModified: "2026-08-23", image: "/og/wordpress-sait.png" },
     { path: "/kak-raboti-google-ads", lastModified: "2026-06-25" },
     { path: "/redizain-ili-nov-sait", lastModified: "2026-06-23" },
     { path: "/wordpress-seo", lastModified: "2026-06-23" },
-    { path: "/kak-raboti-seo", lastModified: "2026-05-22" },
+    { path: "/kak-raboti-seo", lastModified: "2026-08-30" },
     { path: "/aeo-ai-overview", lastModified: "2026-08-08" },
     { path: "/digitalen-marketing", lastModified: "2026-04-27" },
     { path: "/kalkulator-digitalen-marketing", lastModified: "2026-07-14" },

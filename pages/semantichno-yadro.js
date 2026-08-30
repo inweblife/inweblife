@@ -32,7 +32,7 @@ const articleSchema = {
   },
   inLanguage: "bg-BG",
   datePublished: "2026-07-31",
-  dateModified: "2026-07-31",
+  dateModified: "2026-08-30",
   mainEntityOfPage: `${SITE_URL}/semantichno-yadro`,
 };
 
@@ -63,7 +63,7 @@ const SemantichnoYadro = () => {
         imageAlt="Как да съставим семантично ядро от ключови думи"
         type="article"
         publishedTime="2026-07-31T00:00:00+03:00"
-        modifiedTime="2026-07-31T00:00:00+03:00"
+        modifiedTime="2026-08-30T00:00:00+03:00"
       >
         <script
           type="application/ld+json"

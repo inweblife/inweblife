@@ -32,7 +32,7 @@ const articleSchema = {
   },
   inLanguage: "bg-BG",
   datePublished: "2026-05-22",
-  dateModified: "2026-07-31",
+  dateModified: "2026-08-30",
   mainEntityOfPage: `${SITE_URL}/kak-raboti-seo`,
 };
 
@@ -64,7 +64,7 @@ const KakRabotiSeo = () => {
         imageAlt="Как работи SEO и защо някои сайтове са невидими в Google"
         type="article"
         publishedTime="2026-05-22T00:00:00+03:00"
-        modifiedTime="2026-07-31T00:00:00+03:00"
+        modifiedTime="2026-08-30T00:00:00+03:00"
       >
         <script
           type="application/ld+json"
