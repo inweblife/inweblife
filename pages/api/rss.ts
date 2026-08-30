@@ -33,6 +33,15 @@ const posts = [
     image: "/og/semantichno-yadro.png",
   },
   {
+    path: "/lematizatsia-na-klyuchovi-dumi",
+    title: "Лематизация на ключови думи: нужни ли са всички форми?",
+    description:
+      "Лематизация на ключови думи: как Google свързва различните форми и трябва ли да ги повтаряте? Практично обяснение за SEO.",
+    category: "SEO",
+    date: new Date("2026-08-30"),
+    image: "/og/lematizatsia-na-klyuchovi-dumi.png",
+  },
+  {
     path: "/lokalno-seo",
     title: "Локално SEO - как да получите повече клиенти от Google",
     description:
