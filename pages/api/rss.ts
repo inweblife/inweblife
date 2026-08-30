@@ -29,7 +29,7 @@ const posts = [
     description:
       "Семантично ядро: как се съставя списъкът с ключови думи на един сайт - подробно обяснение на целия процес за най-успешна SEO архитектура",
     category: "SEO",
-    date: new Date("2026-07-31"),
+    date: new Date("2026-08-30"),
     image: "/og/semantichno-yadro.png",
   },
   {
