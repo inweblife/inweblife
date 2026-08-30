@@ -54,7 +54,7 @@ const SeoFashion = () => {
   return (
     <>
       <SeoHead
-        title="Мобилна оптимизация на сайт - UX, скорост и SEO класиране | inweblife"
+        title="Мобилна оптимизация на сайт - UX, скорост и SEO | inweblife"
         description="Мобилният потребител е по-нетърпелив, по-конкретен и по-близо до решение. Как се проектира сайт около това поведение и защо mobile-first е директен SEO сигнал."
         keywords="mobile-first SEO, мобилна оптимизация, мобилно индексиране Google, mobile UX SEO, Core Web Vitals мобилни"
         path="/seo-fashion"

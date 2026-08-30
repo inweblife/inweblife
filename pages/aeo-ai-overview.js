@@ -55,7 +55,7 @@ const AeoAiOverview = () => {
   return (
     <>
       <SeoHead
-        title="AI SEO оптимизация - практическо ръководство за AEO | inweblife"
+        title="AI SEO оптимизация - ръководство за AEO | inweblife"
         description="Практическо ръководство за AI SEO оптимизация: как да структурираш съдържание, така че AI Overviews, ChatGPT и Perplexity да го извличат и цитират."
         keywords="AI SEO оптимизация, оптимизация за AI, оптимизация на страниците с AI, AEO оптимизация, Answer Engine Optimization, AI Overview SEO, Google AI Overviews, AEO vs SEO, passage retrieval, query fan-out, RAG"
         path="/aeo-ai-overview"

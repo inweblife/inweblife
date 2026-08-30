@@ -57,7 +57,7 @@ const QualityScoreSeo = () => {
     <>
       <SeoHead
         title="Как работи Quality Score и защо засяга и SEO | inweblife"
-        description="Как работи Quality Score и защо засяга и SEO: CTR, уместност на рекламата, Landing Page Experience и как оптимизацията за PPC подобрява органичните позиции в Google."
+        description="Как работи Quality Score и защо засяга SEO: CTR, уместност на рекламата и Landing Page Experience подобряват PPC и органичните позиции в Google."
         keywords="quality score, quality score seo, как работи quality score, очаквана честота на кликване, landing page experience, уместност на рекламата, google ads качество"
         path="/quality-score-seo"
         image="/og/quality-score-seo.png"
