@@ -236,8 +236,13 @@ const KakRabotiSeo = () => {
               Добрата On-Page оптимизация не е да напишете ключовата дума 20 пъти. Това е остарял
               подход, който в 2026 г. вреди повече, отколкото помага. Google разбира контекста -
               той знае, че когато пишете за изработка на сайт, естествено ще използвате думи като
-              дизайн, разработка, цена, технологии. Не е нужно да форсирате нищо. Естественият
-              текст, написан за човек, работи по-добре от текст, написан за алгоритъм.
+              дизайн, разработка, цена, технологии. Не е нужно да форсирате нищо, нито да мислите
+              коя граматична форма на ключовата дума да използвате - точно това обяснява{" "}
+              <Link href="/lematizatsia-na-klyuchovi-dumi">
+                <strong>лематизацията на ключови думи</strong>
+              </Link>
+              . Естественият текст, написан за човек, работи по-добре от текст, написан за
+              алгоритъм.
             </p>
 
             <h3>Off-Page SEO - какво вижда Google отвън</h3>
@@ -578,7 +583,7 @@ const KakRabotiSeo = () => {
           <RelatedPosts
             currentHref="/kak-raboti-seo"
             styles={styles}
-            exclude={["/seo-optimizaciya-na-ueb-sait", "/aeo-ai-overview", "/ai-seo-lie", "/seo-slug-kanibalizaciya", "/wordpress-seo"]}
+            exclude={["/seo-optimizaciya-na-ueb-sait", "/aeo-ai-overview", "/ai-seo-lie", "/seo-slug-kanibalizaciya", "/wordpress-seo", "/lematizatsia-na-klyuchovi-dumi"]}
           />
 
           <ShareButtons

@@ -829,6 +829,7 @@ const SemantichnoYadro = () => {
             currentHref="/semantichno-yadro"
             styles={styles}
             exclude={[
+              "/lematizatsia-na-klyuchovi-dumi",
               "/lokalno-seo",
               "/wordpress-site",
               "/kak-raboti-google-ads",
