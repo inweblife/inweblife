@@ -4,6 +4,10 @@ import { SITE_URL } from "../../lib/config";
 
 const SITE_NAME = "inweblife";
 
+// Датите се въвеждат като ден, но се тълкуват в българско време (+03:00),
+// за да съвпадат с article:published_time в мета таговете на страниците.
+const bgDate = (day: string) => new Date(`${day}T00:00:00+03:00`);
+
 const posts = [
   {
     path: "/geo-optimizatsia",
@@ -11,7 +15,7 @@ const posts = [
     description:
       "Какво е GEO оптимизация (Generative Engine Optimization) и как да класирате сайта си, освен в Гугъл в ChatGPT, Perplexity и Google AI Overviews.",
     category: "SEO",
-    date: new Date("2026-09-12"),
+    date: bgDate("2026-09-12"),
     image: "/og/geo-optimizatsia.png",
   },
   {
@@ -20,7 +24,7 @@ const posts = [
     description:
       "SEO оптимизация цени: Вижте какво реално съдържат офертите. Научете какво включва работещият базов пакет от 399 €.",
     category: "SEO",
-    date: new Date("2026-08-12"),
+    date: bgDate("2026-08-12"),
     image: "/og/seo-optimizaciya-ceni.png",
   },
   {
@@ -29,7 +33,7 @@ const posts = [
     description:
       "Колко струва реклама в Гугъл? Виж реални цени на клик, дневни бюджети, месечни разходи, ДДС и колко клика ще получите с 300, 500 и 1000 €.",
     category: "PPC",
-    date: new Date("2026-08-08"),
+    date: bgDate("2026-08-08"),
     image: "/og/kolko-struva-reklama-v-google.png",
   },
   {
@@ -38,7 +42,7 @@ const posts = [
     description:
       "Семантично ядро: как се съставя списъкът с ключови думи на един сайт - подробно обяснение на целия процес за най-успешна SEO архитектура",
     category: "SEO",
-    date: new Date("2026-08-30"),
+    date: bgDate("2026-08-30"),
     image: "/og/semantichno-yadro.png",
   },
   {
@@ -47,7 +51,7 @@ const posts = [
     description:
       "Лематизация на ключови думи: как Google свързва различните форми и трябва ли да ги повтаряте? Практично обяснение за SEO.",
     category: "SEO",
-    date: new Date("2026-08-30"),
+    date: bgDate("2026-08-30"),
     image: "/og/lematizatsia-na-klyuchovi-dumi.png",
   },
   {
@@ -56,7 +60,7 @@ const posts = [
     description:
       "Как работи адреса на бизнеса като локално SEO, кои фактори влияят на класирането и как да получите повече клиенти от Google и Google Maps.",
     category: "SEO",
-    date: new Date("2026-07-17"),
+    date: bgDate("2026-07-17"),
     image: "/og/lokalno-seo.png",
   },
   {
@@ -65,7 +69,7 @@ const posts = [
     description:
       "Изработка на WordPress сайт с прозрачна цена от 400 €, ясен процес по стъпки и SEO основа от начало. Вижте какво включва, цена и срокове.",
     category: "Уеб разработка",
-    date: new Date("2026-08-23"),
+    date: bgDate("2026-08-23"),
     image: "/og/wordpress-sait.png",
   },
   {
@@ -74,7 +78,7 @@ const posts = [
     description:
       "Как работи Google Ads на практика. Вижте как се определя цената на клик, как Quality Score ви пести пари и кои настройки източват бюджета ви.",
     category: "PPC",
-    date: new Date("2026-06-25"),
+    date: bgDate("2026-06-25"),
   },
   {
     path: "/redizain-ili-nov-sait",
@@ -82,7 +86,7 @@ const posts = [
     description:
       "Редизайн на сайт или нов сайт? Кога редизайнът е достатъчен, кога ви трябва нов сайт и как да запазите SEO класиранията при миграция.",
     category: "Уеб разработка",
-    date: new Date("2026-06-23"),
+    date: bgDate("2026-06-23"),
   },
   {
     path: "/wordpress-seo",
@@ -90,7 +94,7 @@ const posts = [
     description:
       "Как да настроите сайта си за максимален трафик? WordPress SEO за най-добрата видимост в търсачките. Вижте как да сте на първа страница.",
     category: "SEO",
-    date: new Date("2026-06-05"),
+    date: bgDate("2026-06-05"),
   },
   {
     path: "/kak-raboti-seo",
@@ -98,7 +102,7 @@ const posts = [
     description:
       "Как работи SEO - как Google обхожда, индексира и класира сайтовете, защо линковете още имат значение и как AI променя търсенето.",
     category: "SEO",
-    date: new Date("2026-08-30"),
+    date: bgDate("2026-08-30"),
   },
   {
     path: "/aeo-ai-overview",
@@ -106,14 +110,14 @@ const posts = [
     description:
       "Практическо ръководство за AI SEO оптимизация: как да структурираш съдържание, така че AI Overviews, ChatGPT и Perplexity да го извличат и цитират.",
     category: "SEO",
-    date: new Date("2026-08-08"),
+    date: bgDate("2026-08-08"),
   },
   {
     path: "/seo-slug-kanibalizaciya",
     title: "SEO slug канибализация - къде Гугъл се обърква",
     description: "Какво е SEO slug канибализация? Как обърква Google и защо вреди. Вижте я в Search Console и спрете вътрешната конкуренция с 301 редирект.",
     category: "SEO",
-    date: new Date("2026-04-30"),
+    date: bgDate("2026-04-30"),
   },
   {
     path: "/digitalen-marketing",
@@ -121,98 +125,98 @@ const posts = [
     description:
       "Дигитален маркетинг за малкия бизнес: стратегии, канали и реален план с 300-400 евро. SEO, Google Ads и социални мрежи без корпоративни бюджети.",
     category: "Дигитален маркетинг",
-    date: new Date("2026-04-27"),
+    date: bgDate("2026-04-27"),
   },
   {
     path: "/kalkulator-digitalen-marketing",
     title: "Калкулатор за дигитален маркетинг - примерни цени",
     description: "Примерни цени за дигитален маркетинг в България: изработка на сайт, SEO, Google Ads, социални мрежи. Реалистични диапазони, не агенционни обещания.",
     category: "Дигитален маркетинг",
-    date: new Date("2026-04-24"),
+    date: bgDate("2026-04-24"),
   },
   {
     path: "/google-ads-reklama",
     title: "Реклама в Гугъл: Как работи най-добре за бизнеса",
     description: "Реклама в Гугъл - как работи най-добре - всичко, което трябва да настроите от ключови думи, заглавия и описания до стратегия за наддаване.",
     category: "PPC",
-    date: new Date("2026-04-23"),
+    date: bgDate("2026-04-23"),
   },
   {
     path: "/ads-without-seo",
     title: "Реклама в LinkedIn без SEO? Не хвърляйте пари на вятъра",
     description: "Защо платената реклама в LinkedIn и Google Ads без SEO основа прахосва бюджета ви. Семантично ядро, пилар клъстери и AEO - пълното ръководство преди да пуснете първата си кампания.",
     category: "SEO",
-    date: new Date("2026-04-22"),
+    date: bgDate("2026-04-22"),
   },
   {
     path: "/seo-optimizaciya-na-ueb-sait",
     title: "SEO оптимизация на уеб сайт - цени, процес и стратегия",
     description: "Какво е SEO оптимизация, как се прави оптимизация на уеб сайт стъпка по стъпка, колко струва и каква SEO услуга ви трябва за дългосрочни резултати.",
     category: "SEO",
-    date: new Date("2026-04-16"),
+    date: bgDate("2026-04-16"),
   },
   {
     path: "/izrabotka-na-sait",
     title: "Как се изработва сайт - стъпки, технологии и цена",
     description: "Какво реално включва изработката на уебсайт - от проучване и структура до избор на технология, цени и поддръжка след публикуването.",
     category: "Уеб разработка",
-    date: new Date("2026-04-12"),
+    date: bgDate("2026-04-12"),
   },
   {
     path: "/quality-score-seo",
     title: "Как работи Quality Score и защо засяга и SEO",
     description: "Quality Score и органичното SEO използват едни и същи сигнали. Разберете как подобряването на Landing Page Experience, CTR и уместността на рекламата намалява CPC и едновременно повишава органичните позиции.",
     category: "SEO",
-    date: new Date("2026-04-09"),
+    date: bgDate("2026-04-09"),
   },
   {
     path: "/website-and-google-ads",
     title: "Изработка на сайт и реклама в Гугъл",
     description: "Колко струва реално да имаш сайт и Google Ads? Без маркетингови клишета - числа, логика и кое работи за малкия бизнес.",
     category: "PPC",
-    date: new Date("2026-03-27"),
+    date: bgDate("2026-03-27"),
   },
   {
     path: "/telemarketing-seo",
     title: "Доброто SEO, което продава, се вижда в SERP",
     description: "Агенция, която не се класира сама в Google, не може да ви класира там вас. Разберете защо доброто SEO се вижда в SERP.",
     category: "SEO",
-    date: new Date("2026-03-10"),
+    date: bgDate("2026-03-10"),
   },
   {
     path: "/ai-seo-lie",
     title: "AI SEO услуги - измама или реална нужда?",
     description: "AI SEO услугите масово се продават като задължителни, но много от тях са преопакован маркетингов страх. Кога е нужна оптимизация за AI.",
     category: "SEO",
-    date: new Date("2026-08-08"),
+    date: bgDate("2026-08-08"),
   },
   {
     path: "/seo-fashion",
     title: "Мобилна оптимизация на сайт - UX, скорост и SEO класиране",
     description: "Как се прави мобилна оптимизация на сайт - скорост, UX и структура, които подобряват SEO класирането в Google.",
     category: "SEO",
-    date: new Date("2026-02-18"),
+    date: bgDate("2026-02-18"),
   },
   {
     path: "/powerful-site",
     title: "Създайте мощен сайт",
     description: "Красивият сайт не продава. Продава сайтът с ясна conversion архитектура, реални trust сигнали и правилно настроен tracking преди първата реклама.",
     category: "Уеб разработка",
-    date: new Date("2026-02-10"),
+    date: bgDate("2026-02-10"),
   },
   {
     path: "/modern-site",
     title: "Как се прави модерен сайт",
     description: "Core Web Vitals, mobile-first индексиране и техническото SEO, което повечето агенции пропускат. С конкретни числа - LCP, CLS, INP.",
     category: "Уеб разработка",
-    date: new Date("2026-02-03"),
+    date: bgDate("2026-02-03"),
   },
   {
     path: "/how-to-make-site",
     title: "Как се прави сайт",
     description: "Повечето сайтове се провалят още преди да е написан ред код. Ето 5-те решения, които определят дали сайтът ще работи за бизнеса - с реални цени и рамка за избор.",
     category: "Уеб разработка",
-    date: new Date("2026-01-27"),
+    date: bgDate("2026-01-27"),
   },
 ];
 
