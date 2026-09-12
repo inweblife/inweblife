@@ -786,7 +786,7 @@ const SeoOptimizaciya = () => {
           <RelatedPosts
             currentHref="/seo-optimizaciya-na-ueb-sait"
             styles={styles}
-            exclude={["/ads-without-seo", "/telemarketing-seo", "/seo-fashion", "/izrabotka-na-sait", "/website-and-google-ads", "/ai-seo-lie", "/kalkulator-digitalen-marketing"]}
+            exclude={["/ads-without-seo", "/telemarketing-seo", "/seo-fashion", "/izrabotka-na-sait", "/website-and-google-ads", "/ai-seo-lie", "/kalkulator-digitalen-marketing", "/kak-raboti-seo", "/semantichno-yadro", "/seo-optimizaciya-ceni", "/aeo-ai-overview"]}
           />
 
           <ShareButtons

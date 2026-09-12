@@ -845,14 +845,7 @@ const SemantichnoYadro = () => {
           <RelatedPosts
             currentHref="/semantichno-yadro"
             styles={styles}
-            exclude={[
-              "/lematizatsia-na-klyuchovi-dumi",
-              "/lokalno-seo",
-              "/wordpress-site",
-              "/kak-raboti-google-ads",
-              "/redizain-ili-nov-sait",
-              "/wordpress-seo",
-            ]}
+            exclude={["/lematizatsia-na-klyuchovi-dumi", "/lokalno-seo", "/wordpress-site", "/kak-raboti-google-ads", "/redizain-ili-nov-sait", "/wordpress-seo", "/kak-raboti-seo", "/seo-slug-kanibalizaciya", "/powerful-site", "/aeo-ai-overview"]}
           />
 
           <ShareButtons

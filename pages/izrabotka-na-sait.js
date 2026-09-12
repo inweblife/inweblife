@@ -543,7 +543,7 @@ const IzrabotkaNaSait = () => {
           <RelatedPosts
             currentHref="/izrabotka-na-sait"
             styles={styles}
-            exclude={["/how-to-make-site", "/seo-fashion", "/modern-site", "/website-and-google-ads", "/powerful-site", "/seo-optimizaciya-na-ueb-sait", "/quality-score-seo", "/kalkulator-digitalen-marketing", "/lematizatsia-na-klyuchovi-dumi"]}
+            exclude={["/how-to-make-site", "/seo-fashion", "/modern-site", "/website-and-google-ads", "/powerful-site", "/seo-optimizaciya-na-ueb-sait", "/quality-score-seo", "/kalkulator-digitalen-marketing", "/lematizatsia-na-klyuchovi-dumi", "/redizain-ili-nov-sait", "/wordpress-site", "/google-ads-reklama"]}
           />
 
           <ShareButtons

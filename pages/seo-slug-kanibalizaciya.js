@@ -479,7 +479,7 @@ const SeoSlugKanibalizaciya = () => {
           <RelatedPosts
             currentHref="/seo-slug-kanibalizaciya"
             styles={styles}
-            exclude={["/seo-optimizaciya-na-ueb-sait", "/ai-seo-lie", "/telemarketing-seo"]}
+            exclude={["/seo-optimizaciya-na-ueb-sait", "/ai-seo-lie", "/telemarketing-seo", "/semantichno-yadro", "/aeo-ai-overview"]}
           />
 
           <ShareButtons
