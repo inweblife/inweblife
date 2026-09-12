@@ -6,6 +6,15 @@ const SITE_NAME = "inweblife";
 
 const posts = [
   {
+    path: "/geo-optimizatsia",
+    title: "GEO оптимизация (Generative Engine Optimization)",
+    description:
+      "Какво е GEO оптимизация (Generative Engine Optimization) и как да класирате сайта си, освен в Гугъл в ChatGPT, Perplexity и Google AI Overviews.",
+    category: "SEO",
+    date: new Date("2026-09-12"),
+    image: "/og/geo-optimizatsia.png",
+  },
+  {
     path: "/seo-optimizaciya-ceni",
     title: "SEO оптимизация цени: Какво реално получавате за парите си",
     description:

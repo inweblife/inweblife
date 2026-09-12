@@ -37,6 +37,7 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
   ];
 
   const blogPostRoutes = [
+    { path: "/geo-optimizatsia", lastModified: "2026-09-12", image: "/og/geo-optimizatsia.png" },
     { path: "/seo-optimizaciya-ceni", lastModified: "2026-08-12", image: "/og/seo-optimizaciya-ceni.png" },
     { path: "/kolko-struva-reklama-v-google", lastModified: "2026-08-08", image: "/og/kolko-struva-reklama-v-google.png" },
     { path: "/semantichno-yadro", lastModified: "2026-08-30", image: "/og/semantichno-yadro.png" },

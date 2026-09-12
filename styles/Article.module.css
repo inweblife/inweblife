@@ -133,6 +133,20 @@
   white-space: nowrap;
 }
 
+.codeBlock {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.95em;
+  line-height: 1.6;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.9rem 1rem;
+  margin: 0 0 1.1rem;
+  max-width: 76ch;
+  overflow-x: auto;
+  white-space: pre;
+}
+
 .next {
   margin-top: clamp(1.5rem, 3vw, 2.2rem);
   display: flex;

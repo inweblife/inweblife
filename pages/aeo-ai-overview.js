@@ -168,6 +168,14 @@ const AeoAiOverview = () => {
               <strong>GEO</strong> учи AI моделите да ви разпознават като източник на знание в
               дадена тематика.
             </p>
+            <p>
+              Третото понятие се използва най-разтегливо и точно затова обърква най-много. Какво
+              означава{" "}
+              <Link href="/geo-optimizatsia">
+                <strong>GEO оптимизация</strong>
+              </Link>{" "}
+              и къде минава границата между нея и AEO, съм разгледал отделно.
+            </p>
             <div className={styles.tableWrap}>
               <table className={styles.table}>
                 <thead>
@@ -755,7 +763,7 @@ const AeoAiOverview = () => {
           <RelatedPosts
             currentHref="/aeo-ai-overview"
             styles={styles}
-            hrefs={["/ai-seo-lie", "/kak-raboti-seo", "/seo-slug-kanibalizaciya"]}
+            hrefs={["/geo-optimizatsia", "/ai-seo-lie", "/kak-raboti-seo"]}
           />
 
           <ShareButtons path="/aeo-ai-overview" title="AI SEO оптимизация - практическо ръководство за AEO" styles={styles} />

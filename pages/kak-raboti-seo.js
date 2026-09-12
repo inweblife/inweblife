@@ -484,8 +484,11 @@ const KakRabotiSeo = () => {
 
             <h3>Има ли отделна оптимизация за AI Overviews</h3>
             <p>
-              От 2024 г. насам в SEO индустрията се появи цяла нова терминология - GEO
-              (Generative Engine Optimization), AEO (Answer Engine Optimization), AI SEO.
+              От 2024 г. насам в SEO индустрията се появи цяла нова терминология -{" "}
+              <Link href="/geo-optimizatsia">
+                <strong>GEO (Generative Engine Optimization)</strong>
+              </Link>
+              , AEO (Answer Engine Optimization), AI SEO.
               Консултанти продаваха пакети за оптимизация специално за AI. Появиха се препоръки
               за llms.txt файлове, content chunking, специални schema, преписване на текст в
               &bdquo;machine-friendly&ldquo; стил.
