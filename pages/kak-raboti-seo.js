@@ -586,7 +586,7 @@ const KakRabotiSeo = () => {
           <RelatedPosts
             currentHref="/kak-raboti-seo"
             styles={styles}
-            exclude={["/seo-optimizaciya-na-ueb-sait", "/aeo-ai-overview", "/ai-seo-lie", "/seo-slug-kanibalizaciya", "/wordpress-seo", "/lematizatsia-na-klyuchovi-dumi"]}
+            exclude={["/seo-optimizaciya-na-ueb-sait", "/aeo-ai-overview", "/ai-seo-lie", "/seo-slug-kanibalizaciya", "/wordpress-seo", "/lematizatsia-na-klyuchovi-dumi", "/geo-optimizatsia"]}
           />
 
           <ShareButtons

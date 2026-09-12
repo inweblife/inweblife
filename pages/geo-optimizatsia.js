@@ -562,7 +562,7 @@ Disallow: /`}
           <RelatedPosts
             currentHref="/geo-optimizatsia"
             styles={styles}
-            hrefs={["/aeo-ai-overview", "/ai-seo-lie", "/kak-raboti-seo"]}
+            hrefs={["/semantichno-yadro", "/seo-optimizaciya-na-ueb-sait", "/seo-fashion"]}
           />
 
           <ShareButtons
