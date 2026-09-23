@@ -340,6 +340,57 @@
   background: color-mix(in srgb, var(--surface-raised) 45%, transparent);
 }
 
+/* На мобилни всеки ред става карта; етикетите идват от data-label на клетките. */
+@media (max-width: 40rem) {
+  .tableStack thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  .tableStack,
+  .tableStack tbody,
+  .tableStack tr,
+  .tableStack td {
+    display: block;
+    width: 100%;
+  }
+
+  .tableStack tr {
+    margin-bottom: 0.75rem;
+    border: 1px solid var(--border);
+  }
+
+  .tableStack tbody tr:nth-child(even) {
+    background: transparent;
+  }
+
+  .tableStack td {
+    border: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .tableStack td:last-child {
+    border-bottom: none;
+  }
+
+  .tableStack td:first-child {
+    font-weight: 700;
+    background: var(--surface-raised);
+  }
+
+  .tableStack td[data-label]::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-muted);
+  }
+}
+
 .summaryBox {
   margin: 0 0 1.2rem;
   padding: 1.1rem 1.3rem;

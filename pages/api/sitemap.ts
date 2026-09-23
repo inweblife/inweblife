@@ -37,6 +37,7 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
   ];
 
   const blogPostRoutes = [
+    { path: "/izrabotka-na-online-magazin", lastModified: "2026-09-23", image: "/og/izrabotka-na-online-magazin.png" },
     { path: "/geo-optimizatsia", lastModified: "2026-09-12", image: "/og/geo-optimizatsia.png" },
     { path: "/seo-optimizaciya-ceni", lastModified: "2026-08-12", image: "/og/seo-optimizaciya-ceni.png" },
     { path: "/kolko-struva-reklama-v-google", lastModified: "2026-08-08", image: "/og/kolko-struva-reklama-v-google.png" },

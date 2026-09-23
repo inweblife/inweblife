@@ -10,6 +10,15 @@ const bgDate = (day: string) => new Date(`${day}T00:00:00+03:00`);
 
 const posts = [
   {
+    path: "/izrabotka-na-online-magazin",
+    title: "Изработка на сайт за онлайн магазин: цени и успешни практики",
+    description:
+      "Колко струва изработката на онлайн магазин и коя платформа да изберете? Научете добрите практики, етапите на разработка и честите грешки.",
+    category: "Уеб разработка",
+    date: bgDate("2026-09-23"),
+    image: "/og/izrabotka-na-online-magazin.png",
+  },
+  {
     path: "/geo-optimizatsia",
     title: "GEO оптимизация (Generative Engine Optimization)",
     description:
