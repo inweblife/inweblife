@@ -147,7 +147,15 @@ const HowToMakeSite = () => {
                 <strong>онлайн магазин с WooCommerce</strong>
               </Link>
               , бюджетът е под 1,500 евро, или крайният срок е
-              2-3 седмици. 43% от всички сайтове в света работят на WordPress - не е случайно.
+              2-3 седмици. 40.2% от всички сайтове в света работят на WordPress (по данни на{" "}
+              <a
+                href="https://w3techs.com/technologies/details/cm-wordpress"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                W3Techs
+              </a>{" "}
+              към септември 2026) - не е случайно.
               Kadence, Astra и GeneratePress са темите, с които работя.
             </p>
             <p>
