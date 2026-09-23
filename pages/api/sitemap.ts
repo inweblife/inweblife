@@ -31,9 +31,9 @@ function buildXml(entries: SitemapEntry[]) {
 
 export default function handler(_req: NextApiRequest, res: NextApiResponse) {
   const staticRoutes = [
-    { path: "/", changeFrequency: "weekly", priority: 1.0, imageSlug: "home", lastModified: "2026-08-30" },
+    { path: "/", changeFrequency: "weekly", priority: 1.0, imageSlug: "home", lastModified: "2026-09-23" },
     { path: "/about", changeFrequency: "monthly", priority: 0.9, imageSlug: "about" },
-    { path: "/blog", changeFrequency: "weekly", priority: 0.95, imageSlug: "blog", lastModified: "2026-08-30" },
+    { path: "/blog", changeFrequency: "weekly", priority: 0.95, imageSlug: "blog", lastModified: "2026-09-23" },
   ];
 
   const blogPostRoutes = [
