@@ -889,7 +889,7 @@ const IzrabotkaNaOnlineMagazin = () => {
               PHP. Какво точно включва поддръжката, колко често се прави и колко струва, е описано
               в статията{" "}
               <Link href="/poddrzhka-na-sait">
-                <strong>какво включва поддръжка на сайт</strong>
+                <strong>какво включва поддръжката на сайт</strong>
               </Link>
               .
             </p>
