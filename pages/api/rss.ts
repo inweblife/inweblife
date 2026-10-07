@@ -10,6 +10,15 @@ const bgDate = (day: string) => new Date(`${day}T00:00:00+03:00`);
 
 const posts = [
   {
+    path: "/poddrzhka-na-sait",
+    title: "Какво включва поддръжка на сайт",
+    description:
+      "Какво включва поддръжката на сайт, колко често се прави и колко струва. Реални цени в България и какво да има в договора.",
+    category: "Уеб разработка",
+    date: bgDate("2026-10-07"),
+    image: "/og/poddrzhka-na-sait.png",
+  },
+  {
     path: "/izrabotka-na-online-magazin",
     title: "Изработка на сайт за онлайн магазин: цени и успешни практики",
     description:

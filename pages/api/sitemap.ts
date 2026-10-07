@@ -31,12 +31,13 @@ function buildXml(entries: SitemapEntry[]) {
 
 export default function handler(_req: NextApiRequest, res: NextApiResponse) {
   const staticRoutes = [
-    { path: "/", changeFrequency: "weekly", priority: 1.0, imageSlug: "home", lastModified: "2026-09-23" },
+    { path: "/", changeFrequency: "weekly", priority: 1.0, imageSlug: "home", lastModified: "2026-10-07" },
     { path: "/about", changeFrequency: "monthly", priority: 0.9, imageSlug: "about" },
-    { path: "/blog", changeFrequency: "weekly", priority: 0.95, imageSlug: "blog", lastModified: "2026-09-23" },
+    { path: "/blog", changeFrequency: "weekly", priority: 0.95, imageSlug: "blog", lastModified: "2026-10-07" },
   ];
 
   const blogPostRoutes = [
+    { path: "/poddrzhka-na-sait", lastModified: "2026-10-07", image: "/og/poddrzhka-na-sait.png" },
     { path: "/izrabotka-na-online-magazin", lastModified: "2026-09-23", image: "/og/izrabotka-na-online-magazin.png" },
     { path: "/geo-optimizatsia", lastModified: "2026-09-12", image: "/og/geo-optimizatsia.png" },
     { path: "/seo-optimizaciya-ceni", lastModified: "2026-08-12", image: "/og/seo-optimizaciya-ceni.png" },
