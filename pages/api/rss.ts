@@ -10,6 +10,15 @@ const bgDate = (day: string) => new Date(`${day}T00:00:00+03:00`);
 
 const posts = [
   {
+    path: "/klyuchovi-dumi-za-firmen-sait",
+    title: "Как да изберем правилните ключови думи за фирмен сайт",
+    description:
+      "Как да изберем правилните ключови думи за фирмен сайт: критерии за избор, проверка в Google, разпределение по страници и честите грешки.",
+    category: "SEO",
+    date: bgDate("2026-10-15"),
+    image: "/og/klyuchovi-dumi-za-firmen-sait.png",
+  },
+  {
     path: "/poddrzhka-na-sait",
     title: "Какво включва поддръжката на сайт",
     description:
