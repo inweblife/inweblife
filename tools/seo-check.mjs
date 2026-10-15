@@ -1,9 +1,10 @@
 import fs from "node:fs";
 import path from "node:path";
+import { pathToFileURL } from "node:url";
 
 const ROOT = process.cwd();
 const PAGES_DIR = path.join(ROOT, "pages");
-const SITEMAP_FILE = path.join(ROOT, "pages", "api", "sitemap.ts");
+const POSTS_FILE = path.join(ROOT, "lib", "posts.js");
 
 const PAGE_EXTENSIONS = new Set([".js", ".tsx"]);
 const SKIP_FILES = new Set(["_app.tsx", "_document.tsx"]);
@@ -41,6 +42,7 @@ const getAllPaths = () => {
 const failures = [];
 const warnings = [];
 const articlePaths = [];
+const articleMeta = new Map();
 
 for (const filePath of getAllPaths()) {
   const source = read(filePath);
@@ -72,6 +74,7 @@ for (const filePath of getAllPaths()) {
 
   if (type === "article") {
     articlePaths.push(pathValue);
+    articleMeta.set(pathValue, { fileName, description, publishedTime, modifiedTime });
 
     if (!publishedTime || !modifiedTime) {
       failures.push(`${fileName}: article страница без publishedTime/modifiedTime`);
@@ -88,11 +91,31 @@ for (const filePath of getAllPaths()) {
   }
 }
 
-const sitemapSource = read(SITEMAP_FILE);
+// lib/posts.js е източникът за картичките, sitemap.xml и RSS, затова трябва да съвпада със
+// SeoHead на всяка статия.
+const { posts } = await import(pathToFileURL(POSTS_FILE).href);
+const postsByHref = new Map(posts.map((post) => [post.href, post]));
+const day = (isoTime) => isoTime?.slice(0, 10);
+
 for (const routePath of articlePaths) {
   if (!routePath) continue;
-  if (!sitemapSource.includes(`path: "${routePath}"`)) {
-    failures.push(`sitemap.ts: липсва article route ${routePath}`);
+  const post = postsByHref.get(routePath);
+  const meta = articleMeta.get(routePath);
+  if (!post) {
+    failures.push(`posts.js: липсва статия ${routePath} (няма да е в блога, sitemap и RSS)`);
+    continue;
+  }
+  if (post.published !== day(meta.publishedTime)) {
+    failures.push(`posts.js: ${routePath} published ${post.published} ≠ ${meta.fileName} ${day(meta.publishedTime)}`);
+  }
+  if (post.modified !== day(meta.modifiedTime)) {
+    failures.push(`posts.js: ${routePath} modified ${post.modified} ≠ ${meta.fileName} ${day(meta.modifiedTime)}`);
+  }
+  if (post.summary !== meta.description) {
+    failures.push(`posts.js: ${routePath} summary ≠ description в ${meta.fileName}`);
+  }
+  if (!post.category) {
+    failures.push(`posts.js: ${routePath} без category (нужна за RSS)`);
   }
 }
 

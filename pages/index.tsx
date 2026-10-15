@@ -7,6 +7,7 @@ import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Home.module.css";
 import blogStyles from "../styles/Blog.module.css";
+import PostDate from "../components/PostDate";
 import { SITE_URL } from "../lib/config";
 import { posts } from "../lib/posts";
 import blurPlaceholders from "../lib/blurPlaceholders.json";
@@ -294,6 +295,7 @@ export default function Home() {
                       className={blogStyles.image}
                     />
                   </div>
+                  <PostDate post={post} className={blogStyles.cardDate} />
                   <h3 className={styles.postCardTitle}>{post.title}</h3>
                   <p>{post.summary}</p>
                   <span className={blogStyles.readMore}>Виж още →</span>

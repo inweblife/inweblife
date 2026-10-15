@@ -1,5 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { SITE_URL } from "../../lib/config";
+import { posts as blogPosts } from "../../lib/posts";
+import { latestModified, postOgImage } from "../../lib/postMeta";
 
 function formatDate(date: string | Date): string {
   const d = typeof date === "string" ? new Date(date) : date;
@@ -30,43 +32,13 @@ function buildXml(entries: SitemapEntry[]) {
 }
 
 export default function handler(_req: NextApiRequest, res: NextApiResponse) {
-  const staticRoutes = [
-    { path: "/", changeFrequency: "weekly", priority: 1.0, imageSlug: "home", lastModified: "2026-10-15" },
-    { path: "/about", changeFrequency: "monthly", priority: 0.9, imageSlug: "about" },
-    { path: "/blog", changeFrequency: "weekly", priority: 0.95, imageSlug: "blog", lastModified: "2026-10-15" },
-  ];
+  // Началната страница и блогът показват последните статии, затова се обновяват с тях.
+  const latestPostDate = latestModified(blogPosts);
 
-  const blogPostRoutes = [
-    { path: "/klyuchovi-dumi-za-firmen-sait", lastModified: "2026-10-15", image: "/og/klyuchovi-dumi-za-firmen-sait.png" },
-    { path: "/poddrzhka-na-sait", lastModified: "2026-10-07", image: "/og/poddrzhka-na-sait.png" },
-    { path: "/izrabotka-na-online-magazin", lastModified: "2026-09-23", image: "/og/izrabotka-na-online-magazin.png" },
-    { path: "/geo-optimizatsia", lastModified: "2026-09-12", image: "/og/geo-optimizatsia.png" },
-    { path: "/seo-optimizaciya-ceni", lastModified: "2026-08-12", image: "/og/seo-optimizaciya-ceni.png" },
-    { path: "/kolko-struva-reklama-v-google", lastModified: "2026-08-08", image: "/og/kolko-struva-reklama-v-google.png" },
-    { path: "/semantichno-yadro", lastModified: "2026-10-15", image: "/og/semantichno-yadro.png" },
-    { path: "/lematizatsia-na-klyuchovi-dumi", lastModified: "2026-08-30", image: "/og/lematizatsia-na-klyuchovi-dumi.png" },
-    { path: "/lokalno-seo", lastModified: "2026-07-17", image: "/og/lokalno-seo.png" },
-    { path: "/wordpress-site", lastModified: "2026-08-23", image: "/og/wordpress-sait.png" },
-    { path: "/kak-raboti-google-ads", lastModified: "2026-06-25" },
-    { path: "/redizain-ili-nov-sait", lastModified: "2026-06-23" },
-    { path: "/wordpress-seo", lastModified: "2026-06-23" },
-    { path: "/kak-raboti-seo", lastModified: "2026-08-30" },
-    { path: "/aeo-ai-overview", lastModified: "2026-08-08" },
-    { path: "/digitalen-marketing", lastModified: "2026-04-27" },
-    { path: "/kalkulator-digitalen-marketing", lastModified: "2026-07-14" },
-    { path: "/google-ads-reklama", lastModified: "2026-07-15" },
-    { path: "/ads-without-seo", lastModified: "2026-04-22" },
-    { path: "/seo-optimizaciya-na-ueb-sait", lastModified: "2026-10-15" },
-    { path: "/izrabotka-na-sait", lastModified: "2026-10-15" },
-    { path: "/quality-score-seo", lastModified: "2026-04-12" },
-    { path: "/website-and-google-ads", lastModified: "2026-05-20" },
-    { path: "/ai-seo-lie", lastModified: "2026-08-08" },
-    { path: "/modern-site", lastModified: "2026-04-09" },
-    { path: "/telemarketing-seo", lastModified: "2026-04-14" },
-    { path: "/powerful-site", lastModified: "2026-04-09" },
-    { path: "/how-to-make-site", lastModified: "2026-04-23" },
-    { path: "/seo-fashion", lastModified: "2026-04-12" },
-    { path: "/seo-slug-kanibalizaciya", lastModified: "2026-04-30" },
+  const staticRoutes = [
+    { path: "/", changeFrequency: "weekly", priority: 1.0, imageSlug: "home", lastModified: latestPostDate },
+    { path: "/about", changeFrequency: "monthly", priority: 0.9, imageSlug: "about" },
+    { path: "/blog", changeFrequency: "weekly", priority: 0.95, imageSlug: "blog", lastModified: latestPostDate },
   ];
 
   const staticLastModified = new Date("2026-04-12");
@@ -79,12 +51,12 @@ export default function handler(_req: NextApiRequest, res: NextApiResponse) {
     image: `${SITE_URL}/og/${route.imageSlug}.png`,
   }));
 
-  const posts = blogPostRoutes.map((post) => ({
-    url: `${SITE_URL}${post.path}`,
-    lastModified: new Date(post.lastModified),
+  const posts = blogPosts.map((post) => ({
+    url: `${SITE_URL}${post.href}`,
+    lastModified: new Date(post.modified),
     changeFrequency: "monthly",
     priority: 0.8,
-    image: `${SITE_URL}${post.image ?? `/og${post.path}.png`}`,
+    image: `${SITE_URL}${postOgImage(post)}`,
   }));
 
   const entries = [...pages, ...posts];

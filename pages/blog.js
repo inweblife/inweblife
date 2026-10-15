@@ -7,6 +7,7 @@ import styles from "../styles/Blog.module.css";
 import { SITE_URL } from "../lib/config";
 import { posts } from "../lib/posts";
 import blurPlaceholders from "../lib/blurPlaceholders.json";
+import PostDate from "../components/PostDate";
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -109,6 +110,7 @@ const Blog = () => {
                     className={styles.image}
                   />
                 </div>
+                <PostDate post={post} className={styles.cardDate} />
                 <h2>{post.title}</h2>
                 <p>{post.summary}</p>
                 <span className={styles.readMore}>Виж още →</span>

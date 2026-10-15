@@ -118,6 +118,11 @@
   overflow: hidden;
 }
 
+.cardDate {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
 .cardLink {
   display: flex;
   flex-direction: column;
