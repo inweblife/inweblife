@@ -46,7 +46,7 @@ const breadcrumbSchema = {
 
 const PRICE_BASE = {
   site:    { min: 400, max: 900,  oneTime: true,  label: "Изработка на сайт",    note: "WordPress/Next.js - дизайн, разработка, SEO основа", budgetMin: 0, budgetMax: 0 },
-  seo:     { min: 200, max: 380,  oneTime: false, label: "SEO оптимизация",       note: "Технически одит, ключови думи, позиции", budgetMin: 0, budgetMax: 0 },
+  seo:     { min: 400, max: 600,  oneTime: false, label: "SEO оптимизация",       note: "Технически одит, ключови думи, позиции", budgetMin: 0, budgetMax: 0 },
   gads:    { min: 100, max: 220,  oneTime: false, label: "Google Ads управление", note: "Само такса управление - бюджетът към Google е отделен", budgetMin: 150, budgetMax: 300 },
   social:  { min: 150, max: 300,  oneTime: false, label: "Социални мрежи",        note: "2-4 публикации/седм., управление на профили", budgetMin: 0, budgetMax: 0 },
   content: { min: 100, max: 200,  oneTime: false, label: "Съдържание / блог",     note: "2-4 SEO оптимизирани статии месечно", budgetMin: 0, budgetMax: 0 },
@@ -444,14 +444,14 @@ export default function KalkulatorDigitalenMarketing() {
               домейна е по-лесно от SEO в ниша с 2 000. Текущото техническо състояние на
               сайта добавя обем - сайт с 200 грешки в Search Console изисква повече
               начална работа от нулата. Броят на целевите ключови думи определя нужното
-              съдържание. Добра SEO работа е практически невъзможна под 200 EUR месечно
+              съдържание. Добра SEO работа е практически невъзможна под 399 EUR месечно
               - под тази граница плащате за отчет, не за реален труд. Пълното ръководство
               е в{" "}
               <Link href="/seo-optimizaciya-na-ueb-sait">
                 <strong>SEO оптимизация на уеб сайт - цени, процес и стратегия</strong>
               </Link>.
             </p>
-            <p>Диапазон: 200-800 EUR/месец.</p>
+            <p>Диапазон: 399-999+ EUR/месец.</p>
           </section>
 
           {/* ── H2 #2b-3 ── */}
