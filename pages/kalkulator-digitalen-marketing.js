@@ -430,7 +430,7 @@ export default function KalkulatorDigitalenMarketing() {
               тя е в реалния брой часове работа и нивото на технически решения. За пълния
               анализ на процеса и разходите вижте{" "}
               <Link href="/izrabotka-na-sait">
-                <strong>изработка на сайт</strong>
+                <strong>цени за изработка на сайт</strong>
               </Link>.
             </p>
             <p>Диапазон: 400-4 000 EUR (еднократно).</p>

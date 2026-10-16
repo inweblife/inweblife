@@ -251,7 +251,7 @@ const LematizatsiaNaKlyuchoviDumi = () => {
               реда в Keyword Planner, два различни обема, но една и съща лема &quot;сайт&quot; зад тях -
               точно затова{" "}
               <Link href="/izrabotka-na-sait">
-                <strong>тази страница</strong>
+                <strong>страницата за изработка на сайт</strong>
               </Link>{" "}
               не се нуждае от отделен близнак за множественото число.
             </p>
