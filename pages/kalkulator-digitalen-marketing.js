@@ -433,7 +433,7 @@ export default function KalkulatorDigitalenMarketing() {
                 <strong>цени за изработка на сайт</strong>
               </Link>.
             </p>
-            <p>Диапазон: 400-4 000 EUR (еднократно).</p>
+            <p>Диапазон: 100-15 000+ EUR (еднократно).</p>
           </section>
 
           {/* ── H2 #2b-2 ── */}
