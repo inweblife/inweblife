@@ -24,7 +24,7 @@ const articleSchema = {
   },
   inLanguage: "bg-BG",
   datePublished: "2026-04-24",
-  dateModified: "2026-07-14",
+  dateModified: "2026-10-16",
   mainEntityOfPage: `${SITE_URL}/kalkulator-digitalen-marketing`,
 };
 
@@ -205,7 +205,7 @@ export default function KalkulatorDigitalenMarketing() {
         imageAlt="Калкулатор за дигитален маркетинг - примерни цени"
         type="article"
         publishedTime="2026-04-24T00:00:00+03:00"
-        modifiedTime="2026-07-14T00:00:00+03:00"
+        modifiedTime="2026-10-16T00:00:00+03:00"
       >
         <script
           type="application/ld+json"
@@ -247,7 +247,7 @@ export default function KalkulatorDigitalenMarketing() {
               <strong>Публикувано:</strong>{" "}
               <time dateTime="2026-04-24">24 април 2026</time> |{" "}
               <strong>Обновено:</strong>{" "}
-              <time dateTime="2026-07-14">14 юли 2026</time>
+              <time dateTime="2026-10-16">16 октомври 2026</time>
             </p>
             <p>
               <strong>Калкулаторът за дигитален маркетинг</strong> на тази страница не показва
