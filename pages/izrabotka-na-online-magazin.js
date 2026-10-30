@@ -3,6 +3,9 @@ import heroImg from "../public/izrabotka-na-online-magazin.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -15,11 +18,7 @@ const articleSchema = {
   description:
     "Колко струва изработката на онлайн магазин и коя платформа да изберете? Научете добрите практики, етапите на разработка и честите грешки.",
   image: [`${SITE_URL}/og/izrabotka-na-online-magazin.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -97,11 +96,7 @@ const IzrabotkaNaOnlineMagazin = () => {
 
         <article className={styles.article}>
           <section>
-            <p>
-              <strong>Автор:</strong> <Link href="/about">Иван Димитров</Link> |{" "}
-              <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-09-23">23 септември 2026</time>
-            </p>
+            <AuthorByline href="/izrabotka-na-online-magazin" styles={styles} />
             <p>
               <strong>
                 Онлайн магазинът не е обикновен сайт с добавена количка - той работи с продуктова
@@ -901,6 +896,8 @@ const IzrabotkaNaOnlineMagazin = () => {
               интеграциите, преди да започне изработката, контактите ми са на страницата „За мен“ в менюто.
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/izrabotka-na-online-magazin"

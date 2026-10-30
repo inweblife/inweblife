@@ -4,6 +4,9 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -16,11 +19,7 @@ const articleSchema = {
   description:
     "Как работи SEO - как Google обхожда, индексира и класира сайтовете, защо линковете още имат значение и как AI променя търсенето.",
   image: [`${SITE_URL}/og/kak-raboti-seo.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -95,10 +94,7 @@ const KakRabotiSeo = () => {
 
         <article className={styles.article}>
           <section>
-            <p>
-              <strong>Автор:</strong> Иван Димитров | <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-05-22">22 май 2026</time>
-            </p>
+            <AuthorByline href="/kak-raboti-seo" styles={styles} />
             <p>
               В рамките на 13 дни между 7 и 20 май 2026 г. Google направи три промени, които
               промениха това, което повечето хора знаеха за SEO. На 7 май премахна разтварящите
@@ -582,6 +578,8 @@ const KakRabotiSeo = () => {
               , където Google Maps и Local Pack решават кой получава обажданията.
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/kak-raboti-seo"

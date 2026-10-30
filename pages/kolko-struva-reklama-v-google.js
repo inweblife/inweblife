@@ -4,6 +4,9 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -29,11 +32,7 @@ const articleSchema = {
   description:
     "Колко струва реклама в Гугъл? Виж реални цени на клик, дневни бюджети, месечни разходи, ДДС и колко клика ще получите с 300, 500 и 1000 €.",
   image: [`${SITE_URL}/og/kolko-struva-reklama-v-google.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -107,11 +106,7 @@ const KolkoStruvaReklamaVGoogle = () => {
 
         <article className={styles.article}>
           <section>
-            <p>
-              <strong>Автор:</strong> <Link href="/about">Иван Димитров</Link> |{" "}
-              <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-08-08">8 август 2026</time>
-            </p>
+            <AuthorByline href="/kolko-struva-reklama-v-google" styles={styles} />
             <p>
               В България Google Ads обикновено струва между 200 и 500 € на месец за малък
               бизнес, а тестова кампания може да стартира от 3-5 € на ден. Реалният разход
@@ -786,6 +781,8 @@ const KolkoStruvaReklamaVGoogle = () => {
               на един ваш клиент. Всичко останало е шум.
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/kolko-struva-reklama-v-google"

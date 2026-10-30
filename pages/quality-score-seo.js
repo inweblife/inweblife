@@ -4,6 +4,9 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -16,11 +19,7 @@ const articleSchema = {
   description:
     "Как работи Quality Score и защо засяга и SEO: пълно обяснение на трите компонента, директната връзка с органичните позиции и как едно SEO инвестиция носи ползи и за двата канала.",
   image: [`${SITE_URL}/og/quality-score-seo.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -95,10 +94,7 @@ const QualityScoreSeo = () => {
 
         <article className={styles.article}>
           <section>
-            <p>
-              <strong>Автор:</strong> Иван Димитров | <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-04-09">9 април 2026</time>
-            </p>
+            <AuthorByline href="/quality-score-seo" styles={styles} />
             <p>
               Как работи Quality Score и защо засяга и SEO е въпрос, който повечето бизнеси
               никога не си задават, затова плащат повече за реклами и се класират по-зле
@@ -458,6 +454,8 @@ const QualityScoreSeo = () => {
               </div>
             </div>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/quality-score-seo"

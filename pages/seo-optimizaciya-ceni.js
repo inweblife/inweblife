@@ -4,6 +4,9 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -30,11 +33,7 @@ const articleSchema = {
   description:
     "SEO оптимизация цени: Вижте какво реално съдържат офертите. Научете какво включва работещият базов пакет от 399 €.",
   image: [`${SITE_URL}/og/seo-optimizaciya-ceni.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -108,11 +107,7 @@ const SeoOptimizaciyaCeni = () => {
 
         <article className={styles.article}>
           <section>
-            <p>
-              <strong>Автор:</strong> <Link href="/about">Иван Димитров</Link> |{" "}
-              <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-08-12">12 август 2026</time>
-            </p>
+            <AuthorByline href="/seo-optimizaciya-ceni" styles={styles} />
             <p>
               Цените за SEO оптимизация в България през 2026 г. обикновено започват от 250-300
               евро месечно за локален бизнес и достигат над 1500 евро за онлайн магазини и
@@ -789,6 +784,8 @@ const SeoOptimizaciyaCeni = () => {
               вашия случай.
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/seo-optimizaciya-ceni"

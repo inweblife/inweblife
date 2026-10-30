@@ -4,6 +4,9 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -16,11 +19,7 @@ const articleSchema = {
   description:
     "Как се прави модерен сайт: semantic clusters, pillar content, mobile-first UX и SEO/PPC стратегия с Next.js фокус.",
   image: [`${SITE_URL}/og/modern-site.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -98,11 +97,7 @@ const ModernSite = () => {
 
         <article className={styles.article}>
           <section>
-            <p>
-              <strong>Автор:</strong> Иван Димитров |{" "}
-              <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-02-03">3 февруари 2026</time>
-            </p>
+            <AuthorByline href="/modern-site" styles={styles} />
             <p>
               &quot;Модерен сайт&quot; в 2026 не означава тъмен режим и
               микроанимации. Означава конкретни резултати в тестовете на Google
@@ -284,6 +279,8 @@ const ModernSite = () => {
               .
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/modern-site"

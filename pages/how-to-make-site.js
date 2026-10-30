@@ -4,6 +4,9 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -16,11 +19,7 @@ const articleSchema = {
   description:
     "Как се прави сайт: структура, semantic clusters, pillar content и вътрешни връзки с SEO, PPC и WordPress/Next.js подход.",
   image: [`${SITE_URL}/og/how-to-make-site.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -93,10 +92,7 @@ const HowToMakeSite = () => {
 
         <article className={styles.article}>
           <section>
-            <p>
-              <strong>Автор:</strong> Иван Димитров | <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-01-27">27 януари 2026</time>
-            </p>
+            <AuthorByline href="/how-to-make-site" styles={styles} />
             <p>
               Повечето хора питат &quot;как се прави сайт&quot; и очакват отговор от типа: избираш WordPress,
               качваш тема, готово. Технически - да, може да стане така. На практика резултатът е
@@ -258,6 +254,8 @@ const HowToMakeSite = () => {
               онлайн присъствие за първата година?&quot;. Пълният анализ с реални числа е в <strong>изработка на сайт и реклама в Гугъл</strong>.
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/how-to-make-site"

@@ -4,6 +4,9 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -16,11 +19,7 @@ const articleSchema = {
   description:
     "Какво е SEO slug канибализация? Как обърква Google и защо вреди. Вижте я в Search Console и спрете вътрешната конкуренция с 301 редирект.",
   image: [`${SITE_URL}/og/seo-slug-kanibalizaciya.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -99,10 +98,7 @@ const SeoSlugKanibalizaciya = () => {
 
         <article className={styles.article}>
           <section>
-            <p>
-              <strong>Автор:</strong> Иван Димитров | <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-04-30">30 април 2026</time>
-            </p>
+            <AuthorByline href="/seo-slug-kanibalizaciya" styles={styles} />
             <p>
               Срещал съм хора, които се оплакват, че трудно успяват да класират страница по важна за
               бизнеса на клиента заявка. Оптимизират за ключова дума от долната част на фунията, със
@@ -475,6 +471,8 @@ const SeoSlugKanibalizaciya = () => {
               на точния пасаж за точната заявка.
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/seo-slug-kanibalizaciya"

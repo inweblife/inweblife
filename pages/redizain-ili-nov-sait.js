@@ -4,6 +4,9 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -27,11 +30,7 @@ const articleSchema = {
   description:
     "Редизайн на сайт или нов сайт? Кога редизайнът е достатъчен, кога ви трябва нов сайт и как да запазите SEO класиранията при миграция.",
   image: [`${SITE_URL}/og/redizain-ili-nov-sait.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -110,10 +109,7 @@ const RedizainIliNovSait = () => {
           <Breadcrumb title="Редизайн на сайт или нов сайт" styles={styles} />
 
           <section>
-            <p>
-              <strong>Автор:</strong> Иван Димитров | <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-06-23">23 юни 2026</time>
-            </p>
+            <AuthorByline href="/redizain-ili-nov-sait" styles={styles} />
             <p>
               <strong>Редизайн на сайт</strong> или изцяло нов сайт - това е едно от най-скъпите
               решения, които един бизнес взема за онлайн присъствието си. Изборът изглежда
@@ -511,6 +507,8 @@ const RedizainIliNovSait = () => {
               ред в офертата - по-важен от визията.
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/redizain-ili-nov-sait"

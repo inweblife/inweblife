@@ -4,6 +4,9 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -16,11 +19,7 @@ const articleSchema = {
   description:
     "Какво е SEO оптимизация и колко струва? Вижте как се прави, кога има резултати и как да изберете правилната стратегия за своя сайт.",
   image: [`${SITE_URL}/og/seo-optimizaciya-na-ueb-sait.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -95,14 +94,7 @@ const SeoOptimizaciya = () => {
 
         <article className={styles.article}>
           <section>
-            <p>
-              <strong>Автор:</strong>{" "}
-              <Link href="/about">
-                <strong>Иван Димитров</strong>
-              </Link>{" "}
-              | <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-04-16">16 април 2026</time>
-            </p>
+            <AuthorByline href="/seo-optimizaciya-na-ueb-sait" styles={styles} />
             <p>
               Ако сайтът ви не носи клиенти от Google, проблемът почти никога не е в дизайна.
               В 9 от 10 случая е в SEO оптимизацията на сайт - или по-точно, в липсата на
@@ -790,6 +782,8 @@ const SeoOptimizaciya = () => {
               примерни диапазони дава реалистична рамка за всички канали наведнъж.
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/seo-optimizaciya-na-ueb-sait"

@@ -4,6 +4,9 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -16,11 +19,7 @@ const articleSchema = {
   description:
     "Дигитален маркетинг за малкия бизнес: стратегии, канали и реален план с 300-400 евро. SEO, Google Ads и социални мрежи без корпоративни бюджети.",
   image: [`${SITE_URL}/og/digitalen-marketing.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -95,11 +94,7 @@ const DigitalenMarketing = () => {
 
         <article className={styles.article}>
           <section>
-            <p>
-              <strong>Автор:</strong> <Link href="/about">Иван Димитров</Link> |{" "}
-              <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-04-27">27 април 2026</time>
-            </p>
+            <AuthorByline href="/digitalen-marketing" styles={styles} />
             <p>
               Всеки собственик на малък бизнес в България в даден момент си задава един и същ въпрос: откъде да почна с дигиталния маркетинг? Обикновено след като е видял конкурент на първо място в Google. Или след като е усетил, че клиентите идват все по-трудно. Или след като е похарчил пари за реклами без ясен резултат.
             </p>
@@ -353,6 +348,8 @@ const DigitalenMarketing = () => {
               , защото дигиталният маркетинг без добър сайт е система без основа.
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/digitalen-marketing"

@@ -3,6 +3,9 @@ import heroImg from "../public/klyuchovi-dumi-za-firmen-sait.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -34,11 +37,7 @@ const articleSchema = {
   headline: TITLE,
   description: DESCRIPTION,
   image: [`${SITE_URL}/og/klyuchovi-dumi-za-firmen-sait.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -112,11 +111,7 @@ const KlyuchoviDumiZaFirmenSait = () => {
 
         <article className={styles.article}>
           <section>
-            <p>
-              <strong>Автор:</strong> <Link href="/about">Иван Димитров</Link> |{" "}
-              <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-10-15">15 октомври 2026</time>
-            </p>
+            <AuthorByline href="/klyuchovi-dumi-za-firmen-sait" styles={styles} />
             <p>
               <strong>
                 Ключовите думи за фирмен сайт се избират според обема на търсене, намерението на
@@ -776,6 +771,8 @@ const KlyuchoviDumiZaFirmenSait = () => {
               „За мен“ в менюто.
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/klyuchovi-dumi-za-firmen-sait"

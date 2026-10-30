@@ -4,6 +4,9 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -16,11 +19,7 @@ const articleSchema = {
   description:
     "Колко реално струват сайт и реклама в Google и кои разходи най-често не се включват в първоначалните оферти на агенции и изпълнители.",
   image: [`${SITE_URL}/og/website-and-google-ads.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -94,10 +93,7 @@ const WebsiteAndGoogleAds = () => {
 
         <article className={styles.article}>
           <section>
-            <p>
-              <strong>Автор:</strong> Иван Димитров | <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-03-27">27 март 2026</time>
-            </p>
+            <AuthorByline href="/website-and-google-ads" styles={styles} />
             <p>
               Това не е оферта и не продава услуга. Това е анализ на реалните разходи при изграждане
               на онлайн присъствие - колко реално излизат сайтът и рекламата в Google и кои разходи
@@ -272,6 +268,8 @@ const WebsiteAndGoogleAds = () => {
               които живеят от това, че клиентите им не знаят.
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <ShareButtons
             path="/website-and-google-ads"

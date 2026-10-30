@@ -4,6 +4,9 @@ import heroImg from "../public/kalkulator-digitalen-marketing.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -15,7 +18,7 @@ const articleSchema = {
   headline: "Калкулатор за дигитален маркетинг - примерни цени",
   description: "Примерни цени за дигитален маркетинг в България: изработка на сайт, SEO, Google Ads, социални мрежи. Реалистични диапазони, не агенционни обещания.",
   image: [`${SITE_URL}/og/kalkulator-digitalen-marketing.png`],
-  author: { "@type": "Person", name: "Иван Димитров", url: `${SITE_URL}/about` },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -238,17 +241,7 @@ export default function KalkulatorDigitalenMarketing() {
 
           {/* ── INTRO ── */}
           <section>
-            <p>
-              <strong>Автор:</strong>{" "}
-              <Link href="/about">
-                <strong>Иван Димитров</strong>
-              </Link>{" "}
-              |{" "}
-              <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-04-24">24 април 2026</time> |{" "}
-              <strong>Обновено:</strong>{" "}
-              <time dateTime="2026-10-16">16 октомври 2026</time>
-            </p>
+            <AuthorByline href="/kalkulator-digitalen-marketing" styles={styles} />
             <p>
               <strong>Калкулаторът за дигитален маркетинг</strong> на тази страница не показва
               моите цени - показва реалистични пазарни диапазони, за да знаете какво е разумно
@@ -684,6 +677,8 @@ export default function KalkulatorDigitalenMarketing() {
               да подпишете.
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/kalkulator-digitalen-marketing"

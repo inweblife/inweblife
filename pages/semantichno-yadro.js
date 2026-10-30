@@ -4,6 +4,9 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -16,11 +19,7 @@ const articleSchema = {
   description:
     "Семантично ядро: как се съставя списъкът с ключови думи на един сайт - подробно обяснение на целия процес за най-успешна SEO архитектура",
   image: [`${SITE_URL}/og/semantichno-yadro.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -97,11 +96,7 @@ const SemantichnoYadro = () => {
 
         <article className={styles.article}>
           <section>
-            <p>
-              <strong>Автор:</strong> <Link href="/about">Иван Димитров</Link> |{" "}
-              <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-07-31">31 юли 2026</time>
-            </p>
+            <AuthorByline href="/semantichno-yadro" styles={styles} />
             <p>
               Ако сте получавали оферта за SEO, почти сигурно сте видели ред с текст &quot;изготвяне
               на семантично ядро&quot; и цена срещу него. И почти сигурно никой не Ви е обяснил какво
@@ -848,6 +843,8 @@ const SemantichnoYadro = () => {
               съдържание. Проблемът е в съдържание, писано без карта.
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/semantichno-yadro"

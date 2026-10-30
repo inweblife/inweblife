@@ -4,6 +4,9 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -16,11 +19,7 @@ const articleSchema = {
   description:
     "Как работи адреса на бизнеса като локално SEO, кои фактори влияят на класирането и как да получите повече клиенти от Google и Google Maps.",
   image: [`${SITE_URL}/og/lokalno-seo.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -95,14 +94,7 @@ const LokalnoSeo = () => {
 
         <article className={styles.article}>
           <section>
-            <p>
-              <strong>Автор:</strong>{" "}
-              <Link href="/about">
-                <strong>Иван Димитров</strong>
-              </Link>{" "}
-              | <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-07-17">17 юли 2026</time>
-            </p>
+            <AuthorByline href="/lokalno-seo" styles={styles} />
             <p>
               Когато някой във вашия град потърси в Google услугата, която предлагате, се
               случва едно от двете: или ви намира, или намира конкурента ви. Трето няма.
@@ -628,6 +620,8 @@ const LokalnoSeo = () => {
               момента, в който спрете да плащате.
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/lokalno-seo"

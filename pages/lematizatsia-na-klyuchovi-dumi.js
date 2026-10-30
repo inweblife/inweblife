@@ -4,6 +4,9 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -16,11 +19,7 @@ const articleSchema = {
   description:
     "Лематизация на ключови думи: как Google свързва различните форми и трябва ли да ги повтаряте? Практично обяснение за SEO.",
   image: [`${SITE_URL}/og/lematizatsia-na-klyuchovi-dumi.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -97,11 +96,7 @@ const LematizatsiaNaKlyuchoviDumi = () => {
 
         <article className={styles.article}>
           <section>
-            <p>
-              <strong>Автор:</strong> <Link href="/about">Иван Димитров</Link> |{" "}
-              <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-08-30">30 август 2026</time>
-            </p>
+            <AuthorByline href="/lematizatsia-na-klyuchovi-dumi" styles={styles} />
             <p>
               Google може да разбира различни граматически форми и близки изрази като свързани с
               едно и също понятие, затова не е необходимо да повтаряте една ключова дума във
@@ -467,6 +462,8 @@ const LematizatsiaNaKlyuchoviDumi = () => {
               точен за търсачката.
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/lematizatsia-na-klyuchovi-dumi"

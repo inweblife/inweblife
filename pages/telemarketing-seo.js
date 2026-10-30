@@ -4,6 +4,9 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -16,11 +19,7 @@ const articleSchema = {
   description:
     "Ако SEO агенцията не се появява в Google, как ще ви класира там вас? Разберете защо агенциите без органична видимост звънят по фирмите и заплашват с Google.",
   image: [`${SITE_URL}/og/telemarketing-seo.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -97,10 +96,7 @@ const TelemarketingSeo = () => {
 
         <article className={styles.article}>
           <section>
-            <p>
-              <strong>Автор:</strong> Иван Димитров | <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-03-10">10 март 2026</time>
-            </p>
+            <AuthorByline href="/telemarketing-seo" styles={styles} />
             <p>
               Ако търсите SEO, което реално работи и донася клиенти - отговорът е пред вас, в
               Google. Отворете търсачката и проверете дали агенцията, с която обмисляте да работите,
@@ -279,6 +275,8 @@ const TelemarketingSeo = () => {
               </Link>.
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/telemarketing-seo"

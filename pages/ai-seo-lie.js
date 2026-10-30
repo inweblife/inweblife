@@ -4,6 +4,9 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -16,11 +19,7 @@ const articleSchema = {
   description:
     "AI SEO услугите масово се продават като задължителни, но много от тях са преопакован маркетингов страх. Кога е нужна оптимизация за AI.",
   image: [`${SITE_URL}/og/ai-seo-lie.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -93,13 +92,7 @@ const AiSeoLie = () => {
 
         <article className={styles.article}>
           <section>
-            <p>
-              <strong>Автор:</strong> <Link href="/about">Иван Димитров</Link> |{" "}
-              <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-02-25">25 февруари 2026</time>{" "}
-              | <strong>Актуализирано:</strong>{" "}
-              <time dateTime="2026-08-08">8 август 2026</time>
-            </p>
+            <AuthorByline href="/ai-seo-lie" styles={styles} />
             <p>
               <strong>Краткият отговор: рядко е буквална измама, по-често е преопакован SEO под
               нов, по-скъп етикет.</strong> LLM оптимизацията често се продава като нова услуга, но
@@ -440,6 +433,8 @@ const AiSeoLie = () => {
               фундаменталното качество на съдържанието, което винаги е било целта на истинското SEO.
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/ai-seo-lie"

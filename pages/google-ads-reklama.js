@@ -4,6 +4,9 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -34,11 +37,7 @@ const articleSchema = {
   description:
     "Реклама в Гугъл - как работи най-добре - всичко, което трябва да настроите от ключови думи, заглавия и описания до стратегия за наддаване.",
   image: [`${SITE_URL}/og/google-ads-reklama.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -113,10 +112,7 @@ const GoogleAdsReklama = () => {
 
         <article className={styles.article}>
           <section>
-            <p>
-              <strong>Автор:</strong> <Link href="/about">Иван Димитров</Link> | <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-04-23">23 април 2026</time>
-            </p>
+            <AuthorByline href="/google-ads-reklama" styles={styles} />
             <p>
               PPC специалист с 10+ години опит в управление на Google Ads кампании с голям
               бюджет.
@@ -967,6 +963,8 @@ const GoogleAdsReklama = () => {
               открито от агенциите. Калкулаторът с примерни цени дава тази рамка.
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/google-ads-reklama"

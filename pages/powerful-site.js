@@ -4,6 +4,9 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -16,11 +19,7 @@ const articleSchema = {
   description:
     "Създайте мощен сайт с CMS стратегия, mobile-first архитектура, pillar content и topical authority за SEO и PPC растеж.",
   image: [`${SITE_URL}/og/powerful-site.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -94,10 +93,7 @@ const PowerfulSite = () => {
 
         <article className={styles.article}>
           <section>
-            <p>
-              <strong>Автор:</strong> Иван Димитров | <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-02-10">10 февруари 2026</time>
-            </p>
+            <AuthorByline href="/powerful-site" styles={styles} />
             <p>
               Всеки бизнес в един момент осъзнава: да имаш сайт и да имаш сайт, който работи
               за теб, са две напълно различни неща. Първият тип сайт съществува. Вторият
@@ -214,6 +210,8 @@ const PowerfulSite = () => {
               .
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/powerful-site"

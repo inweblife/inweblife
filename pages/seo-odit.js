@@ -3,6 +3,8 @@ import heroImg from "../public/seo-odit.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import AuthorByline from "../components/AuthorByline";
 import TableOfContents from "../components/TableOfContents";
 import ShareButtons from "../components/ShareButtons";
@@ -59,13 +61,7 @@ const articleSchema = {
   headline: TITLE,
   description: DESCRIPTION,
   image: [`${SITE_URL}/og/seo-odit.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-    image: `${SITE_URL}/ivan.webp`,
-    jobTitle: "Уеб разработчик, SEO и Google Ads специалист",
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -134,7 +130,7 @@ const SeoOdit = () => {
 
         <article className={styles.article}>
           <section>
-            <AuthorByline published="2026-10-30" publishedLabel="30 октомври 2026" styles={styles} />
+            <AuthorByline href="/seo-odit" styles={styles} />
             <p>
               <strong>
                 SEO одитът е проверка на целия сайт, която показва защо Google не го индексира, не
@@ -695,6 +691,8 @@ const SeoOdit = () => {
               Ако искате одит на вашия сайт, контактите ми са на страницата „За мен“ в менюто.
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/seo-odit"

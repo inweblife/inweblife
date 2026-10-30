@@ -4,6 +4,9 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -16,11 +19,7 @@ const articleSchema = {
   description:
     "Колко струва изработка на сайт? Вижте цените според вида на сайта, факторите, които определят крайната цена, и сроковете за разработка.",
   image: [`${SITE_URL}/og/izrabotka-na-sait.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -104,15 +103,7 @@ const IzrabotkaNaSait = () => {
                 всяка оферта.
               </strong>
             </p>
-            <p>
-              <strong>Автор:</strong>{" "}
-              <Link href="/about">
-                <strong>Иван Димитров</strong>
-              </Link>{" "}
-              | <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-04-12">12 април 2026</time> |{" "}
-              <strong>Обновено:</strong> <time dateTime="2026-10-16">16 октомври 2026</time>
-            </p>
+            <AuthorByline href="/izrabotka-na-sait" styles={styles} />
             <p>
               Виждал съм десетки сайтове, платени за 3000-5000 евро, които не могат да минат 40
               точки в PageSpeed. Виждал съм и сайтове за 500 евро, които генерират запитвания всеки
@@ -1198,6 +1189,8 @@ const IzrabotkaNaSait = () => {
               знаете какво означава.
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/izrabotka-na-sait"

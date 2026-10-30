@@ -4,6 +4,9 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -16,11 +19,7 @@ const articleSchema = {
   description:
     "Защо платената реклама в LinkedIn и Google без SEO основа изгаря бюджета ви. Семантично ядро, пилар клъстери и AEO - пълното ръководство преди да пуснете първата си кампания.",
   image: [`${SITE_URL}/og/ads-without-seo.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -105,11 +104,7 @@ const AdsWithoutSeo = () => {
         <article className={styles.article}>
           {/* ── SECTION 1 ── */}
           <section>
-            <p>
-              <strong>Автор:</strong> <Link href="/about">Иван Димитров</Link> |{" "}
-              <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-04-22">22 април 2026</time>
-            </p>
+            <AuthorByline href="/ads-without-seo" styles={styles} />
             <p>
               Когато клиент реши да инвестира в{" "}
               <Link href="/kalkulator-digitalen-marketing">
@@ -594,6 +589,8 @@ const AdsWithoutSeo = () => {
               умно ускорение на вече работеща машина.
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/ads-without-seo"

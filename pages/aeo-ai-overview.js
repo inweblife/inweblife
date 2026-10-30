@@ -3,6 +3,9 @@ import heroImg from "../public/aeo-ai-overview.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
+import AuthorByline from "../components/AuthorByline";
+import AuthorBox from "../components/AuthorBox";
+import { authorSchema } from "../lib/author";
 import ShareButtons from "../components/ShareButtons";
 import PostNavigation from "../components/PostNavigation";
 import RelatedPosts from "../components/RelatedPosts";
@@ -15,11 +18,7 @@ const articleSchema = {
   description:
     "Практическо ръководство за AI SEO оптимизация: как да структурираш съдържание, така че AI Overviews, ChatGPT и Perplexity да го извличат и цитират.",
   image: [`${SITE_URL}/og/aeo-ai-overview.png`],
-  author: {
-    "@type": "Person",
-    name: "Иван Димитров",
-    url: `${SITE_URL}/about`,
-  },
+  author: authorSchema,
   publisher: {
     "@type": "Organization",
     name: "inweblife",
@@ -95,13 +94,7 @@ const AeoAiOverview = () => {
 
         <article className={styles.article}>
           <section>
-            <p>
-              <strong>Автор:</strong> <Link href="/about">Иван Димитров</Link> |{" "}
-              <strong>Публикувано:</strong>{" "}
-              <time dateTime="2026-05-12">12 май 2026</time>{" "}
-              | <strong>Актуализирано:</strong>{" "}
-              <time dateTime="2026-08-08">8 август 2026</time>
-            </p>
+            <AuthorByline href="/aeo-ai-overview" styles={styles} />
             <p>
               <strong>AEO оптимизацията (Answer Engine Optimization)</strong> е процесът на
               структуриране на съдържание така, че AI системи като Google AI Overviews, ChatGPT
@@ -759,6 +752,8 @@ const AeoAiOverview = () => {
               , вижте свързаните материали по-долу.
             </p>
           </section>
+
+          <AuthorBox styles={styles} />
 
           <RelatedPosts
             currentHref="/aeo-ai-overview"
