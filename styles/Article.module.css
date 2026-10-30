@@ -593,3 +593,43 @@
 .tocList a:hover {
   text-decoration: underline;
 }
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin: 0 0 1.4rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.authorPhotoLink {
+  flex-shrink: 0;
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid color-mix(in srgb, var(--accent) 35%, var(--border));
+}
+
+.authorPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.article .authorText p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.authorName {
+  font-weight: 800;
+}
+
+.article .authorMeta {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
