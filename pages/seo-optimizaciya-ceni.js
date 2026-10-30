@@ -4,6 +4,7 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import Breadcrumb from "../components/Breadcrumb";
 import AuthorByline from "../components/AuthorByline";
 import AuthorBox from "../components/AuthorBox";
 import { authorSchema } from "../lib/author";
@@ -106,6 +107,8 @@ const SeoOptimizaciyaCeni = () => {
         </section>
 
         <article className={styles.article}>
+          <Breadcrumb title="SEO оптимизация цени: Какво реално получавате за парите си" styles={styles} />
+
           <section>
             <AuthorByline href="/seo-optimizaciya-ceni" styles={styles} />
             <p>

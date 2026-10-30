@@ -4,6 +4,7 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import Breadcrumb from "../components/Breadcrumb";
 import AuthorByline from "../components/AuthorByline";
 import AuthorBox from "../components/AuthorBox";
 import { authorSchema } from "../lib/author";
@@ -95,6 +96,8 @@ const LematizatsiaNaKlyuchoviDumi = () => {
         </section>
 
         <article className={styles.article}>
+          <Breadcrumb title="Лематизация на ключови думи: нужни ли са всички форми?" styles={styles} />
+
           <section>
             <AuthorByline href="/lematizatsia-na-klyuchovi-dumi" styles={styles} />
             <p>

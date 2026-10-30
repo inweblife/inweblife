@@ -4,6 +4,7 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import Breadcrumb from "../components/Breadcrumb";
 import AuthorByline from "../components/AuthorByline";
 import AuthorBox from "../components/AuthorBox";
 import { authorSchema } from "../lib/author";
@@ -91,6 +92,8 @@ const HowToMakeSite = () => {
         </section>
 
         <article className={styles.article}>
+          <Breadcrumb title="Как се прави сайт" styles={styles} />
+
           <section>
             <AuthorByline href="/how-to-make-site" styles={styles} />
             <p>

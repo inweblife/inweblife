@@ -4,6 +4,7 @@ import heroImg from "../public/kalkulator-digitalen-marketing.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
+import Breadcrumb from "../components/Breadcrumb";
 import AuthorByline from "../components/AuthorByline";
 import AuthorBox from "../components/AuthorBox";
 import { authorSchema } from "../lib/author";
@@ -238,6 +239,8 @@ export default function KalkulatorDigitalenMarketing() {
         </section>
 
         <article className={styles.article}>
+          <Breadcrumb title="Калкулатор за дигитален маркетинг" styles={styles} />
+
 
           {/* ── INTRO ── */}
           <section>

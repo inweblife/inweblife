@@ -4,6 +4,7 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import Breadcrumb from "../components/Breadcrumb";
 import AuthorByline from "../components/AuthorByline";
 import AuthorBox from "../components/AuthorBox";
 import { authorSchema } from "../lib/author";
@@ -102,6 +103,8 @@ const AdsWithoutSeo = () => {
         </section>
 
         <article className={styles.article}>
+          <Breadcrumb title="Реклама в LinkedIn без SEO? Не хвърляйте пари на вятъра" styles={styles} />
+
           {/* ── SECTION 1 ── */}
           <section>
             <AuthorByline href="/ads-without-seo" styles={styles} />

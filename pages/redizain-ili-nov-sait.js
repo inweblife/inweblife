@@ -106,7 +106,7 @@ const RedizainIliNovSait = () => {
         </section>
 
         <article className={styles.article}>
-          <Breadcrumb title="Редизайн на сайт или нов сайт" styles={styles} />
+          <Breadcrumb title="Редизайн на сайт или нов сайт - кое е по-доброто решение" styles={styles} />
 
           <section>
             <AuthorByline href="/redizain-ili-nov-sait" styles={styles} />

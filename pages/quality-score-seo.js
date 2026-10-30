@@ -4,6 +4,7 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import Breadcrumb from "../components/Breadcrumb";
 import AuthorByline from "../components/AuthorByline";
 import AuthorBox from "../components/AuthorBox";
 import { authorSchema } from "../lib/author";
@@ -93,6 +94,8 @@ const QualityScoreSeo = () => {
         </section>
 
         <article className={styles.article}>
+          <Breadcrumb title="Как работи Quality Score и защо засяга и SEO" styles={styles} />
+
           <section>
             <AuthorByline href="/quality-score-seo" styles={styles} />
             <p>

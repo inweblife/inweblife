@@ -4,6 +4,7 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import Breadcrumb from "../components/Breadcrumb";
 import AuthorByline from "../components/AuthorByline";
 import AuthorBox from "../components/AuthorBox";
 import { authorSchema } from "../lib/author";
@@ -92,6 +93,8 @@ const WebsiteAndGoogleAds = () => {
         </section>
 
         <article className={styles.article}>
+          <Breadcrumb title="Колко струват сайт и реклама: скритите разходи" styles={styles} />
+
           <section>
             <AuthorByline href="/website-and-google-ads" styles={styles} />
             <p>

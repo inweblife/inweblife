@@ -3,6 +3,7 @@ import heroImg from "../public/izrabotka-na-online-magazin.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
+import Breadcrumb from "../components/Breadcrumb";
 import AuthorByline from "../components/AuthorByline";
 import AuthorBox from "../components/AuthorBox";
 import { authorSchema } from "../lib/author";
@@ -95,6 +96,8 @@ const IzrabotkaNaOnlineMagazin = () => {
         </section>
 
         <article className={styles.article}>
+          <Breadcrumb title="Изработка на сайт за онлайн магазин: цени и успешни практики" styles={styles} />
+
           <section>
             <AuthorByline href="/izrabotka-na-online-magazin" styles={styles} />
             <p>

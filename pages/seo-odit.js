@@ -3,6 +3,7 @@ import heroImg from "../public/seo-odit.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
+import Breadcrumb from "../components/Breadcrumb";
 import AuthorBox from "../components/AuthorBox";
 import { authorSchema } from "../lib/author";
 import AuthorByline from "../components/AuthorByline";
@@ -129,6 +130,8 @@ const SeoOdit = () => {
         </section>
 
         <article className={styles.article}>
+          <Breadcrumb title={TITLE} styles={styles} />
+
           <section>
             <AuthorByline href="/seo-odit" styles={styles} />
             <p>

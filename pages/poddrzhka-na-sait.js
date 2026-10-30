@@ -3,6 +3,7 @@ import heroImg from "../public/poddrzhka-na-sait.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
+import Breadcrumb from "../components/Breadcrumb";
 import AuthorByline from "../components/AuthorByline";
 import AuthorBox from "../components/AuthorBox";
 import { authorSchema } from "../lib/author";
@@ -92,6 +93,8 @@ const PoddrzhkaNaSait = () => {
         </section>
 
         <article className={styles.article}>
+          <Breadcrumb title="Какво включва поддръжката на сайт" styles={styles} />
+
           <section>
             <AuthorByline href="/poddrzhka-na-sait" styles={styles} />
             <p>

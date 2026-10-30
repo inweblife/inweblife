@@ -4,6 +4,7 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import Breadcrumb from "../components/Breadcrumb";
 import AuthorByline from "../components/AuthorByline";
 import AuthorBox from "../components/AuthorBox";
 import { authorSchema } from "../lib/author";
@@ -97,6 +98,8 @@ const SeoSlugKanibalizaciya = () => {
         </section>
 
         <article className={styles.article}>
+          <Breadcrumb title="SEO slug канибализация - къде Гугъл се обърква" styles={styles} />
+
           <section>
             <AuthorByline href="/seo-slug-kanibalizaciya" styles={styles} />
             <p>

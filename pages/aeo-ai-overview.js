@@ -3,6 +3,7 @@ import heroImg from "../public/aeo-ai-overview.webp";
 import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 import styles from "../styles/Article.module.css";
+import Breadcrumb from "../components/Breadcrumb";
 import AuthorByline from "../components/AuthorByline";
 import AuthorBox from "../components/AuthorBox";
 import { authorSchema } from "../lib/author";
@@ -93,6 +94,8 @@ const AeoAiOverview = () => {
         </section>
 
         <article className={styles.article}>
+          <Breadcrumb title="AI SEO оптимизация - практическо ръководство за AEO" styles={styles} />
+
           <section>
             <AuthorByline href="/aeo-ai-overview" styles={styles} />
             <p>

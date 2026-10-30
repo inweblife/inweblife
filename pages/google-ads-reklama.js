@@ -4,6 +4,7 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import Breadcrumb from "../components/Breadcrumb";
 import AuthorByline from "../components/AuthorByline";
 import AuthorBox from "../components/AuthorBox";
 import { authorSchema } from "../lib/author";
@@ -111,6 +112,8 @@ const GoogleAdsReklama = () => {
         </section>
 
         <article className={styles.article}>
+          <Breadcrumb title="Реклама в Гугъл: Как работи най-добре за бизнеса" styles={styles} />
+
           <section>
             <AuthorByline href="/google-ads-reklama" styles={styles} />
             <p>

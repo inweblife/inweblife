@@ -4,6 +4,7 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import Breadcrumb from "../components/Breadcrumb";
 import AuthorByline from "../components/AuthorByline";
 import AuthorBox from "../components/AuthorBox";
 import { authorSchema } from "../lib/author";
@@ -95,6 +96,8 @@ const SemantichnoYadro = () => {
         </section>
 
         <article className={styles.article}>
+          <Breadcrumb title="Как да съставим семантично ядро от ключови думи" styles={styles} />
+
           <section>
             <AuthorByline href="/semantichno-yadro" styles={styles} />
             <p>

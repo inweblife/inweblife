@@ -4,6 +4,7 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import Breadcrumb from "../components/Breadcrumb";
 import AuthorByline from "../components/AuthorByline";
 import AuthorBox from "../components/AuthorBox";
 import { authorSchema } from "../lib/author";
@@ -91,6 +92,8 @@ const SeoFashion = () => {
         </section>
 
         <article className={styles.article}>
+          <Breadcrumb title="Мобилна оптимизация на сайт - UX, скорост и SEO класиране" styles={styles} />
+
           <section>
             <AuthorByline href="/seo-fashion" styles={styles} />
             <p>

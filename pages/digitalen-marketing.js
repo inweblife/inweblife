@@ -4,6 +4,7 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import Breadcrumb from "../components/Breadcrumb";
 import AuthorByline from "../components/AuthorByline";
 import AuthorBox from "../components/AuthorBox";
 import { authorSchema } from "../lib/author";
@@ -93,6 +94,8 @@ const DigitalenMarketing = () => {
         </section>
 
         <article className={styles.article}>
+          <Breadcrumb title="Дигитален маркетинг за печеливш бизнес" styles={styles} />
+
           <section>
             <AuthorByline href="/digitalen-marketing" styles={styles} />
             <p>

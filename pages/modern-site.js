@@ -4,6 +4,7 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import Breadcrumb from "../components/Breadcrumb";
 import AuthorByline from "../components/AuthorByline";
 import AuthorBox from "../components/AuthorBox";
 import { authorSchema } from "../lib/author";
@@ -96,6 +97,8 @@ const ModernSite = () => {
         </section>
 
         <article className={styles.article}>
+          <Breadcrumb title="Как се прави модерен сайт" styles={styles} />
+
           <section>
             <AuthorByline href="/modern-site" styles={styles} />
             <p>

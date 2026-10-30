@@ -4,6 +4,7 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import Breadcrumb from "../components/Breadcrumb";
 import AuthorByline from "../components/AuthorByline";
 import AuthorBox from "../components/AuthorBox";
 import { authorSchema } from "../lib/author";
@@ -93,6 +94,8 @@ const KakRabotiSeo = () => {
         </section>
 
         <article className={styles.article}>
+          <Breadcrumb title="Как работи SEO и защо някои сайтове са невидими в Google" styles={styles} />
+
           <section>
             <AuthorByline href="/kak-raboti-seo" styles={styles} />
             <p>

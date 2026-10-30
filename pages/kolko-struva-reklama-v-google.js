@@ -4,6 +4,7 @@ import Link from "next/link";
 import SeoHead from "../components/SeoHead";
 
 import styles from "../styles/Article.module.css";
+import Breadcrumb from "../components/Breadcrumb";
 import AuthorByline from "../components/AuthorByline";
 import AuthorBox from "../components/AuthorBox";
 import { authorSchema } from "../lib/author";
@@ -105,6 +106,8 @@ const KolkoStruvaReklamaVGoogle = () => {
         </section>
 
         <article className={styles.article}>
+          <Breadcrumb title="Колко струва реклама в Гугъл - цена на клик и бюджет" styles={styles} />
+
           <section>
             <AuthorByline href="/kolko-struva-reklama-v-google" styles={styles} />
             <p>
