@@ -121,7 +121,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Script
         id="google-preferred-sources"
         src="https://news.google.com/swg/js/v1/publisher.js"
-        strategy="lazyOnload"
+        strategy="afterInteractive"
       />
       <Layout>
         <Component {...pageProps} />
