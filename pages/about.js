@@ -44,16 +44,6 @@ const personSchema = {
   workExample: [
     {
       "@type": "CreativeWork",
-      name: "Carco.bg",
-      url: "https://carco.bg/",
-    },
-    {
-      "@type": "CreativeWork",
-      name: "Ecometal.bg",
-      url: "https://ecometal.bg/",
-    },
-    {
-      "@type": "CreativeWork",
       name: "Kolazascrap.com",
       url: "https://kolazascrap.com/",
     },
@@ -178,7 +168,6 @@ const About = () => {
               <h2 id="strategy-title">Стратегическо управление и бизнес растеж</h2>
               <p>
                 Моят път в дигиталния свят е белязан от работа по ключови индустриални проекти като{" "}
-                <strong>Carco.bg</strong>, <strong>Ecometal.bg</strong>,{" "}
                 <strong>Kolazascrap.com</strong> и <strong>Kolizascrap.com</strong>. Опитът ми включва:
               </p>
               <div className={styles.capabilityGrid}>
@@ -298,26 +287,6 @@ const About = () => {
                   </p>
                 </div>
                 <div className={styles.projectGrid}>
-                  <a
-                    className={styles.projectCard}
-                    href="https://carco.bg/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span className={styles.projectTag}>AUTOMOTIVE</span>
-                    <strong>Carco.bg</strong>
-                    <span>Авточасти втора употреба</span>
-                  </a>
-                  <a
-                    className={styles.projectCard}
-                    href="https://ecometal.bg/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span className={styles.projectTag}>RECYCLING</span>
-                    <strong>Ecometal.bg</strong>
-                    <span>Екометал</span>
-                  </a>
                   <a
                     className={styles.projectCard}
                     href="https://kolazascrap.com/"
